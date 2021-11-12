@@ -22,10 +22,12 @@ int main()
     {
         printf("ent num(0-90)");
         scanf("%d", &k);
+        fflush(stdout);
 
         if (k > 90 || k < 0)
         {
             printf("error\n");
+            fflush(stdout);
         }
         else {
             print(rand() % k);
