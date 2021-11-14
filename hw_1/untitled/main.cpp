@@ -1,8 +1,21 @@
 #include <cstdio>
 #include <cstdlib>
 #include <cctype>
+int scan()
+{
+    int k;
+    int num=0;
+    k = getchar();
+    while (isdigit(k))
+    {
+        num = (num * 10) + (k - '0');
+        k = getchar();
+    }
 
-void print(int n) {
+    return num;
+}
+void print(int n)
+{
     if (n < 0)
     {
         putchar('-');
@@ -17,22 +30,18 @@ void print(int n) {
 }
 int main()
 {
-    int k;
+    int num;
     bool is_success= false;
     while(!is_success)
     {
         printf("ent num(0-90)");
-        k = getchar();
-        int num = 0;
-        while (isdigit(k))
-        {
-            num = (num * 10) + (k - '0');
-            k = getchar();
-        }
+        fflush(stdout);
+        num = scan();
 
         if (num > 90 || num < 0)
         {
             printf("error\n");
+            fflush(stdout);
         }
         else {
             print(rand() % num);
