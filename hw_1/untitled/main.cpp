@@ -1,5 +1,6 @@
 #include <cstdio>
-#include <stdlib.h>
+#include <cstdlib>
+#include <cctype>
 
 void print(int n) {
     if (n < 0)
@@ -21,21 +22,25 @@ int main()
     while(!is_success)
     {
         printf("ent num(0-90)");
-        scanf("%d", &k);
-        fflush(stdout);
+        k = getchar();
+        int num = 0;
+        while (isdigit(k))
+        {
+            num = (num * 10) + (k - '0');
+            k = getchar();
+        }
 
-        if (k > 90 || k < 0)
+        if (num > 90 || num < 0)
         {
             printf("error\n");
-            fflush(stdout);
         }
         else {
-            print(rand() % k);
+            print(rand() % num);
             printf("\n");
             fflush(stdout);
             is_success=true;
         }
     }
 
-    return 0;
+    return EXIT_SUCCESS;
 }
