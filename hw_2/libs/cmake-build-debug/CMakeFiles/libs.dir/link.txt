@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/libs.dir/main.cpp.o -o libs   -L/usr/local/./library.cpp  -L/usr/local/lib  -Wl,-rpath,/usr/local/./library.cpp:/usr/local/lib -Wl,-Bstatic -lstatic-lib -Wl,-Bdynamic -ldynamic-lib 

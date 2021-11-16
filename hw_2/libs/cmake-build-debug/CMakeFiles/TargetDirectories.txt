@@ -1,0 +1,3 @@
+/home/lilu/lilu/cpp_games/cpp_games/hw_2/libs/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/lilu/lilu/cpp_games/cpp_games/hw_2/libs/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/lilu/lilu/cpp_games/cpp_games/hw_2/libs/cmake-build-debug/CMakeFiles/libs.dir

@@ -1,0 +1,2 @@
+/usr/local/lib/libdynamic-lib.so
+/usr/local/./library-dynamic.h/library-dynamic.h

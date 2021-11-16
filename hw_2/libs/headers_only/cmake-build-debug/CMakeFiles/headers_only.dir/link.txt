@@ -1,0 +1,2 @@
+/usr/bin/ar qc libheaders_only.a CMakeFiles/headers_only.dir/library.cpp.o
+/usr/bin/ranlib libheaders_only.a

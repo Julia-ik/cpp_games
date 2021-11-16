@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lilu/lilu/cpp_games/cpp_games/hw_2/libs/main.cpp
+headers_lib.ipp
+/home/lilu/lilu/cpp_games/cpp_games/hw_2/libs/headers_lib.ipp
+library.h
+/home/lilu/lilu/cpp_games/cpp_games/hw_2/libs/library.h
+library-dynamic.h
+/home/lilu/lilu/cpp_games/cpp_games/hw_2/libs/library-dynamic.h
+
+/usr/local/headers_lib.ipp/headers_lib.ipp
+cstdio
+-
+
+/usr/local/library-dynamic.h/library-dynamic.h
+
+/usr/local/library.h/library.h
+

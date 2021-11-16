@@ -1,0 +1,4 @@
+/var/lib/snapd/snap/clion/169/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/lilu/lilu/cpp_games/cpp_games/hw_2/libs
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lilu/lilu/cpp_games/cpp_games/hw_2/libs/cmake-build-debug

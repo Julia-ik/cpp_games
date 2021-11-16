@@ -1,0 +1,6 @@
+#ifndef DYNAMIC_LIB_LIBRARY_DYNAMIC_H
+#define DYNAMIC_LIB_LIBRARY_DYNAMIC_H
+
+void print_dynamic();
+
+#endif //DYNAMIC_LIB_LIBRARY_DYNAMIC_H

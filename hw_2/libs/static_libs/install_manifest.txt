@@ -1,0 +1,2 @@
+/usr/local/./library.cpp/libstatic-lib.a
+/usr/local/./library.h/library.h

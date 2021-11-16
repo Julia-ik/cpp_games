@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdynamic_lib.a CMakeFiles/dynamic_lib.dir/library.cpp.o
+/usr/bin/ranlib libdynamic_lib.a

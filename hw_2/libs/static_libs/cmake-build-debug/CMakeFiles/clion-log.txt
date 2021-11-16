@@ -1,0 +1,11 @@
+/var/lib/snapd/snap/clion/169/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/lilu/lilu/cpp_games/cpp_games/hw_2/libs/static_libs
+CMake Error at CMakeLists.txt:8 (set_target_properties):
+  set_target_properties Can not find target to add properties to: static_lib
+
+
+CMake Error at CMakeLists.txt:10 (install):
+  install TARGETS given target "static_lib" which does not exist.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/lilu/lilu/cpp_games/cpp_games/hw_2/libs/static_libs/cmake-build-debug/CMakeFiles/CMakeOutput.log".

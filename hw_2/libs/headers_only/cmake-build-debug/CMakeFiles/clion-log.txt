@@ -1,0 +1,13 @@
+/var/lib/snapd/snap/clion/169/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/lilu/lilu/cpp_games/cpp_games/hw_2/libs/headers_only
+-- Configuring done
+CMake Error at CMakeLists.txt:16 (add_library):
+  Cannot find source file:
+
+    header_lib.ipp
+
+
+CMake Error at CMakeLists.txt:16 (add_library):
+  No SOURCES given to target: lib2
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.

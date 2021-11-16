@@ -1,0 +1,7 @@
+/home/lilu/lilu/cpp_games/cpp_games/hw_2/libs/static_libs/CMakeFiles/install/strip.dir
+/home/lilu/lilu/cpp_games/cpp_games/hw_2/libs/static_libs/CMakeFiles/install/local.dir
+/home/lilu/lilu/cpp_games/cpp_games/hw_2/libs/static_libs/CMakeFiles/install.dir
+/home/lilu/lilu/cpp_games/cpp_games/hw_2/libs/static_libs/CMakeFiles/list_install_components.dir
+/home/lilu/lilu/cpp_games/cpp_games/hw_2/libs/static_libs/CMakeFiles/rebuild_cache.dir
+/home/lilu/lilu/cpp_games/cpp_games/hw_2/libs/static_libs/CMakeFiles/edit_cache.dir
+/home/lilu/lilu/cpp_games/cpp_games/hw_2/libs/static_libs/CMakeFiles/static-lib.dir
