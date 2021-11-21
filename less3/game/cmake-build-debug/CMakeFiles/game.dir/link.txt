@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/game.dir/main.cpp.o -o game  engine/libengine.a engine/libs/SDL2/libSDL2maind.a engine/libs/SDL2/libSDL2d.a -lm -Wl,--no-undefined -pthread 
