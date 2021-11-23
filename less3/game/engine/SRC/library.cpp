@@ -2,93 +2,42 @@
 #include <memory>
 #include <SDL.h>
 #include <fstream>
-
-void Engine::init(std::string_view name)
+Engine::Engine(int w, int h)
+{
+    width=w;
+    heights=h;
+    window = SDL_CreateWindow("  ",SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED,width, heights, 0);
+    r = SDL_CreateRenderer(window, -1, 0);
+}
+void Engine::init(std::string_view name,SDL_Window **window, SDL_Renderer **r)
 {
     SDL_version version = {0, 0, 0};
     SDL_GetVersion(&version);
     printf("SDL Version: %d.%d.%d, version.major, version.patch, version minor");
+
+
+    SDL_Init(SDL_INIT_VIDEO);
 }
 
-void Engine::draw()
+void Engine::flip(SDL_Renderer **r)
 {
+    SDL_RendererFlip flip = SDL_FLIP_VERTICAL;
 
-
-
-    //SDL_Init(SDL_INIT_EVERYTHING);
-    //window = SDL_CreateWindow("name", 100, 100,680,480,0);
-
-    //if (window == NULL)
-    //{
-     //   printf("\nCould not create window: %s\n", SDL_GetError());
-    //}
-    //SDL_Delay(3000);
-    //SDL_DestroyWindow(window);
-    //SDL_Quit();
-
-    //SDL_SetRenderDrawColor(r,255,0,0,255);
-    //SDL_RenderDrawLine(r, 300, 200,380,260);
-
-    if (SDL_CreateWindowAndRenderer(640, 480, 0, &window, &r) == 0) {
-        SDL_bool done = SDL_FALSE;
-
-        while (!done) {
-            SDL_Event event;
-
-            SDL_SetRenderDrawColor(r, 0, 0, 0, SDL_ALPHA_OPAQUE);
-            SDL_RenderClear(r);
-
-            SDL_SetRenderDrawColor(r, 255, 0, 0, SDL_ALPHA_OPAQUE);
-            SDL_RenderDrawLine(r,320, 480, 0, 0);
-            SDL_RenderPresent(r);
-
-            while (SDL_PollEvent(&event)) {
-                if (event.type == SDL_QUIT) {
-                    done = SDL_TRUE;
-                }
-            }
-        }
-    }
-
-    if (r) {
-        SDL_DestroyRenderer(r);
-
-}}
-
-
-void Engine::drawTriangle(float x1, float y1, float x2, float y2, float x3, float y3)
-{
-
-
-    if (SDL_CreateWindowAndRenderer(640, 480, 0, &window, &r) == 0) {
-        SDL_bool done = SDL_FALSE;
-
-        while (!done) {
-            SDL_Event event;
-
-            SDL_SetRenderDrawColor(r, 0, 0, 0, SDL_ALPHA_OPAQUE);
-            SDL_RenderClear(r);
-
-            SDL_SetRenderDrawColor(r, 255, 0, 0, SDL_ALPHA_OPAQUE);
-
-            SDL_RenderDrawLine(r,x1, y1, x2, y2);
-            SDL_RenderDrawLine(r,x1,y1,x3,y3);
-            SDL_RenderDrawLine(r, x2,y2,x3,y3);
-            SDL_RenderPresent(r);
-
-            while (SDL_PollEvent(&event)) {
-                if (event.type == SDL_QUIT) {
-                    done = SDL_TRUE;
-                }
-            }
-        }
-    }
+   SDL_RenderCopyEx(*r,NULL ,NULL ,NULL ,NULL ,NULL , flip);
 }
 
+void Engine::drawTriangle(SDL_Renderer **r, float x1, float y1, float x2, float y2, float x3, float y3)
+{
+    SDL_SetRenderDrawColor(*r, 255, 0, 0, SDL_ALPHA_OPAQUE);
 
-//engine.init("Windows Name");
-//while (engine.isActive())
-//{
-//engine.update();
-//}
-
+    SDL_RenderDrawLine(*r,x1, y1, x2, y2);
+    SDL_RenderDrawLine(*r,x1,y1,x3,y3);
+    SDL_RenderDrawLine(*r, x2,y2,x3,y3);
+    SDL_RenderPresent(*r);
+}
+void Engine::destroyEngine(SDL_Window **window, SDL_Renderer **renderer)
+{
+    SDL_Delay(7000);
+    SDL_DestroyWindow(*window);
+    SDL_Quit();
+}

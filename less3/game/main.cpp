@@ -1,80 +1,40 @@
-#include <cstdio>
 #include "library.hpp"
-#include <vector>
-#include <iostream>
-#include <string>
-#include <fstream>
-#include <sstream>
-
-//#include <SDL_version.h>
-class f_treugolnik
-{
-public:
-    int pervaya;
-    int vtoraya;
-    int tretiya;
-
-    f_treugolnik(int p, int v, int t)
-    {
-        pervaya =p;
-        vtoraya = v;
-        tretiya =t;
-    }
-
-};
-class v_tochka
-{
-public:
-    float x;
-    float y;
-    v_tochka(float x_file, float y_file)
-    {
-        x=x_file;
-        y=y_file;
-    }
-};
-
+#include "Model_head.h"
+#include "Model.h"
 
 int main()
 {
-    Engine engine;
-    engine.init("game");
+    Engine engine(700, 700);
+    Model_head source;
+    Model model(source.v_source, source.f_source, engine.width, engine.heights);
 
-    std::vector<f_treugolnik> fvector;
-    std::vector<v_tochka> vvector;
+    engine.init("game", &engine.window, &engine.r);
 
+    model.flip_model(engine.heights/2);
 
-
-    std::ifstream in;
-    in.open ("koko.txt", std::ifstream::in);
-    if (in.fail())
+    for(int i=0; i<model.fvector.size();i++)
     {
-        printf("\ncould not open file");
+       int x01 = model.vvector[model.fvector[i]->first]-> x;
+       int y01 = model.vvector[model.fvector[i]->first]-> y;
+       int x02 = model.vvector[model.fvector[i]->second]->x;
+       int y02 = model.vvector[model.fvector[i]->second]->y;
+       int x03 = model.vvector[model.fvector[i]->third]-> x;
+       int y03 = model.vvector[model.fvector[i]->third]-> y;
+
+        engine.drawTriangle(&engine.r,x01,y01,x02,y02,x03,y03);
     }
-    /*face.open("engine/african_head.obj", std::ifstream::in);
-    if (!face.is_open())
-    {
-        printf("\ncould not open file");
-    }
-    else
-    {
-        printf("\nfile is open");
-    }*/
 
-
-
-   /* for(int i=0;i<=fvector.size();i++)
-    {
-        int x01 = vvector[fvector[i].pervaya].x;
-        int y01 = vvector[fvector[i].pervaya].y;
-        int x02 = vvector[fvector[i].vtoraya].x;
-        int y02 = vvector[fvector[i].vtoraya].y;
-        int x03 = vvector[fvector[i].tretiya].x;
-        int y03 = vvector[fvector[i].tretiya].y;
-
-        engine.drawTriangle(x01,y01,x02,y02,x03,y03);
-
-    }*/
+    engine.destroyEngine(&engine.window,&engine.r);
 
     return 0;
 }
+
+// gonna leave it here just for future...
+
+//    FILE * f = fopen("/home/lilu/lilu/cpp_games/cpp_games/less3/game/koko.txt", "r");
+//    int val;
+//    fscanf(f, "%d", &val);
+//    bool succes = f !=nullptr;
+//std::ifstream f("/home/lilu/lilu/cpp_games/cpp_games/less3/game/koko.txt");
+//int v;
+//f >> v;

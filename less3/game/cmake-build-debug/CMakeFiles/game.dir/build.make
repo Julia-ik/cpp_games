@@ -79,20 +79,80 @@ CMakeFiles/game.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lilu/lilu/cpp_games/cpp_games/less3/game/main.cpp -o CMakeFiles/game.dir/main.cpp.s
 
+CMakeFiles/game.dir/Model.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/Model.cpp.o: ../Model.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/game.dir/Model.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/Model.cpp.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/Model.cpp
+
+CMakeFiles/game.dir/Model.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/Model.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lilu/lilu/cpp_games/cpp_games/less3/game/Model.cpp > CMakeFiles/game.dir/Model.cpp.i
+
+CMakeFiles/game.dir/Model.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/Model.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lilu/lilu/cpp_games/cpp_games/less3/game/Model.cpp -o CMakeFiles/game.dir/Model.cpp.s
+
+CMakeFiles/game.dir/Model_head.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/Model_head.cpp.o: ../Model_head.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/game.dir/Model_head.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/Model_head.cpp.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/Model_head.cpp
+
+CMakeFiles/game.dir/Model_head.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/Model_head.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lilu/lilu/cpp_games/cpp_games/less3/game/Model_head.cpp > CMakeFiles/game.dir/Model_head.cpp.i
+
+CMakeFiles/game.dir/Model_head.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/Model_head.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lilu/lilu/cpp_games/cpp_games/less3/game/Model_head.cpp -o CMakeFiles/game.dir/Model_head.cpp.s
+
+CMakeFiles/game.dir/f_triangle.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/f_triangle.cpp.o: ../f_triangle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/game.dir/f_triangle.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/f_triangle.cpp.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/f_triangle.cpp
+
+CMakeFiles/game.dir/f_triangle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/f_triangle.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lilu/lilu/cpp_games/cpp_games/less3/game/f_triangle.cpp > CMakeFiles/game.dir/f_triangle.cpp.i
+
+CMakeFiles/game.dir/f_triangle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/f_triangle.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lilu/lilu/cpp_games/cpp_games/less3/game/f_triangle.cpp -o CMakeFiles/game.dir/f_triangle.cpp.s
+
+CMakeFiles/game.dir/v_point.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/v_point.cpp.o: ../v_point.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/game.dir/v_point.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/v_point.cpp.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/v_point.cpp
+
+CMakeFiles/game.dir/v_point.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/v_point.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lilu/lilu/cpp_games/cpp_games/less3/game/v_point.cpp > CMakeFiles/game.dir/v_point.cpp.i
+
+CMakeFiles/game.dir/v_point.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/v_point.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lilu/lilu/cpp_games/cpp_games/less3/game/v_point.cpp -o CMakeFiles/game.dir/v_point.cpp.s
+
 # Object files for target game
 game_OBJECTS = \
-"CMakeFiles/game.dir/main.cpp.o"
+"CMakeFiles/game.dir/main.cpp.o" \
+"CMakeFiles/game.dir/Model.cpp.o" \
+"CMakeFiles/game.dir/Model_head.cpp.o" \
+"CMakeFiles/game.dir/f_triangle.cpp.o" \
+"CMakeFiles/game.dir/v_point.cpp.o"
 
 # External object files for target game
 game_EXTERNAL_OBJECTS =
 
 game: CMakeFiles/game.dir/main.cpp.o
+game: CMakeFiles/game.dir/Model.cpp.o
+game: CMakeFiles/game.dir/Model_head.cpp.o
+game: CMakeFiles/game.dir/f_triangle.cpp.o
+game: CMakeFiles/game.dir/v_point.cpp.o
 game: CMakeFiles/game.dir/build.make
 game: engine/libengine.a
 game: engine/libs/SDL2/libSDL2maind.a
 game: engine/libs/SDL2/libSDL2d.a
 game: CMakeFiles/game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

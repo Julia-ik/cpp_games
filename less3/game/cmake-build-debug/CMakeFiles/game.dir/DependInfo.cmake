@@ -8,7 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/Model.cpp" "/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/game.dir/Model.cpp.o"
+  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/Model_head.cpp" "/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/game.dir/Model_head.cpp.o"
+  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/f_triangle.cpp" "/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/game.dir/f_triangle.cpp.o"
   "/home/lilu/lilu/cpp_games/cpp_games/less3/game/main.cpp" "/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/game.dir/main.cpp.o"
+  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/v_point.cpp" "/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/game.dir/v_point.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

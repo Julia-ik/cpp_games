@@ -379,6 +379,33 @@ NAS:BOOL=ON
 //Dynamically load NAS audio API
 NAS_SHARED:BOOL=ON
 
+//Path to a file.
+OPENGL_EGL_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a file.
+OPENGL_GLX_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a file.
+OPENGL_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+OPENGL_egl_LIBRARY:FILEPATH=/usr/lib64/libEGL.so
+
+//Path to a library.
+OPENGL_gl_LIBRARY:FILEPATH=/usr/lib64/libGL.so
+
+//Path to a library.
+OPENGL_glu_LIBRARY:FILEPATH=OPENGL_glu_LIBRARY-NOTFOUND
+
+//Path to a library.
+OPENGL_glx_LIBRARY:FILEPATH=/usr/lib64/libGLX.so
+
+//Path to a library.
+OPENGL_opengl_LIBRARY:FILEPATH=/usr/lib64/libOpenGL.so
+
+//Path to a file.
+OPENGL_xmesa_INCLUDE_DIR:PATH=OPENGL_xmesa_INCLUDE_DIR-NOTFOUND
+
 //Support the OSS audio API
 OSS:BOOL=ON
 
@@ -635,6 +662,15 @@ game_BINARY_DIR:STATIC=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-buil
 //Value Computed by CMake
 game_SOURCE_DIR:STATIC=/home/lilu/lilu/cpp_games/cpp_games/less3/game
 
+//Value Computed by CMake
+glew_BINARY_DIR:STATIC=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine/libs/glew
+
+//Value Computed by CMake
+glew_SOURCE_DIR:STATIC=/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/glew
+
+//Dependencies for the target
+libglew_static_LIB_DEPENDS:STATIC=general;GL;general;X11;general;dl;general;Xext;
+
 //Path to a library.
 pkgcfg_lib_EGL_EGL:FILEPATH=/usr/lib64/libEGL.so
 
@@ -783,7 +819,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -890,6 +926,8 @@ EGL_egl_INCLUDEDIR:INTERNAL=
 EGL_egl_LIBDIR:INTERNAL=
 EGL_egl_PREFIX:INTERNAL=
 EGL_egl_VERSION:INTERNAL=
+//Details about finding OpenGL
+FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib64/libOpenGL.so][/usr/lib64/libGLX.so][/usr/include][c ][v()]
 //Details about finding PkgConfig
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v1.8.0()]
 //Test HAVE_3DNOW
@@ -1358,6 +1396,24 @@ KMSDRM_libdrm_INCLUDEDIR:INTERNAL=
 KMSDRM_libdrm_LIBDIR:INTERNAL=
 KMSDRM_libdrm_PREFIX:INTERNAL=
 KMSDRM_libdrm_VERSION:INTERNAL=
+//ADVANCED property for variable: OPENGL_EGL_INCLUDE_DIR
+OPENGL_EGL_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_GLX_INCLUDE_DIR
+OPENGL_GLX_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_INCLUDE_DIR
+OPENGL_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_egl_LIBRARY
+OPENGL_egl_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_gl_LIBRARY
+OPENGL_gl_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_glu_LIBRARY
+OPENGL_glu_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_glx_LIBRARY
+OPENGL_glx_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_opengl_LIBRARY
+OPENGL_opengl_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_xmesa_INCLUDE_DIR
+OPENGL_xmesa_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //Test OSS_FOUND
 OSS_FOUND:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE

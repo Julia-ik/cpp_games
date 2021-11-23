@@ -5,7 +5,7 @@
 		<Option title="SDL2"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\engine\;CMake Files\engine\libs\;CMake Files\engine\libs\SDL2\;CMake Files\engine\libs\SDL2\cmake\;CMake Files\engine\libs\SDL2\include\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\engine\;CMake Files\engine\libs\;CMake Files\engine\libs\SDL2\;CMake Files\engine\libs\SDL2\cmake\;CMake Files\engine\libs\SDL2\include\;CMake Files\engine\libs\glew\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine/libs/SDL2"/>
@@ -1012,6 +1012,9 @@
 		</Unit>
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_config.h.cmake">
 			<Option virtualFolder="CMake Files\engine\libs\SDL2\include\"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/glew/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\engine\libs\glew\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

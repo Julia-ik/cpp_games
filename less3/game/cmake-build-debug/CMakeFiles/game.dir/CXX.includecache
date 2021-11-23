@@ -660,19 +660,29 @@ close_code.h
 
 ../engine/libs/SDL2/include/close_code.h
 
-/home/lilu/lilu/cpp_games/cpp_games/less3/game/main.cpp
-cstdio
--
-library.hpp
-/home/lilu/lilu/cpp_games/cpp_games/less3/game/library.hpp
+/home/lilu/lilu/cpp_games/cpp_games/less3/game/Model.h
 vector
 -
-iostream
--
+v_point.h
+/home/lilu/lilu/cpp_games/cpp_games/less3/game/v_point.h
+f_triangle.h
+/home/lilu/lilu/cpp_games/cpp_games/less3/game/f_triangle.h
 string
 -
-fstream
+
+/home/lilu/lilu/cpp_games/cpp_games/less3/game/Model_head.h
+string
 -
-sstream
--
+
+/home/lilu/lilu/cpp_games/cpp_games/less3/game/f_triangle.h
+
+/home/lilu/lilu/cpp_games/cpp_games/less3/game/main.cpp
+library.hpp
+/home/lilu/lilu/cpp_games/cpp_games/less3/game/library.hpp
+Model_head.h
+/home/lilu/lilu/cpp_games/cpp_games/less3/game/Model_head.h
+Model.h
+/home/lilu/lilu/cpp_games/cpp_games/less3/game/Model.h
+
+/home/lilu/lilu/cpp_games/cpp_games/less3/game/v_point.h
 

@@ -239,6 +239,91 @@ uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f engine/libs/SDL2/CMakeFiles/uninstall.dir/build.make engine/libs/SDL2/CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
+#=============================================================================
+# Target rules for targets named libglew_static
+
+# Build rule for target.
+libglew_static: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libglew_static
+.PHONY : libglew_static
+
+# fast build rule for target.
+libglew_static/fast:
+	$(MAKE) $(MAKESILENT) -f engine/libs/glew/CMakeFiles/libglew_static.dir/build.make engine/libs/glew/CMakeFiles/libglew_static.dir/build
+.PHONY : libglew_static/fast
+
+Model.o: Model.cpp.o
+.PHONY : Model.o
+
+# target to build an object file
+Model.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Model.cpp.o
+.PHONY : Model.cpp.o
+
+Model.i: Model.cpp.i
+.PHONY : Model.i
+
+# target to preprocess a source file
+Model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Model.cpp.i
+.PHONY : Model.cpp.i
+
+Model.s: Model.cpp.s
+.PHONY : Model.s
+
+# target to generate assembly for a file
+Model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Model.cpp.s
+.PHONY : Model.cpp.s
+
+Model_head.o: Model_head.cpp.o
+.PHONY : Model_head.o
+
+# target to build an object file
+Model_head.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Model_head.cpp.o
+.PHONY : Model_head.cpp.o
+
+Model_head.i: Model_head.cpp.i
+.PHONY : Model_head.i
+
+# target to preprocess a source file
+Model_head.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Model_head.cpp.i
+.PHONY : Model_head.cpp.i
+
+Model_head.s: Model_head.cpp.s
+.PHONY : Model_head.s
+
+# target to generate assembly for a file
+Model_head.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Model_head.cpp.s
+.PHONY : Model_head.cpp.s
+
+f_triangle.o: f_triangle.cpp.o
+.PHONY : f_triangle.o
+
+# target to build an object file
+f_triangle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/f_triangle.cpp.o
+.PHONY : f_triangle.cpp.o
+
+f_triangle.i: f_triangle.cpp.i
+.PHONY : f_triangle.i
+
+# target to preprocess a source file
+f_triangle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/f_triangle.cpp.i
+.PHONY : f_triangle.cpp.i
+
+f_triangle.s: f_triangle.cpp.s
+.PHONY : f_triangle.s
+
+# target to generate assembly for a file
+f_triangle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/f_triangle.cpp.s
+.PHONY : f_triangle.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -263,6 +348,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+v_point.o: v_point.cpp.o
+.PHONY : v_point.o
+
+# target to build an object file
+v_point.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/v_point.cpp.o
+.PHONY : v_point.cpp.o
+
+v_point.i: v_point.cpp.i
+.PHONY : v_point.i
+
+# target to preprocess a source file
+v_point.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/v_point.cpp.i
+.PHONY : v_point.cpp.i
+
+v_point.s: v_point.cpp.s
+.PHONY : v_point.s
+
+# target to generate assembly for a file
+v_point.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/v_point.cpp.s
+.PHONY : v_point.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -281,9 +390,22 @@ help:
 	@echo "... SDL2main"
 	@echo "... engine"
 	@echo "... game"
+	@echo "... libglew_static"
+	@echo "... Model.o"
+	@echo "... Model.i"
+	@echo "... Model.s"
+	@echo "... Model_head.o"
+	@echo "... Model_head.i"
+	@echo "... Model_head.s"
+	@echo "... f_triangle.o"
+	@echo "... f_triangle.i"
+	@echo "... f_triangle.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... v_point.o"
+	@echo "... v_point.i"
+	@echo "... v_point.s"
 .PHONY : help
 
 

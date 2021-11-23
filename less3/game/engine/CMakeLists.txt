@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 3.20)
 project(engine)
 
 set(CMAKE_CXX_STANDARD 17)
-
 if(COMPILER_SUPPORTS_CXX17)
     set(CMAKE_REQUIRED_FLAGS "-std=c++17")
 endif()
@@ -15,6 +14,14 @@ if(NOT IOS)
     set(SDL2MAIN_LIBRARY SDL2main)
     set(SDL2_LIBRARY SDL2-static)
     endif()
+
+
+if(NOT APPLE AND NOT ANDROID AND (UNIX OR MINGW))
+    add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/libs/glew)
+    set(GLEW_LIBRARY libglew_static)
+
+endif()
+
 
 target_link_libraries(engine PRIVATE
         ${SDL2MAIN_LIBRARY} ${SDL2_LIBRARY})

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="glew"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\engine\;CMake Files\engine\libs\;CMake Files\engine\libs\SDL2\;CMake Files\engine\libs\SDL2\cmake\;CMake Files\engine\libs\SDL2\include\;CMake Files\engine\libs\glew\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine/libs/glew"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine/libs/glew/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine/libs/glew/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine/libs/glew/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine/libs/glew/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libglew_static">
+				<Option output="/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine/libs/glew/libglewd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine/libs/glew"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-DGLEW_NO_GLU"/>
+					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/glew/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine/libs/glew/Makefile&quot;  VERBOSE=1 libglew_static"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine/libs/glew/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine/libs/glew/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine/libs/glew/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libglew_static/fast">
+				<Option output="/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine/libs/glew/libglewd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine/libs/glew"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-DGLEW_NO_GLU"/>
+					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/glew/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine/libs/glew/Makefile&quot;  VERBOSE=1 libglew_static/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine/libs/glew/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine/libs/glew/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine/libs/glew/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/glew/src/glew.c">
+			<Option target="libglew_static"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\engine\"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\engine\libs\SDL2\"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/SDL2.spec.in">
+			<Option virtualFolder="CMake Files\engine\libs\SDL2\"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/cmake_uninstall.cmake.in">
+			<Option virtualFolder="CMake Files\engine\libs\SDL2\"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/sdl2-config.in">
+			<Option virtualFolder="CMake Files\engine\libs\SDL2\"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/sdl2.pc.in">
+			<Option virtualFolder="CMake Files\engine\libs\SDL2\"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/cmake/macros.cmake">
+			<Option virtualFolder="CMake Files\engine\libs\SDL2\cmake\"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/cmake/sdlchecks.cmake">
+			<Option virtualFolder="CMake Files\engine\libs\SDL2\cmake\"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_config.h.cmake">
+			<Option virtualFolder="CMake Files\engine\libs\SDL2\include\"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/glew/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\engine\libs\glew\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

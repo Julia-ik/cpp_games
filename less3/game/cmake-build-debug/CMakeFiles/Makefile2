@@ -82,15 +82,18 @@ clean: engine/clean
 # Recursive "all" directory target.
 engine/all: engine/CMakeFiles/engine.dir/all
 engine/all: engine/libs/SDL2/all
+engine/all: engine/libs/glew/all
 .PHONY : engine/all
 
 # Recursive "preinstall" directory target.
 engine/preinstall: engine/libs/SDL2/preinstall
+engine/preinstall: engine/libs/glew/preinstall
 .PHONY : engine/preinstall
 
 # Recursive "clean" directory target.
 engine/clean: engine/CMakeFiles/engine.dir/clean
 engine/clean: engine/libs/SDL2/clean
+engine/clean: engine/libs/glew/clean
 .PHONY : engine/clean
 
 #=============================================================================
@@ -114,15 +117,30 @@ engine/libs/SDL2/clean: engine/libs/SDL2/CMakeFiles/uninstall.dir/clean
 .PHONY : engine/libs/SDL2/clean
 
 #=============================================================================
+# Directory level rules for directory engine/libs/glew
+
+# Recursive "all" directory target.
+engine/libs/glew/all: engine/libs/glew/CMakeFiles/libglew_static.dir/all
+.PHONY : engine/libs/glew/all
+
+# Recursive "preinstall" directory target.
+engine/libs/glew/preinstall:
+.PHONY : engine/libs/glew/preinstall
+
+# Recursive "clean" directory target.
+engine/libs/glew/clean: engine/libs/glew/CMakeFiles/libglew_static.dir/clean
+.PHONY : engine/libs/glew/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/game.dir
 
 # All Build rule for target.
-CMakeFiles/game.dir/all: engine/libs/SDL2/CMakeFiles/SDL2main.dir/all
 CMakeFiles/game.dir/all: engine/CMakeFiles/engine.dir/all
+CMakeFiles/game.dir/all: engine/libs/SDL2/CMakeFiles/SDL2main.dir/all
 CMakeFiles/game.dir/all: engine/libs/SDL2/CMakeFiles/SDL2-static.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=100 "Built target game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=98,99 "Built target game"
 .PHONY : CMakeFiles/game.dir/all
 
 # Build rule for subdir invocation for target.
@@ -149,12 +167,12 @@ engine/CMakeFiles/engine.dir/all: engine/libs/SDL2/CMakeFiles/SDL2main.dir/all
 engine/CMakeFiles/engine.dir/all: engine/libs/SDL2/CMakeFiles/SDL2-static.dir/all
 	$(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/depend
 	$(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=99 "Built target engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=97 "Built target engine"
 .PHONY : engine/CMakeFiles/engine.dir/all
 
 # Build rule for subdir invocation for target.
 engine/CMakeFiles/engine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles 49
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine/CMakeFiles/engine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles 0
 .PHONY : engine/CMakeFiles/engine.dir/rule
@@ -201,12 +219,12 @@ engine/libs/SDL2/CMakeFiles/SDL2main.dir/clean:
 engine/libs/SDL2/CMakeFiles/SDL2-static.dir/all:
 	$(MAKE) $(MAKESILENT) -f engine/libs/SDL2/CMakeFiles/SDL2-static.dir/build.make engine/libs/SDL2/CMakeFiles/SDL2-static.dir/depend
 	$(MAKE) $(MAKESILENT) -f engine/libs/SDL2/CMakeFiles/SDL2-static.dir/build.make engine/libs/SDL2/CMakeFiles/SDL2-static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98 "Built target SDL2-static"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96 "Built target SDL2-static"
 .PHONY : engine/libs/SDL2/CMakeFiles/SDL2-static.dir/all
 
 # Build rule for subdir invocation for target.
 engine/libs/SDL2/CMakeFiles/SDL2-static.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles 49
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles 48
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine/libs/SDL2/CMakeFiles/SDL2-static.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles 0
 .PHONY : engine/libs/SDL2/CMakeFiles/SDL2-static.dir/rule
@@ -227,12 +245,12 @@ engine/libs/SDL2/CMakeFiles/SDL2-static.dir/clean:
 engine/libs/SDL2/CMakeFiles/SDL2.dir/all:
 	$(MAKE) $(MAKESILENT) -f engine/libs/SDL2/CMakeFiles/SDL2.dir/build.make engine/libs/SDL2/CMakeFiles/SDL2.dir/depend
 	$(MAKE) $(MAKESILENT) -f engine/libs/SDL2/CMakeFiles/SDL2.dir/build.make engine/libs/SDL2/CMakeFiles/SDL2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49 "Built target SDL2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48 "Built target SDL2"
 .PHONY : engine/libs/SDL2/CMakeFiles/SDL2.dir/all
 
 # Build rule for subdir invocation for target.
 engine/libs/SDL2/CMakeFiles/SDL2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles 49
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles 48
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine/libs/SDL2/CMakeFiles/SDL2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles 0
 .PHONY : engine/libs/SDL2/CMakeFiles/SDL2.dir/rule
@@ -271,6 +289,32 @@ uninstall: engine/libs/SDL2/CMakeFiles/uninstall.dir/rule
 engine/libs/SDL2/CMakeFiles/uninstall.dir/clean:
 	$(MAKE) $(MAKESILENT) -f engine/libs/SDL2/CMakeFiles/uninstall.dir/build.make engine/libs/SDL2/CMakeFiles/uninstall.dir/clean
 .PHONY : engine/libs/SDL2/CMakeFiles/uninstall.dir/clean
+
+#=============================================================================
+# Target rules for target engine/libs/glew/CMakeFiles/libglew_static.dir
+
+# All Build rule for target.
+engine/libs/glew/CMakeFiles/libglew_static.dir/all:
+	$(MAKE) $(MAKESILENT) -f engine/libs/glew/CMakeFiles/libglew_static.dir/build.make engine/libs/glew/CMakeFiles/libglew_static.dir/depend
+	$(MAKE) $(MAKESILENT) -f engine/libs/glew/CMakeFiles/libglew_static.dir/build.make engine/libs/glew/CMakeFiles/libglew_static.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=100 "Built target libglew_static"
+.PHONY : engine/libs/glew/CMakeFiles/libglew_static.dir/all
+
+# Build rule for subdir invocation for target.
+engine/libs/glew/CMakeFiles/libglew_static.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine/libs/glew/CMakeFiles/libglew_static.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles 0
+.PHONY : engine/libs/glew/CMakeFiles/libglew_static.dir/rule
+
+# Convenience name for target.
+libglew_static: engine/libs/glew/CMakeFiles/libglew_static.dir/rule
+.PHONY : libglew_static
+
+# clean rule for target.
+engine/libs/glew/CMakeFiles/libglew_static.dir/clean:
+	$(MAKE) $(MAKESILENT) -f engine/libs/glew/CMakeFiles/libglew_static.dir/build.make engine/libs/glew/CMakeFiles/libglew_static.dir/clean
+.PHONY : engine/libs/glew/CMakeFiles/libglew_static.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

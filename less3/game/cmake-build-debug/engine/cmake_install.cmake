@@ -47,3 +47,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine/libs/SDL2/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine/libs/glew/cmake_install.cmake")
+endif()
+

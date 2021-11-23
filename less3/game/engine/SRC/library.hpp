@@ -8,20 +8,19 @@ class Engine
 {
 
 public:
-    void init(std::string_view name);
-    void draw();
-
-    int x=0;
-    int y=0;
-    int z=0;
-    void drawTriangle(float x1, float y1, float x2, float y2, float x3, float y3);
-    //SDL_Color white = {255, 255, 255};
-    //SDL_Color red = {255, 0 ,0};
-    SDL_Window * window;
+    SDL_Window *window;
     SDL_Renderer *r;
-    //SDL_SetRenderDrawColor(255,0,0,255);
-   // Pimpl *_pimpl;
+    int width;
+    int heights;
+    SDL_bool done = SDL_FALSE;
 
+    Engine(int w, int h);
+    void flip(SDL_Renderer **r);
+
+    void init(std::string_view name, SDL_Window **window, SDL_Renderer **r);
+
+    void drawTriangle(SDL_Renderer **r, float x1, float y1, float x2, float y2, float x3, float y3);
+    void destroyEngine(SDL_Window **window, SDL_Renderer **renderer);
 
 };
 #endif //ENGINE_LIBRARY_H
