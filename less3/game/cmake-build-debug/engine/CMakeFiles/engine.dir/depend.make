@@ -50,5 +50,8 @@ engine/CMakeFiles/engine.dir/SRC/library.cpp.o: \
  ../engine/libs/SDL2/include/SDL_video.h \
  ../engine/libs/SDL2/include/begin_code.h \
  ../engine/libs/SDL2/include/close_code.h \
+ ../Model.h \
  ../engine/SRC/library.cpp \
- ../engine/SRC/library.hpp
+ ../engine/SRC/library.hpp \
+ ../f_triangle.h \
+ ../v_point.h

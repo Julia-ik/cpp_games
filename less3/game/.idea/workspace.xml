@@ -18,62 +18,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4b45fde-ab0c-4aec-a84e-03f814d6340d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Model.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model_head.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/f_triangle.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/f_triangle.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/head/.idea/head.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/v_point.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/v_point.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../less4/opengl/.idea/opengl.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../hw_1/untitled/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw_1/untitled/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../hw_2/libs/cmake-build-debug/CMakeFiles/libs.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw_2/libs/cmake-build-debug/CMakeFiles/libs.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../hw_2/libs/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw_2/libs/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../hw_2/libs/cmake-build-debug/libs" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw_2/libs/cmake-build-debug/libs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../hw_2/libs/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw_2/libs/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Model.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/Model.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/Model.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/SRC/library.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/SRC/library.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/engine.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/engine.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libengine.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libengine.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2-static.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2-static.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2-static.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2-static.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2-static.dir/src/SDL.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2-static.dir/src/SDL.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/SDL2.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/SDL2.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/include/SDL_revision.h" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/include/SDL_revision.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/libSDL2d.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/libSDL2d.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/game" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/game" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/game.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/game.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/engine/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine/SRC/library.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/engine/SRC/library.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine/SRC/library.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/engine/SRC/library.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/african_head.obj" beforeDir="false" afterPath="$PROJECT_DIR$/engine/african_head.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/koko.txt" beforeDir="false" afterPath="$PROJECT_DIR$/koko.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../less4/opengl/.idea/opengl.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +137,7 @@
       <updated>1637525496310</updated>
       <workItem from="1637525498265" duration="46000" />
       <workItem from="1637525708109" duration="26030000" />
-      <workItem from="1637664525594" duration="21590000" />
+      <workItem from="1637664525594" duration="23759000" />
     </task>
     <servers />
   </component>

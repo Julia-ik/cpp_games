@@ -652,9 +652,21 @@ close_code.h
 
 ../engine/libs/SDL2/include/close_code.h
 
+/home/lilu/lilu/cpp_games/cpp_games/less3/game/Model.h
+vector
+-
+v_point.h
+/home/lilu/lilu/cpp_games/cpp_games/less3/game/v_point.h
+f_triangle.h
+/home/lilu/lilu/cpp_games/cpp_games/less3/game/f_triangle.h
+string
+-
+
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/library.cpp
 library.hpp
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/library.hpp
+../../Model.h
+/home/lilu/lilu/cpp_games/cpp_games/less3/game/Model.h
 memory
 -
 SDL.h
@@ -669,4 +681,10 @@ SDL.h
 -
 vector
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/vector
+../../Model.h
+/home/lilu/lilu/cpp_games/cpp_games/less3/game/Model.h
+
+/home/lilu/lilu/cpp_games/cpp_games/less3/game/f_triangle.h
+
+/home/lilu/lilu/cpp_games/cpp_games/less3/game/v_point.h
 

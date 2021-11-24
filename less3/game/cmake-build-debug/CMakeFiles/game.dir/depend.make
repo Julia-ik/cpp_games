@@ -13,6 +13,7 @@ CMakeFiles/game.dir/f_triangle.cpp.o: \
  ../f_triangle.cpp \
  ../f_triangle.h
 CMakeFiles/game.dir/main.cpp.o: \
+ ../Model.h \
  ../engine/SRC/library.hpp \
  ../engine/libs/SDL2/include/SDL.h \
  ../engine/libs/SDL2/include/SDL_assert.h \

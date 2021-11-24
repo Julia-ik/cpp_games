@@ -11,6 +11,7 @@
 Model::Model(std::string v,std::string f, int width, int heights)
 {
     Model::convertFromStr(v, f, width, heights);
+    Model::flip_model(heights/2);
 }
 
 void Model::convertFromStr(std::string v, std::string f, int width, int heights)

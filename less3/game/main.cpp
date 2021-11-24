@@ -10,21 +10,7 @@ int main()
 
     engine.init("game", &engine.window, &engine.r);
 
-    model.flip_model(engine.heights/2);
-
-    for(int i=0; i<model.fvector.size();i++)
-    {
-       int x01 = model.vvector[model.fvector[i]->first]-> x;
-       int y01 = model.vvector[model.fvector[i]->first]-> y;
-       int x02 = model.vvector[model.fvector[i]->second]->x;
-       int y02 = model.vvector[model.fvector[i]->second]->y;
-       int x03 = model.vvector[model.fvector[i]->third]-> x;
-       int y03 = model.vvector[model.fvector[i]->third]-> y;
-
-        engine.drawTriangle(&engine.r,x01,y01,x02,y02,x03,y03);
-    }
-
-    engine.destroyEngine(&engine.window,&engine.r);
+    engine.full(&model);
 
     return 0;
 }
