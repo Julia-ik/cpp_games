@@ -24,8 +24,11 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-DGLEW_NO_GLU"/>
 					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC"/>
 					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include"/>
+					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/glew/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward"/>
@@ -47,8 +50,11 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-DGLEW_NO_GLU"/>
 					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC"/>
 					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include"/>
+					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/glew/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward"/>

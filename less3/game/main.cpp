@@ -4,14 +4,12 @@
 
 int main()
 {
+    bool isItGL = false;
     Engine engine(700, 700);
     Model_head source;
     Model model(source.v_source, source.f_source, engine.width, engine.heights);
 
-    engine.init("game", &engine.window, &engine.r);
-
-    engine.full(&model);
-
+    engine.drawWindow(&model, isItGL);
     return 0;
 }
 

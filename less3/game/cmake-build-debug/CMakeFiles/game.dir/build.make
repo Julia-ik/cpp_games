@@ -151,6 +151,7 @@ game: CMakeFiles/game.dir/build.make
 game: engine/libengine.a
 game: engine/libs/SDL2/libSDL2maind.a
 game: engine/libs/SDL2/libSDL2d.a
+game: engine/libs/glew/libglewd.a
 game: CMakeFiles/game.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/game.dir/link.txt --verbose=$(VERBOSE)

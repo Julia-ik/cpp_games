@@ -63,6 +63,7 @@ CMakeFiles/game.dir/main.cpp.o: \
  ../engine/libs/SDL2/include/SDL_video.h \
  ../engine/libs/SDL2/include/begin_code.h \
  ../engine/libs/SDL2/include/close_code.h \
+ ../engine/libs/glew/include/GL/glew.h \
  ../Model.h \
  ../Model_head.h \
  ../f_triangle.h \

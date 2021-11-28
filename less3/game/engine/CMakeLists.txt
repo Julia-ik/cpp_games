@@ -3,6 +3,7 @@ project(engine)
 
 set(CMAKE_CXX_STANDARD 17)
 if(COMPILER_SUPPORTS_CXX17)
+
     set(CMAKE_REQUIRED_FLAGS "-std=c++17")
 endif()
 
@@ -24,8 +25,10 @@ endif()
 
 
 target_link_libraries(engine PRIVATE
-        ${SDL2MAIN_LIBRARY} ${SDL2_LIBRARY})
+        ${SDL2MAIN_LIBRARY} ${SDL2_LIBRARY}
+        ${GLEW_LIBRARY})
 
 target_include_directories(engine PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/SRC
-        ${CMAKE_CURRENT_SOURCE_DIR}/libs/SDL2/include)
+        ${CMAKE_CURRENT_SOURCE_DIR}/libs/SDL2/include
+        ${CMAKE_CURRENT_SOURCE_DIR}/libs/glew/include)

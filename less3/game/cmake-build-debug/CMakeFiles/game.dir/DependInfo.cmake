@@ -20,6 +20,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../engine/SRC"
   "../engine/libs/SDL2/include"
+  "../engine/libs/glew/include"
   )
 
 # The set of dependency files which are needed:
@@ -31,6 +32,7 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine/CMakeFiles/engine.dir/DependInfo.cmake"
   "/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2main.dir/DependInfo.cmake"
   "/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2-static.dir/DependInfo.cmake"
+  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine/libs/glew/CMakeFiles/libglew_static.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
