@@ -54,14 +54,14 @@ engine/CMakeFiles/engine.dir/SRC/library.cpp.o: \
  ../engine/libs/SDL2/include/begin_code.h \
  ../engine/libs/SDL2/include/close_code.h \
  ../engine/libs/glew/include/GL/glew.h \
- ../Model.h \
- ../engine/Bitmap.h \
+ ../engine/SRC/Bitmap.h \
  ../engine/SRC/EventManager.h \
  ../engine/SRC/ResourceLoader.h \
+ ../engine/SRC/SDL/Model.h \
+ ../engine/SRC/SDL/f_triangle.h \
+ ../engine/SRC/SDL/v_point.h \
  ../engine/SRC/Shader.h \
  ../engine/SRC/SpriteRenderer.h \
  ../engine/SRC/Texture.h \
  ../engine/SRC/library.cpp \
- ../engine/SRC/library.hpp \
- ../f_triangle.h \
- ../v_point.h
+ ../engine/SRC/library.hpp

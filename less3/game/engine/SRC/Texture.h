@@ -5,7 +5,7 @@
 #ifndef GAME_TEXTURE_H
 #define GAME_TEXTURE_H
 #include <vector>
-#include "../Bitmap.h"
+#include "Bitmap.h"
 
 
 class Texture {

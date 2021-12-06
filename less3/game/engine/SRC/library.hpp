@@ -4,7 +4,7 @@
 #include <string_view>
 #include <SDL.h>
 #include "vector"
-#include "../../Model.h"
+#include "SDL/Model.h"
 #include "SpriteRenderer.h"
 #include "EventManager.h"
 #include <GL/glew.h>

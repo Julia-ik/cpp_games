@@ -6,17 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../Model.h
-vector
--
-v_point.h
-../v_point.h
-f_triangle.h
-../f_triangle.h
-string
--
-
-../engine/Bitmap.h
+../engine/SRC/Bitmap.h
 string_view
 -
 vector
@@ -42,6 +32,24 @@ Texture.h
 Shader.h
 ../engine/SRC/Shader.h
 
+../engine/SRC/SDL/Model.h
+vector
+-
+v_point.h
+../engine/SRC/SDL/v_point.h
+f_triangle.h
+../engine/SRC/SDL/f_triangle.h
+string
+-
+
+../engine/SRC/SDL/Model_head.h
+string
+-
+
+../engine/SRC/SDL/f_triangle.h
+
+../engine/SRC/SDL/v_point.h
+
 ../engine/SRC/Shader.h
 GL/glew.h
 -
@@ -63,8 +71,8 @@ Shader.h
 ../engine/SRC/Texture.h
 vector
 -
-../Bitmap.h
-../engine/Bitmap.h
+Bitmap.h
+../engine/SRC/Bitmap.h
 
 ../engine/SRC/library.hpp
 string_view
@@ -73,8 +81,8 @@ SDL.h
 -
 vector
 ../engine/SRC/vector
-../../Model.h
-../Model.h
+SDL/Model.h
+../engine/SRC/SDL/Model.h
 SpriteRenderer.h
 ../engine/SRC/SpriteRenderer.h
 EventManager.h
@@ -746,33 +754,15 @@ OpenGL/glu.h
 GL/glu.h
 -
 
-/home/lilu/lilu/cpp_games/cpp_games/less3/game/Model.h
-vector
--
-v_point.h
-/home/lilu/lilu/cpp_games/cpp_games/less3/game/v_point.h
-f_triangle.h
-/home/lilu/lilu/cpp_games/cpp_games/less3/game/f_triangle.h
-string
--
-
-/home/lilu/lilu/cpp_games/cpp_games/less3/game/Model_head.h
-string
--
-
-/home/lilu/lilu/cpp_games/cpp_games/less3/game/f_triangle.h
-
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/main.cpp
 library.hpp
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/library.hpp
-Model_head.h
-/home/lilu/lilu/cpp_games/cpp_games/less3/game/Model_head.h
-Model.h
-/home/lilu/lilu/cpp_games/cpp_games/less3/game/Model.h
+SDL/Model_head.h
+/home/lilu/lilu/cpp_games/cpp_games/less3/game/SDL/Model_head.h
+SDL/Model.h
+/home/lilu/lilu/cpp_games/cpp_games/less3/game/SDL/Model.h
 chrono
 -
 ResourceLoader.h
 -
-
-/home/lilu/lilu/cpp_games/cpp_games/less3/game/v_point.h
 

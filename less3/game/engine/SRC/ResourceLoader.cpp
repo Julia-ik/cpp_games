@@ -3,7 +3,7 @@
 //
 
 #include "ResourceLoader.h"
-#include "../Bitmap.h"
+#include "Bitmap.h"
 
 #include "stb_image.h"
 

@@ -668,17 +668,7 @@ OpenGL/glu.h
 GL/glu.h
 -
 
-/home/lilu/lilu/cpp_games/cpp_games/less3/game/Model.h
-vector
--
-v_point.h
-/home/lilu/lilu/cpp_games/cpp_games/less3/game/v_point.h
-f_triangle.h
-/home/lilu/lilu/cpp_games/cpp_games/less3/game/f_triangle.h
-string
--
-
-/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Bitmap.h
+/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Bitmap.h
 string_view
 -
 vector
@@ -704,6 +694,20 @@ Texture.h
 Shader.h
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Shader.h
 
+/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/Model.h
+vector
+-
+v_point.h
+/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/v_point.h
+f_triangle.h
+/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/f_triangle.h
+string
+-
+
+/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/f_triangle.h
+
+/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/v_point.h
+
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Shader.h
 GL/glew.h
 -
@@ -725,14 +729,14 @@ Shader.h
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Texture.h
 vector
 -
-../Bitmap.h
-/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Bitmap.h
+Bitmap.h
+/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Bitmap.h
 
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/library.cpp
 library.hpp
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/library.hpp
-../../Model.h
-/home/lilu/lilu/cpp_games/cpp_games/less3/game/Model.h
+SDL/Model.h
+/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/Model.h
 ResourceLoader.h
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/ResourceLoader.h
 GL/glew.h
@@ -751,8 +755,8 @@ SDL.h
 -
 vector
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/vector
-../../Model.h
-/home/lilu/lilu/cpp_games/cpp_games/less3/game/Model.h
+SDL/Model.h
+/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/Model.h
 SpriteRenderer.h
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SpriteRenderer.h
 EventManager.h
@@ -761,8 +765,4 @@ GL/glew.h
 -
 map
 -
-
-/home/lilu/lilu/cpp_games/cpp_games/less3/game/f_triangle.h
-
-/home/lilu/lilu/cpp_games/cpp_games/less3/game/v_point.h
 

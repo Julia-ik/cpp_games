@@ -252,78 +252,6 @@ libglew_static/fast:
 	$(MAKE) $(MAKESILENT) -f engine/libs/glew/CMakeFiles/libglew_static.dir/build.make engine/libs/glew/CMakeFiles/libglew_static.dir/build
 .PHONY : libglew_static/fast
 
-Model.o: Model.cpp.o
-.PHONY : Model.o
-
-# target to build an object file
-Model.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Model.cpp.o
-.PHONY : Model.cpp.o
-
-Model.i: Model.cpp.i
-.PHONY : Model.i
-
-# target to preprocess a source file
-Model.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Model.cpp.i
-.PHONY : Model.cpp.i
-
-Model.s: Model.cpp.s
-.PHONY : Model.s
-
-# target to generate assembly for a file
-Model.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Model.cpp.s
-.PHONY : Model.cpp.s
-
-Model_head.o: Model_head.cpp.o
-.PHONY : Model_head.o
-
-# target to build an object file
-Model_head.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Model_head.cpp.o
-.PHONY : Model_head.cpp.o
-
-Model_head.i: Model_head.cpp.i
-.PHONY : Model_head.i
-
-# target to preprocess a source file
-Model_head.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Model_head.cpp.i
-.PHONY : Model_head.cpp.i
-
-Model_head.s: Model_head.cpp.s
-.PHONY : Model_head.s
-
-# target to generate assembly for a file
-Model_head.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Model_head.cpp.s
-.PHONY : Model_head.cpp.s
-
-engine/Bitmap.o: engine/Bitmap.cpp.o
-.PHONY : engine/Bitmap.o
-
-# target to build an object file
-engine/Bitmap.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/Bitmap.cpp.o
-.PHONY : engine/Bitmap.cpp.o
-
-engine/Bitmap.i: engine/Bitmap.cpp.i
-.PHONY : engine/Bitmap.i
-
-# target to preprocess a source file
-engine/Bitmap.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/Bitmap.cpp.i
-.PHONY : engine/Bitmap.cpp.i
-
-engine/Bitmap.s: engine/Bitmap.cpp.s
-.PHONY : engine/Bitmap.s
-
-# target to generate assembly for a file
-engine/Bitmap.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/Bitmap.cpp.s
-.PHONY : engine/Bitmap.cpp.s
-
 engine/Mesh.o: engine/Mesh.cpp.o
 .PHONY : engine/Mesh.o
 
@@ -347,6 +275,30 @@ engine/Mesh.s: engine/Mesh.cpp.s
 engine/Mesh.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/Mesh.cpp.s
 .PHONY : engine/Mesh.cpp.s
+
+engine/SRC/Bitmap.o: engine/SRC/Bitmap.cpp.o
+.PHONY : engine/SRC/Bitmap.o
+
+# target to build an object file
+engine/SRC/Bitmap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/Bitmap.cpp.o
+.PHONY : engine/SRC/Bitmap.cpp.o
+
+engine/SRC/Bitmap.i: engine/SRC/Bitmap.cpp.i
+.PHONY : engine/SRC/Bitmap.i
+
+# target to preprocess a source file
+engine/SRC/Bitmap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/Bitmap.cpp.i
+.PHONY : engine/SRC/Bitmap.cpp.i
+
+engine/SRC/Bitmap.s: engine/SRC/Bitmap.cpp.s
+.PHONY : engine/SRC/Bitmap.s
+
+# target to generate assembly for a file
+engine/SRC/Bitmap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/Bitmap.cpp.s
+.PHONY : engine/SRC/Bitmap.cpp.s
 
 engine/SRC/EventManager.o: engine/SRC/EventManager.cpp.o
 .PHONY : engine/SRC/EventManager.o
@@ -396,6 +348,102 @@ engine/SRC/ResourceLoader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/ResourceLoader.cpp.s
 .PHONY : engine/SRC/ResourceLoader.cpp.s
 
+engine/SRC/SDL/Model.o: engine/SRC/SDL/Model.cpp.o
+.PHONY : engine/SRC/SDL/Model.o
+
+# target to build an object file
+engine/SRC/SDL/Model.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/SDL/Model.cpp.o
+.PHONY : engine/SRC/SDL/Model.cpp.o
+
+engine/SRC/SDL/Model.i: engine/SRC/SDL/Model.cpp.i
+.PHONY : engine/SRC/SDL/Model.i
+
+# target to preprocess a source file
+engine/SRC/SDL/Model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/SDL/Model.cpp.i
+.PHONY : engine/SRC/SDL/Model.cpp.i
+
+engine/SRC/SDL/Model.s: engine/SRC/SDL/Model.cpp.s
+.PHONY : engine/SRC/SDL/Model.s
+
+# target to generate assembly for a file
+engine/SRC/SDL/Model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/SDL/Model.cpp.s
+.PHONY : engine/SRC/SDL/Model.cpp.s
+
+engine/SRC/SDL/Model_head.o: engine/SRC/SDL/Model_head.cpp.o
+.PHONY : engine/SRC/SDL/Model_head.o
+
+# target to build an object file
+engine/SRC/SDL/Model_head.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/SDL/Model_head.cpp.o
+.PHONY : engine/SRC/SDL/Model_head.cpp.o
+
+engine/SRC/SDL/Model_head.i: engine/SRC/SDL/Model_head.cpp.i
+.PHONY : engine/SRC/SDL/Model_head.i
+
+# target to preprocess a source file
+engine/SRC/SDL/Model_head.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/SDL/Model_head.cpp.i
+.PHONY : engine/SRC/SDL/Model_head.cpp.i
+
+engine/SRC/SDL/Model_head.s: engine/SRC/SDL/Model_head.cpp.s
+.PHONY : engine/SRC/SDL/Model_head.s
+
+# target to generate assembly for a file
+engine/SRC/SDL/Model_head.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/SDL/Model_head.cpp.s
+.PHONY : engine/SRC/SDL/Model_head.cpp.s
+
+engine/SRC/SDL/f_triangle.o: engine/SRC/SDL/f_triangle.cpp.o
+.PHONY : engine/SRC/SDL/f_triangle.o
+
+# target to build an object file
+engine/SRC/SDL/f_triangle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/SDL/f_triangle.cpp.o
+.PHONY : engine/SRC/SDL/f_triangle.cpp.o
+
+engine/SRC/SDL/f_triangle.i: engine/SRC/SDL/f_triangle.cpp.i
+.PHONY : engine/SRC/SDL/f_triangle.i
+
+# target to preprocess a source file
+engine/SRC/SDL/f_triangle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/SDL/f_triangle.cpp.i
+.PHONY : engine/SRC/SDL/f_triangle.cpp.i
+
+engine/SRC/SDL/f_triangle.s: engine/SRC/SDL/f_triangle.cpp.s
+.PHONY : engine/SRC/SDL/f_triangle.s
+
+# target to generate assembly for a file
+engine/SRC/SDL/f_triangle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/SDL/f_triangle.cpp.s
+.PHONY : engine/SRC/SDL/f_triangle.cpp.s
+
+engine/SRC/SDL/v_point.o: engine/SRC/SDL/v_point.cpp.o
+.PHONY : engine/SRC/SDL/v_point.o
+
+# target to build an object file
+engine/SRC/SDL/v_point.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/SDL/v_point.cpp.o
+.PHONY : engine/SRC/SDL/v_point.cpp.o
+
+engine/SRC/SDL/v_point.i: engine/SRC/SDL/v_point.cpp.i
+.PHONY : engine/SRC/SDL/v_point.i
+
+# target to preprocess a source file
+engine/SRC/SDL/v_point.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/SDL/v_point.cpp.i
+.PHONY : engine/SRC/SDL/v_point.cpp.i
+
+engine/SRC/SDL/v_point.s: engine/SRC/SDL/v_point.cpp.s
+.PHONY : engine/SRC/SDL/v_point.s
+
+# target to generate assembly for a file
+engine/SRC/SDL/v_point.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/SDL/v_point.cpp.s
+.PHONY : engine/SRC/SDL/v_point.cpp.s
+
 engine/SRC/Shader.o: engine/SRC/Shader.cpp.o
 .PHONY : engine/SRC/Shader.o
 
@@ -419,30 +467,6 @@ engine/SRC/Shader.s: engine/SRC/Shader.cpp.s
 engine/SRC/Shader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/Shader.cpp.s
 .PHONY : engine/SRC/Shader.cpp.s
-
-engine/SRC/Sprite.o: engine/SRC/Sprite.cpp.o
-.PHONY : engine/SRC/Sprite.o
-
-# target to build an object file
-engine/SRC/Sprite.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/Sprite.cpp.o
-.PHONY : engine/SRC/Sprite.cpp.o
-
-engine/SRC/Sprite.i: engine/SRC/Sprite.cpp.i
-.PHONY : engine/SRC/Sprite.i
-
-# target to preprocess a source file
-engine/SRC/Sprite.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/Sprite.cpp.i
-.PHONY : engine/SRC/Sprite.cpp.i
-
-engine/SRC/Sprite.s: engine/SRC/Sprite.cpp.s
-.PHONY : engine/SRC/Sprite.s
-
-# target to generate assembly for a file
-engine/SRC/Sprite.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/Sprite.cpp.s
-.PHONY : engine/SRC/Sprite.cpp.s
 
 engine/SRC/SpriteRenderer.o: engine/SRC/SpriteRenderer.cpp.o
 .PHONY : engine/SRC/SpriteRenderer.o
@@ -492,30 +516,6 @@ engine/SRC/Texture.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/Texture.cpp.s
 .PHONY : engine/SRC/Texture.cpp.s
 
-f_triangle.o: f_triangle.cpp.o
-.PHONY : f_triangle.o
-
-# target to build an object file
-f_triangle.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/f_triangle.cpp.o
-.PHONY : f_triangle.cpp.o
-
-f_triangle.i: f_triangle.cpp.i
-.PHONY : f_triangle.i
-
-# target to preprocess a source file
-f_triangle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/f_triangle.cpp.i
-.PHONY : f_triangle.cpp.i
-
-f_triangle.s: f_triangle.cpp.s
-.PHONY : f_triangle.s
-
-# target to generate assembly for a file
-f_triangle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/f_triangle.cpp.s
-.PHONY : f_triangle.cpp.s
-
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -540,30 +540,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-v_point.o: v_point.cpp.o
-.PHONY : v_point.o
-
-# target to build an object file
-v_point.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/v_point.cpp.o
-.PHONY : v_point.cpp.o
-
-v_point.i: v_point.cpp.i
-.PHONY : v_point.i
-
-# target to preprocess a source file
-v_point.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/v_point.cpp.i
-.PHONY : v_point.cpp.i
-
-v_point.s: v_point.cpp.s
-.PHONY : v_point.s
-
-# target to generate assembly for a file
-v_point.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/v_point.cpp.s
-.PHONY : v_point.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -583,45 +559,42 @@ help:
 	@echo "... engine"
 	@echo "... game"
 	@echo "... libglew_static"
-	@echo "... Model.o"
-	@echo "... Model.i"
-	@echo "... Model.s"
-	@echo "... Model_head.o"
-	@echo "... Model_head.i"
-	@echo "... Model_head.s"
-	@echo "... engine/Bitmap.o"
-	@echo "... engine/Bitmap.i"
-	@echo "... engine/Bitmap.s"
 	@echo "... engine/Mesh.o"
 	@echo "... engine/Mesh.i"
 	@echo "... engine/Mesh.s"
+	@echo "... engine/SRC/Bitmap.o"
+	@echo "... engine/SRC/Bitmap.i"
+	@echo "... engine/SRC/Bitmap.s"
 	@echo "... engine/SRC/EventManager.o"
 	@echo "... engine/SRC/EventManager.i"
 	@echo "... engine/SRC/EventManager.s"
 	@echo "... engine/SRC/ResourceLoader.o"
 	@echo "... engine/SRC/ResourceLoader.i"
 	@echo "... engine/SRC/ResourceLoader.s"
+	@echo "... engine/SRC/SDL/Model.o"
+	@echo "... engine/SRC/SDL/Model.i"
+	@echo "... engine/SRC/SDL/Model.s"
+	@echo "... engine/SRC/SDL/Model_head.o"
+	@echo "... engine/SRC/SDL/Model_head.i"
+	@echo "... engine/SRC/SDL/Model_head.s"
+	@echo "... engine/SRC/SDL/f_triangle.o"
+	@echo "... engine/SRC/SDL/f_triangle.i"
+	@echo "... engine/SRC/SDL/f_triangle.s"
+	@echo "... engine/SRC/SDL/v_point.o"
+	@echo "... engine/SRC/SDL/v_point.i"
+	@echo "... engine/SRC/SDL/v_point.s"
 	@echo "... engine/SRC/Shader.o"
 	@echo "... engine/SRC/Shader.i"
 	@echo "... engine/SRC/Shader.s"
-	@echo "... engine/SRC/Sprite.o"
-	@echo "... engine/SRC/Sprite.i"
-	@echo "... engine/SRC/Sprite.s"
 	@echo "... engine/SRC/SpriteRenderer.o"
 	@echo "... engine/SRC/SpriteRenderer.i"
 	@echo "... engine/SRC/SpriteRenderer.s"
 	@echo "... engine/SRC/Texture.o"
 	@echo "... engine/SRC/Texture.i"
 	@echo "... engine/SRC/Texture.s"
-	@echo "... f_triangle.o"
-	@echo "... f_triangle.i"
-	@echo "... f_triangle.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... v_point.o"
-	@echo "... v_point.i"
-	@echo "... v_point.s"
 .PHONY : help
 
 

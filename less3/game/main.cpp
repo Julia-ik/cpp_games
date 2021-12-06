@@ -1,6 +1,6 @@
 #include "library.hpp"
-#include "Model_head.h"
-#include "Model.h"
+#include "SDL/Model_head.h"
+#include "SDL/Model.h"
 #include <chrono>
 #include <ResourceLoader.h>
 

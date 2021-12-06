@@ -54,14 +54,14 @@ engine/CMakeFiles/engine.dir/SRC/library.cpp.o
  ../engine/libs/SDL2/include/begin_code.h
  ../engine/libs/SDL2/include/close_code.h
  ../engine/libs/glew/include/GL/glew.h
- /home/lilu/lilu/cpp_games/cpp_games/less3/game/Model.h
- /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Bitmap.h
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Bitmap.h
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/EventManager.h
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/ResourceLoader.h
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/Model.h
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/f_triangle.h
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/v_point.h
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Shader.h
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SpriteRenderer.h
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Texture.h
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/library.cpp
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/library.hpp
- /home/lilu/lilu/cpp_games/cpp_games/less3/game/f_triangle.h
- /home/lilu/lilu/cpp_games/cpp_games/less3/game/v_point.h

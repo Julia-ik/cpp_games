@@ -388,24 +388,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/Model.cpp">
-			<Option target="game"/>
-		</Unit>
-		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/Model.h">
-			<Option target="game"/>
-		</Unit>
-		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/Model_head.cpp">
-			<Option target="game"/>
-		</Unit>
-		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/Model_head.h">
-			<Option target="game"/>
-		</Unit>
-		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Bitmap.cpp">
-			<Option target="game"/>
-		</Unit>
-		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Bitmap.h">
-			<Option target="game"/>
-		</Unit>
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Mesh.cpp">
 			<Option target="game"/>
 		</Unit>
@@ -417,6 +399,12 @@
 		</Unit>
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Node.h">
 			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Bitmap.cpp">
+			<Option target="game"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Bitmap.h">
+			<Option target="game"/>
 		</Unit>
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/EventManager.cpp">
 			<Option target="game"/>
@@ -430,16 +418,34 @@
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/ResourceLoader.h">
 			<Option target="game"/>
 		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/Model.cpp">
+			<Option target="game"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/Model.h">
+			<Option target="game"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/Model_head.cpp">
+			<Option target="game"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/Model_head.h">
+			<Option target="game"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/f_triangle.cpp">
+			<Option target="game"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/f_triangle.h">
+			<Option target="game"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/v_point.cpp">
+			<Option target="game"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/v_point.h">
+			<Option target="game"/>
+		</Unit>
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Shader.cpp">
 			<Option target="game"/>
 		</Unit>
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Shader.h">
-			<Option target="game"/>
-		</Unit>
-		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Sprite.cpp">
-			<Option target="game"/>
-		</Unit>
-		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Sprite.h">
 			<Option target="game"/>
 		</Unit>
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SpriteRenderer.cpp">
@@ -1274,19 +1280,7 @@
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/glew/src/glew.c">
 			<Option target="libglew_static"/>
 		</Unit>
-		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/f_triangle.cpp">
-			<Option target="game"/>
-		</Unit>
-		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/f_triangle.h">
-			<Option target="game"/>
-		</Unit>
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/main.cpp">
-			<Option target="game"/>
-		</Unit>
-		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/v_point.cpp">
-			<Option target="game"/>
-		</Unit>
-		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/v_point.h">
 			<Option target="game"/>
 		</Unit>
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/CMakeLists.txt">

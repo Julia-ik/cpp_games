@@ -136,9 +136,9 @@ engine/libs/glew/clean: engine/libs/glew/CMakeFiles/libglew_static.dir/clean
 
 # All Build rule for target.
 CMakeFiles/game.dir/all: engine/libs/SDL2/CMakeFiles/SDL2main.dir/all
-CMakeFiles/game.dir/all: engine/CMakeFiles/engine.dir/all
 CMakeFiles/game.dir/all: engine/libs/SDL2/CMakeFiles/SDL2-static.dir/all
 CMakeFiles/game.dir/all: engine/libs/glew/CMakeFiles/libglew_static.dir/all
+CMakeFiles/game.dir/all: engine/CMakeFiles/engine.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=96,97,98,99 "Built target game"

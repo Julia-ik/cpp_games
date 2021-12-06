@@ -1,5 +1,5 @@
 #include "library.hpp"
-#include "../../Model.h"
+#include "SDL/Model.h"
 #include "ResourceLoader.h"
 #include <GL/glew.h>
 #include <streambuf>
