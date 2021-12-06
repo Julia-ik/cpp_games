@@ -26339,7 +26339,7 @@ GLboolean GLEWAPIENTRY glewIsSupported (const char* name)
         }
 #endif
 #ifdef GL_SGIX_sprite
-        if (_glewStrSame3(&pos, &len, (const GLubyte*)"sprite", 6))
+        if (_glewStrSame3(&pos, &len, (const GLubyte*)"Sprite", 6))
         {
           ret = GLEW_SGIX_sprite;
           continue;

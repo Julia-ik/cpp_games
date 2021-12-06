@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Node.cpp" "/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine/CMakeFiles/engine.dir/Node.cpp.o"
   "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/library.cpp" "/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine/CMakeFiles/engine.dir/SRC/library.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
@@ -21,8 +22,10 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../engine/SRC"
+  "../engine/libs"
   "../engine/libs/SDL2/include"
   "../engine/libs/glew/include"
+  "../engine/libs/stbi"
   )
 
 # The set of dependency files which are needed:

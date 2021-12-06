@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/engine.dir/Node.cpp.o"
   "CMakeFiles/engine.dir/SRC/library.cpp.o"
   "libengine.a"
   "libengine.pdb"

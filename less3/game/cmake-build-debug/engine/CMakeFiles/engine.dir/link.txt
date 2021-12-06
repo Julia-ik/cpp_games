@@ -1,2 +1,2 @@
-/usr/bin/ar qc libengine.a CMakeFiles/engine.dir/SRC/library.cpp.o
+/usr/bin/ar qc libengine.a CMakeFiles/engine.dir/SRC/library.cpp.o CMakeFiles/engine.dir/Node.cpp.o
 /usr/bin/ranlib libengine.a

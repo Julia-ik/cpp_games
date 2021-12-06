@@ -45,8 +45,10 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC"/>
+					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs"/>
 					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include"/>
 					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/glew/include"/>
+					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/stbi"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward"/>
@@ -69,8 +71,10 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC"/>
+					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs"/>
 					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include"/>
 					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/glew/include"/>
+					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/stbi"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward"/>
@@ -135,8 +139,10 @@
 					<Add option="-DGLEW_STATIC"/>
 					<Add option="-DGLEW_NO_GLU"/>
 					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC"/>
+					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs"/>
 					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include"/>
 					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/glew/include"/>
+					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/stbi"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward"/>
@@ -161,8 +167,10 @@
 					<Add option="-DGLEW_STATIC"/>
 					<Add option="-DGLEW_NO_GLU"/>
 					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC"/>
+					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs"/>
 					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include"/>
 					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/glew/include"/>
+					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/stbi"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward"/>
@@ -390,6 +398,60 @@
 			<Option target="game"/>
 		</Unit>
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/Model_head.h">
+			<Option target="game"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Bitmap.cpp">
+			<Option target="game"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Bitmap.h">
+			<Option target="game"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Mesh.cpp">
+			<Option target="game"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Mesh.h">
+			<Option target="game"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Node.cpp">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Node.h">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/EventManager.cpp">
+			<Option target="game"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/EventManager.h">
+			<Option target="game"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/ResourceLoader.cpp">
+			<Option target="game"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/ResourceLoader.h">
+			<Option target="game"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Shader.cpp">
+			<Option target="game"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Shader.h">
+			<Option target="game"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Sprite.cpp">
+			<Option target="game"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Sprite.h">
+			<Option target="game"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SpriteRenderer.cpp">
+			<Option target="game"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SpriteRenderer.h">
+			<Option target="game"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Texture.cpp">
+			<Option target="game"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Texture.h">
 			<Option target="game"/>
 		</Unit>
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/library.cpp">

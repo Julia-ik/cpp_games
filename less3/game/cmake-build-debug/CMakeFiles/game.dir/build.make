@@ -131,13 +131,125 @@ CMakeFiles/game.dir/v_point.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/v_point.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lilu/lilu/cpp_games/cpp_games/less3/game/v_point.cpp -o CMakeFiles/game.dir/v_point.cpp.s
 
+CMakeFiles/game.dir/engine/SRC/Sprite.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/engine/SRC/Sprite.cpp.o: ../engine/SRC/Sprite.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/game.dir/engine/SRC/Sprite.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/engine/SRC/Sprite.cpp.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Sprite.cpp
+
+CMakeFiles/game.dir/engine/SRC/Sprite.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/engine/SRC/Sprite.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Sprite.cpp > CMakeFiles/game.dir/engine/SRC/Sprite.cpp.i
+
+CMakeFiles/game.dir/engine/SRC/Sprite.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/engine/SRC/Sprite.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Sprite.cpp -o CMakeFiles/game.dir/engine/SRC/Sprite.cpp.s
+
+CMakeFiles/game.dir/engine/Mesh.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/engine/Mesh.cpp.o: ../engine/Mesh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/game.dir/engine/Mesh.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/engine/Mesh.cpp.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Mesh.cpp
+
+CMakeFiles/game.dir/engine/Mesh.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/engine/Mesh.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Mesh.cpp > CMakeFiles/game.dir/engine/Mesh.cpp.i
+
+CMakeFiles/game.dir/engine/Mesh.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/engine/Mesh.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Mesh.cpp -o CMakeFiles/game.dir/engine/Mesh.cpp.s
+
+CMakeFiles/game.dir/engine/SRC/Shader.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/engine/SRC/Shader.cpp.o: ../engine/SRC/Shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/game.dir/engine/SRC/Shader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/engine/SRC/Shader.cpp.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Shader.cpp
+
+CMakeFiles/game.dir/engine/SRC/Shader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/engine/SRC/Shader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Shader.cpp > CMakeFiles/game.dir/engine/SRC/Shader.cpp.i
+
+CMakeFiles/game.dir/engine/SRC/Shader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/engine/SRC/Shader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Shader.cpp -o CMakeFiles/game.dir/engine/SRC/Shader.cpp.s
+
+CMakeFiles/game.dir/engine/Bitmap.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/engine/Bitmap.cpp.o: ../engine/Bitmap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/game.dir/engine/Bitmap.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/engine/Bitmap.cpp.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Bitmap.cpp
+
+CMakeFiles/game.dir/engine/Bitmap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/engine/Bitmap.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Bitmap.cpp > CMakeFiles/game.dir/engine/Bitmap.cpp.i
+
+CMakeFiles/game.dir/engine/Bitmap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/engine/Bitmap.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Bitmap.cpp -o CMakeFiles/game.dir/engine/Bitmap.cpp.s
+
+CMakeFiles/game.dir/engine/SRC/Texture.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/engine/SRC/Texture.cpp.o: ../engine/SRC/Texture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/game.dir/engine/SRC/Texture.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/engine/SRC/Texture.cpp.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Texture.cpp
+
+CMakeFiles/game.dir/engine/SRC/Texture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/engine/SRC/Texture.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Texture.cpp > CMakeFiles/game.dir/engine/SRC/Texture.cpp.i
+
+CMakeFiles/game.dir/engine/SRC/Texture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/engine/SRC/Texture.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Texture.cpp -o CMakeFiles/game.dir/engine/SRC/Texture.cpp.s
+
+CMakeFiles/game.dir/engine/SRC/ResourceLoader.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/engine/SRC/ResourceLoader.cpp.o: ../engine/SRC/ResourceLoader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/game.dir/engine/SRC/ResourceLoader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/engine/SRC/ResourceLoader.cpp.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/ResourceLoader.cpp
+
+CMakeFiles/game.dir/engine/SRC/ResourceLoader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/engine/SRC/ResourceLoader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/ResourceLoader.cpp > CMakeFiles/game.dir/engine/SRC/ResourceLoader.cpp.i
+
+CMakeFiles/game.dir/engine/SRC/ResourceLoader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/engine/SRC/ResourceLoader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/ResourceLoader.cpp -o CMakeFiles/game.dir/engine/SRC/ResourceLoader.cpp.s
+
+CMakeFiles/game.dir/engine/SRC/SpriteRenderer.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/engine/SRC/SpriteRenderer.cpp.o: ../engine/SRC/SpriteRenderer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/game.dir/engine/SRC/SpriteRenderer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/engine/SRC/SpriteRenderer.cpp.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SpriteRenderer.cpp
+
+CMakeFiles/game.dir/engine/SRC/SpriteRenderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/engine/SRC/SpriteRenderer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SpriteRenderer.cpp > CMakeFiles/game.dir/engine/SRC/SpriteRenderer.cpp.i
+
+CMakeFiles/game.dir/engine/SRC/SpriteRenderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/engine/SRC/SpriteRenderer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SpriteRenderer.cpp -o CMakeFiles/game.dir/engine/SRC/SpriteRenderer.cpp.s
+
+CMakeFiles/game.dir/engine/SRC/EventManager.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/engine/SRC/EventManager.cpp.o: ../engine/SRC/EventManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/game.dir/engine/SRC/EventManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/engine/SRC/EventManager.cpp.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/EventManager.cpp
+
+CMakeFiles/game.dir/engine/SRC/EventManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/engine/SRC/EventManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/EventManager.cpp > CMakeFiles/game.dir/engine/SRC/EventManager.cpp.i
+
+CMakeFiles/game.dir/engine/SRC/EventManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/engine/SRC/EventManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/EventManager.cpp -o CMakeFiles/game.dir/engine/SRC/EventManager.cpp.s
+
 # Object files for target game
 game_OBJECTS = \
 "CMakeFiles/game.dir/main.cpp.o" \
 "CMakeFiles/game.dir/Model.cpp.o" \
 "CMakeFiles/game.dir/Model_head.cpp.o" \
 "CMakeFiles/game.dir/f_triangle.cpp.o" \
-"CMakeFiles/game.dir/v_point.cpp.o"
+"CMakeFiles/game.dir/v_point.cpp.o" \
+"CMakeFiles/game.dir/engine/SRC/Sprite.cpp.o" \
+"CMakeFiles/game.dir/engine/Mesh.cpp.o" \
+"CMakeFiles/game.dir/engine/SRC/Shader.cpp.o" \
+"CMakeFiles/game.dir/engine/Bitmap.cpp.o" \
+"CMakeFiles/game.dir/engine/SRC/Texture.cpp.o" \
+"CMakeFiles/game.dir/engine/SRC/ResourceLoader.cpp.o" \
+"CMakeFiles/game.dir/engine/SRC/SpriteRenderer.cpp.o" \
+"CMakeFiles/game.dir/engine/SRC/EventManager.cpp.o"
 
 # External object files for target game
 game_EXTERNAL_OBJECTS =
@@ -147,13 +259,21 @@ game: CMakeFiles/game.dir/Model.cpp.o
 game: CMakeFiles/game.dir/Model_head.cpp.o
 game: CMakeFiles/game.dir/f_triangle.cpp.o
 game: CMakeFiles/game.dir/v_point.cpp.o
+game: CMakeFiles/game.dir/engine/SRC/Sprite.cpp.o
+game: CMakeFiles/game.dir/engine/Mesh.cpp.o
+game: CMakeFiles/game.dir/engine/SRC/Shader.cpp.o
+game: CMakeFiles/game.dir/engine/Bitmap.cpp.o
+game: CMakeFiles/game.dir/engine/SRC/Texture.cpp.o
+game: CMakeFiles/game.dir/engine/SRC/ResourceLoader.cpp.o
+game: CMakeFiles/game.dir/engine/SRC/SpriteRenderer.cpp.o
+game: CMakeFiles/game.dir/engine/SRC/EventManager.cpp.o
 game: CMakeFiles/game.dir/build.make
 game: engine/libengine.a
 game: engine/libs/SDL2/libSDL2maind.a
 game: engine/libs/SDL2/libSDL2d.a
 game: engine/libs/glew/libglewd.a
 game: CMakeFiles/game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

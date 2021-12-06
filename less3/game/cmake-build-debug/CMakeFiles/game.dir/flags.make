@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC -I/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include -I/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/glew/include
+CXX_INCLUDES = -I/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC -I/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs -I/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include -I/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/glew/include -I/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/stbi
 
 CXX_FLAGS = -g -std=gnu++17
 

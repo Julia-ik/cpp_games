@@ -5,8 +5,12 @@
 #include <SDL.h>
 #include "vector"
 #include "../../Model.h"
+#include "SpriteRenderer.h"
+#include "EventManager.h"
 #include <GL/glew.h>
+#include <map>
 
+class EventManager;
 class Engine
 {
 
@@ -21,15 +25,12 @@ public:
     uint32_t VBO;
     uint32_t IBO;
     GLuint programID = 0;
-    //constexpr static const GLfloat g_vertex_buffer_data[] = {100,300,80, 100, 400, 150};
-    constexpr static const GLfloat g_vertex_buffer_data[] = {
-            -0.3f, -0.3f, 0.0f,
-            0.3f, -0.3f, 0.0f,
-            0.0f,  0.3f, 0.0f,
-    };
+    std::map<std::string, SpriteRenderer*> _spriteRenderers;
+    bool isActive;
+
+
+
     GLuint LoadShaders(const char * vertex_file_path, const char* fragment_file_path);
-
-
     Engine(int w, int h);
     void drawWindow(Model * model, bool isItGL);
     void flip(SDL_Renderer **r);
@@ -43,5 +44,12 @@ public:
 
     void checkForErrors();
 
+    void initGLL();
+
+    void Render();
+
+    void RegisterEvents();
+
+    void move(SpriteRenderer *sprite);
 };
 #endif //ENGINE_LIBRARY_H

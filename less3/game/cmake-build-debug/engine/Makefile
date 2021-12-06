@@ -175,6 +175,30 @@ engine/fast:
 	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/build
 .PHONY : engine/fast
 
+Node.o: Node.cpp.o
+.PHONY : Node.o
+
+# target to build an object file
+Node.cpp.o:
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/Node.cpp.o
+.PHONY : Node.cpp.o
+
+Node.i: Node.cpp.i
+.PHONY : Node.i
+
+# target to preprocess a source file
+Node.cpp.i:
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/Node.cpp.i
+.PHONY : Node.cpp.i
+
+Node.s: Node.cpp.s
+.PHONY : Node.s
+
+# target to generate assembly for a file
+Node.cpp.s:
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/Node.cpp.s
+.PHONY : Node.cpp.s
+
 SRC/library.o: SRC/library.cpp.o
 .PHONY : SRC/library.o
 
@@ -212,6 +236,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... engine"
+	@echo "... Node.o"
+	@echo "... Node.i"
+	@echo "... Node.s"
 	@echo "... SRC/library.o"
 	@echo "... SRC/library.i"
 	@echo "... SRC/library.s"

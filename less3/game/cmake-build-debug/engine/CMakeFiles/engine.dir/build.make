@@ -79,17 +79,32 @@ engine/CMakeFiles/engine.dir/SRC/library.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/SRC/library.cpp.s"
 	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/library.cpp -o CMakeFiles/engine.dir/SRC/library.cpp.s
 
+engine/CMakeFiles/engine.dir/Node.cpp.o: engine/CMakeFiles/engine.dir/flags.make
+engine/CMakeFiles/engine.dir/Node.cpp.o: ../engine/Node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object engine/CMakeFiles/engine.dir/Node.cpp.o"
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/Node.cpp.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Node.cpp
+
+engine/CMakeFiles/engine.dir/Node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/Node.cpp.i"
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Node.cpp > CMakeFiles/engine.dir/Node.cpp.i
+
+engine/CMakeFiles/engine.dir/Node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/Node.cpp.s"
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Node.cpp -o CMakeFiles/engine.dir/Node.cpp.s
+
 # Object files for target engine
 engine_OBJECTS = \
-"CMakeFiles/engine.dir/SRC/library.cpp.o"
+"CMakeFiles/engine.dir/SRC/library.cpp.o" \
+"CMakeFiles/engine.dir/Node.cpp.o"
 
 # External object files for target engine
 engine_EXTERNAL_OBJECTS =
 
 engine/libengine.a: engine/CMakeFiles/engine.dir/SRC/library.cpp.o
+engine/libengine.a: engine/CMakeFiles/engine.dir/Node.cpp.o
 engine/libengine.a: engine/CMakeFiles/engine.dir/build.make
 engine/libengine.a: engine/CMakeFiles/engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libengine.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libengine.a"
 	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine && $(CMAKE_COMMAND) -P CMakeFiles/engine.dir/cmake_clean_target.cmake
 	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/engine.dir/link.txt --verbose=$(VERBOSE)
 

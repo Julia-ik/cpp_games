@@ -300,6 +300,198 @@ Model_head.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Model_head.cpp.s
 .PHONY : Model_head.cpp.s
 
+engine/Bitmap.o: engine/Bitmap.cpp.o
+.PHONY : engine/Bitmap.o
+
+# target to build an object file
+engine/Bitmap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/Bitmap.cpp.o
+.PHONY : engine/Bitmap.cpp.o
+
+engine/Bitmap.i: engine/Bitmap.cpp.i
+.PHONY : engine/Bitmap.i
+
+# target to preprocess a source file
+engine/Bitmap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/Bitmap.cpp.i
+.PHONY : engine/Bitmap.cpp.i
+
+engine/Bitmap.s: engine/Bitmap.cpp.s
+.PHONY : engine/Bitmap.s
+
+# target to generate assembly for a file
+engine/Bitmap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/Bitmap.cpp.s
+.PHONY : engine/Bitmap.cpp.s
+
+engine/Mesh.o: engine/Mesh.cpp.o
+.PHONY : engine/Mesh.o
+
+# target to build an object file
+engine/Mesh.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/Mesh.cpp.o
+.PHONY : engine/Mesh.cpp.o
+
+engine/Mesh.i: engine/Mesh.cpp.i
+.PHONY : engine/Mesh.i
+
+# target to preprocess a source file
+engine/Mesh.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/Mesh.cpp.i
+.PHONY : engine/Mesh.cpp.i
+
+engine/Mesh.s: engine/Mesh.cpp.s
+.PHONY : engine/Mesh.s
+
+# target to generate assembly for a file
+engine/Mesh.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/Mesh.cpp.s
+.PHONY : engine/Mesh.cpp.s
+
+engine/SRC/EventManager.o: engine/SRC/EventManager.cpp.o
+.PHONY : engine/SRC/EventManager.o
+
+# target to build an object file
+engine/SRC/EventManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/EventManager.cpp.o
+.PHONY : engine/SRC/EventManager.cpp.o
+
+engine/SRC/EventManager.i: engine/SRC/EventManager.cpp.i
+.PHONY : engine/SRC/EventManager.i
+
+# target to preprocess a source file
+engine/SRC/EventManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/EventManager.cpp.i
+.PHONY : engine/SRC/EventManager.cpp.i
+
+engine/SRC/EventManager.s: engine/SRC/EventManager.cpp.s
+.PHONY : engine/SRC/EventManager.s
+
+# target to generate assembly for a file
+engine/SRC/EventManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/EventManager.cpp.s
+.PHONY : engine/SRC/EventManager.cpp.s
+
+engine/SRC/ResourceLoader.o: engine/SRC/ResourceLoader.cpp.o
+.PHONY : engine/SRC/ResourceLoader.o
+
+# target to build an object file
+engine/SRC/ResourceLoader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/ResourceLoader.cpp.o
+.PHONY : engine/SRC/ResourceLoader.cpp.o
+
+engine/SRC/ResourceLoader.i: engine/SRC/ResourceLoader.cpp.i
+.PHONY : engine/SRC/ResourceLoader.i
+
+# target to preprocess a source file
+engine/SRC/ResourceLoader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/ResourceLoader.cpp.i
+.PHONY : engine/SRC/ResourceLoader.cpp.i
+
+engine/SRC/ResourceLoader.s: engine/SRC/ResourceLoader.cpp.s
+.PHONY : engine/SRC/ResourceLoader.s
+
+# target to generate assembly for a file
+engine/SRC/ResourceLoader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/ResourceLoader.cpp.s
+.PHONY : engine/SRC/ResourceLoader.cpp.s
+
+engine/SRC/Shader.o: engine/SRC/Shader.cpp.o
+.PHONY : engine/SRC/Shader.o
+
+# target to build an object file
+engine/SRC/Shader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/Shader.cpp.o
+.PHONY : engine/SRC/Shader.cpp.o
+
+engine/SRC/Shader.i: engine/SRC/Shader.cpp.i
+.PHONY : engine/SRC/Shader.i
+
+# target to preprocess a source file
+engine/SRC/Shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/Shader.cpp.i
+.PHONY : engine/SRC/Shader.cpp.i
+
+engine/SRC/Shader.s: engine/SRC/Shader.cpp.s
+.PHONY : engine/SRC/Shader.s
+
+# target to generate assembly for a file
+engine/SRC/Shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/Shader.cpp.s
+.PHONY : engine/SRC/Shader.cpp.s
+
+engine/SRC/Sprite.o: engine/SRC/Sprite.cpp.o
+.PHONY : engine/SRC/Sprite.o
+
+# target to build an object file
+engine/SRC/Sprite.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/Sprite.cpp.o
+.PHONY : engine/SRC/Sprite.cpp.o
+
+engine/SRC/Sprite.i: engine/SRC/Sprite.cpp.i
+.PHONY : engine/SRC/Sprite.i
+
+# target to preprocess a source file
+engine/SRC/Sprite.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/Sprite.cpp.i
+.PHONY : engine/SRC/Sprite.cpp.i
+
+engine/SRC/Sprite.s: engine/SRC/Sprite.cpp.s
+.PHONY : engine/SRC/Sprite.s
+
+# target to generate assembly for a file
+engine/SRC/Sprite.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/Sprite.cpp.s
+.PHONY : engine/SRC/Sprite.cpp.s
+
+engine/SRC/SpriteRenderer.o: engine/SRC/SpriteRenderer.cpp.o
+.PHONY : engine/SRC/SpriteRenderer.o
+
+# target to build an object file
+engine/SRC/SpriteRenderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/SpriteRenderer.cpp.o
+.PHONY : engine/SRC/SpriteRenderer.cpp.o
+
+engine/SRC/SpriteRenderer.i: engine/SRC/SpriteRenderer.cpp.i
+.PHONY : engine/SRC/SpriteRenderer.i
+
+# target to preprocess a source file
+engine/SRC/SpriteRenderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/SpriteRenderer.cpp.i
+.PHONY : engine/SRC/SpriteRenderer.cpp.i
+
+engine/SRC/SpriteRenderer.s: engine/SRC/SpriteRenderer.cpp.s
+.PHONY : engine/SRC/SpriteRenderer.s
+
+# target to generate assembly for a file
+engine/SRC/SpriteRenderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/SpriteRenderer.cpp.s
+.PHONY : engine/SRC/SpriteRenderer.cpp.s
+
+engine/SRC/Texture.o: engine/SRC/Texture.cpp.o
+.PHONY : engine/SRC/Texture.o
+
+# target to build an object file
+engine/SRC/Texture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/Texture.cpp.o
+.PHONY : engine/SRC/Texture.cpp.o
+
+engine/SRC/Texture.i: engine/SRC/Texture.cpp.i
+.PHONY : engine/SRC/Texture.i
+
+# target to preprocess a source file
+engine/SRC/Texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/Texture.cpp.i
+.PHONY : engine/SRC/Texture.cpp.i
+
+engine/SRC/Texture.s: engine/SRC/Texture.cpp.s
+.PHONY : engine/SRC/Texture.s
+
+# target to generate assembly for a file
+engine/SRC/Texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/Texture.cpp.s
+.PHONY : engine/SRC/Texture.cpp.s
+
 f_triangle.o: f_triangle.cpp.o
 .PHONY : f_triangle.o
 
@@ -397,6 +589,30 @@ help:
 	@echo "... Model_head.o"
 	@echo "... Model_head.i"
 	@echo "... Model_head.s"
+	@echo "... engine/Bitmap.o"
+	@echo "... engine/Bitmap.i"
+	@echo "... engine/Bitmap.s"
+	@echo "... engine/Mesh.o"
+	@echo "... engine/Mesh.i"
+	@echo "... engine/Mesh.s"
+	@echo "... engine/SRC/EventManager.o"
+	@echo "... engine/SRC/EventManager.i"
+	@echo "... engine/SRC/EventManager.s"
+	@echo "... engine/SRC/ResourceLoader.o"
+	@echo "... engine/SRC/ResourceLoader.i"
+	@echo "... engine/SRC/ResourceLoader.s"
+	@echo "... engine/SRC/Shader.o"
+	@echo "... engine/SRC/Shader.i"
+	@echo "... engine/SRC/Shader.s"
+	@echo "... engine/SRC/Sprite.o"
+	@echo "... engine/SRC/Sprite.i"
+	@echo "... engine/SRC/Sprite.s"
+	@echo "... engine/SRC/SpriteRenderer.o"
+	@echo "... engine/SRC/SpriteRenderer.i"
+	@echo "... engine/SRC/SpriteRenderer.s"
+	@echo "... engine/SRC/Texture.o"
+	@echo "... engine/SRC/Texture.i"
+	@echo "... engine/SRC/Texture.s"
 	@echo "... f_triangle.o"
 	@echo "... f_triangle.i"
 	@echo "... f_triangle.s"
