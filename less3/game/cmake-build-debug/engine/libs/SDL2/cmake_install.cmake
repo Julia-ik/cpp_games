@@ -198,7 +198,7 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   
-          execute_process(COMMAND /var/lib/snapd/snap/clion/169/bin/cmake/linux/bin/cmake -E create_symlink
+          execute_process(COMMAND /var/lib/snapd/snap/clion/175/bin/cmake/linux/bin/cmake -E create_symlink
             "libSDL2-2.0d.so" "libSDL2d.so"
             WORKING_DIRECTORY "/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine/libs/SDL2")
 endif()
@@ -224,6 +224,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/share/aclocal" TYPE FILE FILES "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/sdl2.m4")
+  file(INSTALL DESTINATION "/usr/local/share/aclocal" TYPE FILE FILES "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/sdl2.m4")
 endif()
 

@@ -3,7 +3,7 @@
 #include "ResourceLoader.h"
 #include <GL/glew.h>
 #include <streambuf>
-
+#include "Sound.h"
 #include <SDL.h>
 #include <stdio.h>
 
@@ -13,9 +13,6 @@ Engine::Engine(int w, int h)
 {
     width=w;
     heights=h;
-
-
-
     window = SDL_CreateWindow("  ",
                               SDL_WINDOWPOS_CENTERED,
                               SDL_WINDOWPOS_CENTERED,
@@ -23,10 +20,7 @@ Engine::Engine(int w, int h)
                               heights,
                               SDL_WINDOW_OPENGL);
 
-
    r = SDL_CreateRenderer(window, -1, SDL_WINDOW_OPENGL);
-
-
 }
 
 void Engine::drawWindow(Model *model, bool isItGL)
@@ -76,6 +70,7 @@ void Engine::initSDL()
 
     SDL_Init(SDL_INIT_VIDEO);
 }
+
 GLuint Engine::initGL()
 {
     /*struct Point
@@ -286,6 +281,7 @@ GLuint Engine::LoadShaders(const char * vertex_file_path,const char * fragment_f
 void Engine::initGLL(){
     // Загрузка шейдеров
     SDL_GL_CreateContext(window);
+    SDL_Init(SDL_INIT_EVERYTHING);
 
     glewExperimental=true;
     if (glewInit() != GLEW_OK) {
@@ -307,13 +303,14 @@ void Engine::initGLL(){
 
 
     //Renderer = new SpriteRenderer(ResourceManager::GetShader("sprite"));
-    
     // Загрузка текстур
     ResourceManager::LoadTexture("/home/lilu/lilu/cpp_games/cpp_games/less3/game/images/gun.png", true, "gun");
     ResourceManager::LoadTexture("/home/lilu/lilu/cpp_games/cpp_games/less3/game/images/body.png", true, "body");
     ResourceManager::LoadTexture("/home/lilu/lilu/cpp_games/cpp_games/less3/game/images/fire2.png", true, "fire");
 
     isActive = true;
+
+    Sound sound("/home/lilu/lilu/cpp_games/cpp_games/less3/game/sound/dramatic.wav");
 }
 
 void Engine::RegisterEvents()

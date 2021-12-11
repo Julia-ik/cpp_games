@@ -18,107 +18,108 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4b45fde-ab0c-4aec-a84e-03f814d6340d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/engine/SRC/Sound.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine/SRC/Sound.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../hw_1/untitled/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw_1/untitled/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/engine/SRC/SDL/Model.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model.h" beforeDir="false" afterPath="$PROJECT_DIR$/engine/SRC/SDL/Model.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_head.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/engine/SRC/SDL/Model_head.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model_head.h" beforeDir="false" afterPath="$PROJECT_DIR$/engine/SRC/SDL/Model_head.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/CXX.includecache" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/Model.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/Model_head.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/depend.internal" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/engine/Bitmap.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/engine/Mesh.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/engine/Mesh.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/engine/SRC/ResourceLoader.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/engine/SRC/ResourceLoader.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/engine/SRC/Sprite.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/engine/SRC/SpriteRenderer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/engine/SRC/SpriteRenderer.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/engine/SRC/Texture.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/engine/SRC/Texture.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/f_triangle.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/v_point.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/SRC/library.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/SRC/library.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/depend.internal" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/engine.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/engine.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libengine.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libengine.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/Export/lib64/cmake/SDL2/SDL2Targets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/Export/lib64/cmake/SDL2/SDL2Targets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2-static.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2-static.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2-static.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2-static.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2-static.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2-static.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2-static.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2-static.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2-static.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2-static.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2-static.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2-static.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2-static.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2-static.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2-static.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2-static.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2-static.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2-static.dir/src/SDL.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2-static.dir/src/SDL.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2-static.dir/src/audio/SDL_audio.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2-static.dir/src/audio/SDL_audio.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2main.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2main.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2main.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2main.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2main.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2main.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2main.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2main.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2main.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2main.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2main.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2main.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/SDL2main.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/uninstall.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/CMakeFiles/uninstall.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/SDL2.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/SDL2.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/cmake_uninstall.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/cmake_uninstall.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/include/SDL_config.h" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/include/SDL_config.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/include/SDL_revision.h" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/include/SDL_revision.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/libSDL2d.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/libSDL2d.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/libSDL2maind.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/SDL2/libSDL2maind.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/glew/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/glew/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/glew/CMakeFiles/libglew_static.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/glew/CMakeFiles/libglew_static.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/glew/CMakeFiles/libglew_static.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/glew/CMakeFiles/libglew_static.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/glew/CMakeFiles/libglew_static.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/glew/CMakeFiles/libglew_static.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/glew/CMakeFiles/libglew_static.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/glew/CMakeFiles/libglew_static.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/glew/CMakeFiles/libglew_static.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/glew/CMakeFiles/libglew_static.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/glew/CMakeFiles/libglew_static.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/glew/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/glew/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libs/glew/libglewd.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libs/glew/libglewd.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/game" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/game" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/game.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/game.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/Bitmap.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/engine/SRC/Bitmap.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/Bitmap.h" beforeDir="false" afterPath="$PROJECT_DIR$/engine/SRC/Bitmap.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/SRC/ResourceLoader.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/engine/SRC/ResourceLoader.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/SRC/Texture.h" beforeDir="false" afterPath="$PROJECT_DIR$/engine/SRC/Texture.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/engine/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine/SRC/library.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/engine/SRC/library.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/SRC/library.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/engine/SRC/library.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/hhh.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/f_triangle.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/engine/SRC/SDL/f_triangle.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/f_triangle.h" beforeDir="false" afterPath="$PROJECT_DIR$/engine/SRC/SDL/f_triangle.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fragmentShader.txt" beforeDir="false" afterPath="$PROJECT_DIR$/engine/SRC/shaders/fragmentShader.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fragmentShader1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/engine/SRC/shaders/fragmentShader1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/.idea/head.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/cmake-build-debug/CMakeFiles/3.20.2/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/cmake-build-debug/CMakeFiles/3.20.2/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/cmake-build-debug/CMakeFiles/3.20.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/cmake-build-debug/CMakeFiles/3.20.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/cmake-build-debug/CMakeFiles/3.20.2/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdCXX/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/cmake-build-debug/CMakeFiles/head.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/cmake-build-debug/CMakeFiles/head.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/cmake-build-debug/CMakeFiles/head.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/cmake-build-debug/CMakeFiles/head.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/cmake-build-debug/CMakeFiles/head.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/cmake-build-debug/CMakeFiles/head.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/cmake-build-debug/CMakeFiles/head.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/cmake-build-debug/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/cmake-build-debug/head.cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/koko.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/libs/SDL2/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/engine/libs/SDL2/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/libs/SDL2/Makefile.rules" beforeDir="false" afterPath="$PROJECT_DIR$/engine/libs/SDL2/Makefile.rules" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/libs/SDL2/config.log" beforeDir="false" afterPath="$PROJECT_DIR$/engine/libs/SDL2/config.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/libs/SDL2/config.status" beforeDir="false" afterPath="$PROJECT_DIR$/engine/libs/SDL2/config.status" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/libs/SDL2/include/SDL_config.h" beforeDir="false" afterPath="$PROJECT_DIR$/engine/libs/SDL2/include/SDL_config.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v_point.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/engine/SRC/SDL/v_point.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v_point.h" beforeDir="false" afterPath="$PROJECT_DIR$/engine/SRC/SDL/v_point.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vertexShader.txt" beforeDir="false" afterPath="$PROJECT_DIR$/engine/SRC/shaders/vertexShader.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vertexShader1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/engine/SRC/shaders/vertexShader1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../less4/opengl/.idea/opengl.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -147,6 +148,12 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="OCResolveContextSettings">
+    <option name="configuration" value="0-Debug-engine" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedIndex" value="1" />
@@ -180,6 +187,16 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.game">
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SDL2-static" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="game" TARGET_NAME="SDL2-static" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -191,11 +208,6 @@
       </method>
     </configuration>
     <configuration name="SDL2main" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="game" TARGET_NAME="SDL2main" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -218,11 +230,6 @@
     <configuration name="uninstall" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="game" TARGET_NAME="uninstall" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <list>
@@ -251,6 +258,11 @@
       <workItem from="1638630755766" duration="8541000" />
       <workItem from="1638651798465" duration="35776000" />
       <workItem from="1638788945046" duration="1088000" />
+      <workItem from="1638979479550" duration="909000" />
+      <workItem from="1638981610048" duration="1231000" />
+      <workItem from="1639160256253" duration="12226000" />
+      <workItem from="1639238649638" duration="2248000" />
+      <workItem from="1639241591446" duration="2237000" />
     </task>
     <servers />
   </component>
@@ -267,7 +279,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

@@ -1,4 +1,4 @@
-/var/lib/snapd/snap/clion/169/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/lilu/lilu/cpp_games/cpp_games/less3/game
+/var/lib/snapd/snap/clion/175/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/lilu/lilu/cpp_games/cpp_games/less3/game
 -- The C compiler identification is GNU 11.2.1
 -- The CXX compiler identification is GNU 11.2.1
 -- Detecting C compiler ABI info
@@ -341,7 +341,10 @@
 -- Performing Test OSS_FOUND
 -- Performing Test OSS_FOUND - Success
 -- Looking for alsa/asoundlib.h
--- Looking for alsa/asoundlib.h - not found
+-- Looking for alsa/asoundlib.h - found
+-- Looking for snd_pcm_recover in asound
+-- Looking for snd_pcm_recover in asound - found
+-- dynamic libasound -> libasound.so.2
 -- Checking for module 'jack'
 --   Package 'jack', required by 'virtual:world', not found
 -- Checking for module 'libpipewire-0.3>=0.3.20'
@@ -483,8 +486,8 @@
 -- 
 -- Options:
 --   3DNOW                  (Wanted: ON): ON
---   ALSA                   (Wanted: ON): OFF
---   ALSA_SHARED            (Wanted: ON): OFF
+--   ALSA                   (Wanted: ON): ON
+--   ALSA_SHARED            (Wanted: ON): ON
 --   ALTIVEC                (Wanted: ON): OFF
 --   ARMNEON                (Wanted: OFF): OFF
 --   ARMSIMD                (Wanted: OFF): OFF

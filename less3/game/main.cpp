@@ -3,6 +3,7 @@
 #include "SDL/Model.h"
 #include <chrono>
 #include <ResourceLoader.h>
+#include "Sound.h"
 
 int main()
 {
@@ -14,6 +15,8 @@ int main()
 
     //engine.drawWindow(&model, isItGL);
     engine.initGLL();
+    Sound sound("/home/lilu/lilu/cpp_games/cpp_games/less3/game/sound/dramatic.wav");
+    sound.PlaySound("/home/lilu/lilu/cpp_games/cpp_games/less3/game/sound/dramatic.wav");
 
     SpriteRenderer bodySprite(ResourceManager::GetShader("sprite"),
                               glm::vec2(300.0f, 300.0f), glm::vec2(85.0f, 40.0f),

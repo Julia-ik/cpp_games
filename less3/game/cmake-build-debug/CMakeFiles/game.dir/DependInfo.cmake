@@ -4,36 +4,22 @@ set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
 
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
-  )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Mesh.cpp" "/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/game.dir/engine/Mesh.cpp.o"
-  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Bitmap.cpp" "/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/game.dir/engine/SRC/Bitmap.cpp.o"
-  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/EventManager.cpp" "/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/game.dir/engine/SRC/EventManager.cpp.o"
-  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/ResourceLoader.cpp" "/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/game.dir/engine/SRC/ResourceLoader.cpp.o"
-  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/Model.cpp" "/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/game.dir/engine/SRC/SDL/Model.cpp.o"
-  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/Model_head.cpp" "/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/game.dir/engine/SRC/SDL/Model_head.cpp.o"
-  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/f_triangle.cpp" "/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/game.dir/engine/SRC/SDL/f_triangle.cpp.o"
-  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/v_point.cpp" "/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/game.dir/engine/SRC/SDL/v_point.cpp.o"
-  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Shader.cpp" "/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/game.dir/engine/SRC/Shader.cpp.o"
-  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SpriteRenderer.cpp" "/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/game.dir/engine/SRC/SpriteRenderer.cpp.o"
-  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Texture.cpp" "/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/game.dir/engine/SRC/Texture.cpp.o"
-  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/main.cpp" "/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/game.dir/main.cpp.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
-
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../engine/SRC"
-  "../engine/libs"
-  "../engine/libs/SDL2/include"
-  "../engine/libs/glew/include"
-  "../engine/libs/stbi"
   )
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Mesh.cpp" "CMakeFiles/game.dir/engine/Mesh.cpp.o" "gcc" "CMakeFiles/game.dir/engine/Mesh.cpp.o.d"
+  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Bitmap.cpp" "CMakeFiles/game.dir/engine/SRC/Bitmap.cpp.o" "gcc" "CMakeFiles/game.dir/engine/SRC/Bitmap.cpp.o.d"
+  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/EventManager.cpp" "CMakeFiles/game.dir/engine/SRC/EventManager.cpp.o" "gcc" "CMakeFiles/game.dir/engine/SRC/EventManager.cpp.o.d"
+  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/ResourceLoader.cpp" "CMakeFiles/game.dir/engine/SRC/ResourceLoader.cpp.o" "gcc" "CMakeFiles/game.dir/engine/SRC/ResourceLoader.cpp.o.d"
+  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/Model.cpp" "CMakeFiles/game.dir/engine/SRC/SDL/Model.cpp.o" "gcc" "CMakeFiles/game.dir/engine/SRC/SDL/Model.cpp.o.d"
+  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/Model_head.cpp" "CMakeFiles/game.dir/engine/SRC/SDL/Model_head.cpp.o" "gcc" "CMakeFiles/game.dir/engine/SRC/SDL/Model_head.cpp.o.d"
+  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/f_triangle.cpp" "CMakeFiles/game.dir/engine/SRC/SDL/f_triangle.cpp.o" "gcc" "CMakeFiles/game.dir/engine/SRC/SDL/f_triangle.cpp.o.d"
+  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/v_point.cpp" "CMakeFiles/game.dir/engine/SRC/SDL/v_point.cpp.o" "gcc" "CMakeFiles/game.dir/engine/SRC/SDL/v_point.cpp.o.d"
+  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Shader.cpp" "CMakeFiles/game.dir/engine/SRC/Shader.cpp.o" "gcc" "CMakeFiles/game.dir/engine/SRC/Shader.cpp.o.d"
+  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SpriteRenderer.cpp" "CMakeFiles/game.dir/engine/SRC/SpriteRenderer.cpp.o" "gcc" "CMakeFiles/game.dir/engine/SRC/SpriteRenderer.cpp.o.d"
+  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Texture.cpp" "CMakeFiles/game.dir/engine/SRC/Texture.cpp.o" "gcc" "CMakeFiles/game.dir/engine/SRC/Texture.cpp.o.d"
+  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/main.cpp" "CMakeFiles/game.dir/main.cpp.o" "gcc" "CMakeFiles/game.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.

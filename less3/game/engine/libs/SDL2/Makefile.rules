@@ -353,6 +353,9 @@ $(objects)/SDL_sysloadso.lo: /home/lilu/lilu/cpp_games/cpp_games/less3/game/engi
 $(objects)/SDL_dspaudio.lo: /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/audio/dsp/SDL_dspaudio.c $(objects)/.created
 	$(RUN_CMD_CC)$(LIBTOOL) --tag=CC --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -MMD -MT $@ -c $< -o $@
 
+$(objects)/SDL_alsa_audio.lo: /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/audio/alsa/SDL_alsa_audio.c $(objects)/.created
+	$(RUN_CMD_CC)$(LIBTOOL) --tag=CC --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -MMD -MT $@ -c $< -o $@
+
 $(objects)/SDL_x11clipboard.lo: /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/x11/SDL_x11clipboard.c $(objects)/.created
 	$(RUN_CMD_CC)$(LIBTOOL) --tag=CC --mode=compile $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -MMD -MT $@ -c $< -o $@
 

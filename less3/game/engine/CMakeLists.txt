@@ -7,7 +7,7 @@ if(COMPILER_SUPPORTS_CXX17)
     set(CMAKE_REQUIRED_FLAGS "-std=c++17")
 endif()
 
-add_library(engine STATIC SRC/library.cpp Node.cpp Node.h)
+add_library(engine STATIC SRC/library.cpp Node.cpp Node.h SRC/Sound.cpp SRC/Sound.cpp SRC/Sound.h AudioManager.cpp AudioManager.h)
 #SDL
 
 if(NOT IOS)

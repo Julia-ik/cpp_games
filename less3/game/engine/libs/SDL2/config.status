@@ -843,7 +843,7 @@ fi
 
 
 
-SUMMARY="SDL2 Configure Summary:\nBuilding Shared Libraries\nBuilding Static Libraries\nEnabled modules : atomic audio video render events joystick haptic sensor power filesystem threads timers file loadso cpuinfo assembly\nAssembly Math   : mmx 3dnow sse sse2 sse3\nAudio drivers   : disk dummy oss\nVideo drivers   : dummy x11(dynamic) opengl opengl_es1 opengl_es2 vulkan\nX11 libraries   : xcursor xdbe xinput2 xinput2_multitouch xrandr xscrnsaver xshape xvidmode\nInput drivers   : linuxev linuxkd\nEnable virtual joystick APIs : YES\nUsing libsamplerate : NO\nUsing libudev       : NO\nUsing dbus          : NO\nUsing ime           : YES\nUsing ibus          : NO\nUsing fcitx         : NO\n"
+SUMMARY="SDL2 Configure Summary:\nBuilding Shared Libraries\nBuilding Static Libraries\nEnabled modules : atomic audio video render events joystick haptic sensor power filesystem threads timers file loadso cpuinfo assembly\nAssembly Math   : mmx 3dnow sse sse2 sse3\nAudio drivers   : disk dummy oss alsa(dynamic)\nVideo drivers   : dummy x11(dynamic) opengl opengl_es1 opengl_es2 vulkan\nX11 libraries   : xcursor xdbe xinput2 xinput2_multitouch xrandr xscrnsaver xshape xvidmode\nInput drivers   : linuxev linuxkd\nEnable virtual joystick APIs : YES\nUsing libsamplerate : NO\nUsing libudev       : NO\nUsing dbus          : NO\nUsing ime           : YES\nUsing ibus          : NO\nUsing fcitx         : NO\n"
 
 
 # Handling of arguments.
@@ -932,8 +932,8 @@ S["EXTRA_LDFLAGS"]=" -lm -lpthread -lrt"
 S["BUILD_LDFLAGS"]=" -Wl,--no-undefined"
 S["EXTRA_CFLAGS"]="-Iinclude -I/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include -idirafter /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine"\
 "/libs/SDL2/src/video/khronos  -mmmx -m3dnow -msse -msse2 -msse3 -Wall -fno-strict-aliasing -fvisibility=hidden -Wdeclaration-after-statement -Werror"\
-"=declaration-after-statement  -I/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/hidapi/hidapi -D_REENTRANT -DHAVE_LINUX_VERSION_"\
-"H"
+"=declaration-after-statement   -I/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/hidapi/hidapi -D_REENTRANT -DHAVE_LINUX_VERSION"\
+"_H"
 S["BUILD_CFLAGS"]="-g -O3 -DUSING_GENERATED_CONFIG_H"
 S["SDLTEST_OBJECTS"]="$(objects)/SDL_test_assert.lo $(objects)/SDL_test_common.lo $(objects)/SDL_test_compare.lo $(objects)/SDL_test_crc32.lo $(objects)/SDL_test_font.lo "\
 "$(objects)/SDL_test_fuzzer.lo $(objects)/SDL_test_harness.lo $(objects)/SDL_test_imageBlit.lo $(objects)/SDL_test_imageBlitBlend.lo $(objects)/SDL_t"\
@@ -963,17 +963,17 @@ S["OBJECTS"]="$(objects)/SDL.lo $(objects)/SDL_assert.lo $(objects)/SDL_dataqueu
 "L_egl.lo $(objects)/SDL_fillrect.lo $(objects)/SDL_pixels.lo $(objects)/SDL_rect.lo $(objects)/SDL_shape.lo $(objects)/SDL_stretch.lo $(objects)/SDL"\
 "_surface.lo $(objects)/SDL_video.lo $(objects)/SDL_vulkan_utils.lo $(objects)/SDL_yuv.lo $(objects)/yuv_rgb.lo $(objects)/SDL_locale.lo $(objects)/S"\
 "DL_nullevents.lo $(objects)/SDL_nullframebuffer.lo $(objects)/SDL_nullvideo.lo $(objects)/SDL_diskaudio.lo $(objects)/SDL_dummyaudio.lo $(objects)/S"\
-"DL_sysloadso.lo $(objects)/SDL_dspaudio.lo $(objects)/SDL_x11clipboard.lo $(objects)/SDL_x11dyn.lo $(objects)/SDL_x11events.lo $(objects)/SDL_x11fra"\
-"mebuffer.lo $(objects)/SDL_x11keyboard.lo $(objects)/SDL_x11messagebox.lo $(objects)/SDL_x11modes.lo $(objects)/SDL_x11mouse.lo $(objects)/SDL_x11op"\
-"engl.lo $(objects)/SDL_x11opengles.lo $(objects)/SDL_x11shape.lo $(objects)/SDL_x11touch.lo $(objects)/SDL_x11video.lo $(objects)/SDL_x11vulkan.lo $"\
-"(objects)/SDL_x11window.lo $(objects)/SDL_x11xinput2.lo $(objects)/edid-parse.lo $(objects)/imKStoUCS.lo $(objects)/SDL_ime.lo $(objects)/SDL_hidapi"\
-"_gamecube.lo $(objects)/SDL_hidapi_luna.lo $(objects)/SDL_hidapi_ps4.lo $(objects)/SDL_hidapi_ps5.lo $(objects)/SDL_hidapi_rumble.lo $(objects)/SDL_"\
-"hidapi_stadia.lo $(objects)/SDL_hidapi_steam.lo $(objects)/SDL_hidapi_switch.lo $(objects)/SDL_hidapi_xbox360.lo $(objects)/SDL_hidapi_xbox360w.lo $"\
-"(objects)/SDL_hidapi_xboxone.lo $(objects)/SDL_hidapijoystick.lo $(objects)/SDL_hidapi.lo $(objects)/SDL_systhread.lo $(objects)/SDL_syssem.lo $(obj"\
-"ects)/SDL_sysmutex.lo $(objects)/SDL_syscond.lo $(objects)/SDL_systls.lo $(objects)/SDL_sysurl.lo $(objects)/SDL_syslocale.lo $(objects)/SDL_sysjoys"\
-"tick.lo $(objects)/SDL_steamcontroller.lo $(objects)/SDL_syshaptic.lo $(objects)/SDL_syspower.lo $(objects)/SDL_sysfilesystem.lo $(objects)/SDL_syst"\
-"imer.lo $(objects)/SDL_evdev.lo $(objects)/SDL_evdev_kbd.lo $(objects)/SDL_evdev_kbd_freebsd.lo $(objects)/SDL_evdev_capabilities.lo $(objects)/SDL_"\
-"threadprio.lo $(objects)/SDL_poll.lo $(objects)/SDL_virtualjoystick.lo $(objects)/SDL_dummysensor.lo"
+"DL_sysloadso.lo $(objects)/SDL_dspaudio.lo $(objects)/SDL_alsa_audio.lo $(objects)/SDL_x11clipboard.lo $(objects)/SDL_x11dyn.lo $(objects)/SDL_x11ev"\
+"ents.lo $(objects)/SDL_x11framebuffer.lo $(objects)/SDL_x11keyboard.lo $(objects)/SDL_x11messagebox.lo $(objects)/SDL_x11modes.lo $(objects)/SDL_x11"\
+"mouse.lo $(objects)/SDL_x11opengl.lo $(objects)/SDL_x11opengles.lo $(objects)/SDL_x11shape.lo $(objects)/SDL_x11touch.lo $(objects)/SDL_x11video.lo "\
+"$(objects)/SDL_x11vulkan.lo $(objects)/SDL_x11window.lo $(objects)/SDL_x11xinput2.lo $(objects)/edid-parse.lo $(objects)/imKStoUCS.lo $(objects)/SDL"\
+"_ime.lo $(objects)/SDL_hidapi_gamecube.lo $(objects)/SDL_hidapi_luna.lo $(objects)/SDL_hidapi_ps4.lo $(objects)/SDL_hidapi_ps5.lo $(objects)/SDL_hid"\
+"api_rumble.lo $(objects)/SDL_hidapi_stadia.lo $(objects)/SDL_hidapi_steam.lo $(objects)/SDL_hidapi_switch.lo $(objects)/SDL_hidapi_xbox360.lo $(obje"\
+"cts)/SDL_hidapi_xbox360w.lo $(objects)/SDL_hidapi_xboxone.lo $(objects)/SDL_hidapijoystick.lo $(objects)/SDL_hidapi.lo $(objects)/SDL_systhread.lo $"\
+"(objects)/SDL_syssem.lo $(objects)/SDL_sysmutex.lo $(objects)/SDL_syscond.lo $(objects)/SDL_systls.lo $(objects)/SDL_sysurl.lo $(objects)/SDL_sysloc"\
+"ale.lo $(objects)/SDL_sysjoystick.lo $(objects)/SDL_steamcontroller.lo $(objects)/SDL_syshaptic.lo $(objects)/SDL_syspower.lo $(objects)/SDL_sysfile"\
+"system.lo $(objects)/SDL_systimer.lo $(objects)/SDL_evdev.lo $(objects)/SDL_evdev_kbd.lo $(objects)/SDL_evdev_kbd_freebsd.lo $(objects)/SDL_evdev_ca"\
+"pabilities.lo $(objects)/SDL_threadprio.lo $(objects)/SDL_poll.lo $(objects)/SDL_virtualjoystick.lo $(objects)/SDL_dummysensor.lo"
 S["INCLUDE"]="-Iinclude -I/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include -idirafter /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine"\
 "/libs/SDL2/src/video/khronos"
 S["ac_aux_dir"]="build-scripts"
@@ -1019,7 +1019,7 @@ S["ESD_CFLAGS"]=""
 S["ESD_CONFIG"]="no"
 S["JACK_LIBS"]=""
 S["JACK_CFLAGS"]=""
-S["ALSA_LIBS"]=""
+S["ALSA_LIBS"]=" -lasound -lm -ldl -lpthread"
 S["ALSA_CFLAGS"]=""
 S["POW_LIB"]=""
 S["LIBOBJS"]=""
@@ -1315,6 +1315,9 @@ D["SDL_AUDIO_DRIVER_DISK"]=" 1"
 D["SDL_AUDIO_DRIVER_DUMMY"]=" 1"
 D["SDL_LOADSO_DLOPEN"]=" 1"
 D["SDL_AUDIO_DRIVER_OSS"]=" 1"
+D["HAVE_LIBASOUND"]=" 1"
+D["SDL_AUDIO_DRIVER_ALSA"]=" 1"
+D["SDL_AUDIO_DRIVER_ALSA_DYNAMIC"]=" \"libasound.so.2\""
 D["SDL_VIDEO_DRIVER_X11"]=" 1"
 D["SDL_VIDEO_DRIVER_X11_DYNAMIC"]=" \"libX11.so.6\""
 D["SDL_VIDEO_DRIVER_X11_DYNAMIC_XEXT"]=" \"libXext.so.6\""

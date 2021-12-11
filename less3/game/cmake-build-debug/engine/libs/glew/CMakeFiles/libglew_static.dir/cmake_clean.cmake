@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/libglew_static.dir/src/glew.c.o"
+  "CMakeFiles/libglew_static.dir/src/glew.c.o.d"
   "libglewd.a"
   "libglewd.pdb"
 )

@@ -276,10 +276,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/AudioManager.cpp">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/AudioManager.h">
+			<Option target="engine"/>
+		</Unit>
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Node.cpp">
 			<Option target="engine"/>
 		</Unit>
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Node.h">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Sound.cpp">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Sound.h">
 			<Option target="engine"/>
 		</Unit>
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/library.cpp">
@@ -349,6 +361,14 @@
 			<Option target="SDL2"/>
 		</Unit>
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/audio/SDL_wave.h">
+			<Option target="SDL2-static"/>
+			<Option target="SDL2"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/audio/alsa/SDL_alsa_audio.c">
+			<Option target="SDL2-static"/>
+			<Option target="SDL2"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/audio/alsa/SDL_alsa_audio.h">
 			<Option target="SDL2-static"/>
 			<Option target="SDL2"/>
 		</Unit>

@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o"
+  "CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o.d"
   "libSDL2maind.a"
   "libSDL2maind.pdb"
 )

@@ -7,7 +7,7 @@ string(REGEX REPLACE "\n" ";" files "${files}")
 foreach (file ${files})
     message(STATUS "Uninstalling \"$ENV{DESTDIR}${file}\"")
     execute_process(
-        COMMAND /var/lib/snapd/snap/clion/169/bin/cmake/linux/bin/cmake -E remove "$ENV{DESTDIR}${file}"
+        COMMAND /var/lib/snapd/snap/clion/175/bin/cmake/linux/bin/cmake -E remove "$ENV{DESTDIR}${file}"
         OUTPUT_VARIABLE rm_out
         RESULT_VARIABLE rm_retval
     )
