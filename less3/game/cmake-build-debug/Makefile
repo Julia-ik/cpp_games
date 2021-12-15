@@ -468,29 +468,53 @@ engine/SRC/Shader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/Shader.cpp.s
 .PHONY : engine/SRC/Shader.cpp.s
 
-engine/SRC/SpriteRenderer.o: engine/SRC/SpriteRenderer.cpp.o
-.PHONY : engine/SRC/SpriteRenderer.o
+engine/SRC/Sprite.o: engine/SRC/Sprite.cpp.o
+.PHONY : engine/SRC/Sprite.o
 
 # target to build an object file
-engine/SRC/SpriteRenderer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/SpriteRenderer.cpp.o
-.PHONY : engine/SRC/SpriteRenderer.cpp.o
+engine/SRC/Sprite.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/Sprite.cpp.o
+.PHONY : engine/SRC/Sprite.cpp.o
 
-engine/SRC/SpriteRenderer.i: engine/SRC/SpriteRenderer.cpp.i
-.PHONY : engine/SRC/SpriteRenderer.i
+engine/SRC/Sprite.i: engine/SRC/Sprite.cpp.i
+.PHONY : engine/SRC/Sprite.i
 
 # target to preprocess a source file
-engine/SRC/SpriteRenderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/SpriteRenderer.cpp.i
-.PHONY : engine/SRC/SpriteRenderer.cpp.i
+engine/SRC/Sprite.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/Sprite.cpp.i
+.PHONY : engine/SRC/Sprite.cpp.i
 
-engine/SRC/SpriteRenderer.s: engine/SRC/SpriteRenderer.cpp.s
-.PHONY : engine/SRC/SpriteRenderer.s
+engine/SRC/Sprite.s: engine/SRC/Sprite.cpp.s
+.PHONY : engine/SRC/Sprite.s
 
 # target to generate assembly for a file
-engine/SRC/SpriteRenderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/SpriteRenderer.cpp.s
-.PHONY : engine/SRC/SpriteRenderer.cpp.s
+engine/SRC/Sprite.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/Sprite.cpp.s
+.PHONY : engine/SRC/Sprite.cpp.s
+
+engine/SRC/Tank.o: engine/SRC/Tank.cpp.o
+.PHONY : engine/SRC/Tank.o
+
+# target to build an object file
+engine/SRC/Tank.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/Tank.cpp.o
+.PHONY : engine/SRC/Tank.cpp.o
+
+engine/SRC/Tank.i: engine/SRC/Tank.cpp.i
+.PHONY : engine/SRC/Tank.i
+
+# target to preprocess a source file
+engine/SRC/Tank.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/Tank.cpp.i
+.PHONY : engine/SRC/Tank.cpp.i
+
+engine/SRC/Tank.s: engine/SRC/Tank.cpp.s
+.PHONY : engine/SRC/Tank.s
+
+# target to generate assembly for a file
+engine/SRC/Tank.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/engine/SRC/Tank.cpp.s
+.PHONY : engine/SRC/Tank.cpp.s
 
 engine/SRC/Texture.o: engine/SRC/Texture.cpp.o
 .PHONY : engine/SRC/Texture.o
@@ -586,9 +610,12 @@ help:
 	@echo "... engine/SRC/Shader.o"
 	@echo "... engine/SRC/Shader.i"
 	@echo "... engine/SRC/Shader.s"
-	@echo "... engine/SRC/SpriteRenderer.o"
-	@echo "... engine/SRC/SpriteRenderer.i"
-	@echo "... engine/SRC/SpriteRenderer.s"
+	@echo "... engine/SRC/Sprite.o"
+	@echo "... engine/SRC/Sprite.i"
+	@echo "... engine/SRC/Sprite.s"
+	@echo "... engine/SRC/Tank.o"
+	@echo "... engine/SRC/Tank.i"
+	@echo "... engine/SRC/Tank.s"
 	@echo "... engine/SRC/Texture.o"
 	@echo "... engine/SRC/Texture.i"
 	@echo "... engine/SRC/Texture.s"

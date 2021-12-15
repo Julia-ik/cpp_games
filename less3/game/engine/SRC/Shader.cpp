@@ -19,122 +19,91 @@ Shader::Shader()
     GLuint FragmentShaderID =glCreateShader(GL_FRAGMENT_SHADER);
 
 
+    std::string VertexShaderCode ="#version 330 core\n"
+                                  "layout (location = 0) in vec4 vertex;\n"
+                                  " \n"
+                                  "out vec2 TexCoords;\n"
+                                  " \n"
+                                  "uniform mat4 model;\n"
+                                  "uniform mat4 projection;\n"
+                                  " \n"
+                                  "void main()\n"
+                                  "{\n"
+                                  "    TexCoords = vertex.zw;\n"
+                                  "    gl_Position = projection * model * vec4(vertex.xy, 0.0, 1.0);\n"
+                                  "}";
 
-// Загружаем код Вершинного Шейдера из файла
-std::string VertexShaderCode ="#version 330 core\n"
-                              "layout (location = 0) in vec4 vertex;\n"
-                              " \n"
-                              "out vec2 TexCoords;\n"
-                              " \n"
-                              "uniform mat4 model;\n"
-                              "uniform mat4 projection;\n"
-                              " \n"
-                              "void main()\n"
-                              "{\n"
-                              "    TexCoords = vertex.zw;\n"
-                              "    gl_Position = projection * model * vec4(vertex.xy, 0.0, 1.0);\n"
-                              "}";
-        /*"#version 330 core\n"
-                               "layout(location = 0) in vec3 vertexPosition_modelspace;\n"
-                               "\n"
-                               "void main(){\n"
-                               "    gl_Position.xyz = vertexPosition_modelspace;\n"
-                               "    gl_Position.w = 1.0;\n"
-                               " }";
-/*
-std::ifstream VertexShaderStream(vertex_file_path, std::ios::in);
-if(VertexShaderStream.is_open())
-{
-    std::stringstream sstr;
-    sstr << VertexShaderStream.rdbuf();
-    VertexShaderCode = sstr.str();
-    VertexShaderStream.close();
-}*/
+    std::string FragmentShaderCode = "#version 330 core\n"
+                                     "in vec2 TexCoords;\n"
+                                     "out vec4 color;\n"
+                                     " \n"
+                                     "uniform sampler2D image;\n"
+                                     "uniform vec4 spriteColor;\n"
+                                     " \n"
+                                     "void main()\n"
+                                     "{    \n"
+                                     "    color = spriteColor * texture(image, TexCoords);\n"
+                                     "}  ";
 
-// Загружаем код Фрагментного шейдера из файла
-std::string FragmentShaderCode = "#version 330 core\n"
-                                 "in vec2 TexCoords;\n"
-                                 "out vec4 color;\n"
-                                 " \n"
-                                 "uniform sampler2D image;\n"
-                                 "uniform vec3 spriteColor;\n"
-                                 " \n"
-                                 "void main()\n"
-                                 "{    \n"
-                                 "    color = texture(image, TexCoords);\n"
-                                 "}  ";
-        /*"#version 330 core\n"
-                                 "out vec3 color;\n"
-                                 "\n"
-                                 "void main(){\n"
-                                 "    color = vec3(0.5f,0,0.5f);\n"
-                                 "}";
 
-/*std::ifstream FragmentShaderStream(fragment_file_path, std::ios::in);
-if(FragmentShaderStream.is_open()){
-    std::stringstream sstr;
-    sstr << FragmentShaderStream.rdbuf();
-    FragmentShaderCode = sstr.str();
-    FragmentShaderStream.close();
-}*/
 
-GLint Result = GL_FALSE;
-int InfoLogLength;
+    GLint Result = GL_FALSE;
+    int InfoLogLength;
 
 // Компилируем Вершинный шейдер
- char const * VertexSourcePointer = VertexShaderCode.c_str();
- glShaderSource(VertexShaderID, 1, &VertexSourcePointer , NULL);
- glCompileShader(VertexShaderID);
+    char const * VertexSourcePointer = VertexShaderCode.c_str();
+    glShaderSource(VertexShaderID, 1, &VertexSourcePointer , NULL);
+    glCompileShader(VertexShaderID);
 
 // Выполняем проверку Вершинного шейдера
- glGetShaderiv(VertexShaderID, GL_COMPILE_STATUS, &Result);
- glGetShaderiv(VertexShaderID, GL_INFO_LOG_LENGTH, &InfoLogLength);
- if ( InfoLogLength > 0 )
- {
-    std::vector<char> VertexShaderErrorMessage(InfoLogLength+1);
-    glGetShaderInfoLog(VertexShaderID, InfoLogLength, NULL, &VertexShaderErrorMessage[0]);
-    fprintf(stdout, "%sn", &VertexShaderErrorMessage[0]);
-}
+    glGetShaderiv(VertexShaderID, GL_COMPILE_STATUS, &Result);
+    glGetShaderiv(VertexShaderID, GL_INFO_LOG_LENGTH, &InfoLogLength);
+    if ( InfoLogLength > 0 )
+    {
+        std::vector<char> VertexShaderErrorMessage(InfoLogLength+1);
+        glGetShaderInfoLog(VertexShaderID, InfoLogLength, NULL, &VertexShaderErrorMessage[0]);
+        fprintf(stdout, "%sn", &VertexShaderErrorMessage[0]);
+    }
 
 // Компилируем Фрагментный шейдер
- char const * FragmentSourcePointer = FragmentShaderCode.c_str();
- glShaderSource(FragmentShaderID, 1, &FragmentSourcePointer , NULL);
- glCompileShader(FragmentShaderID);
+    char const * FragmentSourcePointer = FragmentShaderCode.c_str();
+    glShaderSource(FragmentShaderID, 1, &FragmentSourcePointer , NULL);
+    glCompileShader(FragmentShaderID);
 
 // Проверяем Фрагментный шейдер
- glGetShaderiv(FragmentShaderID, GL_COMPILE_STATUS, &Result);
- glGetShaderiv(FragmentShaderID, GL_INFO_LOG_LENGTH, &InfoLogLength);
- if ( InfoLogLength > 0 )
- {
-    std::vector<char> FragmentShaderErrorMessage(InfoLogLength+1);
-    glGetShaderInfoLog(FragmentShaderID, InfoLogLength, NULL, &FragmentShaderErrorMessage[0]);
-    fprintf(stdout, "%s\n", &FragmentShaderErrorMessage[0]);
-}
+    glGetShaderiv(FragmentShaderID, GL_COMPILE_STATUS, &Result);
+    glGetShaderiv(FragmentShaderID, GL_INFO_LOG_LENGTH, &InfoLogLength);
+    if ( InfoLogLength > 0 )
+    {
+        std::vector<char> FragmentShaderErrorMessage(InfoLogLength+1);
+        glGetShaderInfoLog(FragmentShaderID, InfoLogLength, NULL, &FragmentShaderErrorMessage[0]);
+        fprintf(stdout, "%s\n", &FragmentShaderErrorMessage[0]);
+    }
 
 
 // Создаем шейдерную программу и привязываем шейдеры к ней
- fprintf(stdout, "creating shader program");
+    fprintf(stdout, "creating shader program");
 
 
- programID = glCreateProgram();
- glAttachShader(programID, VertexShaderID);
- glAttachShader(programID, FragmentShaderID);
- glLinkProgram(programID);
+    programID = glCreateProgram();
+    glAttachShader(programID, VertexShaderID);
+    glAttachShader(programID, FragmentShaderID);
+    glLinkProgram(programID);
 
 // Проверяем шейдерную программу
- glGetProgramiv(programID, GL_LINK_STATUS, &Result);
- glGetProgramiv(programID, GL_INFO_LOG_LENGTH, &InfoLogLength);
- if ( InfoLogLength > 0 )
- {
-    std::vector<char> ProgramErrorMessage(InfoLogLength+1);
-    glGetProgramInfoLog(programID, InfoLogLength, NULL, &ProgramErrorMessage[0]);
-    fprintf(stdout, "%s\n", &ProgramErrorMessage[0]);
-}
+    glGetProgramiv(programID, GL_LINK_STATUS, &Result);
+    glGetProgramiv(programID, GL_INFO_LOG_LENGTH, &InfoLogLength);
+    if ( InfoLogLength > 0 )
+    {
+        std::vector<char> ProgramErrorMessage(InfoLogLength+1);
+        glGetProgramInfoLog(programID, InfoLogLength, NULL, &ProgramErrorMessage[0]);
+        fprintf(stdout, "%s\n", &ProgramErrorMessage[0]);
+    }
 
-glDeleteShader(VertexShaderID);
-glDeleteShader(FragmentShaderID);
+    glDeleteShader(VertexShaderID);
+    glDeleteShader(FragmentShaderID);
 
-uScreenSize = glGetUniformLocation(programID, "screenSize");
+    uScreenSize = glGetUniformLocation(programID, "screenSize");
 
 //return ProgramID;
 }
@@ -199,5 +168,3 @@ void Shader::SetMatrix4(const char *name, const glm::mat4 &matrix, bool useShade
         this->Use();
     glUniformMatrix4fv(glGetUniformLocation(this->programID, name), 1, false, glm::value_ptr(matrix));
 }
-
-

@@ -19,12 +19,6 @@ Shader ResourceManager::LoadShader(const char *vShaderFile, const char *fShaderF
     return Shaders[name];
 }
 
-/*Shader ResourceManager::LoadShader(GLuint program, std::string name)
-{
-    Shader shader(program);
-    Shaders[name]=shader;
-    return Shaders[name];
-}*/
 
 Shader ResourceManager::GetShader(std::string name)
 {

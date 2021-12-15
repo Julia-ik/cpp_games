@@ -385,7 +385,7 @@ CMakeFiles/game.dir/engine/Mesh.cpp.o: \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/Model.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/v_point.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/f_triangle.h \
- /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SpriteRenderer.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Sprite.h \
  /usr/include/glm/gtc/matrix_transform.hpp \
  /usr/include/glm/ext/matrix_projection.hpp \
  /usr/include/glm/gtc/constants.hpp \
@@ -400,14 +400,40 @@ CMakeFiles/game.dir/engine/Mesh.cpp.o: \
  /usr/include/glm/gtc/matrix_transform.inl \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Texture.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Bitmap.h \
- /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Shader.h \
- /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/EventManager.h \
- /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Node.h \
+ /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_tempbuf.h \
+ /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
+ /usr/include/c++/11/bits/uses_allocator.h \
+ /usr/include/c++/11/bits/unique_ptr.h /usr/include/c++/11/utility \
+ /usr/include/c++/11/bits/stl_relops.h /usr/include/c++/11/tuple \
+ /usr/include/c++/11/array /usr/include/c++/11/bits/invoke.h \
+ /usr/include/c++/11/bits/shared_ptr.h \
+ /usr/include/c++/11/bits/shared_ptr_base.h /usr/include/c++/11/typeinfo \
+ /usr/include/c++/11/bits/allocated_ptr.h \
+ /usr/include/c++/11/bits/refwrap.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
+ /usr/include/c++/11/ext/concurrence.h /usr/include/c++/11/exception \
+ /usr/include/c++/11/bits/exception_ptr.h \
+ /usr/include/c++/11/bits/cxxabi_init_exception.h \
+ /usr/include/c++/11/bits/nested_exception.h \
+ /usr/include/c++/11/bits/shared_ptr_atomic.h \
+ /usr/include/c++/11/bits/atomic_base.h \
+ /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/11/backward/auto_ptr.h \
+ /usr/include/c++/11/pstl/glue_memory_defs.h \
+ /usr/include/c++/11/pstl/execution_defs.h /usr/include/c++/11/optional \
+ /usr/include/c++/11/bits/enable_special_members.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Color.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Shader.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/ResourceLoader.h \
+ /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/bits/node_handle.h \
- /usr/include/c++/11/bits/stl_map.h /usr/include/c++/11/tuple \
- /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
- /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
- /usr/include/c++/11/bits/invoke.h \
+ /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \
- /usr/include/c++/11/bits/erase_if.h
+ /usr/include/c++/11/bits/erase_if.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Sound.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_audio.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/AudioManager.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/EventManager.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Color.h

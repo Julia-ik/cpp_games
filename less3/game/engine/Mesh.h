@@ -12,11 +12,13 @@
 #include <vector>
 #include "Shader.h"
 #include "library.hpp"
+#include "Color.h"
 
-
-struct Vertex {
+struct Vertex
+{
     glm::vec2 Position;
     glm::vec2 TexCoords;
+    //ext::color color;
 };
 /*struct Texture {
     unsigned int id;

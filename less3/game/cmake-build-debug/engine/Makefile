@@ -175,53 +175,77 @@ engine/fast:
 	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/build
 .PHONY : engine/fast
 
-AudioManager.o: AudioManager.cpp.o
-.PHONY : AudioManager.o
+Button.o: Button.cpp.o
+.PHONY : Button.o
 
 # target to build an object file
-AudioManager.cpp.o:
-	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/AudioManager.cpp.o
-.PHONY : AudioManager.cpp.o
+Button.cpp.o:
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/Button.cpp.o
+.PHONY : Button.cpp.o
 
-AudioManager.i: AudioManager.cpp.i
-.PHONY : AudioManager.i
+Button.i: Button.cpp.i
+.PHONY : Button.i
 
 # target to preprocess a source file
-AudioManager.cpp.i:
-	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/AudioManager.cpp.i
-.PHONY : AudioManager.cpp.i
+Button.cpp.i:
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/Button.cpp.i
+.PHONY : Button.cpp.i
 
-AudioManager.s: AudioManager.cpp.s
-.PHONY : AudioManager.s
+Button.s: Button.cpp.s
+.PHONY : Button.s
 
 # target to generate assembly for a file
-AudioManager.cpp.s:
-	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/AudioManager.cpp.s
-.PHONY : AudioManager.cpp.s
+Button.cpp.s:
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/Button.cpp.s
+.PHONY : Button.cpp.s
 
-Node.o: Node.cpp.o
-.PHONY : Node.o
+SRC/AudioManager.o: SRC/AudioManager.cpp.o
+.PHONY : SRC/AudioManager.o
 
 # target to build an object file
-Node.cpp.o:
-	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/Node.cpp.o
-.PHONY : Node.cpp.o
+SRC/AudioManager.cpp.o:
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/SRC/AudioManager.cpp.o
+.PHONY : SRC/AudioManager.cpp.o
 
-Node.i: Node.cpp.i
-.PHONY : Node.i
+SRC/AudioManager.i: SRC/AudioManager.cpp.i
+.PHONY : SRC/AudioManager.i
 
 # target to preprocess a source file
-Node.cpp.i:
-	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/Node.cpp.i
-.PHONY : Node.cpp.i
+SRC/AudioManager.cpp.i:
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/SRC/AudioManager.cpp.i
+.PHONY : SRC/AudioManager.cpp.i
 
-Node.s: Node.cpp.s
-.PHONY : Node.s
+SRC/AudioManager.s: SRC/AudioManager.cpp.s
+.PHONY : SRC/AudioManager.s
 
 # target to generate assembly for a file
-Node.cpp.s:
-	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/Node.cpp.s
-.PHONY : Node.cpp.s
+SRC/AudioManager.cpp.s:
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/SRC/AudioManager.cpp.s
+.PHONY : SRC/AudioManager.cpp.s
+
+SRC/Node.o: SRC/Node.cpp.o
+.PHONY : SRC/Node.o
+
+# target to build an object file
+SRC/Node.cpp.o:
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/SRC/Node.cpp.o
+.PHONY : SRC/Node.cpp.o
+
+SRC/Node.i: SRC/Node.cpp.i
+.PHONY : SRC/Node.i
+
+# target to preprocess a source file
+SRC/Node.cpp.i:
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/SRC/Node.cpp.i
+.PHONY : SRC/Node.cpp.i
+
+SRC/Node.s: SRC/Node.cpp.s
+.PHONY : SRC/Node.s
+
+# target to generate assembly for a file
+SRC/Node.cpp.s:
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/SRC/Node.cpp.s
+.PHONY : SRC/Node.cpp.s
 
 SRC/Sound.o: SRC/Sound.cpp.o
 .PHONY : SRC/Sound.o
@@ -284,12 +308,15 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... engine"
-	@echo "... AudioManager.o"
-	@echo "... AudioManager.i"
-	@echo "... AudioManager.s"
-	@echo "... Node.o"
-	@echo "... Node.i"
-	@echo "... Node.s"
+	@echo "... Button.o"
+	@echo "... Button.i"
+	@echo "... Button.s"
+	@echo "... SRC/AudioManager.o"
+	@echo "... SRC/AudioManager.i"
+	@echo "... SRC/AudioManager.s"
+	@echo "... SRC/Node.o"
+	@echo "... SRC/Node.i"
+	@echo "... SRC/Node.s"
 	@echo "... SRC/Sound.o"
 	@echo "... SRC/Sound.i"
 	@echo "... SRC/Sound.s"

@@ -83,19 +83,19 @@ engine/CMakeFiles/engine.dir/SRC/library.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/SRC/library.cpp.s"
 	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/library.cpp -o CMakeFiles/engine.dir/SRC/library.cpp.s
 
-engine/CMakeFiles/engine.dir/Node.cpp.o: engine/CMakeFiles/engine.dir/flags.make
-engine/CMakeFiles/engine.dir/Node.cpp.o: ../engine/Node.cpp
-engine/CMakeFiles/engine.dir/Node.cpp.o: engine/CMakeFiles/engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object engine/CMakeFiles/engine.dir/Node.cpp.o"
-	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engine/CMakeFiles/engine.dir/Node.cpp.o -MF CMakeFiles/engine.dir/Node.cpp.o.d -o CMakeFiles/engine.dir/Node.cpp.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Node.cpp
+engine/CMakeFiles/engine.dir/SRC/Node.cpp.o: engine/CMakeFiles/engine.dir/flags.make
+engine/CMakeFiles/engine.dir/SRC/Node.cpp.o: ../engine/SRC/Node.cpp
+engine/CMakeFiles/engine.dir/SRC/Node.cpp.o: engine/CMakeFiles/engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object engine/CMakeFiles/engine.dir/SRC/Node.cpp.o"
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engine/CMakeFiles/engine.dir/SRC/Node.cpp.o -MF CMakeFiles/engine.dir/SRC/Node.cpp.o.d -o CMakeFiles/engine.dir/SRC/Node.cpp.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Node.cpp
 
-engine/CMakeFiles/engine.dir/Node.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/Node.cpp.i"
-	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Node.cpp > CMakeFiles/engine.dir/Node.cpp.i
+engine/CMakeFiles/engine.dir/SRC/Node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/SRC/Node.cpp.i"
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Node.cpp > CMakeFiles/engine.dir/SRC/Node.cpp.i
 
-engine/CMakeFiles/engine.dir/Node.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/Node.cpp.s"
-	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Node.cpp -o CMakeFiles/engine.dir/Node.cpp.s
+engine/CMakeFiles/engine.dir/SRC/Node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/SRC/Node.cpp.s"
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Node.cpp -o CMakeFiles/engine.dir/SRC/Node.cpp.s
 
 engine/CMakeFiles/engine.dir/SRC/Sound.cpp.o: engine/CMakeFiles/engine.dir/flags.make
 engine/CMakeFiles/engine.dir/SRC/Sound.cpp.o: ../engine/SRC/Sound.cpp
@@ -111,37 +111,53 @@ engine/CMakeFiles/engine.dir/SRC/Sound.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/SRC/Sound.cpp.s"
 	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Sound.cpp -o CMakeFiles/engine.dir/SRC/Sound.cpp.s
 
-engine/CMakeFiles/engine.dir/AudioManager.cpp.o: engine/CMakeFiles/engine.dir/flags.make
-engine/CMakeFiles/engine.dir/AudioManager.cpp.o: ../engine/AudioManager.cpp
-engine/CMakeFiles/engine.dir/AudioManager.cpp.o: engine/CMakeFiles/engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object engine/CMakeFiles/engine.dir/AudioManager.cpp.o"
-	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engine/CMakeFiles/engine.dir/AudioManager.cpp.o -MF CMakeFiles/engine.dir/AudioManager.cpp.o.d -o CMakeFiles/engine.dir/AudioManager.cpp.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/AudioManager.cpp
+engine/CMakeFiles/engine.dir/SRC/AudioManager.cpp.o: engine/CMakeFiles/engine.dir/flags.make
+engine/CMakeFiles/engine.dir/SRC/AudioManager.cpp.o: ../engine/SRC/AudioManager.cpp
+engine/CMakeFiles/engine.dir/SRC/AudioManager.cpp.o: engine/CMakeFiles/engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object engine/CMakeFiles/engine.dir/SRC/AudioManager.cpp.o"
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engine/CMakeFiles/engine.dir/SRC/AudioManager.cpp.o -MF CMakeFiles/engine.dir/SRC/AudioManager.cpp.o.d -o CMakeFiles/engine.dir/SRC/AudioManager.cpp.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/AudioManager.cpp
 
-engine/CMakeFiles/engine.dir/AudioManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/AudioManager.cpp.i"
-	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/AudioManager.cpp > CMakeFiles/engine.dir/AudioManager.cpp.i
+engine/CMakeFiles/engine.dir/SRC/AudioManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/SRC/AudioManager.cpp.i"
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/AudioManager.cpp > CMakeFiles/engine.dir/SRC/AudioManager.cpp.i
 
-engine/CMakeFiles/engine.dir/AudioManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/AudioManager.cpp.s"
-	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/AudioManager.cpp -o CMakeFiles/engine.dir/AudioManager.cpp.s
+engine/CMakeFiles/engine.dir/SRC/AudioManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/SRC/AudioManager.cpp.s"
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/AudioManager.cpp -o CMakeFiles/engine.dir/SRC/AudioManager.cpp.s
+
+engine/CMakeFiles/engine.dir/Button.cpp.o: engine/CMakeFiles/engine.dir/flags.make
+engine/CMakeFiles/engine.dir/Button.cpp.o: ../engine/Button.cpp
+engine/CMakeFiles/engine.dir/Button.cpp.o: engine/CMakeFiles/engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object engine/CMakeFiles/engine.dir/Button.cpp.o"
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engine/CMakeFiles/engine.dir/Button.cpp.o -MF CMakeFiles/engine.dir/Button.cpp.o.d -o CMakeFiles/engine.dir/Button.cpp.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Button.cpp
+
+engine/CMakeFiles/engine.dir/Button.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/Button.cpp.i"
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Button.cpp > CMakeFiles/engine.dir/Button.cpp.i
+
+engine/CMakeFiles/engine.dir/Button.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/Button.cpp.s"
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Button.cpp -o CMakeFiles/engine.dir/Button.cpp.s
 
 # Object files for target engine
 engine_OBJECTS = \
 "CMakeFiles/engine.dir/SRC/library.cpp.o" \
-"CMakeFiles/engine.dir/Node.cpp.o" \
+"CMakeFiles/engine.dir/SRC/Node.cpp.o" \
 "CMakeFiles/engine.dir/SRC/Sound.cpp.o" \
-"CMakeFiles/engine.dir/AudioManager.cpp.o"
+"CMakeFiles/engine.dir/SRC/AudioManager.cpp.o" \
+"CMakeFiles/engine.dir/Button.cpp.o"
 
 # External object files for target engine
 engine_EXTERNAL_OBJECTS =
 
 engine/libengine.a: engine/CMakeFiles/engine.dir/SRC/library.cpp.o
-engine/libengine.a: engine/CMakeFiles/engine.dir/Node.cpp.o
+engine/libengine.a: engine/CMakeFiles/engine.dir/SRC/Node.cpp.o
 engine/libengine.a: engine/CMakeFiles/engine.dir/SRC/Sound.cpp.o
-engine/libengine.a: engine/CMakeFiles/engine.dir/AudioManager.cpp.o
+engine/libengine.a: engine/CMakeFiles/engine.dir/SRC/AudioManager.cpp.o
+engine/libengine.a: engine/CMakeFiles/engine.dir/Button.cpp.o
 engine/libengine.a: engine/CMakeFiles/engine.dir/build.make
 engine/libengine.a: engine/CMakeFiles/engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libengine.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libengine.a"
 	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine && $(CMAKE_COMMAND) -P CMakeFiles/engine.dir/cmake_clean_target.cmake
 	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/engine && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/engine.dir/link.txt --verbose=$(VERBOSE)
 

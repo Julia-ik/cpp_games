@@ -49,6 +49,7 @@
 					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include"/>
 					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/glew/include"/>
 					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/stbi"/>
+					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/imgui"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward"/>
@@ -75,6 +76,7 @@
 					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include"/>
 					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/glew/include"/>
 					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/stbi"/>
+					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/imgui"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward"/>
@@ -143,6 +145,7 @@
 					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include"/>
 					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/glew/include"/>
 					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/stbi"/>
+					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/imgui"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward"/>
@@ -171,6 +174,7 @@
 					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include"/>
 					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/glew/include"/>
 					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/stbi"/>
+					<Add directory="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/imgui"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward"/>
@@ -388,10 +392,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/AudioManager.cpp">
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Button.cpp">
 			<Option target="engine"/>
 		</Unit>
-		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/AudioManager.h">
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Button.h">
 			<Option target="engine"/>
 		</Unit>
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Mesh.cpp">
@@ -400,10 +404,10 @@
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Mesh.h">
 			<Option target="game"/>
 		</Unit>
-		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Node.cpp">
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/AudioManager.cpp">
 			<Option target="engine"/>
 		</Unit>
-		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Node.h">
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/AudioManager.h">
 			<Option target="engine"/>
 		</Unit>
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Bitmap.cpp">
@@ -412,11 +416,20 @@
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Bitmap.h">
 			<Option target="game"/>
 		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Color.h">
+			<Option target="engine"/>
+		</Unit>
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/EventManager.cpp">
 			<Option target="game"/>
 		</Unit>
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/EventManager.h">
 			<Option target="game"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Node.cpp">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Node.h">
+			<Option target="engine"/>
 		</Unit>
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/ResourceLoader.cpp">
 			<Option target="game"/>
@@ -460,10 +473,16 @@
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Sound.h">
 			<Option target="engine"/>
 		</Unit>
-		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SpriteRenderer.cpp">
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Sprite.cpp">
 			<Option target="game"/>
 		</Unit>
-		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SpriteRenderer.h">
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Sprite.h">
+			<Option target="game"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Tank.cpp">
+			<Option target="game"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Tank.h">
 			<Option target="game"/>
 		</Unit>
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Texture.cpp">
@@ -476,6 +495,9 @@
 			<Option target="engine"/>
 		</Unit>
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/library.hpp">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Shaders.h">
 			<Option target="engine"/>
 		</Unit>
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/SDL.c">

@@ -17,7 +17,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/f_triangle.cpp" "CMakeFiles/game.dir/engine/SRC/SDL/f_triangle.cpp.o" "gcc" "CMakeFiles/game.dir/engine/SRC/SDL/f_triangle.cpp.o.d"
   "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/v_point.cpp" "CMakeFiles/game.dir/engine/SRC/SDL/v_point.cpp.o" "gcc" "CMakeFiles/game.dir/engine/SRC/SDL/v_point.cpp.o.d"
   "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Shader.cpp" "CMakeFiles/game.dir/engine/SRC/Shader.cpp.o" "gcc" "CMakeFiles/game.dir/engine/SRC/Shader.cpp.o.d"
-  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SpriteRenderer.cpp" "CMakeFiles/game.dir/engine/SRC/SpriteRenderer.cpp.o" "gcc" "CMakeFiles/game.dir/engine/SRC/SpriteRenderer.cpp.o.d"
+  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Sprite.cpp" "CMakeFiles/game.dir/engine/SRC/Sprite.cpp.o" "gcc" "CMakeFiles/game.dir/engine/SRC/Sprite.cpp.o.d"
+  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Tank.cpp" "CMakeFiles/game.dir/engine/SRC/Tank.cpp.o" "gcc" "CMakeFiles/game.dir/engine/SRC/Tank.cpp.o.d"
   "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Texture.cpp" "CMakeFiles/game.dir/engine/SRC/Texture.cpp.o" "gcc" "CMakeFiles/game.dir/engine/SRC/Texture.cpp.o.d"
   "/home/lilu/lilu/cpp_games/cpp_games/less3/game/main.cpp" "CMakeFiles/game.dir/main.cpp.o" "gcc" "CMakeFiles/game.dir/main.cpp.o.d"
   )

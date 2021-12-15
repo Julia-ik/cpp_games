@@ -262,5 +262,38 @@ CMakeFiles/game.dir/engine/SRC/ResourceLoader.cpp.o: \
  /usr/include/glm/detail/func_integer.inl \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Shader.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/glew/include/GL/glew.h \
- /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/stbi/stb_image.h \
- /usr/include/c++/11/stdlib.h
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Sound.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_audio.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_stdinc.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_config.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_platform.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/begin_code.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/close_code.h \
+ /usr/include/c++/11/stdlib.h /usr/include/string.h \
+ /usr/include/strings.h /usr/include/inttypes.h \
+ /usr/include/c++/11/math.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_error.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_endian.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_mutex.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_thread.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_atomic.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_rwops.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/AudioManager.h \
+ /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_tempbuf.h \
+ /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
+ /usr/include/c++/11/bits/unique_ptr.h \
+ /usr/include/c++/11/bits/shared_ptr.h \
+ /usr/include/c++/11/bits/shared_ptr_base.h /usr/include/c++/11/typeinfo \
+ /usr/include/c++/11/bits/allocated_ptr.h \
+ /usr/include/c++/11/bits/refwrap.h /usr/include/c++/11/ext/concurrence.h \
+ /usr/include/c++/11/exception /usr/include/c++/11/bits/exception_ptr.h \
+ /usr/include/c++/11/bits/cxxabi_init_exception.h \
+ /usr/include/c++/11/bits/nested_exception.h \
+ /usr/include/c++/11/bits/shared_ptr_atomic.h \
+ /usr/include/c++/11/bits/atomic_base.h \
+ /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/11/backward/auto_ptr.h \
+ /usr/include/c++/11/pstl/glue_memory_defs.h \
+ /usr/include/c++/11/pstl/execution_defs.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/stbi/stb_image.h

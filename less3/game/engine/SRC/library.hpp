@@ -5,7 +5,7 @@
 #include <SDL.h>
 #include "vector"
 #include "SDL/Model.h"
-#include "SpriteRenderer.h"
+#include "Sprite.h"
 #include "EventManager.h"
 #include <GL/glew.h>
 #include <map>
@@ -17,6 +17,7 @@ class Engine
 public:
     SDL_Window *window;
     SDL_Renderer *r;
+    AudioManager audioManager;
     int width;
     int heights;
     SDL_bool done = SDL_FALSE;
@@ -24,8 +25,10 @@ public:
     uint32_t VAO;
     uint32_t VBO;
     uint32_t IBO;
+    Node scene;
     GLuint programID = 0;
-    std::map<std::string, SpriteRenderer*> _spriteRenderers;
+    std::vector<std::shared_ptr<Sound>> _sounds;
+
     bool isActive;
 
 
@@ -50,6 +53,12 @@ public:
 
     void RegisterEvents();
 
-    void move(SpriteRenderer *sprite);
+    void move(Sprite *sprite);
+
+    void moveLeft(Sprite *sprite);
+
+    void moveRight(Sprite *sprite);
+
+    void moveBack(Sprite *sprite);
 };
 #endif //ENGINE_LIBRARY_H

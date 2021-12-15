@@ -1,14 +1,14 @@
 Performing C SOURCE FILE Test HAVE_GCC_PREFERRED_STACK_BOUNDARY failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_bef5e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bef5e.dir/build.make CMakeFiles/cmTC_bef5e.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_013b1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_013b1.dir/build.make CMakeFiles/cmTC_013b1.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_bef5e.dir/src.c.o
-/usr/bin/cc -DHAVE_GCC_PREFERRED_STACK_BOUNDARY  -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos" -mpreferred-stack-boundary=2 -o CMakeFiles/cmTC_bef5e.dir/src.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_013b1.dir/src.c.o
+/usr/bin/cc -DHAVE_GCC_PREFERRED_STACK_BOUNDARY  -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos" -mpreferred-stack-boundary=2 -o CMakeFiles/cmTC_013b1.dir/src.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
 cc1: error: ‘-mpreferred-stack-boundary=2’ is not between 3 and 12
-gmake[1]: *** [CMakeFiles/cmTC_bef5e.dir/build.make:78: CMakeFiles/cmTC_bef5e.dir/src.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_013b1.dir/build.make:78: CMakeFiles/cmTC_013b1.dir/src.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_bef5e/fast] Error 2
+gmake: *** [Makefile:127: cmTC_013b1/fast] Error 2
 
 
 Source file was:
@@ -16,14 +16,14 @@ int x = 0; int main(int argc, char **argv) {}
 Performing C SOURCE FILE Test HAVE_ALTIVEC_H_HDR failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cd57a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cd57a.dir/build.make CMakeFiles/cmTC_cd57a.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5ecf1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5ecf1.dir/build.make CMakeFiles/cmTC_5ecf1.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_cd57a.dir/src.c.o
-/usr/bin/cc -DHAVE_ALTIVEC_H_HDR  -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos" -maltivec -o CMakeFiles/cmTC_cd57a.dir/src.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_5ecf1.dir/src.c.o
+/usr/bin/cc -DHAVE_ALTIVEC_H_HDR  -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos" -maltivec -o CMakeFiles/cmTC_5ecf1.dir/src.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
 cc: error: unrecognized command-line option ‘-maltivec’
-gmake[1]: *** [CMakeFiles/cmTC_cd57a.dir/build.make:78: CMakeFiles/cmTC_cd57a.dir/src.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_5ecf1.dir/build.make:78: CMakeFiles/cmTC_5ecf1.dir/src.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_cd57a/fast] Error 2
+gmake: *** [Makefile:127: cmTC_5ecf1/fast] Error 2
 
 
 Source file was:
@@ -36,14 +36,14 @@ Source file was:
 Performing C SOURCE FILE Test HAVE_ALTIVEC failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_860c5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_860c5.dir/build.make CMakeFiles/cmTC_860c5.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0ef36/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0ef36.dir/build.make CMakeFiles/cmTC_0ef36.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_860c5.dir/src.c.o
-/usr/bin/cc -DHAVE_ALTIVEC  -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos" -maltivec -o CMakeFiles/cmTC_860c5.dir/src.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_0ef36.dir/src.c.o
+/usr/bin/cc -DHAVE_ALTIVEC  -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos" -maltivec -o CMakeFiles/cmTC_0ef36.dir/src.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
 cc: error: unrecognized command-line option ‘-maltivec’
-gmake[1]: *** [CMakeFiles/cmTC_860c5.dir/build.make:78: CMakeFiles/cmTC_860c5.dir/src.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_0ef36.dir/build.make:78: CMakeFiles/cmTC_0ef36.dir/src.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_860c5/fast] Error 2
+gmake: *** [Makefile:127: cmTC_0ef36/fast] Error 2
 
 
 Source file was:
@@ -55,36 +55,36 @@ Source file was:
 Determining if the include file libunwind.h exists failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a0c3c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a0c3c.dir/build.make CMakeFiles/cmTC_a0c3c.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_25ef5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_25ef5.dir/build.make CMakeFiles/cmTC_25ef5.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a0c3c.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_a0c3c.dir/CheckIncludeFile.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Building C object CMakeFiles/cmTC_25ef5.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_25ef5.dir/CheckIncludeFile.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: libunwind.h: No such file or directory
     1 | #include <libunwind.h>
       |          ^~~~~~~~~~~~~
 compilation terminated.
-gmake[1]: *** [CMakeFiles/cmTC_a0c3c.dir/build.make:78: CMakeFiles/cmTC_a0c3c.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_25ef5.dir/build.make:78: CMakeFiles/cmTC_25ef5.dir/CheckIncludeFile.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_a0c3c/fast] Error 2
+gmake: *** [Makefile:127: cmTC_25ef5/fast] Error 2
 
 
 
 Determining if the strlcpy exist failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ccd49/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ccd49.dir/build.make CMakeFiles/cmTC_ccd49.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_930b5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_930b5.dir/build.make CMakeFiles/cmTC_930b5.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ccd49.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_ccd49.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_930b5.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_930b5.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘strlcpy’ undeclared (first use in this function); did you mean ‘strncpy’?
    14 |   return ((int*)(&strlcpy))[argc];
       |                   ^~~~~~~
       |                   strncpy
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-gmake[1]: *** [CMakeFiles/cmTC_ccd49.dir/build.make:78: CMakeFiles/cmTC_ccd49.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_930b5.dir/build.make:78: CMakeFiles/cmTC_930b5.dir/CheckSymbolExists.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_ccd49/fast] Error 2
+gmake: *** [Makefile:127: cmTC_930b5/fast] Error 2
 
 
 File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -110,19 +110,19 @@ int main(int argc, char** argv)
 Determining if the strlcat exist failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8b910/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8b910.dir/build.make CMakeFiles/cmTC_8b910.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_73b29/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_73b29.dir/build.make CMakeFiles/cmTC_73b29.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8b910.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_8b910.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_73b29.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_73b29.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘strlcat’ undeclared (first use in this function); did you mean ‘strncat’?
    14 |   return ((int*)(&strlcat))[argc];
       |                   ^~~~~~~
       |                   strncat
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-gmake[1]: *** [CMakeFiles/cmTC_8b910.dir/build.make:78: CMakeFiles/cmTC_8b910.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_73b29.dir/build.make:78: CMakeFiles/cmTC_73b29.dir/CheckSymbolExists.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_8b910/fast] Error 2
+gmake: *** [Makefile:127: cmTC_73b29/fast] Error 2
 
 
 File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -148,18 +148,18 @@ int main(int argc, char** argv)
 Determining if the _strrev exist failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_79652/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_79652.dir/build.make CMakeFiles/cmTC_79652.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4d732/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4d732.dir/build.make CMakeFiles/cmTC_4d732.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_79652.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_79652.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_4d732.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_4d732.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_strrev’ undeclared (first use in this function)
    14 |   return ((int*)(&_strrev))[argc];
       |                   ^~~~~~~
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-gmake[1]: *** [CMakeFiles/cmTC_79652.dir/build.make:78: CMakeFiles/cmTC_79652.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_4d732.dir/build.make:78: CMakeFiles/cmTC_4d732.dir/CheckSymbolExists.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_79652/fast] Error 2
+gmake: *** [Makefile:127: cmTC_4d732/fast] Error 2
 
 
 File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -185,18 +185,18 @@ int main(int argc, char** argv)
 Determining if the _strupr exist failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_abd7a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_abd7a.dir/build.make CMakeFiles/cmTC_abd7a.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d5578/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d5578.dir/build.make CMakeFiles/cmTC_d5578.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_abd7a.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_abd7a.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_d5578.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_d5578.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_strupr’ undeclared (first use in this function)
    14 |   return ((int*)(&_strupr))[argc];
       |                   ^~~~~~~
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-gmake[1]: *** [CMakeFiles/cmTC_abd7a.dir/build.make:78: CMakeFiles/cmTC_abd7a.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_d5578.dir/build.make:78: CMakeFiles/cmTC_d5578.dir/CheckSymbolExists.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_abd7a/fast] Error 2
+gmake: *** [Makefile:127: cmTC_d5578/fast] Error 2
 
 
 File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -222,18 +222,18 @@ int main(int argc, char** argv)
 Determining if the _strlwr exist failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_12354/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_12354.dir/build.make CMakeFiles/cmTC_12354.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_81cf5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_81cf5.dir/build.make CMakeFiles/cmTC_81cf5.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_12354.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_12354.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_81cf5.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_81cf5.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_strlwr’ undeclared (first use in this function)
    14 |   return ((int*)(&_strlwr))[argc];
       |                   ^~~~~~~
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-gmake[1]: *** [CMakeFiles/cmTC_12354.dir/build.make:78: CMakeFiles/cmTC_12354.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_81cf5.dir/build.make:78: CMakeFiles/cmTC_81cf5.dir/CheckSymbolExists.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_12354/fast] Error 2
+gmake: *** [Makefile:127: cmTC_81cf5/fast] Error 2
 
 
 File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -259,18 +259,18 @@ int main(int argc, char** argv)
 Determining if the itoa exist failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9d992/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9d992.dir/build.make CMakeFiles/cmTC_9d992.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f49a4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f49a4.dir/build.make CMakeFiles/cmTC_f49a4.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_9d992.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_9d992.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_f49a4.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_f49a4.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘itoa’ undeclared (first use in this function)
    14 |   return ((int*)(&itoa))[argc];
       |                   ^~~~
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-gmake[1]: *** [CMakeFiles/cmTC_9d992.dir/build.make:78: CMakeFiles/cmTC_9d992.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_f49a4.dir/build.make:78: CMakeFiles/cmTC_f49a4.dir/CheckSymbolExists.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_9d992/fast] Error 2
+gmake: *** [Makefile:127: cmTC_f49a4/fast] Error 2
 
 
 File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -296,18 +296,18 @@ int main(int argc, char** argv)
 Determining if the _ltoa exist failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_959aa/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_959aa.dir/build.make CMakeFiles/cmTC_959aa.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c3a11/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c3a11.dir/build.make CMakeFiles/cmTC_c3a11.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_959aa.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_959aa.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_c3a11.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_c3a11.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_ltoa’ undeclared (first use in this function)
    14 |   return ((int*)(&_ltoa))[argc];
       |                   ^~~~~
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-gmake[1]: *** [CMakeFiles/cmTC_959aa.dir/build.make:78: CMakeFiles/cmTC_959aa.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_c3a11.dir/build.make:78: CMakeFiles/cmTC_c3a11.dir/CheckSymbolExists.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_959aa/fast] Error 2
+gmake: *** [Makefile:127: cmTC_c3a11/fast] Error 2
 
 
 File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -333,18 +333,18 @@ int main(int argc, char** argv)
 Determining if the _uitoa exist failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2e296/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2e296.dir/build.make CMakeFiles/cmTC_2e296.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b5f29/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b5f29.dir/build.make CMakeFiles/cmTC_b5f29.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2e296.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_2e296.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_b5f29.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_b5f29.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_uitoa’ undeclared (first use in this function)
    14 |   return ((int*)(&_uitoa))[argc];
       |                   ^~~~~~
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-gmake[1]: *** [CMakeFiles/cmTC_2e296.dir/build.make:78: CMakeFiles/cmTC_2e296.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_b5f29.dir/build.make:78: CMakeFiles/cmTC_b5f29.dir/CheckSymbolExists.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_2e296/fast] Error 2
+gmake: *** [Makefile:127: cmTC_b5f29/fast] Error 2
 
 
 File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -370,18 +370,18 @@ int main(int argc, char** argv)
 Determining if the _ultoa exist failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2ba54/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2ba54.dir/build.make CMakeFiles/cmTC_2ba54.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6ad10/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6ad10.dir/build.make CMakeFiles/cmTC_6ad10.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2ba54.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_2ba54.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_6ad10.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_6ad10.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_ultoa’ undeclared (first use in this function)
    14 |   return ((int*)(&_ultoa))[argc];
       |                   ^~~~~~
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-gmake[1]: *** [CMakeFiles/cmTC_2ba54.dir/build.make:78: CMakeFiles/cmTC_2ba54.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_6ad10.dir/build.make:78: CMakeFiles/cmTC_6ad10.dir/CheckSymbolExists.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_2ba54/fast] Error 2
+gmake: *** [Makefile:127: cmTC_6ad10/fast] Error 2
 
 
 File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -407,18 +407,18 @@ int main(int argc, char** argv)
 Determining if the _i64toa exist failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7d7b0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7d7b0.dir/build.make CMakeFiles/cmTC_7d7b0.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0024e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0024e.dir/build.make CMakeFiles/cmTC_0024e.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7d7b0.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_7d7b0.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_0024e.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_0024e.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_i64toa’ undeclared (first use in this function)
    14 |   return ((int*)(&_i64toa))[argc];
       |                   ^~~~~~~
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-gmake[1]: *** [CMakeFiles/cmTC_7d7b0.dir/build.make:78: CMakeFiles/cmTC_7d7b0.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_0024e.dir/build.make:78: CMakeFiles/cmTC_0024e.dir/CheckSymbolExists.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_7d7b0/fast] Error 2
+gmake: *** [Makefile:127: cmTC_0024e/fast] Error 2
 
 
 File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -444,18 +444,18 @@ int main(int argc, char** argv)
 Determining if the _ui64toa exist failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_51b31/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_51b31.dir/build.make CMakeFiles/cmTC_51b31.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f51c4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f51c4.dir/build.make CMakeFiles/cmTC_f51c4.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_51b31.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_51b31.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_f51c4.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_f51c4.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_ui64toa’ undeclared (first use in this function)
    14 |   return ((int*)(&_ui64toa))[argc];
       |                   ^~~~~~~~
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-gmake[1]: *** [CMakeFiles/cmTC_51b31.dir/build.make:78: CMakeFiles/cmTC_51b31.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_f51c4.dir/build.make:78: CMakeFiles/cmTC_f51c4.dir/CheckSymbolExists.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_51b31/fast] Error 2
+gmake: *** [Makefile:127: cmTC_f51c4/fast] Error 2
 
 
 File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -481,19 +481,19 @@ int main(int argc, char** argv)
 Determining if the _stricmp exist failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_16a03/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_16a03.dir/build.make CMakeFiles/cmTC_16a03.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fb1d2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fb1d2.dir/build.make CMakeFiles/cmTC_fb1d2.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_16a03.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_16a03.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_fb1d2.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_fb1d2.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_stricmp’ undeclared (first use in this function); did you mean ‘strncmp’?
    14 |   return ((int*)(&_stricmp))[argc];
       |                   ^~~~~~~~
       |                   strncmp
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-gmake[1]: *** [CMakeFiles/cmTC_16a03.dir/build.make:78: CMakeFiles/cmTC_16a03.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_fb1d2.dir/build.make:78: CMakeFiles/cmTC_fb1d2.dir/CheckSymbolExists.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_16a03/fast] Error 2
+gmake: *** [Makefile:127: cmTC_fb1d2/fast] Error 2
 
 
 File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -519,19 +519,19 @@ int main(int argc, char** argv)
 Determining if the _strnicmp exist failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c3da3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c3da3.dir/build.make CMakeFiles/cmTC_c3da3.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7171f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7171f.dir/build.make CMakeFiles/cmTC_7171f.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c3da3.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_c3da3.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_7171f.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_7171f.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_strnicmp’ undeclared (first use in this function); did you mean ‘strncmp’?
    14 |   return ((int*)(&_strnicmp))[argc];
       |                   ^~~~~~~~~
       |                   strncmp
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-gmake[1]: *** [CMakeFiles/cmTC_c3da3.dir/build.make:78: CMakeFiles/cmTC_c3da3.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_7171f.dir/build.make:78: CMakeFiles/cmTC_7171f.dir/CheckSymbolExists.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_c3da3/fast] Error 2
+gmake: *** [Makefile:127: cmTC_7171f/fast] Error 2
 
 
 File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -557,19 +557,19 @@ int main(int argc, char** argv)
 Determining if the _wcsdup exist failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5d32b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5d32b.dir/build.make CMakeFiles/cmTC_5d32b.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3f34c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3f34c.dir/build.make CMakeFiles/cmTC_3f34c.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5d32b.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_5d32b.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_3f34c.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_3f34c.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_wcsdup’ undeclared (first use in this function); did you mean ‘wcsdup’?
    14 |   return ((int*)(&_wcsdup))[argc];
       |                   ^~~~~~~
       |                   wcsdup
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-gmake[1]: *** [CMakeFiles/cmTC_5d32b.dir/build.make:78: CMakeFiles/cmTC_5d32b.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_3f34c.dir/build.make:78: CMakeFiles/cmTC_3f34c.dir/CheckSymbolExists.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_5d32b/fast] Error 2
+gmake: *** [Makefile:127: cmTC_3f34c/fast] Error 2
 
 
 File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -595,19 +595,19 @@ int main(int argc, char** argv)
 Determining if the wcslcat exist failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4cf76/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4cf76.dir/build.make CMakeFiles/cmTC_4cf76.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_266f4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_266f4.dir/build.make CMakeFiles/cmTC_266f4.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4cf76.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_4cf76.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_266f4.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_266f4.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘wcslcat’ undeclared (first use in this function); did you mean ‘wcsncat’?
    14 |   return ((int*)(&wcslcat))[argc];
       |                   ^~~~~~~
       |                   wcsncat
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-gmake[1]: *** [CMakeFiles/cmTC_4cf76.dir/build.make:78: CMakeFiles/cmTC_4cf76.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_266f4.dir/build.make:78: CMakeFiles/cmTC_266f4.dir/CheckSymbolExists.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_4cf76/fast] Error 2
+gmake: *** [Makefile:127: cmTC_266f4/fast] Error 2
 
 
 File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -633,19 +633,19 @@ int main(int argc, char** argv)
 Determining if the wcslcpy exist failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_eaac9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_eaac9.dir/build.make CMakeFiles/cmTC_eaac9.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_71928/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_71928.dir/build.make CMakeFiles/cmTC_71928.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_eaac9.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_eaac9.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_71928.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_71928.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘wcslcpy’ undeclared (first use in this function); did you mean ‘wcsncpy’?
    14 |   return ((int*)(&wcslcpy))[argc];
       |                   ^~~~~~~
       |                   wcsncpy
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-gmake[1]: *** [CMakeFiles/cmTC_eaac9.dir/build.make:78: CMakeFiles/cmTC_eaac9.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_71928.dir/build.make:78: CMakeFiles/cmTC_71928.dir/CheckSymbolExists.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_eaac9/fast] Error 2
+gmake: *** [Makefile:127: cmTC_71928/fast] Error 2
 
 
 File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -671,19 +671,19 @@ int main(int argc, char** argv)
 Determining if the _wcsicmp exist failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f8b5c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f8b5c.dir/build.make CMakeFiles/cmTC_f8b5c.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5d2c1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5d2c1.dir/build.make CMakeFiles/cmTC_5d2c1.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f8b5c.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_f8b5c.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_5d2c1.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_5d2c1.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_wcsicmp’ undeclared (first use in this function); did you mean ‘wcsncmp’?
    14 |   return ((int*)(&_wcsicmp))[argc];
       |                   ^~~~~~~~
       |                   wcsncmp
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-gmake[1]: *** [CMakeFiles/cmTC_f8b5c.dir/build.make:78: CMakeFiles/cmTC_f8b5c.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_5d2c1.dir/build.make:78: CMakeFiles/cmTC_5d2c1.dir/CheckSymbolExists.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_f8b5c/fast] Error 2
+gmake: *** [Makefile:127: cmTC_5d2c1/fast] Error 2
 
 
 File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -709,19 +709,19 @@ int main(int argc, char** argv)
 Determining if the _wcsnicmp exist failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5410f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5410f.dir/build.make CMakeFiles/cmTC_5410f.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6fa76/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6fa76.dir/build.make CMakeFiles/cmTC_6fa76.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5410f.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_5410f.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_6fa76.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_6fa76.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_wcsnicmp’ undeclared (first use in this function); did you mean ‘wcsncmp’?
    14 |   return ((int*)(&_wcsnicmp))[argc];
       |                   ^~~~~~~~~
       |                   wcsncmp
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-gmake[1]: *** [CMakeFiles/cmTC_5410f.dir/build.make:78: CMakeFiles/cmTC_5410f.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_6fa76.dir/build.make:78: CMakeFiles/cmTC_6fa76.dir/CheckSymbolExists.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_5410f/fast] Error 2
+gmake: *** [Makefile:127: cmTC_6fa76/fast] Error 2
 
 
 File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -747,19 +747,19 @@ int main(int argc, char** argv)
 Determining if the fopen64 exist failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c4e58/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c4e58.dir/build.make CMakeFiles/cmTC_c4e58.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_51e6b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_51e6b.dir/build.make CMakeFiles/cmTC_51e6b.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c4e58.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_c4e58.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_51e6b.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_51e6b.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘fopen64’ undeclared (first use in this function); did you mean ‘fopen’?
    14 |   return ((int*)(&fopen64))[argc];
       |                   ^~~~~~~
       |                   fopen
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-gmake[1]: *** [CMakeFiles/cmTC_c4e58.dir/build.make:78: CMakeFiles/cmTC_c4e58.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_51e6b.dir/build.make:78: CMakeFiles/cmTC_51e6b.dir/CheckSymbolExists.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_c4e58/fast] Error 2
+gmake: *** [Makefile:127: cmTC_51e6b/fast] Error 2
 
 
 File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -785,19 +785,19 @@ int main(int argc, char** argv)
 Determining if the fseeko64 exist failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7f3c3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7f3c3.dir/build.make CMakeFiles/cmTC_7f3c3.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f4f0f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f4f0f.dir/build.make CMakeFiles/cmTC_f4f0f.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7f3c3.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_7f3c3.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_f4f0f.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_f4f0f.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘fseeko64’ undeclared (first use in this function); did you mean ‘fseeko’?
    14 |   return ((int*)(&fseeko64))[argc];
       |                   ^~~~~~~~
       |                   fseeko
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-gmake[1]: *** [CMakeFiles/cmTC_7f3c3.dir/build.make:78: CMakeFiles/cmTC_7f3c3.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_f4f0f.dir/build.make:78: CMakeFiles/cmTC_f4f0f.dir/CheckSymbolExists.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_7f3c3/fast] Error 2
+gmake: *** [Makefile:127: cmTC_f4f0f/fast] Error 2
 
 
 File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -823,17 +823,17 @@ int main(int argc, char** argv)
 Determining if the sysctlbyname exist failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_76665/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_76665.dir/build.make CMakeFiles/cmTC_76665.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9d2dd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9d2dd.dir/build.make CMakeFiles/cmTC_9d2dd.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_76665.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_76665.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_9d2dd.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_9d2dd.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:3:10: fatal error: sys/sysctl.h: No such file or directory
     3 | #include <sys/sysctl.h>
       |          ^~~~~~~~~~~~~~
 compilation terminated.
-gmake[1]: *** [CMakeFiles/cmTC_76665.dir/build.make:78: CMakeFiles/cmTC_76665.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_9d2dd.dir/build.make:78: CMakeFiles/cmTC_9d2dd.dir/CheckSymbolExists.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_76665/fast] Error 2
+gmake: *** [Makefile:127: cmTC_9d2dd/fast] Error 2
 
 
 File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -854,18 +854,18 @@ int main(int argc, char** argv)
 Determining if the elf_aux_info exist failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b8a22/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b8a22.dir/build.make CMakeFiles/cmTC_b8a22.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2464e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2464e.dir/build.make CMakeFiles/cmTC_2464e.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b8a22.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_b8a22.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_2464e.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_2464e.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘elf_aux_info’ undeclared (first use in this function)
     8 |   return ((int*)(&elf_aux_info))[argc];
       |                   ^~~~~~~~~~~~
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
-gmake[1]: *** [CMakeFiles/cmTC_b8a22.dir/build.make:78: CMakeFiles/cmTC_b8a22.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_2464e.dir/build.make:78: CMakeFiles/cmTC_2464e.dir/CheckSymbolExists.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_b8a22/fast] Error 2
+gmake: *** [Makefile:127: cmTC_2464e/fast] Error 2
 
 
 File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -885,37 +885,37 @@ int main(int argc, char** argv)
 Determining if the function iconv_open exists in the iconv failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_09f6f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_09f6f.dir/build.make CMakeFiles/cmTC_09f6f.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2cfca/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2cfca.dir/build.make CMakeFiles/cmTC_2cfca.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_09f6f.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos" -DCHECK_FUNCTION_EXISTS=iconv_open -o CMakeFiles/cmTC_09f6f.dir/CheckFunctionExists.c.o -c /var/lib/snapd/snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CheckFunctionExists.c
-Linking C executable cmTC_09f6f
-/var/lib/snapd/snap/clion/175/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09f6f.dir/link.txt --verbose=1
-/usr/bin/cc  -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos" -DCHECK_FUNCTION_EXISTS=iconv_open -rdynamic CMakeFiles/cmTC_09f6f.dir/CheckFunctionExists.c.o -o cmTC_09f6f  -liconv 
+Building C object CMakeFiles/cmTC_2cfca.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos" -DCHECK_FUNCTION_EXISTS=iconv_open -o CMakeFiles/cmTC_2cfca.dir/CheckFunctionExists.c.o -c /var/lib/snapd/snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2cfca
+/var/lib/snapd/snap/clion/175/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2cfca.dir/link.txt --verbose=1
+/usr/bin/cc  -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos" -DCHECK_FUNCTION_EXISTS=iconv_open -rdynamic CMakeFiles/cmTC_2cfca.dir/CheckFunctionExists.c.o -o cmTC_2cfca  -liconv 
 /usr/bin/ld: cannot find -liconv
 collect2: error: ld returned 1 exit status
-gmake[1]: *** [CMakeFiles/cmTC_09f6f.dir/build.make:99: cmTC_09f6f] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_2cfca.dir/build.make:99: cmTC_2cfca] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_09f6f/fast] Error 2
+gmake: *** [Makefile:127: cmTC_2cfca/fast] Error 2
 
 
 
 Determining if the alloca exist failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_34254/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_34254.dir/build.make CMakeFiles/cmTC_34254.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ef662/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ef662.dir/build.make CMakeFiles/cmTC_ef662.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_34254.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_34254.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_ef662.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_ef662.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘alloca’ undeclared (first use in this function); did you mean ‘valloc’?
     8 |   return ((int*)(&alloca))[argc];
       |                   ^~~~~~
       |                   valloc
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
-gmake[1]: *** [CMakeFiles/cmTC_34254.dir/build.make:78: CMakeFiles/cmTC_34254.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_ef662.dir/build.make:78: CMakeFiles/cmTC_ef662.dir/CheckSymbolExists.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_34254/fast] Error 2
+gmake: *** [Makefile:127: cmTC_ef662/fast] Error 2
 
 
 File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -935,68 +935,68 @@ int main(int argc, char** argv)
 Determining if the include file audio/audiolib.h exists failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_29622/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_29622.dir/build.make CMakeFiles/cmTC_29622.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_10fc4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_10fc4.dir/build.make CMakeFiles/cmTC_10fc4.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_29622.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_29622.dir/CheckIncludeFile.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Building C object CMakeFiles/cmTC_10fc4.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_10fc4.dir/CheckIncludeFile.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: audio/audiolib.h: No such file or directory
     1 | #include <audio/audiolib.h>
       |          ^~~~~~~~~~~~~~~~~~
 compilation terminated.
-gmake[1]: *** [CMakeFiles/cmTC_29622.dir/build.make:78: CMakeFiles/cmTC_29622.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_10fc4.dir/build.make:78: CMakeFiles/cmTC_10fc4.dir/CheckIncludeFile.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_29622/fast] Error 2
+gmake: *** [Makefile:127: cmTC_10fc4/fast] Error 2
 
 
 
 Determining if the include file sndio.h exists failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a5d6f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a5d6f.dir/build.make CMakeFiles/cmTC_a5d6f.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_dea70/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_dea70.dir/build.make CMakeFiles/cmTC_dea70.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a5d6f.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_a5d6f.dir/CheckIncludeFile.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Building C object CMakeFiles/cmTC_dea70.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_dea70.dir/CheckIncludeFile.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: sndio.h: No such file or directory
     1 | #include <sndio.h>
       |          ^~~~~~~~~
 compilation terminated.
-gmake[1]: *** [CMakeFiles/cmTC_a5d6f.dir/build.make:78: CMakeFiles/cmTC_a5d6f.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_dea70.dir/build.make:78: CMakeFiles/cmTC_dea70.dir/CheckIncludeFile.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_a5d6f/fast] Error 2
+gmake: *** [Makefile:127: cmTC_dea70/fast] Error 2
 
 
 
 Determining if the include file samplerate.h exists failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_373dc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_373dc.dir/build.make CMakeFiles/cmTC_373dc.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8081d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8081d.dir/build.make CMakeFiles/cmTC_8081d.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_373dc.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_373dc.dir/CheckIncludeFile.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Building C object CMakeFiles/cmTC_8081d.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_8081d.dir/CheckIncludeFile.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: samplerate.h: No such file or directory
     1 | #include <samplerate.h>
       |          ^~~~~~~~~~~~~~
 compilation terminated.
-gmake[1]: *** [CMakeFiles/cmTC_373dc.dir/build.make:78: CMakeFiles/cmTC_373dc.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_8081d.dir/build.make:78: CMakeFiles/cmTC_8081d.dir/CheckIncludeFile.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_373dc/fast] Error 2
+gmake: *** [Makefile:127: cmTC_8081d/fast] Error 2
 
 
 
 Performing C SOURCE FILE Test HAVE_VIDEO_RPI failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1d972/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1d972.dir/build.make CMakeFiles/cmTC_1d972.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e65a9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e65a9.dir/build.make CMakeFiles/cmTC_e65a9.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1d972.dir/src.c.o
-/usr/bin/cc -DHAVE_VIDEO_RPI  -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -I/opt/vc/include/interface/vmcs_host/linux/ -I/opt/vc/include/interface/vcos/pthreads -I/opt/vc/include  -L/opt/vc/lib -o CMakeFiles/cmTC_1d972.dir/src.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_e65a9.dir/src.c.o
+/usr/bin/cc -DHAVE_VIDEO_RPI  -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -I/opt/vc/include/interface/vmcs_host/linux/ -I/opt/vc/include/interface/vcos/pthreads -I/opt/vc/include  -L/opt/vc/lib -o CMakeFiles/cmTC_e65a9.dir/src.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:18: fatal error: bcm_host.h: No such file or directory
     2 |         #include <bcm_host.h>
       |                  ^~~~~~~~~~~~
 compilation terminated.
-gmake[1]: *** [CMakeFiles/cmTC_1d972.dir/build.make:78: CMakeFiles/cmTC_1d972.dir/src.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_e65a9.dir/build.make:78: CMakeFiles/cmTC_e65a9.dir/src.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_1d972/fast] Error 2
+gmake: *** [Makefile:127: cmTC_e65a9/fast] Error 2
 
 
 Source file was:
@@ -1006,34 +1006,34 @@ Source file was:
 Determining if the include file X11/extensions/Xinerama.h exists failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a6f08/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a6f08.dir/build.make CMakeFiles/cmTC_a6f08.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c1d9a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c1d9a.dir/build.make CMakeFiles/cmTC_c1d9a.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a6f08.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_a6f08.dir/CheckIncludeFile.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Building C object CMakeFiles/cmTC_c1d9a.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"  -o CMakeFiles/cmTC_c1d9a.dir/CheckIncludeFile.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: X11/extensions/Xinerama.h: No such file or directory
     1 | #include <X11/extensions/Xinerama.h>
       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
 compilation terminated.
-gmake[1]: *** [CMakeFiles/cmTC_a6f08.dir/build.make:78: CMakeFiles/cmTC_a6f08.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_c1d9a.dir/build.make:78: CMakeFiles/cmTC_c1d9a.dir/CheckIncludeFile.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_a6f08/fast] Error 2
+gmake: *** [Makefile:127: cmTC_c1d9a/fast] Error 2
 
 
 
 Performing C SOURCE FILE Test HAVE_VIDEO_VIVANTE_VDK failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_442bc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_442bc.dir/build.make CMakeFiles/cmTC_442bc.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6cb36/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6cb36.dir/build.make CMakeFiles/cmTC_6cb36.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_442bc.dir/src.c.o
-/usr/bin/cc -DHAVE_VIDEO_VIVANTE_VDK  -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"   -o CMakeFiles/cmTC_442bc.dir/src.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_6cb36.dir/src.c.o
+/usr/bin/cc -DHAVE_VIDEO_VIVANTE_VDK  -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"   -o CMakeFiles/cmTC_6cb36.dir/src.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:18: fatal error: gc_vdk.h: No such file or directory
     2 |         #include <gc_vdk.h>
       |                  ^~~~~~~~~~
 compilation terminated.
-gmake[1]: *** [CMakeFiles/cmTC_442bc.dir/build.make:78: CMakeFiles/cmTC_442bc.dir/src.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_6cb36.dir/build.make:78: CMakeFiles/cmTC_6cb36.dir/src.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_442bc/fast] Error 2
+gmake: *** [Makefile:127: cmTC_6cb36/fast] Error 2
 
 
 Source file was:
@@ -1043,17 +1043,17 @@ Source file was:
 Performing C SOURCE FILE Test HAVE_VIDEO_VIVANTE_EGL_FB failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7ed72/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7ed72.dir/build.make CMakeFiles/cmTC_7ed72.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d161f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d161f.dir/build.make CMakeFiles/cmTC_d161f.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7ed72.dir/src.c.o
-/usr/bin/cc -DHAVE_VIDEO_VIVANTE_EGL_FB  -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"   -o CMakeFiles/cmTC_7ed72.dir/src.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_d161f.dir/src.c.o
+/usr/bin/cc -DHAVE_VIDEO_VIVANTE_EGL_FB  -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"   -o CMakeFiles/cmTC_d161f.dir/src.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:4:18: fatal error: EGL/eglvivante.h: No such file or directory
     4 |         #include <EGL/eglvivante.h>
       |                  ^~~~~~~~~~~~~~~~~~
 compilation terminated.
-gmake[1]: *** [CMakeFiles/cmTC_7ed72.dir/build.make:78: CMakeFiles/cmTC_7ed72.dir/src.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_d161f.dir/build.make:78: CMakeFiles/cmTC_d161f.dir/src.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_7ed72/fast] Error 2
+gmake: *** [Makefile:127: cmTC_d161f/fast] Error 2
 
 
 Source file was:
@@ -1065,34 +1065,34 @@ Source file was:
 Determining if the include file libudev.h exists failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6a995/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6a995.dir/build.make CMakeFiles/cmTC_6a995.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_34936/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_34936.dir/build.make CMakeFiles/cmTC_34936.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6a995.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"   -o CMakeFiles/cmTC_6a995.dir/CheckIncludeFile.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Building C object CMakeFiles/cmTC_34936.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"   -o CMakeFiles/cmTC_34936.dir/CheckIncludeFile.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: libudev.h: No such file or directory
     1 | #include <libudev.h>
       |          ^~~~~~~~~~~
 compilation terminated.
-gmake[1]: *** [CMakeFiles/cmTC_6a995.dir/build.make:78: CMakeFiles/cmTC_6a995.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_34936.dir/build.make:78: CMakeFiles/cmTC_34936.dir/CheckIncludeFile.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_6a995/fast] Error 2
+gmake: *** [Makefile:127: cmTC_34936/fast] Error 2
 
 
 
 Determining if files pthread_np.h exist failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e6c52/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e6c52.dir/build.make CMakeFiles/cmTC_e6c52.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ddfb0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ddfb0.dir/build.make CMakeFiles/cmTC_ddfb0.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e6c52.dir/HAVE_PTHREAD_NP_H.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"   -D_REENTRANT -pthread -o CMakeFiles/cmTC_e6c52.dir/HAVE_PTHREAD_NP_H.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_PTHREAD_NP_H.c
+Building C object CMakeFiles/cmTC_ddfb0.dir/HAVE_PTHREAD_NP_H.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"   -D_REENTRANT -pthread -o CMakeFiles/cmTC_ddfb0.dir/HAVE_PTHREAD_NP_H.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_PTHREAD_NP_H.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_PTHREAD_NP_H.c:2:10: fatal error: pthread_np.h: No such file or directory
     2 | #include <pthread_np.h>
       |          ^~~~~~~~~~~~~~
 compilation terminated.
-gmake[1]: *** [CMakeFiles/cmTC_e6c52.dir/build.make:78: CMakeFiles/cmTC_e6c52.dir/HAVE_PTHREAD_NP_H.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_ddfb0.dir/build.make:78: CMakeFiles/cmTC_ddfb0.dir/HAVE_PTHREAD_NP_H.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_e6c52/fast] Error 2
+gmake: *** [Makefile:127: cmTC_ddfb0/fast] Error 2
 
 
 Source:
@@ -1105,19 +1105,19 @@ int main(void){return 0;}
 Determining if the pthread_setname_np exist failed with the following output:
 Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_129f8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_129f8.dir/build.make CMakeFiles/cmTC_129f8.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_44ebb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_44ebb.dir/build.make CMakeFiles/cmTC_44ebb.dir/build
 gmake[1]: Entering directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_129f8.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"   -D_REENTRANT -pthread -o CMakeFiles/cmTC_129f8.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_44ebb.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/src/video/khronos"   -D_REENTRANT -pthread -o CMakeFiles/cmTC_44ebb.dir/CheckSymbolExists.c.o -c /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘pthread_setname_np’ undeclared (first use in this function); did you mean ‘pthread_setcanceltype’?
     8 |   return ((int*)(&pthread_setname_np))[argc];
       |                   ^~~~~~~~~~~~~~~~~~
       |                   pthread_setcanceltype
 /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
-gmake[1]: *** [CMakeFiles/cmTC_129f8.dir/build.make:78: CMakeFiles/cmTC_129f8.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_44ebb.dir/build.make:78: CMakeFiles/cmTC_44ebb.dir/CheckSymbolExists.c.o] Error 1
 gmake[1]: Leaving directory '/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_129f8/fast] Error 2
+gmake: *** [Makefile:127: cmTC_44ebb/fast] Error 2
 
 
 File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:

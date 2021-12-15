@@ -7,7 +7,9 @@ if(COMPILER_SUPPORTS_CXX17)
     set(CMAKE_REQUIRED_FLAGS "-std=c++17")
 endif()
 
-add_library(engine STATIC SRC/library.cpp Node.cpp Node.h SRC/Sound.cpp SRC/Sound.cpp SRC/Sound.h AudioManager.cpp AudioManager.h)
+add_library(engine STATIC SRC/library.cpp SRC/Node.cpp SRC/Node.h
+        SRC/Sound.cpp SRC/Sound.cpp SRC/Sound.h SRC/AudioManager.cpp SRC/AudioManager.h
+        SRC/Color.h Button.cpp Button.h Shaders.h)
 #SDL
 
 if(NOT IOS)
@@ -34,4 +36,5 @@ target_include_directories(engine PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/libs
         ${CMAKE_CURRENT_SOURCE_DIR}/libs/SDL2/include
         ${CMAKE_CURRENT_SOURCE_DIR}/libs/glew/include
-        ${CMAKE_CURRENT_SOURCE_DIR}/libs/stbi)
+        ${CMAKE_CURRENT_SOURCE_DIR}/libs/stbi
+        ${CMAKE_CURRENT_SOURCE_DIR}/libs/imgui)

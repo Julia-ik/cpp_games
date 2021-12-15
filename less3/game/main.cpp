@@ -4,33 +4,25 @@
 #include <chrono>
 #include <ResourceLoader.h>
 #include "Sound.h"
+#include "Tank.h"
 
 int main()
 {
-    bool isItGL = true;
     Engine engine(700, 700);
-
-    Model_head source;
-    Model model(source.v_source, source.f_source, engine.width, engine.heights);
-
-    //engine.drawWindow(&model, isItGL);
     engine.initGLL();
-    Sound sound("/home/lilu/lilu/cpp_games/cpp_games/less3/game/sound/dramatic.wav");
-    sound.PlaySound("/home/lilu/lilu/cpp_games/cpp_games/less3/game/sound/dramatic.wav");
 
-    SpriteRenderer bodySprite(ResourceManager::GetShader("sprite"),
-                              glm::vec2(300.0f, 300.0f), glm::vec2(85.0f, 40.0f),
-                              0.0f, 0.5f);
-    engine._spriteRenderers["body"] = &bodySprite;
-    SpriteRenderer gunSprite(ResourceManager::GetShader("sprite"),
-                             glm::vec2(engine._spriteRenderers["body"]->_position.x+21.5,
-                                       engine._spriteRenderers["body"]->_position.y+8.0f), glm::vec2(70.0f, 30.0f),
-                             45.0f, 0.3f);
-    engine._spriteRenderers["gun"] = &gunSprite;
-    SpriteRenderer fireSprite(ResourceManager::GetShader("sprite"),
-                              glm::vec2(500.0f, 500.0f), glm::vec2(10.0f, 10.0f),
-                              0.0f, 0.5f);
-    engine._spriteRenderers["fire"] = &fireSprite;
+
+    /*
+    Sprite fireSprite(ResourceManager::GetShader("sprite"),
+                      glm::vec2(500.0f, 500.0f), glm::vec2(10.0f, 10.0f),
+                      0.0f, glm::vec2(0.5f), "fire");
+    engine._spriteRenderers["fire"] = &fireSprite;*/
+    Tank tank(&engine, ResourceManager::GetShader("sprite"),
+              glm::vec2(300.0f, 300.0f), glm::vec2(85.0f, 40.0f),
+              0.0f, glm::vec2(0.5f, 0.5f));
+
+    engine.scene.addNode(std::make_shared<Tank>(tank));
+
 
 
     auto oldTime = std::chrono::high_resolution_clock::now();
@@ -38,14 +30,17 @@ int main()
 
     while (engine.isActive){
 
-        engine.RegisterEvents();
+        tank.RegisterEvents();
 
         auto curTime = std::chrono::high_resolution_clock::now();
-        auto delta = std::chrono::duration_cast<std::chrono::duration<double>>(curTime - oldTime);
+        auto delta = std::chrono::duration_cast<std::chrono::duration<float>>(curTime - oldTime);
         oldTime = curTime;
-        val += delta.count();
+        val = delta.count();
 
-        engine.Render();
+        engine.scene.update(val);
+        engine.scene.visit();
+
+
 
         SDL_GL_SwapWindow(engine.window);
 
@@ -54,13 +49,3 @@ int main()
 
     return 0;
 }
-
-// gonna leave it here just for future...
-
-//    FILE * f = fopen("/home/lilu/lilu/cpp_games/cpp_games/less3/game/koko.txt", "r");
-//    int val;
-//    fscanf(f, "%d", &val);
-//    bool succes = f !=nullptr;
-//std::ifstream f("/home/lilu/lilu/cpp_games/cpp_games/less3/game/koko.txt");
-//int v;
-//f >> v;

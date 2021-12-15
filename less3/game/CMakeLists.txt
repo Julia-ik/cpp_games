@@ -4,7 +4,14 @@ project(game)
 set(CMAKE_CXX_STANDARD 17)
 
 
-add_executable(game main.cpp engine/SRC/SDL/Model.cpp engine/SRC/SDL/Model.h engine/SRC/SDL/Model_head.cpp engine/SRC/SDL/Model_head.h engine/SRC/SDL/f_triangle.cpp engine/SRC/SDL/f_triangle.h engine/SRC/SDL/v_point.cpp engine/SRC/SDL/v_point.h engine/Mesh.cpp engine/Mesh.h engine/SRC/Shader.cpp engine/SRC/Shader.h engine/SRC/Bitmap.cpp engine/SRC/Bitmap.h engine/SRC/Texture.cpp engine/SRC/Texture.h engine/SRC/ResourceLoader.cpp engine/SRC/ResourceLoader.h engine/SRC/SpriteRenderer.cpp engine/SRC/SpriteRenderer.h engine/SRC/EventManager.cpp engine/SRC/EventManager.h)
+add_executable(game main.cpp engine/SRC/SDL/Model.cpp engine/SRC/SDL/Model.h
+        engine/SRC/SDL/Model_head.cpp engine/SRC/SDL/Model_head.h
+        engine/SRC/SDL/f_triangle.cpp engine/SRC/SDL/f_triangle.h engine/SRC/SDL/v_point.cpp
+        engine/SRC/SDL/v_point.h engine/Mesh.cpp engine/Mesh.h engine/SRC/Shader.cpp
+        engine/SRC/Shader.h engine/SRC/Bitmap.cpp engine/SRC/Bitmap.h engine/SRC/Texture.cpp
+        engine/SRC/Texture.h engine/SRC/ResourceLoader.cpp engine/SRC/ResourceLoader.h
+        engine/SRC/Sprite.cpp engine/SRC/Sprite.h engine/SRC/EventManager.cpp engine/SRC/EventManager.h
+        engine/SRC/Tank.cpp engine/SRC/Tank.h)
 add_subdirectory(engine)
 
 target_link_libraries(game engine)

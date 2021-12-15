@@ -1,97 +1,151 @@
 //
 // Created by lilu on 08.12.2021.
 //
-#include "SDL.h"
-#include "SDL_audio.h"
-#include <string>
 #include "Sound.h"
-#include <stdlib.h>
+#include "AudioManager.h"
+#include <string>
+#include <vector>
+#include <iostream>
+#include <stdexcept>
+#include <map>
 
-Sound::Sound(std::string_view filename)
+namespace
 {
-    extern void mixaudio(void *unused, Uint8 *stream, int len);
-    SDL_AudioSpec fmt;
+    static void audio_callback(void* userdata, uint8_t* stream, int len)
+    {
 
-/* Set 16-bit stereo audio at 22Khz */
-fmt.freq = 22050;
-fmt.format = AUDIO_S32;
-fmt.channels = 2;
-fmt.samples = 512;        /* A good value for games */
-fmt.callback = mixaudio;
-fmt.userdata = NULL;
+        auto audioManager = static_cast<AudioManager*>(userdata);
 
-/* Open the audio device and start playing sound! */
-if ( SDL_OpenAudio(&fmt, NULL) < 0 ) {
-fprintf(stderr, "Unable to open audio: %s\n", SDL_GetError());
-exit(1);
-}
+        SDL_memset(stream, 0, len);
 
-SDL_PauseAudio(0);
+            //TODO: check is playing or pause
+            //TODO: looping
 
-SDL_CloseAudio();
-}
+            auto amount = audioManager->_buffers[audioManager->_currentSound].size -
+                    audioManager->_buffers[audioManager->_currentSound].current_pos;
+            if ( amount > len )
+            {
+                amount = len;
+            }
 
-#define NUM_SOUNDS 2
-struct sample {
-    Uint8 *data;
-    Uint32 dpos;
-    Uint32 dlen;
-} sounds[NUM_SOUNDS];
+            SDL_MixAudioFormat(stream,
+                               audioManager->_buffers[audioManager->_currentSound].start +
+                                       audioManager->_buffers[audioManager->_currentSound].current_pos,
+                               AUDIO_S16LSB,
+                               amount,
+                               SDL_MIX_MAXVOLUME*audioManager->volume);
 
-void mixaudio(void *unused, Uint8 *stream, int len)
-{
-    int i;
-    Uint32 amount;
+        audioManager->_buffers[audioManager->_currentSound].current_pos += amount;
 
-    for ( i=0; i<NUM_SOUNDS; ++i ) {
-        amount = (sounds[i].dlen-sounds[i].dpos);
-        if ( amount > len ) {
-            amount = len;
-        }
-        SDL_MixAudio(stream, &sounds[i].data[sounds[i].dpos], amount, SDL_MIX_MAXVOLUME);
-        sounds[i].dpos += amount;
+            if (audioManager->shouldLoop &&
+            audioManager->_buffers[audioManager->_currentSound].current_pos >=
+                    audioManager->_buffers[audioManager->_currentSound].size)
+            {
+                audioManager->_buffers[audioManager->_currentSound].current_pos = 0;
+            }
     }
 }
 
-void Sound::PlaySound(char *file)
+Sound::Sound(std::string_view filename, AudioManager * audioManager, std::string name)
+:_name(name), _audioManager(audioManager)
+{
+    SDL_RWops* file = SDL_RWFromFile(filename.data(), "rb");
+    if (file == nullptr)
+    {
+        throw std::runtime_error(std::string(filename) + "doesn't exist");
+    }
+
+    SDL_AudioSpec audioSpecFromFile{};
+    const int32_t auto_delete_file            = 1;
+    _buf                                = nullptr;
+    uint32_t      sample_buffer_len_from_file = 0;
+
+
+    SDL_AudioSpec* audio_spec = SDL_LoadWAV_RW(file,
+                                               auto_delete_file,
+                                               &audioSpecFromFile,
+                                               &_buf,
+                                               &sample_buffer_len_from_file);
+
+    if (audio_spec == nullptr)
+    {
+        throw std::runtime_error(std::string(filename) + " can't parse and load audio samples from file");
+    }
+
+
+    const int32_t allow_changes = 0;
+    const char*   device_name       = nullptr;
+    const int32_t is_capture_device = 0;
+
+
+    AudioBuf buf;
+    buf.start = _buf;
+    buf.size = sample_buffer_len_from_file;
+    buf.current_pos = 0;
+
+    audioManager->_buffers[_name] = buf;
+    //audioManager->_currentSound = name;
+
+
+
+    audioSpecFromFile.callback = audio_callback;
+    audioSpecFromFile.userdata = audioManager;
+    audioSpecFromFile.channels = 2;
+    audioSpecFromFile.samples = 1024;
+
+
+    SDL_AudioSpec returned{};
+    _audio_device_id = SDL_OpenAudioDevice(
+            device_name, is_capture_device, &audioSpecFromFile,
+            &returned, allow_changes);
+    if (_audio_device_id == 0)
+    {
+        throw std::runtime_error("Can't open Audio Device");
+    }
+
+
+    if (audioSpecFromFile.format != returned.format ||
+        audioSpecFromFile.channels != returned.channels || audioSpecFromFile.freq != returned.freq)
+    {
+        throw std::runtime_error("Audio Device doesn't support our format");
+    }
+
+    SDL_PauseAudioDevice(_audio_device_id, SDL_TRUE);
+
+}
+void Sound::play()
+{
+    //SDL_PauseAudioDevice(_audio_device_id, SDL_TRUE);
+    _audioManager->_currentSound = _name;
+    SDL_PauseAudioDevice(_audio_device_id, SDL_FALSE);
+}
+void Sound::pause()
 {
 
-    int index;
-    SDL_AudioSpec wave;
-    Uint8 *data;
-    Uint32 dlen;
-    SDL_AudioCVT cvt;
+    SDL_PauseAudioDevice(_audio_device_id, SDL_TRUE);
+}
+void Sound::stop()
+{
+    SDL_PauseAudioDevice(_audio_device_id, SDL_TRUE);
+    _audioManager->_buffers[_name].current_pos = 0;
 
-    /* Look for an empty (or finished) sound slot */
-    for ( index=0; index<NUM_SOUNDS; ++index ) {
-        if ( sounds[index].dpos == sounds[index].dlen ) {
-            break;
-        }
-    }
-    if ( index == NUM_SOUNDS )
-        return;
+    //SDL_CloseAudio();
+    //SDL_FreeWAV(_buf);
+}
 
-    /* Load the sound file and convert it to 16-bit stereo at 22kHz */
-    if ( SDL_LoadWAV(file, &wave, &data, &dlen) == NULL ) {
-        fprintf(stderr, "Couldn't load %s: %s\n", file, SDL_GetError());
-        return;
+void Sound::volumePlus()
+{
+    if(_audioManager->volume < 1)
+    {
+        _audioManager->volume+=0.01f;
     }
 
-    SDL_BuildAudioCVT(&cvt, wave.format, wave.channels, wave.freq,
-                      AUDIO_S16,   2,             22050);
-    cvt.buf = static_cast<Uint8 *>(malloc(dlen * cvt.len_mult));
-    memcpy(cvt.buf, data, dlen);
-    cvt.len = dlen;
-    SDL_ConvertAudio(&cvt);
-    SDL_FreeWAV(data);
-
-    /* Put the sound data in the slot (it starts playing immediately) */
-    if ( sounds[index].data ) {
-        free(sounds[index].data);
+}
+void Sound::volumeMinus()
+{
+    if(_audioManager->volume > 0)
+    {
+        _audioManager->volume-=0.01f;
     }
-    SDL_LockAudio();
-    sounds[index].data = cvt.buf;
-    sounds[index].dlen = cvt.len_cvt;
-    sounds[index].dpos = 0;
-    SDL_UnlockAudio();
+
 }

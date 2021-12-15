@@ -8,8 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/AudioManager.cpp" "engine/CMakeFiles/engine.dir/AudioManager.cpp.o" "gcc" "engine/CMakeFiles/engine.dir/AudioManager.cpp.o.d"
-  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Node.cpp" "engine/CMakeFiles/engine.dir/Node.cpp.o" "gcc" "engine/CMakeFiles/engine.dir/Node.cpp.o.d"
+  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Button.cpp" "engine/CMakeFiles/engine.dir/Button.cpp.o" "gcc" "engine/CMakeFiles/engine.dir/Button.cpp.o.d"
+  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/AudioManager.cpp" "engine/CMakeFiles/engine.dir/SRC/AudioManager.cpp.o" "gcc" "engine/CMakeFiles/engine.dir/SRC/AudioManager.cpp.o.d"
+  "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Node.cpp" "engine/CMakeFiles/engine.dir/SRC/Node.cpp.o" "gcc" "engine/CMakeFiles/engine.dir/SRC/Node.cpp.o.d"
   "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Sound.cpp" "engine/CMakeFiles/engine.dir/SRC/Sound.cpp.o" "gcc" "engine/CMakeFiles/engine.dir/SRC/Sound.cpp.o.d"
   "/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/library.cpp" "engine/CMakeFiles/engine.dir/SRC/library.cpp.o" "gcc" "engine/CMakeFiles/engine.dir/SRC/library.cpp.o.d"
   )
