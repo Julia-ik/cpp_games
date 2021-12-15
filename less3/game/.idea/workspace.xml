@@ -19,11 +19,24 @@
   <component name="ChangeListManager">
     <list default="true" id="b4b45fde-ab0c-4aec-a84e-03f814d6340d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../../hw_1/untitled/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw_1/untitled/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/engine/Mesh.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/engine/Mesh.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/engine/SRC/Tank.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/engine/SRC/Tank.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/game.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/SRC/AudioManager.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/SRC/AudioManager.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/SRC/AudioManager.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/SRC/AudioManager.cpp.o.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/SRC/Sound.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/SRC/Sound.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/SRC/Sound.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/SRC/Sound.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/SRC/library.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/SRC/library.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/compiler_depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/compiler_depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/CMakeFiles/engine.dir/compiler_depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/engine/libengine.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/engine/libengine.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/game" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/game" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/SRC/AudioManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/engine/SRC/AudioManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/SRC/AudioManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/engine/SRC/AudioManager.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine/SRC/Sound.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/engine/SRC/Sound.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/SRC/Sound.h" beforeDir="false" afterPath="$PROJECT_DIR$/engine/SRC/Sound.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/SRC/library.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/engine/SRC/library.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../less4/opengl/.idea/opengl.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -177,7 +190,7 @@
       <workItem from="1639515140914" duration="4871000" />
       <workItem from="1639521927276" duration="2152000" />
       <workItem from="1639553608801" duration="1753000" />
-      <workItem from="1639558738250" duration="408000" />
+      <workItem from="1639558738250" duration="4811000" />
     </task>
     <servers />
   </component>

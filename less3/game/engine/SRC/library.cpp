@@ -113,7 +113,7 @@ void Engine::initGLL()
                                  true, "grass");
 
 
-
+    audioManager.init();
     _sounds.push_back(std::make_shared<Sound>("/home/lilu/lilu/cpp_games/cpp_games/less3/game/sound/dramatic.wav",
                                               &audioManager, "theme"));
     scene.setScale(glm::vec2(width, heights));

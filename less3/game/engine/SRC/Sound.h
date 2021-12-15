@@ -12,7 +12,7 @@
 class Sound
 {
 public:
-    SDL_AudioDeviceID _audio_device_id;
+
     uint8_t* _buf;
     std::string _name;
     AudioManager * _audioManager;
