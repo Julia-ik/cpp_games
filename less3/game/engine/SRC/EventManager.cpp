@@ -25,7 +25,6 @@ void EventManager::RegisterEvents()
                 event.motion.y <= _button->_position.y + _button->_contentSize.y)
             {
                 _button->isPressed = true;
-                printf("\n ORDER %d\n",_button->_nodes[0]->_zOrder);
                 _button->_nodes[0]->_contentSize.x*=0.8f;
                 _button->_nodes[0]->_contentSize.y*=0.8f;
             }

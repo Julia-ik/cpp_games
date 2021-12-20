@@ -119,11 +119,11 @@ void Engine::initGLL()
     _sounds.push_back(std::make_shared<Sound>("/home/lilu/lilu/cpp_games/cpp_games/less3/game/sound/dramatic.wav",
                                               &audioManager, "theme"));
     scene.setScale(glm::vec2(width, heights));
-   /*scene.addNode(std::make_shared<Sprite>(ResourceManager::GetShader("sprite"),
+    scene.addNode(std::make_shared<Sprite>(ResourceManager::GetShader("sprite"),
                                          glm::vec2(0.0f, 0.0f), glm::vec2(width, heights),
                                          0.0f, glm::vec2(0.5f),glm::vec4(0.0f,1.0f,0.0f,
                                                                          1.0f), "grass"), 1);
-*/
+
 
 
     _sounds[0]->play();

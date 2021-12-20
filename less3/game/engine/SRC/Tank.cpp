@@ -73,7 +73,7 @@ void Tank::updateSelf(float delta)
             if(_engine->scene.getNodes()[i]->getPosition().x > _engine->width ||
                     _engine->scene.getNodes()[i]->getPosition().y > _engine->heights)
             {
-                _engine->scene.removeNode(_engine->scene.getNodes()[i]);
+             //   _engine->scene.removeNode(_engine->scene.getNodes()[]);
             }
         }
 

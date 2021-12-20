@@ -1,2 +1,0 @@
-/usr/bin/ar qc libengine.a CMakeFiles/engine.dir/SRC/library.cpp.o CMakeFiles/engine.dir/SRC/Node.cpp.o CMakeFiles/engine.dir/SRC/Sound.cpp.o CMakeFiles/engine.dir/SRC/AudioManager.cpp.o CMakeFiles/engine.dir/SRC/Button.cpp.o CMakeFiles/engine.dir/SRC/Vertex.cpp.o CMakeFiles/engine.dir/SRC/ImguiManager.cpp.o
-/usr/bin/ranlib libengine.a
