@@ -435,9 +435,7 @@ CMakeFiles/game.dir/main.cpp.o: \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Sound.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_audio.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/AudioManager.h \
- /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/EventManager.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/Model_head.h \
- /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/Model.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/ResourceLoader.h \
@@ -451,4 +449,8 @@ CMakeFiles/game.dir/main.cpp.o: \
  /usr/include/glm/ext/vector_relational.inl \
  /usr/include/glm/detail/type_float.hpp \
  /usr/include/glm/gtx/rotate_vector.inl \
- /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/library.hpp
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/library.hpp \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Button.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/EventManager.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Tank.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Button.h

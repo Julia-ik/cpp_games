@@ -169,7 +169,7 @@ engine/CMakeFiles/engine.dir/all: engine/libs/SDL2/CMakeFiles/SDL2-static.dir/al
 engine/CMakeFiles/engine.dir/all: engine/libs/glew/CMakeFiles/libglew_static.dir/all
 	$(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/depend
 	$(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=94,95 "Built target engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=93,94,95 "Built target engine"
 .PHONY : engine/CMakeFiles/engine.dir/all
 
 # Build rule for subdir invocation for target.
@@ -195,12 +195,12 @@ engine/CMakeFiles/engine.dir/clean:
 engine/libs/SDL2/CMakeFiles/SDL2main.dir/all:
 	$(MAKE) $(MAKESILENT) -f engine/libs/SDL2/CMakeFiles/SDL2main.dir/build.make engine/libs/SDL2/CMakeFiles/SDL2main.dir/depend
 	$(MAKE) $(MAKESILENT) -f engine/libs/SDL2/CMakeFiles/SDL2main.dir/build.make engine/libs/SDL2/CMakeFiles/SDL2main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num=93 "Built target SDL2main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles --progress-num= "Built target SDL2main"
 .PHONY : engine/libs/SDL2/CMakeFiles/SDL2main.dir/all
 
 # Build rule for subdir invocation for target.
 engine/libs/SDL2/CMakeFiles/SDL2main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine/libs/SDL2/CMakeFiles/SDL2main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles 0
 .PHONY : engine/libs/SDL2/CMakeFiles/SDL2main.dir/rule

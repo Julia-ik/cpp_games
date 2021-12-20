@@ -533,7 +533,6 @@ CMakeFiles/game.dir/engine/Mesh.cpp.o: ../engine/Mesh.cpp \
   ../engine/SRC/Sound.h \
   ../engine/libs/SDL2/include/SDL_audio.h \
   ../engine/SRC/AudioManager.h \
-  ../engine/SRC/EventManager.h \
   ../engine/SRC/Color.h
 
 CMakeFiles/game.dir/engine/SRC/Bitmap.cpp.o: ../engine/SRC/Bitmap.cpp \
@@ -1323,7 +1322,237 @@ CMakeFiles/game.dir/engine/SRC/EventManager.cpp.o: ../engine/SRC/EventManager.cp
   /usr/include/asm-generic/errno-base.h \
   /usr/include/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
-  /usr/include/c++/11/bits/basic_string.tcc
+  /usr/include/c++/11/bits/basic_string.tcc \
+  ../engine/SRC/Node.h \
+  /usr/include/c++/11/memory \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/11/bits/align.h \
+  /usr/include/c++/11/bit \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/shared_ptr.h \
+  /usr/include/c++/11/bits/shared_ptr_base.h \
+  /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/ext/concurrence.h \
+  /usr/include/c++/11/exception \
+  /usr/include/c++/11/bits/exception_ptr.h \
+  /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/bits/nested_exception.h \
+  /usr/include/c++/11/bits/shared_ptr_atomic.h \
+  /usr/include/c++/11/bits/atomic_base.h \
+  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/11/backward/auto_ptr.h \
+  /usr/include/c++/11/pstl/glue_memory_defs.h \
+  /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/glm/glm.hpp \
+  /usr/include/glm/detail/_fixes.hpp \
+  /usr/include/glm/detail/setup.hpp \
+  /usr/include/c++/11/cassert \
+  /usr/include/assert.h \
+  /usr/include/c++/11/cstddef \
+  /usr/include/glm/simd/platform.h \
+  /usr/include/c++/11/climits \
+  /usr/lib/gcc/x86_64-redhat-linux/11/include/limits.h \
+  /usr/lib/gcc/x86_64-redhat-linux/11/include/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/bits/posix2_lim.h \
+  /usr/include/bits/xopen_lim.h \
+  /usr/include/bits/uio_lim.h \
+  /usr/include/c++/11/cfloat \
+  /usr/include/glm/fwd.hpp \
+  /usr/include/glm/detail/qualifier.hpp \
+  /usr/include/glm/detail/setup.hpp \
+  /usr/include/glm/vec2.hpp \
+  /usr/include/glm/ext/vector_bool2.hpp \
+  /usr/include/glm/detail/type_vec2.hpp \
+  /usr/include/glm/detail/type_vec2.inl \
+  /usr/include/glm/detail/compute_vector_relational.hpp \
+  /usr/include/glm/ext/vector_bool2_precision.hpp \
+  /usr/include/glm/ext/vector_float2.hpp \
+  /usr/include/glm/ext/vector_float2_precision.hpp \
+  /usr/include/glm/ext/vector_double2.hpp \
+  /usr/include/glm/ext/vector_double2_precision.hpp \
+  /usr/include/glm/ext/vector_int2.hpp \
+  /usr/include/glm/ext/vector_int2_sized.hpp \
+  /usr/include/glm/ext/scalar_int_sized.hpp \
+  /usr/include/glm/detail/setup.hpp \
+  /usr/include/glm/ext/vector_uint2.hpp \
+  /usr/include/glm/ext/vector_uint2_sized.hpp \
+  /usr/include/glm/ext/scalar_uint_sized.hpp \
+  /usr/include/glm/vec3.hpp \
+  /usr/include/glm/ext/vector_bool3.hpp \
+  /usr/include/glm/detail/type_vec3.hpp \
+  /usr/include/glm/detail/type_vec3.inl \
+  /usr/include/glm/ext/vector_bool3_precision.hpp \
+  /usr/include/glm/ext/vector_float3.hpp \
+  /usr/include/glm/ext/vector_float3_precision.hpp \
+  /usr/include/glm/ext/vector_double3.hpp \
+  /usr/include/glm/ext/vector_double3_precision.hpp \
+  /usr/include/glm/ext/vector_int3.hpp \
+  /usr/include/glm/ext/vector_int3_sized.hpp \
+  /usr/include/glm/ext/vector_uint3.hpp \
+  /usr/include/glm/ext/vector_uint3_sized.hpp \
+  /usr/include/glm/vec4.hpp \
+  /usr/include/glm/ext/vector_bool4.hpp \
+  /usr/include/glm/detail/type_vec4.hpp \
+  /usr/include/glm/detail/type_vec4.inl \
+  /usr/include/glm/ext/vector_bool4_precision.hpp \
+  /usr/include/glm/ext/vector_float4.hpp \
+  /usr/include/glm/ext/vector_float4_precision.hpp \
+  /usr/include/glm/ext/vector_double4.hpp \
+  /usr/include/glm/ext/vector_double4_precision.hpp \
+  /usr/include/glm/ext/vector_int4.hpp \
+  /usr/include/glm/ext/vector_int4_sized.hpp \
+  /usr/include/glm/ext/vector_uint4.hpp \
+  /usr/include/glm/ext/vector_uint4_sized.hpp \
+  /usr/include/glm/mat2x2.hpp \
+  /usr/include/glm/ext/matrix_double2x2.hpp \
+  /usr/include/glm/detail/type_mat2x2.hpp \
+  /usr/include/glm/detail/type_mat2x2.inl \
+  /usr/include/glm/matrix.hpp \
+  /usr/include/glm/mat2x3.hpp \
+  /usr/include/glm/ext/matrix_double2x3.hpp \
+  /usr/include/glm/detail/type_mat2x3.hpp \
+  /usr/include/glm/detail/type_mat2x3.inl \
+  /usr/include/glm/ext/matrix_double2x3_precision.hpp \
+  /usr/include/glm/ext/matrix_float2x3.hpp \
+  /usr/include/glm/ext/matrix_float2x3_precision.hpp \
+  /usr/include/glm/mat2x4.hpp \
+  /usr/include/glm/ext/matrix_double2x4.hpp \
+  /usr/include/glm/detail/type_mat2x4.hpp \
+  /usr/include/glm/detail/type_mat2x4.inl \
+  /usr/include/glm/ext/matrix_double2x4_precision.hpp \
+  /usr/include/glm/ext/matrix_float2x4.hpp \
+  /usr/include/glm/ext/matrix_float2x4_precision.hpp \
+  /usr/include/glm/mat3x2.hpp \
+  /usr/include/glm/ext/matrix_double3x2.hpp \
+  /usr/include/glm/detail/type_mat3x2.hpp \
+  /usr/include/glm/detail/type_mat3x2.inl \
+  /usr/include/glm/ext/matrix_double3x2_precision.hpp \
+  /usr/include/glm/ext/matrix_float3x2.hpp \
+  /usr/include/glm/ext/matrix_float3x2_precision.hpp \
+  /usr/include/glm/mat3x3.hpp \
+  /usr/include/glm/ext/matrix_double3x3.hpp \
+  /usr/include/glm/detail/type_mat3x3.hpp \
+  /usr/include/glm/detail/type_mat3x3.inl \
+  /usr/include/glm/ext/matrix_double3x3_precision.hpp \
+  /usr/include/glm/ext/matrix_float3x3.hpp \
+  /usr/include/glm/ext/matrix_float3x3_precision.hpp \
+  /usr/include/glm/mat3x4.hpp \
+  /usr/include/glm/ext/matrix_double3x4.hpp \
+  /usr/include/glm/detail/type_mat3x4.hpp \
+  /usr/include/glm/detail/type_mat3x4.inl \
+  /usr/include/glm/ext/matrix_double3x4_precision.hpp \
+  /usr/include/glm/ext/matrix_float3x4.hpp \
+  /usr/include/glm/ext/matrix_float3x4_precision.hpp \
+  /usr/include/glm/mat4x2.hpp \
+  /usr/include/glm/ext/matrix_double4x2.hpp \
+  /usr/include/glm/detail/type_mat4x2.hpp \
+  /usr/include/glm/detail/type_mat4x2.inl \
+  /usr/include/glm/ext/matrix_double4x2_precision.hpp \
+  /usr/include/glm/ext/matrix_float4x2.hpp \
+  /usr/include/glm/ext/matrix_float4x2_precision.hpp \
+  /usr/include/glm/mat4x3.hpp \
+  /usr/include/glm/ext/matrix_double4x3.hpp \
+  /usr/include/glm/detail/type_mat4x3.hpp \
+  /usr/include/glm/detail/type_mat4x3.inl \
+  /usr/include/glm/ext/matrix_double4x3_precision.hpp \
+  /usr/include/glm/ext/matrix_float4x3.hpp \
+  /usr/include/glm/ext/matrix_float4x3_precision.hpp \
+  /usr/include/glm/mat4x4.hpp \
+  /usr/include/glm/ext/matrix_double4x4.hpp \
+  /usr/include/glm/detail/type_mat4x4.hpp \
+  /usr/include/glm/detail/type_mat4x4.inl \
+  /usr/include/glm/ext/matrix_double4x4_precision.hpp \
+  /usr/include/glm/ext/matrix_float4x4.hpp \
+  /usr/include/glm/ext/matrix_float4x4_precision.hpp \
+  /usr/include/glm/detail/func_matrix.inl \
+  /usr/include/glm/geometric.hpp \
+  /usr/include/glm/detail/func_geometric.inl \
+  /usr/include/glm/exponential.hpp \
+  /usr/include/glm/detail/type_vec1.hpp \
+  /usr/include/glm/detail/type_vec1.inl \
+  /usr/include/glm/detail/func_exponential.inl \
+  /usr/include/glm/vector_relational.hpp \
+  /usr/include/glm/detail/func_vector_relational.inl \
+  /usr/include/glm/detail/_vectorize.hpp \
+  /usr/include/glm/common.hpp \
+  /usr/include/glm/detail/func_common.inl \
+  /usr/include/glm/detail/compute_common.hpp \
+  /usr/include/glm/ext/matrix_double2x2_precision.hpp \
+  /usr/include/glm/ext/matrix_float2x2.hpp \
+  /usr/include/glm/ext/matrix_float2x2_precision.hpp \
+  /usr/include/glm/trigonometric.hpp \
+  /usr/include/glm/detail/func_trigonometric.inl \
+  /usr/include/glm/packing.hpp \
+  /usr/include/glm/detail/func_packing.inl \
+  /usr/include/glm/detail/type_half.hpp \
+  /usr/include/glm/detail/type_half.inl \
+  /usr/include/glm/integer.hpp \
+  /usr/include/glm/detail/func_integer.inl \
+  /usr/include/c++/11/optional \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  ../engine/SRC/Sound.h \
+  ../engine/libs/SDL2/include/SDL_audio.h \
+  ../engine/SRC/AudioManager.h \
+  /usr/include/c++/11/map \
+  /usr/include/c++/11/bits/stl_tree.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/stl_map.h \
+  /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/include/c++/11/bits/erase_if.h \
+  ../engine/SRC/Tank.h \
+  ../engine/SRC/Shader.h \
+  ../engine/libs/glew/include/GL/glew.h \
+  ../engine/SRC/Sprite.h \
+  /usr/include/glm/gtc/matrix_transform.hpp \
+  /usr/include/glm/ext/matrix_projection.hpp \
+  /usr/include/glm/gtc/constants.hpp \
+  /usr/include/glm/ext/scalar_constants.hpp \
+  /usr/include/glm/ext/scalar_constants.inl \
+  /usr/include/glm/gtc/constants.inl \
+  /usr/include/glm/ext/matrix_projection.inl \
+  /usr/include/glm/ext/matrix_clip_space.hpp \
+  /usr/include/glm/ext/matrix_clip_space.inl \
+  /usr/include/glm/ext/matrix_transform.hpp \
+  /usr/include/glm/ext/matrix_transform.inl \
+  /usr/include/glm/gtc/matrix_transform.inl \
+  ../engine/SRC/Texture.h \
+  ../engine/SRC/Bitmap.h \
+  ../engine/SRC/Color.h \
+  ../engine/SRC/ResourceLoader.h \
+  /usr/include/glm/gtx/rotate_vector.hpp \
+  /usr/include/glm/gtx/transform.hpp \
+  /usr/include/glm/gtx/transform.inl \
+  /usr/include/glm/gtc/epsilon.hpp \
+  /usr/include/glm/detail/setup.hpp \
+  /usr/include/glm/gtc/epsilon.inl \
+  /usr/include/glm/ext/vector_relational.hpp \
+  /usr/include/glm/ext/vector_relational.inl \
+  /usr/include/glm/detail/type_float.hpp \
+  /usr/include/glm/gtx/rotate_vector.inl \
+  ../engine/SRC/library.hpp \
+  ../engine/SRC/SDL/Model.h \
+  ../engine/SRC/SDL/v_point.h \
+  ../engine/SRC/SDL/f_triangle.h \
+  ../engine/SRC/Button.h
 
 CMakeFiles/game.dir/engine/SRC/ResourceLoader.cpp.o: ../engine/SRC/ResourceLoader.cpp \
   /usr/include/stdc-predef.h \
@@ -2880,7 +3109,8 @@ CMakeFiles/game.dir/engine/SRC/Sprite.cpp.o: ../engine/SRC/Sprite.cpp \
   ../engine/libs/SDL2/include/SDL_thread.h \
   ../engine/libs/SDL2/include/SDL_atomic.h \
   ../engine/libs/SDL2/include/SDL_rwops.h \
-  ../engine/SRC/AudioManager.h
+  ../engine/SRC/AudioManager.h \
+  ../engine/SRC/Vertex.h
 
 CMakeFiles/game.dir/engine/SRC/Tank.cpp.o: ../engine/SRC/Tank.cpp \
   /usr/include/stdc-predef.h \
@@ -3214,35 +3444,96 @@ CMakeFiles/game.dir/engine/SRC/Tank.cpp.o: ../engine/SRC/Tank.cpp \
   /usr/include/c++/11/bits/enable_special_members.h \
   ../engine/SRC/Shader.h \
   ../engine/libs/glew/include/GL/glew.h \
-  ../engine/SRC/EventManager.h \
-  ../engine/libs/SDL2/include/SDL.h \
-  ../engine/libs/SDL2/include/SDL_main.h \
-  ../engine/libs/SDL2/include/SDL_stdinc.h \
-  ../engine/libs/SDL2/include/SDL_config.h \
-  ../engine/libs/SDL2/include/SDL_platform.h \
-  ../engine/libs/SDL2/include/begin_code.h \
-  ../engine/libs/SDL2/include/close_code.h \
+  ../engine/SRC/Sprite.h \
+  /usr/include/glm/gtc/matrix_transform.hpp \
+  /usr/include/glm/ext/matrix_projection.hpp \
+  /usr/include/glm/gtc/constants.hpp \
+  /usr/include/glm/ext/scalar_constants.hpp \
+  /usr/include/glm/ext/scalar_constants.inl \
+  /usr/include/glm/gtc/constants.inl \
+  /usr/include/glm/ext/matrix_projection.inl \
+  /usr/include/glm/ext/matrix_clip_space.hpp \
+  /usr/include/glm/ext/matrix_clip_space.inl \
+  /usr/include/glm/ext/matrix_transform.hpp \
+  /usr/include/glm/ext/matrix_transform.inl \
+  /usr/include/glm/gtc/matrix_transform.inl \
+  ../engine/SRC/Texture.h \
+  ../engine/SRC/Bitmap.h \
+  /usr/include/c++/11/string_view \
+  /usr/include/c++/11/bits/char_traits.h \
+  /usr/include/c++/11/bits/ostream_insert.h \
+  /usr/include/c++/11/bits/cxxabi_forced.h \
+  /usr/include/c++/11/bits/string_view.tcc \
+  ../engine/SRC/Color.h \
+  /usr/include/c++/11/string \
+  /usr/include/c++/11/bits/localefwd.h \
+  /usr/include/c++/11/x86_64-redhat-linux/bits/c++locale.h \
+  /usr/include/c++/11/clocale \
+  /usr/include/locale.h \
+  /usr/include/bits/locale.h \
+  /usr/include/c++/11/cctype \
+  /usr/include/ctype.h \
+  /usr/include/c++/11/bits/basic_string.h \
+  /usr/include/c++/11/ext/string_conversions.h \
+  /usr/include/c++/11/cstdlib \
+  /usr/include/c++/11/cstdio \
   /usr/include/stdio.h \
   /usr/include/bits/types/__fpos_t.h \
   /usr/include/bits/types/__fpos64_t.h \
   /usr/include/bits/types/struct_FILE.h \
   /usr/include/bits/types/cookie_io_functions_t.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/c++/11/cerrno \
+  /usr/include/errno.h \
+  /usr/include/bits/errno.h \
+  /usr/include/linux/errno.h \
+  /usr/include/asm/errno.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/bits/types/error_t.h \
+  /usr/include/c++/11/bits/charconv.h \
+  /usr/include/c++/11/bits/basic_string.tcc \
+  ../engine/SRC/ResourceLoader.h \
+  /usr/include/c++/11/map \
+  /usr/include/c++/11/bits/stl_tree.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/stl_map.h \
+  /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/include/c++/11/bits/erase_if.h \
+  ../engine/SRC/Sound.h \
+  ../engine/libs/SDL2/include/SDL_audio.h \
+  ../engine/libs/SDL2/include/SDL_stdinc.h \
+  ../engine/libs/SDL2/include/SDL_config.h \
+  ../engine/libs/SDL2/include/SDL_platform.h \
+  ../engine/libs/SDL2/include/begin_code.h \
+  ../engine/libs/SDL2/include/close_code.h \
   /usr/include/c++/11/stdlib.h \
-  /usr/include/c++/11/cstdlib \
   /usr/include/string.h \
   /usr/include/strings.h \
   /usr/include/inttypes.h \
-  /usr/include/ctype.h \
   /usr/include/c++/11/math.h \
-  ../engine/libs/SDL2/include/SDL_assert.h \
-  ../engine/libs/SDL2/include/SDL_atomic.h \
-  ../engine/libs/SDL2/include/SDL_audio.h \
   ../engine/libs/SDL2/include/SDL_error.h \
   ../engine/libs/SDL2/include/SDL_endian.h \
   ../engine/libs/SDL2/include/SDL_mutex.h \
   ../engine/libs/SDL2/include/SDL_thread.h \
+  ../engine/libs/SDL2/include/SDL_atomic.h \
   ../engine/libs/SDL2/include/SDL_rwops.h \
+  ../engine/SRC/AudioManager.h \
+  /usr/include/glm/gtx/rotate_vector.hpp \
+  /usr/include/glm/gtx/transform.hpp \
+  /usr/include/glm/gtx/transform.inl \
+  /usr/include/glm/gtc/epsilon.hpp \
+  /usr/include/glm/detail/setup.hpp \
+  /usr/include/glm/gtc/epsilon.inl \
+  /usr/include/glm/ext/vector_relational.hpp \
+  /usr/include/glm/ext/vector_relational.inl \
+  /usr/include/glm/detail/type_float.hpp \
+  /usr/include/glm/gtx/rotate_vector.inl \
+  ../engine/SRC/library.hpp \
+  ../engine/libs/SDL2/include/SDL.h \
+  ../engine/libs/SDL2/include/SDL_main.h \
+  ../engine/libs/SDL2/include/SDL_assert.h \
+  ../engine/libs/SDL2/include/SDL_audio.h \
   ../engine/libs/SDL2/include/SDL_clipboard.h \
   ../engine/libs/SDL2/include/SDL_cpuinfo.h \
   /usr/lib/gcc/x86_64-redhat-linux/11/include/immintrin.h \
@@ -3359,68 +3650,6 @@ CMakeFiles/game.dir/engine/SRC/Tank.cpp.o: ../engine/SRC/Tank.cpp \
   ../engine/libs/SDL2/include/SDL_version.h \
   ../engine/libs/SDL2/include/SDL_locale.h \
   ../engine/libs/SDL2/include/SDL_misc.h \
-  /usr/include/c++/11/string \
-  /usr/include/c++/11/bits/char_traits.h \
-  /usr/include/c++/11/bits/localefwd.h \
-  /usr/include/c++/11/x86_64-redhat-linux/bits/c++locale.h \
-  /usr/include/c++/11/clocale \
-  /usr/include/locale.h \
-  /usr/include/bits/locale.h \
-  /usr/include/c++/11/cctype \
-  /usr/include/c++/11/bits/ostream_insert.h \
-  /usr/include/c++/11/bits/cxxabi_forced.h \
-  /usr/include/c++/11/bits/basic_string.h \
-  /usr/include/c++/11/string_view \
-  /usr/include/c++/11/bits/string_view.tcc \
-  /usr/include/c++/11/ext/string_conversions.h \
-  /usr/include/c++/11/cstdio \
-  /usr/include/c++/11/cerrno \
-  /usr/include/errno.h \
-  /usr/include/bits/errno.h \
-  /usr/include/linux/errno.h \
-  /usr/include/asm/errno.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/bits/types/error_t.h \
-  /usr/include/c++/11/bits/charconv.h \
-  /usr/include/c++/11/bits/basic_string.tcc \
-  ../engine/SRC/Sprite.h \
-  /usr/include/glm/gtc/matrix_transform.hpp \
-  /usr/include/glm/ext/matrix_projection.hpp \
-  /usr/include/glm/gtc/constants.hpp \
-  /usr/include/glm/ext/scalar_constants.hpp \
-  /usr/include/glm/ext/scalar_constants.inl \
-  /usr/include/glm/gtc/constants.inl \
-  /usr/include/glm/ext/matrix_projection.inl \
-  /usr/include/glm/ext/matrix_clip_space.hpp \
-  /usr/include/glm/ext/matrix_clip_space.inl \
-  /usr/include/glm/ext/matrix_transform.hpp \
-  /usr/include/glm/ext/matrix_transform.inl \
-  /usr/include/glm/gtc/matrix_transform.inl \
-  ../engine/SRC/Texture.h \
-  ../engine/SRC/Bitmap.h \
-  ../engine/SRC/Color.h \
-  ../engine/SRC/ResourceLoader.h \
-  /usr/include/c++/11/map \
-  /usr/include/c++/11/bits/stl_tree.h \
-  /usr/include/c++/11/bits/node_handle.h \
-  /usr/include/c++/11/bits/stl_map.h \
-  /usr/include/c++/11/bits/stl_multimap.h \
-  /usr/include/c++/11/bits/erase_if.h \
-  ../engine/SRC/Sound.h \
-  ../engine/libs/SDL2/include/SDL_audio.h \
-  ../engine/SRC/AudioManager.h \
-  /usr/include/glm/gtx/rotate_vector.hpp \
-  /usr/include/glm/gtx/transform.hpp \
-  /usr/include/glm/gtx/transform.inl \
-  /usr/include/glm/gtc/epsilon.hpp \
-  /usr/include/glm/detail/setup.hpp \
-  /usr/include/glm/gtc/epsilon.inl \
-  /usr/include/glm/ext/vector_relational.hpp \
-  /usr/include/glm/ext/vector_relational.inl \
-  /usr/include/glm/detail/type_float.hpp \
-  /usr/include/glm/gtx/rotate_vector.inl \
-  ../engine/SRC/library.hpp \
   ../engine/SRC/SDL/Model.h \
   ../engine/SRC/SDL/v_point.h \
   ../engine/SRC/SDL/f_triangle.h
@@ -4244,9 +4473,7 @@ CMakeFiles/game.dir/main.cpp.o: ../main.cpp \
   ../engine/SRC/Sound.h \
   ../engine/libs/SDL2/include/SDL_audio.h \
   ../engine/SRC/AudioManager.h \
-  ../engine/SRC/EventManager.h \
   ../engine/SRC/SDL/Model_head.h \
-  ../engine/SRC/SDL/Model.h \
   /usr/include/c++/11/chrono \
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/ctime \
@@ -4264,20 +4491,20 @@ CMakeFiles/game.dir/main.cpp.o: ../main.cpp \
   /usr/include/glm/ext/vector_relational.inl \
   /usr/include/glm/detail/type_float.hpp \
   /usr/include/glm/gtx/rotate_vector.inl \
-  ../engine/SRC/library.hpp
+  ../engine/SRC/library.hpp \
+  ../engine/SRC/Button.h \
+  ../engine/SRC/EventManager.h \
+  ../engine/SRC/Tank.h \
+  ../engine/SRC/Button.h
 
 
 /usr/include/GL/glext.h:
 
 /usr/include/GL/gl.h:
 
-/usr/include/glm/gtx/rotate_vector.inl:
-
-/usr/include/glm/gtx/transform.inl:
-
-../engine/SRC/Tank.h:
-
 ../engine/SRC/Tank.cpp:
+
+../engine/SRC/Vertex.h:
 
 /usr/include/glm/gtc/type_ptr.inl:
 
@@ -4290,10 +4517,6 @@ CMakeFiles/game.dir/main.cpp.o: ../main.cpp \
 /usr/include/glm/ext/vector_bool1_precision.hpp:
 
 /usr/include/glm/ext/vector_bool1.hpp:
-
-/usr/include/c++/11/bits/parse_numbers.h:
-
-/usr/include/glm/gtc/epsilon.inl:
 
 /usr/include/glm/gtc/quaternion.inl:
 
@@ -4360,6 +4583,18 @@ CMakeFiles/game.dir/main.cpp.o: ../main.cpp \
 ../engine/SRC/SDL/Model.cpp:
 
 ../engine/SRC/ResourceLoader.cpp:
+
+../engine/SRC/Button.h:
+
+/usr/include/glm/gtx/rotate_vector.inl:
+
+/usr/include/c++/11/bits/parse_numbers.h:
+
+/usr/include/glm/gtc/epsilon.inl:
+
+/usr/include/glm/gtx/transform.inl:
+
+../engine/SRC/Tank.h:
 
 ../engine/SRC/EventManager.cpp:
 

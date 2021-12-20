@@ -9,7 +9,7 @@ endif()
 
 add_library(engine STATIC SRC/library.cpp SRC/Node.cpp SRC/Node.h
         SRC/Sound.cpp SRC/Sound.cpp SRC/Sound.h SRC/AudioManager.cpp SRC/AudioManager.h
-        SRC/Color.h Button.cpp Button.h Shaders.h)
+        SRC/Color.h SRC/Button.cpp SRC/Button.h Shaders.h SRC/Vertex.cpp SRC/Vertex.h SRC/ImguiManager.cpp SRC/ImguiManager.h)
 #SDL
 
 if(NOT IOS)

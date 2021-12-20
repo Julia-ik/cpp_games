@@ -8,7 +8,6 @@
 
 #include "Node.h"
 #include "Shader.h"
-#include "EventManager.h"
 #include "Sprite.h"
 #include <glm/gtx/rotate_vector.hpp>
 #include "library.hpp"
@@ -18,8 +17,10 @@ class Tank : public Node
 {
 public:
     Shader shader;
-    Engine * _engine;
+    Engine *_engine;
+
     std::vector<std::shared_ptr<Sound>> _sounds;
+
     float _speed=0.0;
     float _turnSpeed=0.0;
     bool isLeft = false;
@@ -32,10 +33,10 @@ public:
 
     Tank(Engine *engine,const Shader &shader, glm::vec2 position, glm::vec2 size,
          float rotation, glm::vec2 center);
-    EventManager _em;
-    std::shared_ptr<Node> _gun;
 
-    void RegisterEvents();
+    void RegisterEvent();
+
+  //  Sound createSound {return /*массив вик птр*/};
 
     void moveLeft(std::shared_ptr<Node>, float delta);
 

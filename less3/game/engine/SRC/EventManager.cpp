@@ -4,57 +4,128 @@
 
 #include "EventManager.h"
 #include "SDL.h"
+#include <memory>
 
 
-
-EventManager::EventManager()
+EventManager::EventManager(Engine *engine, Tank *tank, Button *button): _engine(engine), _tank(tank), _button(button)
 {
-    for(int i = 0; i < 322; i++) { // init them all to false
-        KEYS[i] = false;
-    }
+    RegisterEvents();
 }
 
-void EventManager:: keyboard() {
-    // message processing loop
+void EventManager::RegisterEvents()
+{
+    while(SDL_PollEvent(&event)) {
 
-    while (SDL_PollEvent(&event)) {
-        // check for messages
-        switch (event.type) {
-            // exit if the window is closed
-            case SDL_QUIT:
-                printf("QUIT"); // set game state to done,(do what you want here)
-                break;
-                // check for keypresses
-            case SDL_KEYDOWN:
-                KEYS[event.key.keysym.sym] = true;
-                break;
-            case SDL_KEYUP:
-                KEYS[event.key.keysym.sym] = false;
-                break;
-            default:
-                break;
+
+        if (event.type == SDL_MOUSEBUTTONDOWN)
+        {
+            if (event.motion.x >=_button->_position.x &&
+                event.motion.x <=_button->_position.x + _button->_contentSize.x &&
+                event.motion.y >= _button->_position.y &&
+                event.motion.y <= _button->_position.y + _button->_contentSize.y)
+            {
+                _button->isPressed = true;
+                printf("\n ORDER %d\n",_button->_nodes[0]->_zOrder);
+                _button->_nodes[0]->_contentSize.x*=0.8f;
+                _button->_nodes[0]->_contentSize.y*=0.8f;
+            }
         }
-    } // end of message processing
-}
+       if(event.type == SDL_MOUSEBUTTONUP && _button->isPressed)
+        {
+                _button->_nodes[0]->_contentSize.x/=0.8f;
+                _button->_nodes[0]->_contentSize.y/=0.8f;
+                _button->isPressed = false;
+        }
 
-void EventManager:: handleInput() {
-    if(KEYS[SDLK_LEFT]) { // move left
-        printf("\n LEFT \n");
-    }
-    if(KEYS[SDLK_RIGHT]) { // move right
-        printf("\n RIGHT \n");
-    }
-    if(KEYS[SDLK_a]) { // shoot
-        printf("\n AA \n");
-    }
-    if(KEYS[SDLK_d]) {
-        printf("\n DDD \n");
-    }
-    if(KEYS[SDLK_SPACE]) {
-        printf("\n SPACE \n");
-    }
+        auto keyState = SDL_GetKeyboardState(NULL);
 
-    if(KEYS[SDLK_ESCAPE]) {
-        printf("\n QUITE \n");
+        if (keyState[SDL_SCANCODE_A]) {
+            _tank->_nodes[1]->isLeft = true;
+        }
+        if (!keyState[SDL_SCANCODE_A]) {
+            _tank->_nodes[1]->isLeft = false;
+        }
+        if (keyState[SDL_SCANCODE_D]) {
+            _tank->_nodes[1]->isRight=true;
+        }
+        if (!keyState[SDL_SCANCODE_D]) {
+            _tank->_nodes[1]->isRight= false;
+        }
+        if (keyState[SDL_SCANCODE_LEFT]) {
+            //_spriteRenderers["body"]->_isLeft=true;
+            _tank->_nodes[0]->isLeft=true;
+
+        }
+        if (!keyState[SDL_SCANCODE_LEFT]) {
+            //_spriteRenderers["body"]->_isLeft=true;
+            _tank->_nodes[0]->isLeft=false;
+
+        }
+        if (keyState[SDL_SCANCODE_RIGHT]) {
+            _tank->_nodes[0]->isRight=true;
+        }
+        if (!keyState[SDL_SCANCODE_RIGHT]) {
+            _tank->_nodes[0]->isRight=false;
+        }
+        if (keyState[SDL_SCANCODE_SPACE]) {
+
+            _engine->scene.addNode(_tank->createShared<Sprite>(ResourceManager::GetShader("sprite"),
+                                                        glm::vec2 (_tank->_nodes[1]->getPosition().x + 68,
+                                                                   _tank->_nodes[1]->getPosition().y+8),
+                                                        glm::vec2(10.0f, 10.0f),
+                                                        0.0f, glm::vec2(0.5f),
+                                                        glm::vec4(1.0f, 0.0f,0.0f,0.8f),"fire"), 7);
+
+            _engine->_sounds[0]->pause();
+            _tank->_sounds[1]->play();
+
+        }
+        if (!keyState[SDL_SCANCODE_SPACE]) {
+            _tank->_sounds[1]->stop();
+        }
+        if (keyState[SDL_SCANCODE_ESCAPE]) {
+            _engine->isActive = false;
+        }
+        if(keyState[SDL_SCANCODE_UP])
+        {
+            _engine->_sounds[0]->pause();
+            _tank->_sounds[0]->play();
+
+            _tank->_nodes[0]->isMovingForward = true;
+        }
+        if(!keyState[SDL_SCANCODE_UP])
+        {
+            _tank->_nodes[0]->isMovingForward = false;
+
+        }
+        if(keyState[SDL_SCANCODE_DOWN])
+        {
+            _engine->_sounds[0]->pause();
+            _tank->_sounds[0]->play();
+
+            _tank->_nodes[0]->isMovingBack = true;
+        }
+        if(!keyState[SDL_SCANCODE_DOWN])
+        {
+            _tank->_nodes[0]->isMovingBack = false;
+        }
+        if(!keyState[SDL_SCANCODE_DOWN] && !keyState[SDL_SCANCODE_UP]
+           && !keyState[SDL_SCANCODE_SPACE])
+        {
+            _engine->_sounds[0]->play();
+        }
+        if(!keyState[SDL_SCANCODE_DOWN] && !keyState[SDL_SCANCODE_UP])
+        {
+            _tank->_sounds[0]->pause();
+        }
+        if(keyState[SDL_SCANCODE_KP_PLUS])
+        {
+            _tank->_sounds[0]->volumePlus();
+        }
+        if(keyState[SDL_SCANCODE_KP_MINUS])
+        {
+            _tank->_sounds[0]->volumeMinus();
+        }
+
     }
 }

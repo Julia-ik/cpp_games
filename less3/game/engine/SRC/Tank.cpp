@@ -28,114 +28,13 @@ Tank::Tank(Engine *engine, const Shader &shader, glm::vec2 position, glm::vec2 s
                                     glm::vec2(70.0f, 30.0f), _rotation, glm::vec2 (0.3f, 0.5f),
                                     glm::vec4(1.0f, 0.0f, 1.0f, 1.0f),"gun");
 
-    addNode(body);
-    addNode(gun);
+    addNode(body, 4);
+    addNode(gun, 5);
 };
 
 void Tank::init()
 {
 
-}
-
-void Tank::RegisterEvents()
-{
-    SDL_Event ev;
-
-    while(SDL_PollEvent(&ev)) {
-
-        auto keyState = SDL_GetKeyboardState(NULL);
-
-        if (keyState[SDL_SCANCODE_A]) {
-            _nodes[1]->isLeft = true;
-        }
-        if (!keyState[SDL_SCANCODE_A]) {
-            _nodes[1]->isLeft = false;
-        }
-        if (keyState[SDL_SCANCODE_D]) {
-            _nodes[1]->isRight=true;
-        }
-        if (!keyState[SDL_SCANCODE_D]) {
-            _nodes[1]->isRight= false;
-        }
-        if (keyState[SDL_SCANCODE_LEFT]) {
-            //_spriteRenderers["body"]->_isLeft=true;
-            _nodes[0]->isLeft=true;
-
-        }
-        if (!keyState[SDL_SCANCODE_LEFT]) {
-            //_spriteRenderers["body"]->_isLeft=true;
-            _nodes[0]->isLeft=false;
-
-        }
-        if (keyState[SDL_SCANCODE_RIGHT]) {
-            _nodes[0]->isRight=true;
-        }
-        if (!keyState[SDL_SCANCODE_RIGHT]) {
-            _nodes[0]->isRight=false;
-        }
-        if (keyState[SDL_SCANCODE_SPACE]) {
-
-            _engine->scene.addNode(createShared<Sprite>(ResourceManager::GetShader("sprite"),
-                                                        glm::vec2 (_nodes[1]->getPosition().x + 68,
-                                                                   _nodes[1]->getPosition().y+8),
-                                                        glm::vec2(10.0f, 10.0f),
-                                                        0.0f, glm::vec2(0.5f),
-                                                        glm::vec4(1.0f, 0.0f,0.0f,0.8f),"fire"));
-
-            _engine->_sounds[0]->pause();
-            _sounds[1]->play();
-
-        }
-        if (!keyState[SDL_SCANCODE_SPACE]) {
-            _sounds[1]->stop();
-        }
-        if (keyState[SDL_SCANCODE_ESCAPE]) {
-            _engine->isActive = false;
-        }
-        if(keyState[SDL_SCANCODE_UP])
-        {
-            _engine->_sounds[0]->pause();
-            _sounds[0]->play();
-
-            _nodes[0]->isMovingForward = true;
-
-
-        }
-        if(!keyState[SDL_SCANCODE_UP])
-        {
-            _nodes[0]->isMovingForward = false;
-
-        }
-        if(keyState[SDL_SCANCODE_DOWN])
-        {
-            _engine->_sounds[0]->pause();
-            _sounds[0]->play();
-
-            _nodes[0]->isMovingBack = true;
-        }
-        if(!keyState[SDL_SCANCODE_DOWN])
-        {
-            _nodes[0]->isMovingBack = false;
-        }
-        if(!keyState[SDL_SCANCODE_DOWN] && !keyState[SDL_SCANCODE_UP]
-        && !keyState[SDL_SCANCODE_SPACE])
-        {
-            _engine->_sounds[0]->play();
-        }
-        if(!keyState[SDL_SCANCODE_DOWN] && !keyState[SDL_SCANCODE_UP])
-        {
-            _sounds[0]->pause();
-        }
-        if(keyState[SDL_SCANCODE_KP_PLUS])
-        {
-            _sounds[0]->volumePlus();
-        }
-        if(keyState[SDL_SCANCODE_KP_MINUS])
-        {
-            _sounds[0]->volumeMinus();
-        }
-
-    }
 }
 
 void Tank::updateSelf(float delta)
@@ -179,6 +78,18 @@ void Tank::updateSelf(float delta)
         }
 
     }
+    /*str2.erase(std::remove_if(str2.begin(),
+                              str2.end(),
+                              [](unsigned char x){return std::isspace(x);}),
+               str2.end());
+    std::cout << str2 << '\n';*/
+    /*for(int i=0; i<_sounds.size();i++)
+    {
+        if(_sounds[i].expired())
+        {
+            _engine->audioManager._buffers.erase(_sounds[i].lock()->_name);
+        }
+    }*/
 }
 
 void Tank::moveLeft(std::shared_ptr<Node> sprite, float delta){
@@ -215,7 +126,8 @@ void Tank::moveRight(std::shared_ptr<Node> sprite, float delta){
     }
 }
 
-void Tank::move(std::shared_ptr<Node> sprite, float delta) {
+void Tank::move(std::shared_ptr<Node> sprite, float delta)
+{
     if (sprite->_speed < 40.0f) {
         sprite->_speed += delta * 2000.0f;
     }

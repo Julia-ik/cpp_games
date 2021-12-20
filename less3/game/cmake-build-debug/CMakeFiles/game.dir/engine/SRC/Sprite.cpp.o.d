@@ -309,4 +309,5 @@ CMakeFiles/game.dir/engine/SRC/Sprite.cpp.o: \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_thread.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_atomic.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_rwops.h \
- /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/AudioManager.h
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/AudioManager.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Vertex.h

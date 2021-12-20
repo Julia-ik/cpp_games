@@ -8,33 +8,29 @@
 #include "SDL.h"
 #include <stdlib.h>
 #include <string>
+#include "Node.h"
+#include "Sound.h"
+#include "Tank.h"
+#include "library.hpp"
+#include "Button.h"
 
 
-/*struct KeyEvent : public BaseEvent
-{
-    KeyCode key = KeyCode::UNKNOWN;
-
-    enum class Type
-    {
-        KeyDown,
-        KeyUp,
-    } type;
-
-    KeyEvent(Type type, KeyCode key) : type(type), key(key) { }
-};
-*/
 class EventManager
 {
 public:
     SDL_Event event;
-    bool KEYS[322];  // 322 is the number of SDLK_DOWN events
+    Engine *_engine;
+    Tank *_tank;
+    Button *_button;
 
 
-    EventManager();
+    EventManager(Engine *engine, Tank *tank, Button *button);
 
-    void keyboard();
+    void RegisterEvents();
 
-    void handleInput();
+private:
+    int _currentMouseX;
+    int _currentMouseY;
 };
 
 

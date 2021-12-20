@@ -253,29 +253,78 @@ CMakeFiles/game.dir/engine/SRC/Tank.cpp.o: \
  /usr/include/c++/11/bits/enable_special_members.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Shader.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/glew/include/GL/glew.h \
- /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/EventManager.h \
- /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL.h \
- /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_main.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Sprite.h \
+ /usr/include/glm/gtc/matrix_transform.hpp \
+ /usr/include/glm/ext/matrix_projection.hpp \
+ /usr/include/glm/gtc/constants.hpp \
+ /usr/include/glm/ext/scalar_constants.hpp \
+ /usr/include/glm/ext/scalar_constants.inl \
+ /usr/include/glm/gtc/constants.inl \
+ /usr/include/glm/ext/matrix_projection.inl \
+ /usr/include/glm/ext/matrix_clip_space.hpp \
+ /usr/include/glm/ext/matrix_clip_space.inl \
+ /usr/include/glm/ext/matrix_transform.hpp \
+ /usr/include/glm/ext/matrix_transform.inl \
+ /usr/include/glm/gtc/matrix_transform.inl \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Texture.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Bitmap.h \
+ /usr/include/c++/11/string_view /usr/include/c++/11/bits/char_traits.h \
+ /usr/include/c++/11/bits/ostream_insert.h \
+ /usr/include/c++/11/bits/cxxabi_forced.h \
+ /usr/include/c++/11/bits/string_view.tcc \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Color.h \
+ /usr/include/c++/11/string /usr/include/c++/11/bits/localefwd.h \
+ /usr/include/c++/11/x86_64-redhat-linux/bits/c++locale.h \
+ /usr/include/c++/11/clocale /usr/include/locale.h \
+ /usr/include/bits/locale.h /usr/include/c++/11/cctype \
+ /usr/include/ctype.h /usr/include/c++/11/bits/basic_string.h \
+ /usr/include/c++/11/ext/string_conversions.h /usr/include/c++/11/cstdlib \
+ /usr/include/c++/11/cstdio /usr/include/stdio.h \
+ /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__fpos64_t.h \
+ /usr/include/bits/types/struct_FILE.h \
+ /usr/include/bits/types/cookie_io_functions_t.h \
+ /usr/include/bits/stdio_lim.h /usr/include/c++/11/cerrno \
+ /usr/include/errno.h /usr/include/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/bits/types/error_t.h /usr/include/c++/11/bits/charconv.h \
+ /usr/include/c++/11/bits/basic_string.tcc \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/ResourceLoader.h \
+ /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
+ /usr/include/c++/11/bits/node_handle.h \
+ /usr/include/c++/11/bits/stl_map.h \
+ /usr/include/c++/11/bits/stl_multimap.h \
+ /usr/include/c++/11/bits/erase_if.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Sound.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_audio.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_stdinc.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_config.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_platform.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/begin_code.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/close_code.h \
- /usr/include/stdio.h /usr/include/bits/types/__fpos_t.h \
- /usr/include/bits/types/__fpos64_t.h \
- /usr/include/bits/types/struct_FILE.h \
- /usr/include/bits/types/cookie_io_functions_t.h \
- /usr/include/bits/stdio_lim.h /usr/include/c++/11/stdlib.h \
- /usr/include/c++/11/cstdlib /usr/include/string.h /usr/include/strings.h \
- /usr/include/inttypes.h /usr/include/ctype.h /usr/include/c++/11/math.h \
- /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_assert.h \
- /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_atomic.h \
- /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_audio.h \
+ /usr/include/c++/11/stdlib.h /usr/include/string.h \
+ /usr/include/strings.h /usr/include/inttypes.h \
+ /usr/include/c++/11/math.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_error.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_endian.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_mutex.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_thread.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_atomic.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_rwops.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/AudioManager.h \
+ /usr/include/glm/gtx/rotate_vector.hpp \
+ /usr/include/glm/gtx/transform.hpp /usr/include/glm/gtx/transform.inl \
+ /usr/include/glm/gtc/epsilon.hpp /usr/include/glm/detail/setup.hpp \
+ /usr/include/glm/gtc/epsilon.inl \
+ /usr/include/glm/ext/vector_relational.hpp \
+ /usr/include/glm/ext/vector_relational.inl \
+ /usr/include/glm/detail/type_float.hpp \
+ /usr/include/glm/gtx/rotate_vector.inl \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/library.hpp \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_main.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_assert.h \
+ /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_audio.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_clipboard.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_cpuinfo.h \
  /usr/lib/gcc/x86_64-redhat-linux/11/include/immintrin.h \
@@ -392,56 +441,6 @@ CMakeFiles/game.dir/engine/SRC/Tank.cpp.o: \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_version.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_locale.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_misc.h \
- /usr/include/c++/11/string /usr/include/c++/11/bits/char_traits.h \
- /usr/include/c++/11/bits/localefwd.h \
- /usr/include/c++/11/x86_64-redhat-linux/bits/c++locale.h \
- /usr/include/c++/11/clocale /usr/include/locale.h \
- /usr/include/bits/locale.h /usr/include/c++/11/cctype \
- /usr/include/c++/11/bits/ostream_insert.h \
- /usr/include/c++/11/bits/cxxabi_forced.h \
- /usr/include/c++/11/bits/basic_string.h /usr/include/c++/11/string_view \
- /usr/include/c++/11/bits/string_view.tcc \
- /usr/include/c++/11/ext/string_conversions.h /usr/include/c++/11/cstdio \
- /usr/include/c++/11/cerrno /usr/include/errno.h \
- /usr/include/bits/errno.h /usr/include/linux/errno.h \
- /usr/include/asm/errno.h /usr/include/asm-generic/errno.h \
- /usr/include/asm-generic/errno-base.h /usr/include/bits/types/error_t.h \
- /usr/include/c++/11/bits/charconv.h \
- /usr/include/c++/11/bits/basic_string.tcc \
- /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Sprite.h \
- /usr/include/glm/gtc/matrix_transform.hpp \
- /usr/include/glm/ext/matrix_projection.hpp \
- /usr/include/glm/gtc/constants.hpp \
- /usr/include/glm/ext/scalar_constants.hpp \
- /usr/include/glm/ext/scalar_constants.inl \
- /usr/include/glm/gtc/constants.inl \
- /usr/include/glm/ext/matrix_projection.inl \
- /usr/include/glm/ext/matrix_clip_space.hpp \
- /usr/include/glm/ext/matrix_clip_space.inl \
- /usr/include/glm/ext/matrix_transform.hpp \
- /usr/include/glm/ext/matrix_transform.inl \
- /usr/include/glm/gtc/matrix_transform.inl \
- /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Texture.h \
- /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Bitmap.h \
- /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Color.h \
- /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/ResourceLoader.h \
- /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
- /usr/include/c++/11/bits/node_handle.h \
- /usr/include/c++/11/bits/stl_map.h \
- /usr/include/c++/11/bits/stl_multimap.h \
- /usr/include/c++/11/bits/erase_if.h \
- /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Sound.h \
- /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_audio.h \
- /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/AudioManager.h \
- /usr/include/glm/gtx/rotate_vector.hpp \
- /usr/include/glm/gtx/transform.hpp /usr/include/glm/gtx/transform.inl \
- /usr/include/glm/gtc/epsilon.hpp /usr/include/glm/detail/setup.hpp \
- /usr/include/glm/gtc/epsilon.inl \
- /usr/include/glm/ext/vector_relational.hpp \
- /usr/include/glm/ext/vector_relational.inl \
- /usr/include/glm/detail/type_float.hpp \
- /usr/include/glm/gtx/rotate_vector.inl \
- /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/library.hpp \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/Model.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/v_point.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/SDL/f_triangle.h

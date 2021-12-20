@@ -31,6 +31,14 @@ public:
     void  visitSelf() override;
     glm::vec4 _color;
 
+/*void GlVertexBuffer::draw(size_t num, size_t offset)
+{
+    glBindVertexArray(_VAO);
+
+    GlDrawElements(GL_TRIANGLES, static_cast<GLsizei>(num),
+                   GL_UNSIGNED_INT,
+                   reinterpret_cast <GLvoid*>(offset));
+}*/
 
 
 private:

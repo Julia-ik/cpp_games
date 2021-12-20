@@ -6,16 +6,20 @@
 #include "glm/gtx/matrix_transform_2d.hpp"
 #include <vector>
 #include "glm/glm.hpp"
-#include <stdio.h>
+#include <algorithm>
 
-void Node::addNode(std::shared_ptr<Node> node)
+void Node::addNode(std::shared_ptr<Node> node, int zOrder)
 {
-    if (node != nullptr){
 
-        if(node->_parent != nullptr) {
+    if (node != nullptr)
+    {
+        if(node->_parent != nullptr)
+        {
             node->_parent = shared_from_this();
         }
+        node->_zOrder = zOrder;
         _nodes.push_back(std::move(node));
+       std::sort(_nodes.begin(), _nodes.end(), comparor);
     }
 }
 
@@ -42,18 +46,45 @@ std::shared_ptr<Node> Node::getParent()
 
 void Node::visit()
 {
-    this->visitSelf();
-    for(int i =0; i<_nodes.size();i++){
-        _nodes[i]->visit();
+
+    for(int i = 0; i<_nodes.size();i++)
+    {
+        if(_zOrder >_nodes[i]->_zOrder)
+        {
+            _nodes[i]->visit();
+        }
     }
+    this -> visitSelf();
+
+    for(int i = 0; i<_nodes.size();i++)
+    {
+        if(_zOrder <=_nodes[i]->_zOrder)
+        {
+            _nodes[i]->visit();
+        }
+    }
+
 }
 
 void Node::update(float delta)
 {
-    this->updateSelf(delta);
-    for(int i =0; i<_nodes.size();i++){
-        _nodes[i]->update(delta);
+    for(int i = 0; i<_nodes.size();i++)
+    {
+        if(_zOrder >_nodes[i]->_zOrder)
+        {
+            _nodes[i]->update(delta);
+        }
     }
+    this -> updateSelf(delta);
+
+    for(int i = 0; i<_nodes.size();i++)
+    {
+        if(_zOrder <=_nodes[i]->_zOrder)
+        {
+            _nodes[i]->update(delta);
+        }
+    }
+
 }
 
 const glm::vec2 &Node::getPosition() const

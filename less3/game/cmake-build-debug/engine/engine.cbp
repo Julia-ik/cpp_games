@@ -278,19 +278,25 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Button.cpp">
-			<Option target="engine"/>
-		</Unit>
-		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/Button.h">
-			<Option target="engine"/>
-		</Unit>
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/AudioManager.cpp">
 			<Option target="engine"/>
 		</Unit>
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/AudioManager.h">
 			<Option target="engine"/>
 		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Button.cpp">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Button.h">
+			<Option target="engine"/>
+		</Unit>
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Color.h">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/ImguiManager.cpp">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/ImguiManager.h">
 			<Option target="engine"/>
 		</Unit>
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Node.cpp">
@@ -303,6 +309,12 @@
 			<Option target="engine"/>
 		</Unit>
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Sound.h">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Vertex.cpp">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Vertex.h">
 			<Option target="engine"/>
 		</Unit>
 		<Unit filename="/home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/library.cpp">

@@ -25,7 +25,9 @@ public:
     void visit();
     void update(float delta);
 
-    void addNode(std::shared_ptr<Node> node);
+    friend class  EventManager;
+
+    void addNode(std::shared_ptr<Node> node, int zOrder);
 
     void removeNode(std::shared_ptr<Node> node);
 
@@ -53,6 +55,12 @@ public:
 
     glm::mat3 getTransform();
 
+   static bool comparor (std::shared_ptr<Node> i,std::shared_ptr<Node> j)
+    {
+        return (i->_zOrder<j->_zOrder);
+    }
+
+
 protected:
     virtual void visitSelf() {};
     virtual void updateSelf(float delta) {};
@@ -70,6 +78,7 @@ protected:
 
 public:
     std::optional<glm::mat3> _transform;
+    int _zOrder=0;
 };
 
 

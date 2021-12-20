@@ -27,6 +27,8 @@ mix audiocallback в одном потоке а нужно добавить mute
 openfile + проверка 
 ~деструктор
 
+
+
 звук выстрела в танке констуркторе?
 
 улучшения в движке
@@ -76,5 +78,46 @@ num, pos добавить отрисовку
 добавить в ноду поле zorder порядок чайлдов если отриц то под текущей + над vizit change when zorder<0 vector child must be sorted with zorder
 
 текстурный и шейдерный
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+все перенести в аудиоменеджер все саунды	
+	mutex
+	thread 1 thread 2
+	tank1	 tank2
+	func1(lock чтото) func2
+	блокирует один поток
+	
+RenderDraw без параметров
+vb draw(pos count)
+scissor in renderer
+
+class uimanager в engine
+()
+visit()
+render() туда отправляем конечные данные	
+scene visit и туда же
+uivisit
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 

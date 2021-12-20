@@ -6,7 +6,6 @@
 #include "vector"
 #include "SDL/Model.h"
 #include "Sprite.h"
-#include "EventManager.h"
 #include <GL/glew.h>
 #include <map>
 

@@ -435,5 +435,4 @@ CMakeFiles/game.dir/engine/Mesh.cpp.o: \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Sound.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/libs/SDL2/include/SDL_audio.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/AudioManager.h \
- /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/EventManager.h \
  /home/lilu/lilu/cpp_games/cpp_games/less3/game/engine/SRC/Color.h

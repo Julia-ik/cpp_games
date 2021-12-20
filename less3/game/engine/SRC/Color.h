@@ -6,10 +6,11 @@
 #define GAME_COLOR_H
 #include <glm/glm.hpp>
 
-    struct color
+    struct color_t
     {
-        explicit color(std::uint32_t rgba) : _rgba(rgba) {}
-        color(glm::vec4 color)
+        explicit color_t(std::uint32_t rgba) : _rgba(rgba) {}
+        color_t() = default;
+        color_t(glm::vec4 color)
         {
             this->setColor(color);
         }

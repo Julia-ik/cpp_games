@@ -1,27 +1,33 @@
 #include "library.hpp"
 #include "SDL/Model_head.h"
-#include "SDL/Model.h"
+//#include "SDL/Model.h"
 #include <chrono>
 #include <ResourceLoader.h>
 #include "Sound.h"
 #include "Tank.h"
+#include "Button.h"
+#include "EventManager.h"
 
 int main()
 {
     Engine engine(700, 700);
+
+
     engine.initGLL();
 
 
-    /*
-    Sprite fireSprite(ResourceManager::GetShader("sprite"),
-                      glm::vec2(500.0f, 500.0f), glm::vec2(10.0f, 10.0f),
-                      0.0f, glm::vec2(0.5f), "fire");
-    engine._spriteRenderers["fire"] = &fireSprite;*/
     Tank tank(&engine, ResourceManager::GetShader("sprite"),
               glm::vec2(300.0f, 300.0f), glm::vec2(85.0f, 40.0f),
               0.0f, glm::vec2(0.5f, 0.5f));
 
-    engine.scene.addNode(std::make_shared<Tank>(tank));
+
+    Button button(ResourceManager::GetShader("sprite"),
+                  glm::vec2(10.0f, 10.0f), glm::vec2(60.0f, 60.0f),
+                  0.0f, glm::vec2(0.0f, 0.0f));
+
+    engine.scene.addNode(std::make_shared<Tank>(tank), 2);
+
+    engine.scene.addNode(std::make_shared<Button>(button), 3);
 
 
 
@@ -30,8 +36,7 @@ int main()
 
     while (engine.isActive){
 
-        tank.RegisterEvents();
-
+        EventManager eventManager(&engine, &tank, &button);
         auto curTime = std::chrono::high_resolution_clock::now();
         auto delta = std::chrono::duration_cast<std::chrono::duration<float>>(curTime - oldTime);
         oldTime = curTime;

@@ -175,30 +175,6 @@ engine/fast:
 	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/build
 .PHONY : engine/fast
 
-Button.o: Button.cpp.o
-.PHONY : Button.o
-
-# target to build an object file
-Button.cpp.o:
-	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/Button.cpp.o
-.PHONY : Button.cpp.o
-
-Button.i: Button.cpp.i
-.PHONY : Button.i
-
-# target to preprocess a source file
-Button.cpp.i:
-	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/Button.cpp.i
-.PHONY : Button.cpp.i
-
-Button.s: Button.cpp.s
-.PHONY : Button.s
-
-# target to generate assembly for a file
-Button.cpp.s:
-	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/Button.cpp.s
-.PHONY : Button.cpp.s
-
 SRC/AudioManager.o: SRC/AudioManager.cpp.o
 .PHONY : SRC/AudioManager.o
 
@@ -222,6 +198,54 @@ SRC/AudioManager.s: SRC/AudioManager.cpp.s
 SRC/AudioManager.cpp.s:
 	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/SRC/AudioManager.cpp.s
 .PHONY : SRC/AudioManager.cpp.s
+
+SRC/Button.o: SRC/Button.cpp.o
+.PHONY : SRC/Button.o
+
+# target to build an object file
+SRC/Button.cpp.o:
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/SRC/Button.cpp.o
+.PHONY : SRC/Button.cpp.o
+
+SRC/Button.i: SRC/Button.cpp.i
+.PHONY : SRC/Button.i
+
+# target to preprocess a source file
+SRC/Button.cpp.i:
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/SRC/Button.cpp.i
+.PHONY : SRC/Button.cpp.i
+
+SRC/Button.s: SRC/Button.cpp.s
+.PHONY : SRC/Button.s
+
+# target to generate assembly for a file
+SRC/Button.cpp.s:
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/SRC/Button.cpp.s
+.PHONY : SRC/Button.cpp.s
+
+SRC/ImguiManager.o: SRC/ImguiManager.cpp.o
+.PHONY : SRC/ImguiManager.o
+
+# target to build an object file
+SRC/ImguiManager.cpp.o:
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/SRC/ImguiManager.cpp.o
+.PHONY : SRC/ImguiManager.cpp.o
+
+SRC/ImguiManager.i: SRC/ImguiManager.cpp.i
+.PHONY : SRC/ImguiManager.i
+
+# target to preprocess a source file
+SRC/ImguiManager.cpp.i:
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/SRC/ImguiManager.cpp.i
+.PHONY : SRC/ImguiManager.cpp.i
+
+SRC/ImguiManager.s: SRC/ImguiManager.cpp.s
+.PHONY : SRC/ImguiManager.s
+
+# target to generate assembly for a file
+SRC/ImguiManager.cpp.s:
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/SRC/ImguiManager.cpp.s
+.PHONY : SRC/ImguiManager.cpp.s
 
 SRC/Node.o: SRC/Node.cpp.o
 .PHONY : SRC/Node.o
@@ -271,6 +295,30 @@ SRC/Sound.cpp.s:
 	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/SRC/Sound.cpp.s
 .PHONY : SRC/Sound.cpp.s
 
+SRC/Vertex.o: SRC/Vertex.cpp.o
+.PHONY : SRC/Vertex.o
+
+# target to build an object file
+SRC/Vertex.cpp.o:
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/SRC/Vertex.cpp.o
+.PHONY : SRC/Vertex.cpp.o
+
+SRC/Vertex.i: SRC/Vertex.cpp.i
+.PHONY : SRC/Vertex.i
+
+# target to preprocess a source file
+SRC/Vertex.cpp.i:
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/SRC/Vertex.cpp.i
+.PHONY : SRC/Vertex.cpp.i
+
+SRC/Vertex.s: SRC/Vertex.cpp.s
+.PHONY : SRC/Vertex.s
+
+# target to generate assembly for a file
+SRC/Vertex.cpp.s:
+	cd /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/SRC/Vertex.cpp.s
+.PHONY : SRC/Vertex.cpp.s
+
 SRC/library.o: SRC/library.cpp.o
 .PHONY : SRC/library.o
 
@@ -308,18 +356,24 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... engine"
-	@echo "... Button.o"
-	@echo "... Button.i"
-	@echo "... Button.s"
 	@echo "... SRC/AudioManager.o"
 	@echo "... SRC/AudioManager.i"
 	@echo "... SRC/AudioManager.s"
+	@echo "... SRC/Button.o"
+	@echo "... SRC/Button.i"
+	@echo "... SRC/Button.s"
+	@echo "... SRC/ImguiManager.o"
+	@echo "... SRC/ImguiManager.i"
+	@echo "... SRC/ImguiManager.s"
 	@echo "... SRC/Node.o"
 	@echo "... SRC/Node.i"
 	@echo "... SRC/Node.s"
 	@echo "... SRC/Sound.o"
 	@echo "... SRC/Sound.i"
 	@echo "... SRC/Sound.s"
+	@echo "... SRC/Vertex.o"
+	@echo "... SRC/Vertex.i"
+	@echo "... SRC/Vertex.s"
 	@echo "... SRC/library.o"
 	@echo "... SRC/library.i"
 	@echo "... SRC/library.s"
