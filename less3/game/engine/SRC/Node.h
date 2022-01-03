@@ -74,11 +74,12 @@ protected:
     glm::vec2 _anchor = glm::vec2(0.5f);
     glm::float32 _rotation = 0.0f;
 
-    glm::vec2 _contentSize = glm::vec2(0.0f);
+
 
 public:
     std::optional<glm::mat3> _transform;
     int _zOrder=0;
+    glm::vec2 _contentSize = glm::vec2(0.0f);
 };
 
 

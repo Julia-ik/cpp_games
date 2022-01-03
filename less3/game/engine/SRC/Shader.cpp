@@ -22,9 +22,9 @@ Shader::Shader()
     std::string VertexShaderCode ="#version 330 core\n"
                                   "layout (location = 0) in vec2 position;\n"
                                   "layout (location = 1) in vec2 textureCoords;\n"
-                                  "layout (location = 2) in vec4 color;\n"
+                                  //"layout (location = 2) in vec4 color;\n"
                                   "out vec2 TexCoords;\n"
-                                  "out vec4 color_f; "
+                                  //"out vec4 color_f; "
                                   " \n"
                                   "uniform mat4 model;\n"
                                   "uniform mat4 projection;\n"
@@ -32,21 +32,21 @@ Shader::Shader()
                                   "void main()\n"
                                   "{\n"
                                   "    TexCoords = textureCoords;\n"
-                                  "     color_f = color;"
+                                  //"     color_f = color;"
                                   "    gl_Position = projection * model * vec4(position, 0.0, 1.0);\n"
                                   "}";
 
     std::string FragmentShaderCode = "#version 330 core\n"
                                      "in vec2 TexCoords;\n"
                                      "out vec4 color;\n"
-                                     "in vec4 color_f;"
+                                     //"in vec4 color_f;"
                                      " \n"
                                      "uniform sampler2D image;\n"
                                      "uniform vec4 spriteColor;\n"
                                      " \n"
                                      "void main()\n"
                                      "{    \n"
-                                     "    color = texture(image, TexCoords) * color_f;\n"
+                                     "    color = texture(image, TexCoords);\n"
                                      "}  ";
 
 

@@ -1,0 +1,3528 @@
+The system is: Linux - 5.14.15-300.fc35.x86_64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdCXX/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_38ea1 && [1/2] Building C object CMakeFiles/cmTC_38ea1.dir/CMakeCCompilerABI.c.o
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-redhat-linux
+Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-11.2.1-20210728/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.2.1 20210728 (Red Hat 11.2.1-1) (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_38ea1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_38ea1.dir/'
+ /usr/libexec/gcc/x86_64-redhat-linux/11/cc1 -quiet -v /var/lib/snapd/snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_38ea1.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/cca2xJPY.s
+GNU C17 (GCC) version 11.2.1 20210728 (Red Hat 11.2.1-1) (x86_64-redhat-linux)
+	compiled by GNU C version 11.2.1 20210728 (Red Hat 11.2.1-1), GMP version 6.2.0, MPFR version 4.1.0-p13, MPC version 1.2.1, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-redhat-linux/11/include
+ /usr/local/include
+ /usr/include
+End of search list.
+GNU C17 (GCC) version 11.2.1 20210728 (Red Hat 11.2.1-1) (x86_64-redhat-linux)
+	compiled by GNU C version 11.2.1 20210728 (Red Hat 11.2.1-1), GMP version 6.2.0, MPFR version 4.1.0-p13, MPC version 1.2.1, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 39946a2835556c9d9b7727422629f1c1
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_38ea1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_38ea1.dir/'
+ as -v --64 -o CMakeFiles/cmTC_38ea1.dir/CMakeCCompilerABI.c.o /tmp/cca2xJPY.s
+GNU assembler version 2.37 (x86_64-redhat-linux) using BFD version version 2.37-10.fc35
+COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_38ea1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_38ea1.dir/CMakeCCompilerABI.c.'
+[2/2] Linking C executable cmTC_38ea1
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-redhat-linux
+Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-11.2.1-20210728/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.2.1 20210728 (Red Hat 11.2.1-1) (GCC) 
+COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_38ea1' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_38ea1.'
+ /usr/libexec/gcc/x86_64-redhat-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHEEUK2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_38ea1 /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../.. CMakeFiles/cmTC_38ea1.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/11/crtend.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_38ea1' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_38ea1.'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/x86_64-redhat-linux/11/include]
+    add: [/usr/local/include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/11/include] ==> [/usr/lib/gcc/x86_64-redhat-linux/11/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/lib/gcc/x86_64-redhat-linux/11/include;/usr/local/include;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_38ea1 && [1/2] Building C object CMakeFiles/cmTC_38ea1.dir/CMakeCCompilerABI.c.o]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-redhat-linux]
+  ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran objc obj-c++ ada go d lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-11.2.1-20210728/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.2.1 20210728 (Red Hat 11.2.1-1) (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_38ea1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_38ea1.dir/']
+  ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/11/cc1 -quiet -v /var/lib/snapd/snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_38ea1.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/cca2xJPY.s]
+  ignore line: [GNU C17 (GCC) version 11.2.1 20210728 (Red Hat 11.2.1-1) (x86_64-redhat-linux)]
+  ignore line: [	compiled by GNU C version 11.2.1 20210728 (Red Hat 11.2.1-1)  GMP version 6.2.0  MPFR version 4.1.0-p13  MPC version 1.2.1  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (GCC) version 11.2.1 20210728 (Red Hat 11.2.1-1) (x86_64-redhat-linux)]
+  ignore line: [	compiled by GNU C version 11.2.1 20210728 (Red Hat 11.2.1-1)  GMP version 6.2.0  MPFR version 4.1.0-p13  MPC version 1.2.1  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 39946a2835556c9d9b7727422629f1c1]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_38ea1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_38ea1.dir/']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_38ea1.dir/CMakeCCompilerABI.c.o /tmp/cca2xJPY.s]
+  ignore line: [GNU assembler version 2.37 (x86_64-redhat-linux) using BFD version version 2.37-10.fc35]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_38ea1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_38ea1.dir/CMakeCCompilerABI.c.']
+  ignore line: [[2/2] Linking C executable cmTC_38ea1]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-redhat-linux]
+  ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran objc obj-c++ ada go d lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-11.2.1-20210728/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.2.1 20210728 (Red Hat 11.2.1-1) (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_38ea1' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_38ea1.']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHEEUK2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_38ea1 /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../.. CMakeFiles/cmTC_38ea1.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/11/crtend.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o]
+    arg [/usr/libexec/gcc/x86_64-redhat-linux/11/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccHEEUK2.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--no-add-needed] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_38ea1] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/11] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/11/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../..]
+    arg [CMakeFiles/cmTC_38ea1.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/11/crtend.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/crtend.o]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o]
+  collapse obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+  collapse obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+  collapse obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11] ==> [/usr/lib/gcc/x86_64-redhat-linux/11]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../..] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o;/usr/lib/gcc/x86_64-redhat-linux/11/crtend.o;/usr/lib64/crtn.o]
+  implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/11;/usr/lib64;/lib64;/usr/lib]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_04987 && [1/2] Building CXX object CMakeFiles/cmTC_04987.dir/CMakeCXXCompilerABI.cpp.o
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-redhat-linux
+Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-11.2.1-20210728/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.2.1 20210728 (Red Hat 11.2.1-1) (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_04987.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_04987.dir/'
+ /usr/libexec/gcc/x86_64-redhat-linux/11/cc1plus -quiet -v -D_GNU_SOURCE /var/lib/snapd/snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_04987.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/cc3H8fVg.s
+GNU C++17 (GCC) version 11.2.1 20210728 (Red Hat 11.2.1-1) (x86_64-redhat-linux)
+	compiled by GNU C version 11.2.1 20210728 (Red Hat 11.2.1-1), GMP version 6.2.0, MPFR version 4.1.0-p13, MPC version 1.2.1, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11
+ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux
+ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward
+ /usr/lib/gcc/x86_64-redhat-linux/11/include
+ /usr/local/include
+ /usr/include
+End of search list.
+GNU C++17 (GCC) version 11.2.1 20210728 (Red Hat 11.2.1-1) (x86_64-redhat-linux)
+	compiled by GNU C version 11.2.1 20210728 (Red Hat 11.2.1-1), GMP version 6.2.0, MPFR version 4.1.0-p13, MPC version 1.2.1, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 7a79dc55e6169391e360816903c7a557
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_04987.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_04987.dir/'
+ as -v --64 -o CMakeFiles/cmTC_04987.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc3H8fVg.s
+GNU assembler version 2.37 (x86_64-redhat-linux) using BFD version version 2.37-10.fc35
+COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_04987.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_04987.dir/CMakeCXXCompilerABI.cpp.'
+[2/2] Linking CXX executable cmTC_04987
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-redhat-linux
+Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-11.2.1-20210728/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.2.1 20210728 (Red Hat 11.2.1-1) (GCC) 
+COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_04987' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_04987.'
+ /usr/libexec/gcc/x86_64-redhat-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1CpmNA.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_04987 /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../.. CMakeFiles/cmTC_04987.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/11/crtend.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_04987' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_04987.'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11]
+    add: [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux]
+    add: [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward]
+    add: [/usr/lib/gcc/x86_64-redhat-linux/11/include]
+    add: [/usr/local/include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11] ==> [/usr/include/c++/11]
+  collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux] ==> [/usr/include/c++/11/x86_64-redhat-linux]
+  collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward] ==> [/usr/include/c++/11/backward]
+  collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/11/include] ==> [/usr/lib/gcc/x86_64-redhat-linux/11/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/include/c++/11;/usr/include/c++/11/x86_64-redhat-linux;/usr/include/c++/11/backward;/usr/lib/gcc/x86_64-redhat-linux/11/include;/usr/local/include;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_04987 && [1/2] Building CXX object CMakeFiles/cmTC_04987.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-redhat-linux]
+  ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran objc obj-c++ ada go d lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-11.2.1-20210728/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.2.1 20210728 (Red Hat 11.2.1-1) (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_04987.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_04987.dir/']
+  ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/11/cc1plus -quiet -v -D_GNU_SOURCE /var/lib/snapd/snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_04987.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/cc3H8fVg.s]
+  ignore line: [GNU C++17 (GCC) version 11.2.1 20210728 (Red Hat 11.2.1-1) (x86_64-redhat-linux)]
+  ignore line: [	compiled by GNU C version 11.2.1 20210728 (Red Hat 11.2.1-1)  GMP version 6.2.0  MPFR version 4.1.0-p13  MPC version 1.2.1  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11]
+  ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux]
+  ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward]
+  ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++17 (GCC) version 11.2.1 20210728 (Red Hat 11.2.1-1) (x86_64-redhat-linux)]
+  ignore line: [	compiled by GNU C version 11.2.1 20210728 (Red Hat 11.2.1-1)  GMP version 6.2.0  MPFR version 4.1.0-p13  MPC version 1.2.1  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 7a79dc55e6169391e360816903c7a557]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_04987.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_04987.dir/']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_04987.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc3H8fVg.s]
+  ignore line: [GNU assembler version 2.37 (x86_64-redhat-linux) using BFD version version 2.37-10.fc35]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_04987.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_04987.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [[2/2] Linking CXX executable cmTC_04987]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-redhat-linux]
+  ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran objc obj-c++ ada go d lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-11.2.1-20210728/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.2.1 20210728 (Red Hat 11.2.1-1) (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_04987' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_04987.']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1CpmNA.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_04987 /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../.. CMakeFiles/cmTC_04987.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/11/crtend.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o]
+    arg [/usr/libexec/gcc/x86_64-redhat-linux/11/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc1CpmNA.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--no-add-needed] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_04987] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/11] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/11/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../..]
+    arg [CMakeFiles/cmTC_04987.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/11/crtend.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/crtend.o]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o]
+  collapse obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+  collapse obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+  collapse obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11] ==> [/usr/lib/gcc/x86_64-redhat-linux/11]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o;/usr/lib/gcc/x86_64-redhat-linux/11/crtend.o;/usr/lib64/crtn.o]
+  implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/11;/usr/lib64;/lib64;/usr/lib]
+  implicit fwks: []
+
+
+Performing C SOURCE FILE Test HAVE_GCC_WALL succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_39f5d && [1/2] Building C object CMakeFiles/cmTC_39f5d.dir/src.c.o
+[2/2] Linking C executable cmTC_39f5d
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAVE_GCC_NO_STRICT_ALIASING succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_463f5 && [1/2] Building C object CMakeFiles/cmTC_463f5.dir/src.c.o
+[2/2] Linking C executable cmTC_463f5
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAVE_GCC_WDECLARATION_AFTER_STATEMENT succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_c3423 && [1/2] Building C object CMakeFiles/cmTC_c3423.dir/src.c.o
+[2/2] Linking C executable cmTC_c3423
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAVE_GCC_WERROR_DECLARATION_AFTER_STATEMENT succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_27c55 && [1/2] Building C object CMakeFiles/cmTC_27c55.dir/src.c.o
+[2/2] Linking C executable cmTC_27c55
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAVE_GCC_ATOMICS succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_a89ea && [1/2] Building C object CMakeFiles/cmTC_a89ea.dir/src.c.o
+[2/2] Linking C executable cmTC_a89ea
+
+
+Source file was:
+int main(int argc, char **argv) {
+        int a;
+        void *x, *y, *z;
+        __sync_lock_test_and_set(&a, 4);
+        __sync_lock_test_and_set(&x, y);
+        __sync_fetch_and_add(&a, 1);
+        __sync_bool_compare_and_swap(&a, 5, 10);
+        __sync_bool_compare_and_swap(&x, y, z); }
+Performing C SOURCE FILE Test HAVE_GCC_FVISIBILITY succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_d08cb && [1/2] Building C object CMakeFiles/cmTC_d08cb.dir/src.c.o
+[2/2] Linking C executable cmTC_d08cb
+
+
+Source file was:
+
+      #if !defined(__GNUC__) || __GNUC__ < 4
+      #error SDL only uses visibility attributes in GCC 4 or newer
+      #endif
+      int main(int argc, char **argv) {}
+Performing C SOURCE FILE Test HAVE_GCC_WSHADOW succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_3131c && [1/2] Building C object CMakeFiles/cmTC_3131c.dir/src.c.o
+[2/2] Linking C executable cmTC_3131c
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAVE_NO_UNDEFINED succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_b005e && [1/2] Building C object CMakeFiles/cmTC_b005e.dir/src.c.o
+[2/2] Linking C executable cmTC_b005e
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAVE_MMX succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_c5e04 && [1/2] Building C object CMakeFiles/cmTC_c5e04.dir/src.c.o
+[2/2] Linking C executable cmTC_c5e04
+
+
+Source file was:
+
+          #ifdef __MINGW32__
+          #include <_mingw.h>
+          #ifdef __MINGW64_VERSION_MAJOR
+          #include <intrin.h>
+          #else
+          #include <mmintrin.h>
+          #endif
+          #else
+          #include <mmintrin.h>
+          #endif
+          #ifndef __MMX__
+          #error Assembler CPP flag not enabled
+          #endif
+          int main(int argc, char **argv) { }
+Performing C SOURCE FILE Test HAVE_3DNOW succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_3d53e && [1/2] Building C object CMakeFiles/cmTC_3d53e.dir/src.c.o
+[2/2] Linking C executable cmTC_3d53e
+
+
+Source file was:
+
+          #include <mm3dnow.h>
+          #ifndef __3dNOW__
+          #error Assembler CPP flag not enabled
+          #endif
+          int main(int argc, char **argv) {
+            void *p = 0;
+            _m_prefetch(p);
+          }
+Performing C SOURCE FILE Test HAVE_SSE succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_1966b && [1/2] Building C object CMakeFiles/cmTC_1966b.dir/src.c.o
+[2/2] Linking C executable cmTC_1966b
+
+
+Source file was:
+
+          #ifdef __MINGW32__
+          #include <_mingw.h>
+          #ifdef __MINGW64_VERSION_MAJOR
+          #include <intrin.h>
+          #else
+          #include <xmmintrin.h>
+          #endif
+          #else
+          #include <xmmintrin.h>
+          #endif
+          #ifndef __SSE__
+          #error Assembler CPP flag not enabled
+          #endif
+          int main(int argc, char **argv) { }
+Performing C SOURCE FILE Test HAVE_SSE2 succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_42559 && [1/2] Building C object CMakeFiles/cmTC_42559.dir/src.c.o
+[2/2] Linking C executable cmTC_42559
+
+
+Source file was:
+
+          #ifdef __MINGW32__
+          #include <_mingw.h>
+          #ifdef __MINGW64_VERSION_MAJOR
+          #include <intrin.h>
+          #else
+          #include <emmintrin.h>
+          #endif
+          #else
+          #include <emmintrin.h>
+          #endif
+          #ifndef __SSE2__
+          #error Assembler CPP flag not enabled
+          #endif
+          int main(int argc, char **argv) { }
+Performing C SOURCE FILE Test HAVE_SSE3 succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_fa7ba && [1/2] Building C object CMakeFiles/cmTC_fa7ba.dir/src.c.o
+[2/2] Linking C executable cmTC_fa7ba
+
+
+Source file was:
+
+          #ifdef __MINGW32__
+          #include <_mingw.h>
+          #ifdef __MINGW64_VERSION_MAJOR
+          #include <intrin.h>
+          #else
+          #include <pmmintrin.h>
+          #endif
+          #else
+          #include <pmmintrin.h>
+          #endif
+          #ifndef __SSE3__
+          #error Assembler CPP flag not enabled
+          #endif
+          int main(int argc, char **argv) { }
+Determining if the include file immintrin.h exists passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_415d7 && [1/2] Building C object CMakeFiles/cmTC_415d7.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_415d7
+
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_9c59d && [1/2] Building C object CMakeFiles/cmTC_9c59d.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_9c59d
+
+
+
+Determining if the include file stdio.h exists passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_739d0 && [1/2] Building C object CMakeFiles/cmTC_739d0.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_739d0
+
+
+
+Determining if the include file stdlib.h exists passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_94783 && [1/2] Building C object CMakeFiles/cmTC_94783.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_94783
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_256bf && [1/2] Building C object CMakeFiles/cmTC_256bf.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_256bf
+
+
+
+Determining if the include file stdarg.h exists passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_488fa && [1/2] Building C object CMakeFiles/cmTC_488fa.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_488fa
+
+
+
+Determining if the include file malloc.h exists passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_5096a && [1/2] Building C object CMakeFiles/cmTC_5096a.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_5096a
+
+
+
+Determining if the include file memory.h exists passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_6242b && [1/2] Building C object CMakeFiles/cmTC_6242b.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_6242b
+
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_a3e73 && [1/2] Building C object CMakeFiles/cmTC_a3e73.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_a3e73
+
+
+
+Determining if the include file limits.h exists passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_2e4b9 && [1/2] Building C object CMakeFiles/cmTC_2e4b9.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_2e4b9
+
+
+
+Determining if the include file strings.h exists passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_63b3b && [1/2] Building C object CMakeFiles/cmTC_63b3b.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_63b3b
+
+
+
+Determining if the include file wchar.h exists passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_4787d && [1/2] Building C object CMakeFiles/cmTC_4787d.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_4787d
+
+
+
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_16fdc && [1/2] Building C object CMakeFiles/cmTC_16fdc.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_16fdc
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_3852e && [1/2] Building C object CMakeFiles/cmTC_3852e.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_3852e
+
+
+
+Determining if the include file ctype.h exists passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_89143 && [1/2] Building C object CMakeFiles/cmTC_89143.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_89143
+
+
+
+Determining if the include file math.h exists passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_a78a1 && [1/2] Building C object CMakeFiles/cmTC_a78a1.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_a78a1
+
+
+
+Determining if the include file iconv.h exists passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_078c7 && [1/2] Building C object CMakeFiles/cmTC_078c7.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_078c7
+
+
+
+Determining if the include file signal.h exists passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_cde02 && [1/2] Building C object CMakeFiles/cmTC_cde02.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_cde02
+
+
+
+Determining if files stddef.h;stdarg.h;stdlib.h;string.h;stdio.h;wchar.h;float.h exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_cbea1 && [1/2] Building C object CMakeFiles/cmTC_cbea1.dir/STDC_HEADERS.c.o
+[2/2] Linking C executable cmTC_cbea1
+
+
+
+Determining size of size_t passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_0d8e4 && [1/2] Building C object CMakeFiles/cmTC_0d8e4.dir/SIZEOF_SIZE_T.c.o
+[2/2] Linking C executable cmTC_0d8e4
+
+
+
+Determining if the M_PI exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_54168 && [1/2] Building C object CMakeFiles/cmTC_54168.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_54168
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef M_PI
+  return ((int*)(&M_PI))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test HAVE_MPROTECT succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_c150b && [1/2] Building C object CMakeFiles/cmTC_c150b.dir/src.c.o
+[2/2] Linking C executable cmTC_c150b
+
+
+Source file was:
+#include <sys/types.h>
+                             #include <sys/mman.h>
+                             int main() { }
+Determining if the strtod exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_09994 && [1/2] Building C object CMakeFiles/cmTC_09994.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_09994
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtod
+  return ((int*)(&strtod))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the malloc exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_8c11a && [1/2] Building C object CMakeFiles/cmTC_8c11a.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_8c11a
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef malloc
+  return ((int*)(&malloc))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the calloc exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_ff071 && [1/2] Building C object CMakeFiles/cmTC_ff071.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_ff071
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef calloc
+  return ((int*)(&calloc))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the realloc exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_4bc0e && [1/2] Building C object CMakeFiles/cmTC_4bc0e.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_4bc0e
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef realloc
+  return ((int*)(&realloc))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the free exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_4a1ef && [1/2] Building C object CMakeFiles/cmTC_4a1ef.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_4a1ef
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef free
+  return ((int*)(&free))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the getenv exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_4e174 && [1/2] Building C object CMakeFiles/cmTC_4e174.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_4e174
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getenv
+  return ((int*)(&getenv))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the setenv exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_2ce4d && [1/2] Building C object CMakeFiles/cmTC_2ce4d.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_2ce4d
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef setenv
+  return ((int*)(&setenv))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the putenv exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_c993e && [1/2] Building C object CMakeFiles/cmTC_c993e.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_c993e
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef putenv
+  return ((int*)(&putenv))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the unsetenv exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_10baf && [1/2] Building C object CMakeFiles/cmTC_10baf.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_10baf
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef unsetenv
+  return ((int*)(&unsetenv))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the qsort exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_97c40 && [1/2] Building C object CMakeFiles/cmTC_97c40.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_97c40
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef qsort
+  return ((int*)(&qsort))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the abs exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_a3e5d && [1/2] Building C object CMakeFiles/cmTC_a3e5d.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_a3e5d
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef abs
+  return ((int*)(&abs))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the bcopy exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_c2650 && [1/2] Building C object CMakeFiles/cmTC_c2650.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_c2650
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef bcopy
+  return ((int*)(&bcopy))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the memset exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_c480e && [1/2] Building C object CMakeFiles/cmTC_c480e.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_c480e
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef memset
+  return ((int*)(&memset))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the memcpy exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_04121 && [1/2] Building C object CMakeFiles/cmTC_04121.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_04121
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef memcpy
+  return ((int*)(&memcpy))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the memmove exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_a8034 && [1/2] Building C object CMakeFiles/cmTC_a8034.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_a8034
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef memmove
+  return ((int*)(&memmove))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the memcmp exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_ffe0e && [1/2] Building C object CMakeFiles/cmTC_ffe0e.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_ffe0e
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef memcmp
+  return ((int*)(&memcmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strlen exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_38824 && [1/2] Building C object CMakeFiles/cmTC_38824.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_38824
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlen
+  return ((int*)(&strlen))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the index exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_359ec && [1/2] Building C object CMakeFiles/cmTC_359ec.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_359ec
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef index
+  return ((int*)(&index))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the rindex exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_fd82f && [1/2] Building C object CMakeFiles/cmTC_fd82f.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_fd82f
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef rindex
+  return ((int*)(&rindex))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strchr exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_03841 && [1/2] Building C object CMakeFiles/cmTC_03841.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_03841
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strchr
+  return ((int*)(&strchr))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strrchr exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_961e7 && [1/2] Building C object CMakeFiles/cmTC_961e7.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_961e7
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strrchr
+  return ((int*)(&strrchr))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strstr exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_109bf && [1/2] Building C object CMakeFiles/cmTC_109bf.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_109bf
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strstr
+  return ((int*)(&strstr))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strtok_r exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_a5937 && [1/2] Building C object CMakeFiles/cmTC_a5937.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_a5937
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtok_r
+  return ((int*)(&strtok_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strtol exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_16bf8 && [1/2] Building C object CMakeFiles/cmTC_16bf8.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_16bf8
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtol
+  return ((int*)(&strtol))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strtoul exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_d8123 && [1/2] Building C object CMakeFiles/cmTC_d8123.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_d8123
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtoul
+  return ((int*)(&strtoul))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strtoll exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_ccaef && [1/2] Building C object CMakeFiles/cmTC_ccaef.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_ccaef
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtoll
+  return ((int*)(&strtoll))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strtoull exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_5b67e && [1/2] Building C object CMakeFiles/cmTC_5b67e.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_5b67e
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtoull
+  return ((int*)(&strtoull))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the atoi exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_3e9a9 && [1/2] Building C object CMakeFiles/cmTC_3e9a9.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_3e9a9
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef atoi
+  return ((int*)(&atoi))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the atof exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_46562 && [1/2] Building C object CMakeFiles/cmTC_46562.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_46562
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef atof
+  return ((int*)(&atof))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strcmp exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_5a774 && [1/2] Building C object CMakeFiles/cmTC_5a774.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_5a774
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strcmp
+  return ((int*)(&strcmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strncmp exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_65e37 && [1/2] Building C object CMakeFiles/cmTC_65e37.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_65e37
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strncmp
+  return ((int*)(&strncmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strcasecmp exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_4575e && [1/2] Building C object CMakeFiles/cmTC_4575e.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_4575e
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strcasecmp
+  return ((int*)(&strcasecmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strncasecmp exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_2502a && [1/2] Building C object CMakeFiles/cmTC_2502a.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_2502a
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strncasecmp
+  return ((int*)(&strncasecmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the wcscmp exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_11ca3 && [1/2] Building C object CMakeFiles/cmTC_11ca3.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_11ca3
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef wcscmp
+  return ((int*)(&wcscmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the wcsdup exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_d8d77 && [1/2] Building C object CMakeFiles/cmTC_d8d77.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_d8d77
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef wcsdup
+  return ((int*)(&wcsdup))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the wcslen exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_d16c6 && [1/2] Building C object CMakeFiles/cmTC_d16c6.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_d16c6
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef wcslen
+  return ((int*)(&wcslen))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the wcsncmp exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_aa5a0 && [1/2] Building C object CMakeFiles/cmTC_aa5a0.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_aa5a0
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef wcsncmp
+  return ((int*)(&wcsncmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the wcsstr exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_040e2 && [1/2] Building C object CMakeFiles/cmTC_040e2.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_040e2
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef wcsstr
+  return ((int*)(&wcsstr))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the wcscasecmp exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_18d0f && [1/2] Building C object CMakeFiles/cmTC_18d0f.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_18d0f
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef wcscasecmp
+  return ((int*)(&wcscasecmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the wcsncasecmp exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_fea28 && [1/2] Building C object CMakeFiles/cmTC_fea28.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_fea28
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef wcsncasecmp
+  return ((int*)(&wcsncasecmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the sscanf exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_8d84e && [1/2] Building C object CMakeFiles/cmTC_8d84e.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_8d84e
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sscanf
+  return ((int*)(&sscanf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the vsscanf exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_1ecd5 && [1/2] Building C object CMakeFiles/cmTC_1ecd5.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_1ecd5
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef vsscanf
+  return ((int*)(&vsscanf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the vsnprintf exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_36509 && [1/2] Building C object CMakeFiles/cmTC_36509.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_36509
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef vsnprintf
+  return ((int*)(&vsnprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the fseeko exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_675fd && [1/2] Building C object CMakeFiles/cmTC_675fd.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_675fd
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fseeko
+  return ((int*)(&fseeko))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _Exit exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_09642 && [1/2] Building C object CMakeFiles/cmTC_09642.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_09642
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _Exit
+  return ((int*)(&_Exit))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the sigaction exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_31d51 && [1/2] Building C object CMakeFiles/cmTC_31d51.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_31d51
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <signal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sigaction
+  return ((int*)(&sigaction))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the setjmp exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_819af && [1/2] Building C object CMakeFiles/cmTC_819af.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_819af
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <setjmp.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef setjmp
+  return ((int*)(&setjmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the nanosleep exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_d4f72 && [1/2] Building C object CMakeFiles/cmTC_d4f72.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_d4f72
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <time.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef nanosleep
+  return ((int*)(&nanosleep))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the sysconf exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_aef18 && [1/2] Building C object CMakeFiles/cmTC_aef18.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_aef18
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sysconf
+  return ((int*)(&sysconf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the getauxval exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_d246f && [1/2] Building C object CMakeFiles/cmTC_d246f.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_d246f
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/auxv.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getauxval
+  return ((int*)(&getauxval))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the poll exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_33319 && [1/2] Building C object CMakeFiles/cmTC_33319.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_33319
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <poll.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef poll
+  return ((int*)(&poll))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function pow exists in the m passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_0823b && [1/2] Building C object CMakeFiles/cmTC_0823b.dir/CheckFunctionExists.c.o
+<command-line>: warning: conflicting types for built-in function ‘pow’; expected ‘double(double,  double)’ [-Wbuiltin-declaration-mismatch]
+/var/lib/snapd/snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/var/lib/snapd/snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CheckFunctionExists.c:1:1: note: ‘pow’ is declared in header ‘<math.h>’
+  +++ |+#include <math.h>
+    1 | #ifdef CHECK_FUNCTION_EXISTS
+[2/2] Linking C executable cmTC_0823b
+
+
+
+Determining if the atan exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_338da && [1/2] Building C object CMakeFiles/cmTC_338da.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_338da
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef atan
+  return ((int*)(&atan))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the atan2 exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_74097 && [1/2] Building C object CMakeFiles/cmTC_74097.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_74097
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef atan2
+  return ((int*)(&atan2))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the atanf exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_9f947 && [1/2] Building C object CMakeFiles/cmTC_9f947.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_9f947
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef atanf
+  return ((int*)(&atanf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the atan2f exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_e9971 && [1/2] Building C object CMakeFiles/cmTC_e9971.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_e9971
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef atan2f
+  return ((int*)(&atan2f))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the ceil exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_88479 && [1/2] Building C object CMakeFiles/cmTC_88479.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_88479
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef ceil
+  return ((int*)(&ceil))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the ceilf exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_9f417 && [1/2] Building C object CMakeFiles/cmTC_9f417.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_9f417
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef ceilf
+  return ((int*)(&ceilf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the copysign exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_6525d && [1/2] Building C object CMakeFiles/cmTC_6525d.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_6525d
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef copysign
+  return ((int*)(&copysign))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the copysignf exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_f8814 && [1/2] Building C object CMakeFiles/cmTC_f8814.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_f8814
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef copysignf
+  return ((int*)(&copysignf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the cos exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_ec344 && [1/2] Building C object CMakeFiles/cmTC_ec344.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_ec344
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef cos
+  return ((int*)(&cos))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the cosf exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_294be && [1/2] Building C object CMakeFiles/cmTC_294be.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_294be
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef cosf
+  return ((int*)(&cosf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the exp exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_7d9fc && [1/2] Building C object CMakeFiles/cmTC_7d9fc.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_7d9fc
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef exp
+  return ((int*)(&exp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the expf exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_32f82 && [1/2] Building C object CMakeFiles/cmTC_32f82.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_32f82
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef expf
+  return ((int*)(&expf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the fabs exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_facdc && [1/2] Building C object CMakeFiles/cmTC_facdc.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_facdc
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fabs
+  return ((int*)(&fabs))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the fabsf exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_f3eef && [1/2] Building C object CMakeFiles/cmTC_f3eef.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_f3eef
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fabsf
+  return ((int*)(&fabsf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the floor exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_bab3e && [1/2] Building C object CMakeFiles/cmTC_bab3e.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_bab3e
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef floor
+  return ((int*)(&floor))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the floorf exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_64714 && [1/2] Building C object CMakeFiles/cmTC_64714.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_64714
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef floorf
+  return ((int*)(&floorf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the fmod exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_432d9 && [1/2] Building C object CMakeFiles/cmTC_432d9.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_432d9
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fmod
+  return ((int*)(&fmod))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the fmodf exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_726c1 && [1/2] Building C object CMakeFiles/cmTC_726c1.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_726c1
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fmodf
+  return ((int*)(&fmodf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the log exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_584ab && [1/2] Building C object CMakeFiles/cmTC_584ab.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_584ab
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef log
+  return ((int*)(&log))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the logf exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_ca01b && [1/2] Building C object CMakeFiles/cmTC_ca01b.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_ca01b
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef logf
+  return ((int*)(&logf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the log10 exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_6d1ee && [1/2] Building C object CMakeFiles/cmTC_6d1ee.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_6d1ee
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef log10
+  return ((int*)(&log10))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the log10f exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_5c15d && [1/2] Building C object CMakeFiles/cmTC_5c15d.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_5c15d
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef log10f
+  return ((int*)(&log10f))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the lround exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_1838f && [1/2] Building C object CMakeFiles/cmTC_1838f.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_1838f
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef lround
+  return ((int*)(&lround))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the lroundf exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_2837e && [1/2] Building C object CMakeFiles/cmTC_2837e.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_2837e
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef lroundf
+  return ((int*)(&lroundf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the pow exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_b567b && [1/2] Building C object CMakeFiles/cmTC_b567b.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_b567b
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pow
+  return ((int*)(&pow))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the powf exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_20be5 && [1/2] Building C object CMakeFiles/cmTC_20be5.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_20be5
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef powf
+  return ((int*)(&powf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the round exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_1ab7a && [1/2] Building C object CMakeFiles/cmTC_1ab7a.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_1ab7a
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef round
+  return ((int*)(&round))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the roundf exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_cfb5b && [1/2] Building C object CMakeFiles/cmTC_cfb5b.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_cfb5b
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef roundf
+  return ((int*)(&roundf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the scalbn exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_a426d && [1/2] Building C object CMakeFiles/cmTC_a426d.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_a426d
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef scalbn
+  return ((int*)(&scalbn))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the scalbnf exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_0ce62 && [1/2] Building C object CMakeFiles/cmTC_0ce62.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_0ce62
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef scalbnf
+  return ((int*)(&scalbnf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the sin exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_354ef && [1/2] Building C object CMakeFiles/cmTC_354ef.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_354ef
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sin
+  return ((int*)(&sin))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the sinf exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_d7882 && [1/2] Building C object CMakeFiles/cmTC_d7882.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_d7882
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sinf
+  return ((int*)(&sinf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the sqrt exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_9016d && [1/2] Building C object CMakeFiles/cmTC_9016d.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_9016d
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sqrt
+  return ((int*)(&sqrt))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the sqrtf exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_0e8d4 && [1/2] Building C object CMakeFiles/cmTC_0e8d4.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_0e8d4
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sqrtf
+  return ((int*)(&sqrtf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the tan exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_ff7c0 && [1/2] Building C object CMakeFiles/cmTC_ff7c0.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_ff7c0
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef tan
+  return ((int*)(&tan))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the tanf exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_5997c && [1/2] Building C object CMakeFiles/cmTC_5997c.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_5997c
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef tanf
+  return ((int*)(&tanf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the acos exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_c4ce5 && [1/2] Building C object CMakeFiles/cmTC_c4ce5.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_c4ce5
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef acos
+  return ((int*)(&acos))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the acosf exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_51b47 && [1/2] Building C object CMakeFiles/cmTC_51b47.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_51b47
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef acosf
+  return ((int*)(&acosf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the asin exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_32b4d && [1/2] Building C object CMakeFiles/cmTC_32b4d.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_32b4d
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef asin
+  return ((int*)(&asin))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the asinf exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_152a0 && [1/2] Building C object CMakeFiles/cmTC_152a0.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_152a0
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef asinf
+  return ((int*)(&asinf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the trunc exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_828bc && [1/2] Building C object CMakeFiles/cmTC_828bc.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_828bc
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef trunc
+  return ((int*)(&trunc))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the truncf exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_9d6e1 && [1/2] Building C object CMakeFiles/cmTC_9d6e1.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_9d6e1
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef truncf
+  return ((int*)(&truncf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function iconv_open exists in the c passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_5a869 && [1/2] Building C object CMakeFiles/cmTC_5a869.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_5a869
+
+
+
+Determining if the include file alloca.h exists passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_62904 && [1/2] Building C object CMakeFiles/cmTC_62904.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_62904
+
+
+
+Determining if the alloca exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_a0329 && [1/2] Building C object CMakeFiles/cmTC_a0329.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_a0329
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <alloca.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef alloca
+  return ((int*)(&alloca))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the alloca exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_0c1fe && [1/2] Building C object CMakeFiles/cmTC_0c1fe.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_0c1fe
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef alloca
+  return ((int*)(&alloca))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test HAVE_SA_SIGACTION succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_195f0 && [1/2] Building C object CMakeFiles/cmTC_195f0.dir/src.c.o
+[2/2] Linking C executable cmTC_195f0
+
+
+Source file was:
+
+#include <signal.h>
+
+int main()
+{
+  (void)sizeof(((struct sigaction *)0)->sa_sigaction);
+  return 0;
+}
+
+Determining if the dlopen exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_6467a && [1/2] Building C object CMakeFiles/cmTC_6467a.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_6467a
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <dlfcn.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef dlopen
+  return ((int*)(&dlopen))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test OSS_FOUND succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_80355 && [1/2] Building C object CMakeFiles/cmTC_80355.dir/src.c.o
+[2/2] Linking C executable cmTC_80355
+
+
+Source file was:
+
+        #include <sys/soundcard.h>
+        int main() { int arg = SNDCTL_DSP_SETFRAGMENT; }
+Determining if the include file alsa/asoundlib.h exists passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_98033 && [1/2] Building C object CMakeFiles/cmTC_98033.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_98033
+
+
+
+Determining if the function snd_pcm_recover exists in the asound passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_27be1 && [1/2] Building C object CMakeFiles/cmTC_27be1.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_27be1
+
+
+
+Determining if the include file X11/Xcursor/Xcursor.h exists passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_7df1f && [1/2] Building C object CMakeFiles/cmTC_7df1f.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_7df1f
+
+
+
+Determining if the include file X11/extensions/XInput2.h exists passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_043de && [1/2] Building C object CMakeFiles/cmTC_043de.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_043de
+
+
+
+Determining if the include file X11/extensions/Xrandr.h exists passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_fc828 && [1/2] Building C object CMakeFiles/cmTC_fc828.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_fc828
+
+
+
+Determining if the include file X11/extensions/Xrender.h exists passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_ff41c && [1/2] Building C object CMakeFiles/cmTC_ff41c.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_ff41c
+
+
+
+Determining if the include file X11/extensions/scrnsaver.h exists passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_32789 && [1/2] Building C object CMakeFiles/cmTC_32789.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_32789
+
+
+
+Determining if the include file X11/extensions/shape.h exists passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_26c0c && [1/2] Building C object CMakeFiles/cmTC_26c0c.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_26c0c
+
+
+
+Determining if files X11/Xlib.h;X11/extensions/xf86vmode.h exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_dad38 && [1/2] Building C object CMakeFiles/cmTC_dad38.dir/HAVE_XF86VM_H.c.o
+[2/2] Linking C executable cmTC_dad38
+
+
+
+Determining if files X11/Xlib.h;X11/Xproto.h;X11/extensions/Xext.h exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_b77ff && [1/2] Building C object CMakeFiles/cmTC_b77ff.dir/HAVE_XEXT_H.c.o
+[2/2] Linking C executable cmTC_b77ff
+
+
+
+Determining if the shmat exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_e90ee && [1/2] Building C object CMakeFiles/cmTC_e90ee.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_e90ee
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/shm.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef shmat
+  return ((int*)(&shmat))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test HAVE_CONST_XEXT_ADDDISPLAY succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_e4b56 && [1/2] Building C object CMakeFiles/cmTC_e4b56.dir/src.c.o
+[2/2] Linking C executable cmTC_e4b56
+
+
+Source file was:
+
+          #include <X11/Xlib.h>
+          #include <X11/Xproto.h>
+          #include <X11/extensions/Xext.h>
+          #include <X11/extensions/extutil.h>
+          extern XExtDisplayInfo* XextAddDisplay(XExtensionInfo* a,Display* b,_Xconst char* c,XExtensionHooks* d,int e,XPointer f);
+          int main(int argc, char **argv) {}
+Performing C SOURCE FILE Test HAVE_XGENERICEVENT succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_8cdbf && [1/2] Building C object CMakeFiles/cmTC_8cdbf.dir/src.c.o
+[2/2] Linking C executable cmTC_8cdbf
+
+
+Source file was:
+
+          #include <X11/Xlib.h>
+          int main(int argc, char **argv) {
+            Display *display;
+            XEvent event;
+            XGenericEventCookie *cookie = &event.xcookie;
+            XNextEvent(display, &event);
+            XGetEventData(display, cookie);
+            XFreeEventData(display, cookie); }
+Determining if the XkbKeycodeToKeysym exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_1a1f9 && [1/2] Building C object CMakeFiles/cmTC_1a1f9.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_1a1f9
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <X11/Xlib.h>
+#include <X11/XKBlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef XkbKeycodeToKeysym
+  return ((int*)(&XkbKeycodeToKeysym))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test HAVE_XINPUT2_MULTITOUCH succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_3511e && [1/2] Building C object CMakeFiles/cmTC_3511e.dir/src.c.o
+[2/2] Linking C executable cmTC_3511e
+
+
+Source file was:
+
+            #include <X11/Xlib.h>
+            #include <X11/Xproto.h>
+            #include <X11/extensions/XInput2.h>
+            int event_type = XI_TouchBegin;
+            XITouchClassInfo *t;
+            Status XIAllowTouchEvents(Display *a,int b,unsigned int c,Window d,int f)
+            {
+              return (Status)0;
+            }
+            int main(int argc, char **argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_OPENGL_EGL succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_c498a && [1/2] Building C object CMakeFiles/cmTC_c498a.dir/src.c.o
+[2/2] Linking C executable cmTC_c498a
+
+
+Source file was:
+
+        #define EGL_API_FB
+        #define MESA_EGL_NO_X11_HEADERS
+        #define EGL_NO_X11
+        #include <EGL/egl.h>
+        #include <EGL/eglext.h>
+        int main (int argc, char** argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_OPENGL_GLX succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_6926f && [1/2] Building C object CMakeFiles/cmTC_6926f.dir/src.c.o
+[2/2] Linking C executable cmTC_6926f
+
+
+Source file was:
+
+        #include <GL/glx.h>
+        int main(int argc, char** argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_OPENGL succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_8e59b && [1/2] Building C object CMakeFiles/cmTC_8e59b.dir/src.c.o
+[2/2] Linking C executable cmTC_8e59b
+
+
+Source file was:
+
+        #include <GL/gl.h>
+        #include <GL/glext.h>
+        int main(int argc, char** argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_OPENGLES_V1 succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_e4444 && [1/2] Building C object CMakeFiles/cmTC_e4444.dir/src.c.o
+[2/2] Linking C executable cmTC_e4444
+
+
+Source file was:
+
+        #include <GLES/gl.h>
+        #include <GLES/glext.h>
+        int main (int argc, char** argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_OPENGLES_V2 succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_7d275 && [1/2] Building C object CMakeFiles/cmTC_7d275.dir/src.c.o
+[2/2] Linking C executable cmTC_7d275
+
+
+Source file was:
+
+        #include <GLES2/gl2.h>
+        #include <GLES2/gl2ext.h>
+        int main (int argc, char** argv) {}
+Performing C SOURCE FILE Test HAVE_INPUT_EVENTS succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_c76f3 && [1/2] Building C object CMakeFiles/cmTC_c76f3.dir/src.c.o
+[2/2] Linking C executable cmTC_c76f3
+
+
+Source file was:
+
+        #include <linux/input.h>
+        #ifndef EVIOCGNAME
+        #error EVIOCGNAME() ioctl not available
+        #endif
+        int main(int argc, char** argv) {}
+Performing C SOURCE FILE Test HAVE_INPUT_KD succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_72fbd && [1/2] Building C object CMakeFiles/cmTC_72fbd.dir/src.c.o
+/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:9:15: warning: implicit declaration of function ‘ioctl’ [-Wimplicit-function-declaration]
+    9 |               ioctl(0, KDGKBENT, &kbe);
+      |               ^~~~~
+[2/2] Linking C executable cmTC_72fbd
+
+
+Source file was:
+
+          #include <linux/kd.h>
+          #include <linux/keyboard.h>
+
+          int main(int argc, char **argv)
+          {
+              struct kbentry kbe;
+              kbe.kb_table = KG_CTRL;
+              ioctl(0, KDGKBENT, &kbe);
+          }
+Determining if the include file sys/inotify.h exists passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_717f0 && [1/2] Building C object CMakeFiles/cmTC_717f0.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_717f0
+
+
+
+Determining if the inotify_init exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_5c8dd && [1/2] Building C object CMakeFiles/cmTC_5c8dd.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_5c8dd
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/inotify.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef inotify_init
+  return ((int*)(&inotify_init))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the inotify_init1 exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_1cd89 && [1/2] Building C object CMakeFiles/cmTC_1cd89.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_1cd89
+
+
+File /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/inotify.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef inotify_init1
+  return ((int*)(&inotify_init1))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test HAVE_PTHREADS succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_036d4 && [1/2] Building C object CMakeFiles/cmTC_036d4.dir/src.c.o
+[2/2] Linking C executable cmTC_036d4
+
+
+Source file was:
+
+      #include <pthread.h>
+      int main(int argc, char** argv) {
+        pthread_attr_t type;
+        pthread_attr_init(&type);
+        return 0;
+      }
+Performing C SOURCE FILE Test HAVE_RECURSIVE_MUTEXES succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_de0ef && [1/2] Building C object CMakeFiles/cmTC_de0ef.dir/src.c.o
+[2/2] Linking C executable cmTC_de0ef
+
+
+Source file was:
+
+        #define _GNU_SOURCE 1
+        #include <pthread.h>
+        int main(int argc, char **argv) {
+          pthread_mutexattr_t attr;
+          pthread_mutexattr_settype(&attr, PTHREAD_MUTEX_RECURSIVE);
+          return 0;
+        }
+Performing C SOURCE FILE Test HAVE_PTHREADS_SEM succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_f8e85 && [1/2] Building C object CMakeFiles/cmTC_f8e85.dir/src.c.o
+[2/2] Linking C executable cmTC_f8e85
+
+
+Source file was:
+#include <pthread.h>
+                                 #include <semaphore.h>
+                                 int main(int argc, char **argv) { return 0; }
+Performing C SOURCE FILE Test HAVE_SEM_TIMEDWAIT succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_24f65 && [1/2] Building C object CMakeFiles/cmTC_24f65.dir/src.c.o
+[2/2] Linking C executable cmTC_24f65
+
+
+Source file was:
+
+              #include <pthread.h>
+              #include <semaphore.h>
+              int main(int argc, char **argv) {
+                  sem_timedwait(NULL, NULL);
+                  return 0;
+              }
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_67fa2 && [1/2] Building C object CMakeFiles/cmTC_67fa2.dir/HAVE_PTHREAD_H.c.o
+[2/2] Linking C executable cmTC_67fa2
+
+
+
+Determining if the include file linux/version.h exists passed with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_f8cb0 && [1/2] Building C object CMakeFiles/cmTC_f8cb0.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_f8cb0
+
+
+
+Performing C SOURCE FILE Test HAVE_ENABLE_NEW_DTAGS succeeded with the following output:
+Change Dir: /home/lilu/lilu/cpp_games/cpp_games/less3/game/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/var/lib/snapd/snap/clion/175/bin/ninja/linux/ninja cmTC_b5bfa && [1/2] Building C object CMakeFiles/cmTC_b5bfa.dir/src.c.o
+[2/2] Linking C executable cmTC_b5bfa
+
+
+Source file was:
+int main(void) { return 0; }

@@ -13,15 +13,20 @@
 #include "Color.h"
 #include "Shader.h"
 #include <string>
+#include "Bitmap.h"
+#include "Renderer.h"
 #include "ResourceLoader.h"
+#include "MeshData.h"
 
-
+class Engine;
 class Sprite: public Node
 {
 public:
-
+    MeshData meshData;
+    const Engine &_engine;
+    Renderer::Command _command;
     // Конструктор (инициализируем шейдеры/объекты)
-    Sprite(const Shader &shader, glm::vec2 position, glm::vec2 size, float rotation, glm::vec2 center,
+    Sprite(const Engine &_engine, const Shader &shader, glm::vec2 position, glm::vec2 size, float rotation, glm::vec2 center,
            glm::vec4 col, std::string textureName);
 
     // Деструктор
@@ -30,15 +35,6 @@ public:
     // Рендерим текстурированный прямоугольник по заданному спрайту
     void  visitSelf() override;
     glm::vec4 _color;
-
-/*void GlVertexBuffer::draw(size_t num, size_t offset)
-{
-    glBindVertexArray(_VAO);
-
-    GlDrawElements(GL_TRIANGLES, static_cast<GLsizei>(num),
-                   GL_UNSIGNED_INT,
-                   reinterpret_cast <GLvoid*>(offset));
-}*/
 
 
 private:

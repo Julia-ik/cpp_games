@@ -8,29 +8,24 @@
 #include "SDL.h"
 #include <stdlib.h>
 #include <string>
-#include "Node.h"
-#include "Sound.h"
-#include "Tank.h"
-#include "library.hpp"
-#include "Button.h"
-
+#include <functional>
 
 class EventManager
 {
 public:
-    SDL_Event event;
-    Engine *_engine;
-    Tank *_tank;
-    Button *_button;
-
-
-    EventManager(Engine *engine, Tank *tank, Button *button);
-
-    void RegisterEvents();
-
+    using EventHandler = std::function<void(const SDL_Event & event)>;
+    void addHandler(EventHandler handler) const;
+    void removeHandler(EventHandler handler);
+    void eventHandler();
 private:
-    int _currentMouseX;
-    int _currentMouseY;
+    SDL_Event event;
+
+
+   mutable std::vector<EventHandler> handlers;
+
+
+
+
 };
 
 

@@ -31,6 +31,7 @@ public:
 
     // Загружаем (и генерируем) текстуру из файла
     static Texture LoadTexture(std::string_view file, bool alpha, std::string name);
+    static Texture loadTextureFromBitmap(Bitmap bitmap, bool alpha, std::string name);
 
     // Получаем сохраненную текстуру
     static Texture GetTexture(std::string name);
@@ -46,7 +47,6 @@ private:
 
     // Загружаем текстуру из файла
     static Texture loadTextureFromFile(std::string_view filepath, bool alpha);
-
 
 };
 

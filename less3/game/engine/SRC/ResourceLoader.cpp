@@ -22,7 +22,9 @@ Shader ResourceManager::LoadShader(const char *vShaderFile, const char *fShaderF
 
 Shader ResourceManager::GetShader(std::string name)
 {
+
     return Shaders[name];
+
 }
 
 Texture ResourceManager::LoadTexture(std::string_view file, bool alpha, std::string name)
@@ -33,6 +35,7 @@ Texture ResourceManager::LoadTexture(std::string_view file, bool alpha, std::str
 
 Texture ResourceManager::GetTexture(std::string name)
 {
+    Texture tex = Textures[name];
     return Textures[name];
 }
 
@@ -75,4 +78,21 @@ Texture ResourceManager::loadTextureFromFile(std::string_view filepath, bool alp
 
 
     return texture;
+}
+
+Texture ResourceManager::loadTextureFromBitmap(Bitmap bitmap, bool alpha, std::string name)
+{
+    // Создаем объект текстуры
+    Texture texture;
+
+    if (alpha)
+    {
+        texture.Internal_Format = GL_RGB;
+        texture.Image_Format = GL_RGB;
+    }
+    // Теперь генерируем текстуру
+    texture.Generate(bitmap);
+
+    Textures[name] = texture;
+    return Textures[name];
 }

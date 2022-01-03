@@ -9,7 +9,8 @@ endif()
 
 add_library(engine STATIC SRC/library.cpp SRC/Node.cpp SRC/Node.h
         SRC/Sound.cpp SRC/Sound.cpp SRC/Sound.h SRC/AudioManager.cpp SRC/AudioManager.h
-        SRC/Color.h SRC/Button.cpp SRC/Button.h Shaders.h SRC/Vertex.cpp SRC/Vertex.h SRC/ImguiManager.cpp SRC/ImguiManager.h)
+        SRC/Color.h SRC/Button.cpp SRC/Button.h Shaders.h SRC/ImguiManager.cpp SRC/ImguiManager.h
+        SRC/Renderer.cpp SRC/Renderer.h SRC/VertexBuffer.cpp SRC/VertexBuffer.h)
 #SDL
 
 if(NOT IOS)
@@ -26,10 +27,11 @@ if(NOT APPLE AND NOT ANDROID AND (UNIX OR MINGW))
 endif()
 
 
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/libs/imgui)
 
 target_link_libraries(engine PRIVATE
         ${SDL2MAIN_LIBRARY} ${SDL2_LIBRARY}
-        ${GLEW_LIBRARY} ${OPENGL_LIBRARY} ${STBI_LIBRARY})
+        ${GLEW_LIBRARY} ${OPENGL_LIBRARY} ${STBI_LIBRARY} imgui)
 
 target_include_directories(engine PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/SRC

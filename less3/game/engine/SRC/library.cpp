@@ -2,11 +2,13 @@
 #include "SDL/Model.h"
 #include "ResourceLoader.h"
 #include <GL/glew.h>
+#include "Renderer.h"
+#include "ImguiManager.h"
 #include "Sound.h"
+
 #include <SDL.h>
 #include <stdio.h>
 #include <glm/glm.hpp>
-#include <imgui.h>
 #include <glm/gtc/matrix_transform.hpp>
 
 
@@ -82,18 +84,18 @@ void Engine::printVersionInfo()
 void Engine::initGLL()
 {
     SDL_GL_CreateContext(window);
-    SDL_Init(SDL_INIT_EVERYTHING);
+
 
     glewExperimental=true;
     if (glewInit() != GLEW_OK) {
         fprintf(stderr, "cannot identify GLEWn");
     }
-
+    SDL_Init(SDL_INIT_EVERYTHING);
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-    ResourceManager::LoadShader("../shaders/sprite.vs", "../shaders/sprite.frag",
-                                nullptr, "sprite");
+    _renderer = createShared<Renderer>();
+    _imguiManager = createShared<ImguiManager>();
 
     ResourceManager::LoadShader("../shaders/sprite.vs", "../shaders/sprite.frag",
                                 nullptr, "sprite");
@@ -119,10 +121,10 @@ void Engine::initGLL()
     _sounds.push_back(std::make_shared<Sound>("/home/lilu/lilu/cpp_games/cpp_games/less3/game/sound/dramatic.wav",
                                               &audioManager, "theme"));
     scene.setScale(glm::vec2(width, heights));
-    scene.addNode(std::make_shared<Sprite>(ResourceManager::GetShader("sprite"),
+    /*scene.addNode(makeShare<Sprite>(ResourceManager::GetShader("sprite"),
                                          glm::vec2(0.0f, 0.0f), glm::vec2(width, heights),
                                          0.0f, glm::vec2(0.5f),glm::vec4(0.0f,1.0f,0.0f,
-                                                                         1.0f), "grass"), 1);
+                                                                         1.0f), "grass"), 1);*/
 
 
 
@@ -162,11 +164,31 @@ void Engine::drawSDLModel(Model * model)
     destroyEngine(&window,&r);
 }
 
-void Engine::destroyEngine(SDL_Window **window, SDL_Renderer **renderer)
+void Engine::update(float delta)
+{
+    scene.update(delta);
+    scene.visit();
+    _imguiManager->visit();
+    _renderer->draw();
+}
+
+void Engine::destroyEngine(SDL_Window **window, SDL_Renderer **render)
 {
     SDL_Delay(7000);
     SDL_DestroyWindow(*window);
     SDL_Quit();
+}
+
+void Engine::setClipboardTxt(std::string_view text) const
+{
+    SDL_SetClipboardText(text.data());
+
+}
+
+std::string_view Engine::getClipboardTxt() const
+{
+    _clipboard = SDL_GetClipboardText();
+    return _clipboard;
 }
 
 /*void Engine::checkForErrors()

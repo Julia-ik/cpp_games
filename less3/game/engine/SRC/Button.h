@@ -7,6 +7,7 @@
 #include "Node.h"
 #include "Shader.h"
 #include "Sprite.h"
+#include "library.hpp"
 #include <memory>
 #include <SDL.h>
 
@@ -18,23 +19,13 @@ public:
 
     Shader shader;
     bool isPressed = false;
+    Node node;
+    Engine *_engine;
 
-    Button(const Shader &shader, glm::vec2 position, glm::vec2 size,
+    Button(Engine *engine, const Shader &shader, glm::vec2 position, glm::vec2 size,
            float rotation, glm::vec2 center);
 
-    template<typename T, typename... Args>
-    std::shared_ptr<T> createShared(Args&&... args) const
-    {
-        if constexpr(std::is_constructible_v<T, const Button&, Args&&...>)
-        {
-            return std::make_shared<T>(*this, std::forward<Args>(args)...);
-        }
-        else
-        {
-            return std::make_shared<T>(std::forward<Args>(args)...);
-        }
-    }
-
+    void registerEventHandler();
 };
 
 

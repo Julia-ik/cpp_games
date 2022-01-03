@@ -34,7 +34,7 @@ public:
     Tank(Engine *engine,const Shader &shader, glm::vec2 position, glm::vec2 size,
          float rotation, glm::vec2 center);
 
-    void RegisterEvent();
+    void registerEventHandler();
 
   //  Sound createSound {return /*массив вик птр*/};
 

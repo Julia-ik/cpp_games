@@ -9,7 +9,8 @@
 
 
 Texture::Texture()
-        : Width(0), Height(0), Internal_Format(GL_RGB), Image_Format(GL_RGB), Wrap_S(GL_REPEAT), Wrap_T(GL_REPEAT), Filter_Min(GL_LINEAR), Filter_Max(GL_LINEAR)
+        : Width(0), Height(0), Internal_Format(GL_RGB), Image_Format(GL_RGB),
+        Wrap_S(GL_REPEAT), Wrap_T(GL_REPEAT), Filter_Min(GL_LINEAR), Filter_Max(GL_LINEAR)
 {
     glGenTextures(1, &this->ID);
 }
@@ -25,6 +26,8 @@ void Texture::Generate(Bitmap bitmap)
     glTexImage2D(GL_TEXTURE_2D, 0, glInternalFormat, bitmap.getSize().x,
                  bitmap.getSize().y, 0, glFormat, glType, bitmap.getImage().data());
 
+    Width = bitmap.getSize().x;
+    Height = bitmap.getSize().y;
     // Задаем для текстуры режимы наложения и фильтрации
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, this->Wrap_S);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, this->Wrap_T);

@@ -21,6 +21,7 @@ public:
     };
 
     explicit Bitmap(std::string_view filepath);
+    Bitmap(Format format, std::vector<unsigned char> image,glm::vec2 size);
 
     const std::vector<unsigned char>& getImage() const;
 

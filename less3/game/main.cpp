@@ -17,13 +17,14 @@ int main()
 
 
     Tank tank(&engine, ResourceManager::GetShader("sprite"),
-              glm::vec2(300.0f, 300.0f), glm::vec2(85.0f, 40.0f),
-              0.0f, glm::vec2(0.5f, 0.5f));
+              glm::vec2(300.0f, 300.0f), glm::vec2(0.65f, 0.4f),
+              0.0f, glm::vec2(60.0f, 45.0f));
 
 
-    Button button(ResourceManager::GetShader("sprite"),
-                  glm::vec2(10.0f, 10.0f), glm::vec2(60.0f, 60.0f),
-                  0.0f, glm::vec2(0.0f, 0.0f));
+    Button button(&engine,ResourceManager::GetShader("sprite"),
+                  glm::vec2(10.0f, 10.0f), glm::vec2(0.08f, 0.06f),
+                  0.0f, glm::vec2(65.0f, 50.0f));
+
 
     engine.scene.addNode(std::make_shared<Tank>(tank), 2);
 
@@ -31,21 +32,20 @@ int main()
 
 
 
+
     auto oldTime = std::chrono::high_resolution_clock::now();
-    auto val = 0.0;
+    float val = 0.0f;
 
     while (engine.isActive){
 
-        EventManager eventManager(&engine, &tank, &button);
+        engine._eventManager.eventHandler();
+
         auto curTime = std::chrono::high_resolution_clock::now();
         auto delta = std::chrono::duration_cast<std::chrono::duration<float>>(curTime - oldTime);
         oldTime = curTime;
         val = delta.count();
 
-        engine.scene.update(val);
-        engine.scene.visit();
-
-
+        engine.update(val);
 
         SDL_GL_SwapWindow(engine.window);
 

@@ -6,6 +6,7 @@
 #include "Sprite.h"
 #include "Sound.h"
 
+
 Tank::Tank(Engine *engine, const Shader &shader, glm::vec2 position, glm::vec2 size,
            float rotation, glm::vec2 center): _engine(engine)
 {
@@ -22,20 +23,124 @@ Tank::Tank(Engine *engine, const Shader &shader, glm::vec2 position, glm::vec2 s
     //_sounds[0]->stop();
     //_sounds[1]->stop();
 
-    auto body = createShared<Sprite>(shader, _position, _contentSize, _rotation, _anchor,
+    auto body = _engine->createShared<Sprite>(shader, _position, _contentSize, _rotation, _anchor,
                                      glm::vec4(1.0f, 0.0f, 0.5, 1.0f),"body");
-    auto gun = createShared<Sprite>(shader, glm::vec2(_position.x+21.5f, _position.y + 8.0f),
-                                    glm::vec2(70.0f, 30.0f), _rotation, glm::vec2 (0.3f, 0.5f),
+    auto gun = _engine->createShared<Sprite>(shader, glm::vec2(_position.x+0.215f, _position.y + 0.08f),
+                                    glm::vec2(0.80f, 0.50f), _rotation, glm::vec2 (19.7f, 17.5f),
                                     glm::vec4(1.0f, 0.0f, 1.0f, 1.0f),"gun");
+
 
     addNode(body, 4);
     addNode(gun, 5);
+    registerEventHandler();
 };
 
 void Tank::init()
 {
 
 }
+void Tank::registerEventHandler()
+{
+    _engine->_eventManager.addHandler(
+                [this] (const SDL_Event& e)
+                {
+                    auto keyState = SDL_GetKeyboardState(NULL);
+
+                    if (keyState[SDL_SCANCODE_A]) {
+                        _nodes[1]->isLeft = true;
+                    }
+                    if (!keyState[SDL_SCANCODE_A]) {
+                        _nodes[1]->isLeft = false;
+                    }
+                    if (keyState[SDL_SCANCODE_D]) {
+                        _nodes[1]->isRight=true;
+                    }
+                    if (!keyState[SDL_SCANCODE_D]) {
+                        _nodes[1]->isRight= false;
+                    }
+                    if (keyState[SDL_SCANCODE_LEFT]) {
+                        //_spriteRenderers["body"]->_isLeft=true;
+                        _nodes[0]->isLeft=true;
+
+                    }
+                    if (!keyState[SDL_SCANCODE_LEFT]) {
+                        //_spriteRenderers["body"]->_isLeft=true;
+                        _nodes[0]->isLeft=false;
+
+                    }
+                    if (keyState[SDL_SCANCODE_RIGHT]) {
+                        _nodes[0]->isRight=true;
+                    }
+                    if (!keyState[SDL_SCANCODE_RIGHT]) {
+                        _nodes[0]->isRight=false;
+                    }
+                    if (keyState[SDL_SCANCODE_SPACE]) {
+
+                        _engine->scene.addNode(_engine->createShared<Sprite>(ResourceManager::GetShader("sprite"),
+                                                                    glm::vec2 (_nodes[1]->getPosition().x + 68,
+                                                                               _nodes[1]->getPosition().y+8),
+                                                                    glm::vec2(10.0f, 10.0f),
+                                                                    0.0f, glm::vec2(0.5f),
+                                                                    glm::vec4(1.0f, 0.0f,0.0f,0.8f),"fire"),7);
+
+                        _engine->_sounds[0]->pause();
+                        _sounds[1]->play();
+
+                    }
+                    if (!keyState[SDL_SCANCODE_SPACE]) {
+                        _sounds[1]->stop();
+                    }
+                    if (keyState[SDL_SCANCODE_ESCAPE]) {
+                        _engine->isActive = false;
+                    }
+                    if(keyState[SDL_SCANCODE_UP])
+                    {
+                        _engine->_sounds[0]->pause();
+                        _sounds[0]->play();
+
+                        _nodes[0]->isMovingForward = true;
+
+
+                    }
+                    if(!keyState[SDL_SCANCODE_UP])
+                    {
+                        _nodes[0]->isMovingForward = false;
+
+                    }
+                    if(keyState[SDL_SCANCODE_DOWN])
+                    {
+                        _engine->_sounds[0]->pause();
+                        _sounds[0]->play();
+
+                        _nodes[0]->isMovingBack = true;
+                    }
+                    if(!keyState[SDL_SCANCODE_DOWN])
+                    {
+                        _nodes[0]->isMovingBack = false;
+                    }
+                    if(!keyState[SDL_SCANCODE_DOWN] && !keyState[SDL_SCANCODE_UP]
+                       && !keyState[SDL_SCANCODE_SPACE])
+                    {
+                        _engine->_sounds[0]->play();
+                    }
+                    if(!keyState[SDL_SCANCODE_DOWN] && !keyState[SDL_SCANCODE_UP])
+                    {
+                        _sounds[0]->pause();
+                    }
+                    if(keyState[SDL_SCANCODE_KP_PLUS])
+                    {
+                        _sounds[0]->volumePlus();
+                    }
+                    if(keyState[SDL_SCANCODE_KP_MINUS])
+                    {
+                        _sounds[0]->volumeMinus();
+                    }
+                }
+                );
+
+
+}
+
 
 void Tank::updateSelf(float delta)
 {
@@ -63,9 +168,9 @@ void Tank::updateSelf(float delta)
     {
         moveRight(_nodes[1], delta);
     }
-    _nodes[1] ->setPosition(glm::vec2(_nodes[0]->getPosition().x+21.5f,
-                                      _nodes[0]->getPosition().y+8.0f));
-    if(_engine->scene.getNodes().size() > 2)
+    _nodes[1] ->setPosition(glm::vec2(_nodes[0]->getPosition().x+21.0f,
+                                      _nodes[0]->getPosition().y+5.0f));
+    /*if(_engine->scene.getNodes().size() > 5)
     {
         for(int i=2;i<_engine->scene.getNodes().size(); i++)
         {
@@ -77,7 +182,7 @@ void Tank::updateSelf(float delta)
             }
         }
 
-    }
+    }*/
     /*str2.erase(std::remove_if(str2.begin(),
                               str2.end(),
                               [](unsigned char x){return std::isspace(x);}),

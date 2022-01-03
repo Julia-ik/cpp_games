@@ -18,8 +18,7 @@ Bitmap::Bitmap(std::string_view filepath)
         throw std::runtime_error("Failed to open file: " + std::string{filepath});
     }
 
-    Sint64 //представляет целое число от 0 до 18 446 744 073 709 551 615 и занимает 8 байт
-    length = SDL_RWsize(file);
+    Sint64 length = SDL_RWsize(file);
     std::vector<unsigned char> data(length);
 
     SDL_RWread(file, data.data(), length, 1);
@@ -75,3 +74,7 @@ glm::vec2 Bitmap::getSize() const
 {
     return _size;
 }
+
+Bitmap::Bitmap(Format format, std::vector<unsigned char> image,glm::vec2 size)
+:_format(format),_image(std::move(image)), _size(size)
+{}
