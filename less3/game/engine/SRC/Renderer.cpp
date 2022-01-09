@@ -83,9 +83,7 @@ std::shared_ptr<Shader> Renderer::createProgram(std::string_view name) const
 
 std::shared_ptr<Texture> Renderer::createTexture(Bitmap bitmap) const
 {
-    Texture texture;
-    texture.Generate(bitmap);
-    return std::make_shared<Texture>(texture);
+    return _engine.createShared<Texture>(std::move(bitmap));
 }
 
 

@@ -5,6 +5,7 @@
 #include <library.hpp>
 #include <Shader.h>
 #include "Uniforms.h"
+#include "glm/gtx/matrix_transform_2d.hpp"
 
 #include <imgui.h>
 
@@ -74,6 +75,7 @@ ImguiManager::ImguiManager(const Engine& engine)
     _textureUniform->texture = engine._renderer->createTexture(std::move(bitmap));
 
     _screenSizeUniform = _command.program->createVec2Uniform("uScreenSize", _command.program);
+
     _transformUniform = _command.program->createMat3Uniform("uTransform", _command.program);
 
     _command._transformUniform = _transformUniform;
@@ -149,7 +151,9 @@ ImguiManager::ImguiManager(const Engine& engine)
 
 void ImguiManager::visit()
 {
-
+   // glm::mat3 model(1.0f);
+    //model = glm::scale(model, glm::vec2(1000 , 1000));
+    //_transformUniform->value = model;
     ImGuiIO &io = ImGui::GetIO();
 
     io.DisplaySize = ImVec2(float(_engine.width/8), float(_engine.heights/8));

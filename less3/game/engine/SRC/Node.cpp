@@ -133,17 +133,21 @@ glm::mat3 Node::getTransform()
     }
     else
     {
-        glm::mat3 trans(1.0f);
+        glm::mat3 model(1.0f);
 
-        trans = glm::translate(trans, _position);
-        trans = glm::scale(trans, _scale);
-        trans = glm::rotate(trans, glm::radians(_rotation));
+        model = glm::translate(model, _position);  // сначала выполняем перемещение (преобразования таковы: первым происходит масштабирование, затем поворот, а в конце - перенос; обратный порядок)
 
-        trans = glm::translate(trans, -glm::vec2(_anchor.x * _contentSize.x,
-                                                 _anchor.y * _contentSize.y));
+        model = glm::translate(model, glm::vec2(_anchor.x * _contentSize.x,
+                                                _anchor.y* _contentSize.y)); // перемещаем точку начала поворота в центр прямоугольника
 
-        _transform = trans;
-        return _parent ? (getParent()->getTransform() * trans) : trans;
+        model = glm::rotate(model, glm::radians(_rotation)); // затем производим поворот
+        model = glm::translate(model, -glm::vec2(_anchor.x * _contentSize.x,
+                                                 _anchor.y* _contentSize.y)); // возвращаем точку поворота в исходную позицию
+
+        model = glm::scale(model, glm::vec2(_contentSize)); // последним выполняется масштабирование
+
+        _transform = model;
+        return _parent ? (getParent()->getTransform() * model) : model;
     }
 }
 

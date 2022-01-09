@@ -7,7 +7,6 @@
 
 #include <map>
 #include <string>
-#include "Texture.h"
 #include "Shader.h"
 #include "Sound.h"
 
@@ -20,7 +19,6 @@ public:
 
     // Хранилище ресурсов
     static std::map<std::string, Shader> Shaders;
-    static std::map<std::string, Texture> Textures;
 
     // Загружаем (и генерируем) шейдерную программу из файла загрузки исходного кода вершинных, фрагментных (и геометрических) шейдеров.
     // Если gShaderFile != nullptr, то также загружается и геометрический шейдер
@@ -29,12 +27,6 @@ public:
     // Получаем сохраненный шейдер
     static Shader GetShader(std::string name);
 
-    // Загружаем (и генерируем) текстуру из файла
-    static Texture LoadTexture(std::string_view file, bool alpha, std::string name);
-    static Texture loadTextureFromBitmap(Bitmap bitmap, bool alpha, std::string name);
-
-    // Получаем сохраненную текстуру
-    static Texture GetTexture(std::string name);
 
     // Корректное освобождение памяти всех загруженных ресурсов
     static void Clear();

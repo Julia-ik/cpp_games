@@ -17,12 +17,12 @@ int main()
 
 
     Tank tank(&engine, ResourceManager::GetShader("sprite"),
-              glm::vec2(300.0f, 300.0f), glm::vec2(0.65f, 0.4f),
+              glm::vec2(300.0f, 300.0f), glm::vec2(0.6f, 0.5f),
               0.0f, glm::vec2(60.0f, 45.0f));
 
 
     Button button(&engine,ResourceManager::GetShader("sprite"),
-                  glm::vec2(10.0f, 10.0f), glm::vec2(0.08f, 0.06f),
+                  glm::vec2(10.0f, 10.0f), glm::vec2(0.08f, 0.08f),
                   0.0f, glm::vec2(65.0f, 50.0f));
 
 

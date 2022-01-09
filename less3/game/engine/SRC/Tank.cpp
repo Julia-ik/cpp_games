@@ -24,10 +24,10 @@ Tank::Tank(Engine *engine, const Shader &shader, glm::vec2 position, glm::vec2 s
     //_sounds[1]->stop();
 
     auto body = _engine->createShared<Sprite>(shader, _position, _contentSize, _rotation, _anchor,
-                                     glm::vec4(1.0f, 0.0f, 0.5, 1.0f),"body");
+                                     glm::vec4(1.0f, 0.0f, 0.5, 1.0f),"/home/lilu/lilu/cpp_games/cpp_games/less3/game/images/body.png");
     auto gun = _engine->createShared<Sprite>(shader, glm::vec2(_position.x+0.215f, _position.y + 0.08f),
                                     glm::vec2(0.80f, 0.50f), _rotation, glm::vec2 (19.7f, 17.5f),
-                                    glm::vec4(1.0f, 0.0f, 1.0f, 1.0f),"gun");
+                                    glm::vec4(1.0f, 0.0f, 1.0f, 1.0f),"/home/lilu/lilu/cpp_games/cpp_games/less3/game/images/gun.png");
 
 
     addNode(body, 4);
@@ -81,7 +81,8 @@ void Tank::registerEventHandler()
                                                                                _nodes[1]->getPosition().y+8),
                                                                     glm::vec2(10.0f, 10.0f),
                                                                     0.0f, glm::vec2(0.5f),
-                                                                    glm::vec4(1.0f, 0.0f,0.0f,0.8f),"fire"),7);
+                                                                    glm::vec4(1.0f, 0.0f,0.0f,0.8f),
+                                                                    "/home/lilu/lilu/cpp_games/cpp_games/less3/game/images/fire2.png"),7);
 
                         _engine->_sounds[0]->pause();
                         _sounds[1]->play();

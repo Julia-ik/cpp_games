@@ -16,7 +16,8 @@ Button::Button(Engine *engine,const Shader &shader, glm::vec2 position,
 
 
     auto button = _engine->createShared<Sprite>(shader, _position, _contentSize, _rotation, _anchor,
-                                 glm::vec4(1.0f, 0.0f, 0.5, 1.0f),"button");
+                                 glm::vec4(1.0f, 0.0f, 0.5, 1.0f),
+                                 "/home/lilu/lilu/cpp_games/cpp_games/less3/game/images/button.png");
 
 
 

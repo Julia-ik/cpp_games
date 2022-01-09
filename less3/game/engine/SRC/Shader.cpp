@@ -58,7 +58,7 @@ out vec4 color;
 
 void main()
 {
-    color = texture(uTexture, oTexCoord) * oColor;
+    color = texture(uTexture, oTexCoord);
 }
 )";
 
@@ -147,6 +147,16 @@ void GlMat3Uniform::activate()
 }
 
 GlVec2Uniform::GlVec2Uniform(const std::shared_ptr<Shader> &program, std::string_view name)
+{
+    _location = glGetUniformLocation(program->programID, name.data());
+}
+
+GlTextureUniform::GlTextureUniform(const std::shared_ptr<Shader>& program, std::string_view name)
+{
+    _location = glGetUniformLocation(program->programID, name.data());
+}
+
+GlMat3Uniform::GlMat3Uniform(const std::shared_ptr<Shader> &program, std::string_view name)
 {
     _location = glGetUniformLocation(program->programID, name.data());
 }

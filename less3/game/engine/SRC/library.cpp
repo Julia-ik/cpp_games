@@ -100,26 +100,16 @@ void Engine::initGLL()
     ResourceManager::LoadShader("../shaders/sprite.vs", "../shaders/sprite.frag",
                                 nullptr, "sprite");
 
-    ResourceManager::LoadTexture("/home/lilu/lilu/cpp_games/cpp_games/less3/game/images/gun.png",
-                                 true, "gun");
-    ResourceManager::LoadTexture("/home/lilu/lilu/cpp_games/cpp_games/less3/game/images/body.png",
-                                 true, "body");
-    ResourceManager::LoadTexture("/home/lilu/lilu/cpp_games/cpp_games/less3/game/images/fire2.png",
-                                 true, "fire");
-    ResourceManager::LoadTexture("/home/lilu/lilu/cpp_games/cpp_games/less3/game/images/grass.png",
-                                 true, "grass");
-    ResourceManager::LoadTexture("/home/lilu/lilu/cpp_games/cpp_games/less3/game/images/button.png",
-                                 true, "button");
-
 
     audioManager.init();
     _sounds.push_back(std::make_shared<Sound>("/home/lilu/lilu/cpp_games/cpp_games/less3/game/sound/dramatic.wav",
                                               &audioManager, "theme"));
     scene.setScale(glm::vec2(width, heights));
-    /*scene.addNode(makeShare<Sprite>(ResourceManager::GetShader("sprite"),
+    /*scene.addNode(createShared<Sprite>(ResourceManager::GetShader("sprite"),
                                          glm::vec2(0.0f, 0.0f), glm::vec2(width, heights),
                                          0.0f, glm::vec2(0.5f),glm::vec4(0.0f,1.0f,0.0f,
-                                                                         1.0f), "grass"), 1);*/
+                                                                         1.0f),
+                                                                         "/home/lilu/lilu/cpp_games/cpp_games/less3/game/images/grass.png"), 1);*/
 
 
 

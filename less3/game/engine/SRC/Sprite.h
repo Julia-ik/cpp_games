@@ -36,7 +36,7 @@ public:
 
     // Конструктор (инициализируем шейдеры/объекты)
     Sprite(const Engine &_engine, const Shader &shader, glm::vec2 position, glm::vec2 size, float rotation, glm::vec2 center,
-           glm::vec4 col, std::string textureName);
+           glm::vec4 col, std::string filepath);
 
     // Деструктор
     ~Sprite();
@@ -49,7 +49,7 @@ public:
 private:
     // Состояние рендера
     Shader shader;
-    Texture _texture;
+    std::string  _filepath;
     unsigned int quadVAO;
 
     // Инициализируем и настраиваем атрибуты буфера и атрибуты вершин

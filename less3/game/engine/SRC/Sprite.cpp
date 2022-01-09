@@ -7,7 +7,7 @@
 #include "Uniforms.h"
 
 Sprite::Sprite(const Engine &engine, const Shader &shader, glm::vec2 position, glm::vec2 size, float rotation, glm::vec2 center,
-               glm::vec4 col, std::string textureName) :_color(col), _engine(engine)
+               glm::vec4 col, std::string filepath) :_color(col), _engine(engine)
 {
 
     this->shader = shader;
@@ -16,7 +16,8 @@ Sprite::Sprite(const Engine &engine, const Shader &shader, glm::vec2 position, g
     _rotation = rotation;
     _anchor=center;
 
-    _texture = ResourceManager::GetTexture(textureName);
+    _filepath = filepath;
+
     this->initRenderData();
 
 }
@@ -39,20 +40,21 @@ void Sprite::visitSelf()
 
 void Sprite::initRenderData()
 {
+    Bitmap bitmap(_filepath);
     meshData.vertices.emplace_back();
     meshData.vertices.back().position = {0.0, 0.0};
     meshData.vertices.back().textureCoords = {0.0, 0.0};
 
     meshData.vertices.emplace_back();
-    meshData.vertices.back().position = {0.0, _texture.Height};
+    meshData.vertices.back().position = {0.0, bitmap.getSize().y};
     meshData.vertices.back().textureCoords = {0.0, 1.0};
 
     meshData.vertices.emplace_back();
-    meshData.vertices.back().position = {_texture.Width, _texture.Height};
+    meshData.vertices.back().position = {bitmap.getSize().x, bitmap.getSize().y};
     meshData.vertices.back().textureCoords = {1.0, 1.0};
 
     meshData.vertices.emplace_back();
-    meshData.vertices.back().position = {_texture.Width, 0.0};
+    meshData.vertices.back().position = {bitmap.getSize().x, 0.0};
     meshData.vertices.back().textureCoords = {1.0, 0.0};
 
     meshData.indexes.emplace_back(0);
@@ -68,7 +70,7 @@ void Sprite::initRenderData()
     _command.program = std::make_shared<Shader>(shader);
 
     _textureUniform = _command.program->createTextureUniform("uTexture", _command.program);
-    _textureUniform->texture = std::make_shared<Texture>(_texture);
+    _textureUniform->texture = _engine._renderer->createTexture(std::move(bitmap));
 
     _screenSizeUniform = _command.program->createVec2Uniform("uScreenSize", _command.program);
     _transformUniform = _command.program->createMat3Uniform("uTransform", _command.program);

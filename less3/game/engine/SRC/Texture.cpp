@@ -5,43 +5,36 @@
 #include "Texture.h"
 #include "GL/gl.h"
 #include <vector>
+#include <GLES2/gl2.h>
 
 
-
-Texture::Texture()
-        : Width(0), Height(0), Internal_Format(GL_RGB), Image_Format(GL_RGB),
-        Wrap_S(GL_REPEAT), Wrap_T(GL_REPEAT), Filter_Min(GL_LINEAR), Filter_Max(GL_LINEAR)
+Texture::Texture(Bitmap bitmap)
 {
-    glGenTextures(1, &this->ID);
-}
+    glGenTextures(1, &ID);
+    glBindTexture(GL_TEXTURE_2D, ID);
 
-void Texture::Generate(Bitmap bitmap)
-{
     const auto glInternalFormat = getGlInternalFormat(bitmap.getFormat());
     const auto glType = getGlType(bitmap.getFormat());
     const auto glFormat = getGlFormat(bitmap.getFormat());
 
-    // Создаем текстуру
-    glBindTexture(GL_TEXTURE_2D, this->ID);
-    glTexImage2D(GL_TEXTURE_2D, 0, glInternalFormat, bitmap.getSize().x,
-                 bitmap.getSize().y, 0, glFormat, glType, bitmap.getImage().data());
+    auto dd = bitmap.getImage().data();
 
-    Width = bitmap.getSize().x;
-    Height = bitmap.getSize().y;
-    // Задаем для текстуры режимы наложения и фильтрации
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, this->Wrap_S);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, this->Wrap_T);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, this->Filter_Min);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, this->Filter_Max);
+    glTexImage2D(GL_TEXTURE_2D, 0, glInternalFormat, bitmap.getSize().x, bitmap.getSize().y, 0,
+                 glFormat, glType, bitmap.getImage().data());
 
-    // Отвязываем текстуру
-    glBindTexture(GL_TEXTURE_2D, 0);
+
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+
+    glGenerateMipmap(GL_TEXTURE_2D);
 }
 
-void Texture::Bind() const
+
+void Texture::Bind()
 {
-    glBindTexture(GL_TEXTURE_2D, this->ID);
+    glBindTexture(GL_TEXTURE_2D, ID);
 }
+
 GLenum Texture::getGlInternalFormat(Bitmap::Format bitmapFormat){
     if (bitmapFormat == Bitmap::Format::R)
     {
