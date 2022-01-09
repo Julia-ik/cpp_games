@@ -8,11 +8,17 @@
 
 class Texture;
 class Engine;
+class GlTextureUniform;
+class GlMat3Uniform;
+class GlVec2Uniform;
 
 class ImguiManager final
 {
 public:
     Renderer::Command _command;
+    std::shared_ptr<GlVec2Uniform> _screenSizeUniform;
+    std::shared_ptr<GlMat3Uniform>  _transformUniform;
+    std::shared_ptr<GlTextureUniform>  _textureUniform;
     explicit ImguiManager(const Engine& engine);
     void visit();
 

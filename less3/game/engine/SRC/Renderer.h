@@ -29,8 +29,9 @@ public:
     {
         std::shared_ptr<VertexBuffer>  vertexBuffer;
         std::shared_ptr<Shader> program;
-        std::shared_ptr<Texture> texture;
-        glm::mat4 transform;
+        std::shared_ptr<GlVec2Uniform> _screenSizeUniform;
+        std::shared_ptr<GlMat3Uniform>  _transformUniform;
+        std::shared_ptr<GlTextureUniform>  _textureUniform;
 
         std::optional<glm::vec4> scissor;
 

@@ -7,7 +7,7 @@
 #include <glm/gtc/type_ptr.hpp>
 #include "library.hpp"
 #include <iostream>
-
+#include "Uniforms.h"
 #include <SDL.h>
 
 
@@ -37,14 +37,9 @@ void Renderer::draw()
             if (glProgram)
             {
                 glProgram->Use();
-                auto glTexture = std::dynamic_pointer_cast<Texture>(command.texture);
-                if (glTexture)
-                {
-                    glActiveTexture(GL_TEXTURE0);
-                    glTexture->Bind();
-                }
-                glUniformMatrix4fv(glGetUniformLocation(glProgram->programID, "model"), 1, false,
-                                   glm::value_ptr(command.transform));
+                command._screenSizeUniform->activate();
+                command._textureUniform->activate();
+                command._transformUniform->activate();
 
                 if (command.scissor)
                 {

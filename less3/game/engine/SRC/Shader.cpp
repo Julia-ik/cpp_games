@@ -9,6 +9,7 @@
 #include <vector>
 #include <glm/glm.hpp>
 #include <glm/gtc/type_ptr.hpp>
+#include "Uniforms.h"
 
 Shader::Shader(GLuint programID){
     this->programID = programID;
@@ -19,35 +20,47 @@ Shader::Shader()
     GLuint FragmentShaderID =glCreateShader(GL_FRAGMENT_SHADER);
 
 
-    std::string VertexShaderCode ="#version 330 core\n"
-                                  "layout (location = 0) in vec2 position;\n"
-                                  "layout (location = 1) in vec2 textureCoords;\n"
-                                  //"layout (location = 2) in vec4 color;\n"
-                                  "out vec2 TexCoords;\n"
-                                  //"out vec4 color_f; "
-                                  " \n"
-                                  "uniform mat4 model;\n"
-                                  "uniform mat4 projection;\n"
-                                  " \n"
-                                  "void main()\n"
-                                  "{\n"
-                                  "    TexCoords = textureCoords;\n"
-                                  //"     color_f = color;"
-                                  "    gl_Position = projection * model * vec4(position, 0.0, 1.0);\n"
-                                  "}";
+    std::string VertexShaderCode =R"(
+#version 330 core
 
-    std::string FragmentShaderCode = "#version 330 core\n"
-                                     "in vec2 TexCoords;\n"
-                                     "out vec4 color;\n"
-                                     //"in vec4 color_f;"
-                                     " \n"
-                                     "uniform sampler2D image;\n"
-                                     "uniform vec4 spriteColor;\n"
-                                     " \n"
-                                     "void main()\n"
-                                     "{    \n"
-                                     "    color = texture(image, TexCoords);\n"
-                                     "}  ";
+layout (location = 0) in vec2 position;
+layout (location = 1) in vec2 texCoord;
+layout (location = 2) in vec4 color;
+
+out vec2 oTexCoord;
+out vec4 oColor;
+
+uniform vec2 uScreenSize;
+uniform mat3 uTransform;
+
+void main()
+{
+    oColor = color;
+
+    vec2 pos = (uTransform * vec3(position, 1.0)).xy;
+    vec2 scaledPos = pos / uScreenSize;
+    scaledPos.y = 1.0 - scaledPos.y;
+    scaledPos = scaledPos * 2.0 - vec2(1.0);
+
+    oTexCoord = texCoord;
+    gl_Position = vec4(scaledPos.x, scaledPos.y, 1.0, 1.0);
+}
+)";
+
+    std::string FragmentShaderCode = R"(
+#version 330 core
+
+uniform sampler2D uTexture;
+
+in vec2 oTexCoord;
+in vec4 oColor;
+out vec4 color;
+
+void main()
+{
+    color = texture(uTexture, oTexCoord) * oColor;
+}
+)";
 
 
 
@@ -106,69 +119,54 @@ Shader::Shader()
 
     glDeleteShader(VertexShaderID);
     glDeleteShader(FragmentShaderID);
-
-    uScreenSize = glGetUniformLocation(programID, "screenSize");
-
-//return ProgramID;
 }
 
-Shader &Shader::Use()
+void Shader::Use()
 {
-    glUseProgram(this->programID);
-    return *this;
+    glUseProgram(programID);
 }
 
-void Shader::SetFloat(const char *name, float value, bool useShader)
+std::shared_ptr<GlTextureUniform> Shader::createTextureUniform(std::string_view name, std::shared_ptr<Shader> & shader)
 {
-    if (useShader)
-        this->Use();
-    glUniform1f(glGetUniformLocation(this->programID, name), value);
+    return std::make_shared<GlTextureUniform>(shader, name);
 }
-void Shader::SetInteger(const char *name, int value, bool useShader)
+
+std::shared_ptr<GlMat3Uniform> Shader::createMat3Uniform(std::string_view name, std::shared_ptr<Shader> & shader)
 {
-    if (useShader)
-        this->Use();
-    glUniform1i(glGetUniformLocation(this->programID, name), value);
+    return std::make_shared<GlMat3Uniform>(shader, name);
 }
-void Shader::SetVector2f(const char *name, float x, float y, bool useShader)
+
+std::shared_ptr<GlVec2Uniform> Shader::createVec2Uniform(std::string_view name, std::shared_ptr<Shader> & shader)
 {
-    if (useShader)
-        this->Use();
-    glUniform2f(glGetUniformLocation(this->programID, name), x, y);
+    return std::make_shared<GlVec2Uniform>(shader, name);
 }
-void Shader::SetVector2f(const char *name, const glm::vec2 &value, bool useShader)
+
+void GlMat3Uniform::activate()
 {
-    if (useShader)
-        this->Use();
-    glUniform2f(glGetUniformLocation(this->programID, name), value.x, value.y);
+    glUniformMatrix3fv(_location, 1, GL_FALSE, glm::value_ptr(value));
 }
-void Shader::SetVector3f(const char *name, float x, float y, float z, bool useShader)
+
+GlVec2Uniform::GlVec2Uniform(const std::shared_ptr<Shader> &program, std::string_view name)
 {
-    if (useShader)
-        this->Use();
-    glUniform3f(glGetUniformLocation(this->programID, name), x, y, z);
+    _location = glGetUniformLocation(program->programID, name.data());
 }
-void Shader::SetVector3f(const char *name, const glm::vec3 &value, bool useShader)
+
+void GlVec2Uniform::activate()
 {
-    if (useShader)
-        this->Use();
-    glUniform3f(glGetUniformLocation(this->programID, name), value.x, value.y, value.z);
+    glUniform2f(_location, value.x, value.y);
 }
-void Shader::SetVector4f(const char *name, float x, float y, float z, float w, bool useShader)
+
+
+void GlTextureUniform::activate()
 {
-    if (useShader)
-        this->Use();
-    glUniform4f(glGetUniformLocation(this->programID, name), x, y, z, w);
+    auto glTexture = std::dynamic_pointer_cast<Texture>(texture);
+    if (glTexture)
+    {
+        //TODO: diff texture slots
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, glTexture->ID);
+
+        glUniform1i(_location, 0);
+    }
 }
-void Shader::SetVector4f(const char *name, const glm::vec4 &value, bool useShader)
-{
-    if (useShader)
-        this->Use();
-    glUniform4f(glGetUniformLocation(this->programID, name), value.x, value.y, value.z, value.w);
-}
-void Shader::SetMatrix4(const char *name, const glm::mat4 &matrix, bool useShader)
-{
-    if (useShader)
-        this->Use();
-    glUniformMatrix4fv(glGetUniformLocation(this->programID, name), 1, false, glm::value_ptr(matrix));
-}
+

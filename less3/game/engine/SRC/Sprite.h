@@ -19,12 +19,21 @@
 #include "MeshData.h"
 
 class Engine;
+class GlTextureUniform;
+class GlMat3Uniform;
+class GlVec2Uniform;
+
 class Sprite: public Node
 {
 public:
     MeshData meshData;
     const Engine &_engine;
     Renderer::Command _command;
+
+    std::shared_ptr<GlVec2Uniform> _screenSizeUniform;
+    std::shared_ptr<GlMat3Uniform>  _transformUniform;
+    std::shared_ptr<GlTextureUniform>  _textureUniform;
+
     // Конструктор (инициализируем шейдеры/объекты)
     Sprite(const Engine &_engine, const Shader &shader, glm::vec2 position, glm::vec2 size, float rotation, glm::vec2 center,
            glm::vec4 col, std::string textureName);

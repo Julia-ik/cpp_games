@@ -4,6 +4,7 @@
 #include <Texture.h>
 #include <library.hpp>
 #include <Shader.h>
+#include "Uniforms.h"
 
 #include <imgui.h>
 
@@ -68,15 +69,16 @@ ImguiManager::ImguiManager(const Engine& engine)
     io.ClipboardUserData = this;
 
     _command.program = std::make_shared<Shader>(ResourceManager::GetShader("sprite"));
-    ResourceManager::loadTextureFromBitmap(bitmap, true, "console");
 
+    _textureUniform = _command.program->createTextureUniform("uTexture", _command.program);
+    _textureUniform->texture = engine._renderer->createTexture(std::move(bitmap));
 
-    //_screenSizeUniform = _command.program->createVec2Uniform("uScreenSize");
-    //_transformUniform = _command.program->createMat3Uniform("uTransform");
-    _command.texture = std::make_shared<Texture>(ResourceManager::GetTexture("console"));
+    _screenSizeUniform = _command.program->createVec2Uniform("uScreenSize", _command.program);
+    _transformUniform = _command.program->createMat3Uniform("uTransform", _command.program);
 
-    _command.transform = glm::mat4(1.0f);
-
+    _command._transformUniform = _transformUniform;
+    _command._textureUniform = _textureUniform;
+    _command._screenSizeUniform = _screenSizeUniform;
 
 
     _engine._eventManager.addHandler([this](const SDL_Event &e)
@@ -197,6 +199,8 @@ void ImguiManager::visit()
         auto vertexBuffer = _engine._renderer->createVertexBuffer(std::move(meshData));
 
         _command.vertexBuffer = std::move(vertexBuffer);
+        _screenSizeUniform->value.x = _engine.width;
+        _screenSizeUniform->value.y = _engine.heights;
 
         size_t offset = 0;
         for (int cmd_i = 0; cmd_i < cmd_list->CmdBuffer.Size; cmd_i++)

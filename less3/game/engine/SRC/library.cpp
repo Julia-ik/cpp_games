@@ -100,11 +100,6 @@ void Engine::initGLL()
     ResourceManager::LoadShader("../shaders/sprite.vs", "../shaders/sprite.frag",
                                 nullptr, "sprite");
 
-    glm::mat4 projection = glm::ortho(0.0f, static_cast<float>(this->width),
-                                      static_cast<float>(this->heights), 0.0f, -1.0f, 1.0f);
-    ResourceManager::GetShader("sprite").Use().SetInteger("image", 0);
-    ResourceManager::GetShader("sprite").SetMatrix4("projection", projection);
-
     ResourceManager::LoadTexture("/home/lilu/lilu/cpp_games/cpp_games/less3/game/images/gun.png",
                                  true, "gun");
     ResourceManager::LoadTexture("/home/lilu/lilu/cpp_games/cpp_games/less3/game/images/body.png",
