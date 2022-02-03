@@ -10,8 +10,8 @@ int main()
     engine.initGLL();
 
     Frog frog(&engine, ResourceManager::GetShader("sprite"),
-                  glm::vec2(300.0f, 310.0f), glm::vec2(0.6f, 0.6f),
-                  90.0f, glm::vec2(120.0f, 120.0f));
+                  glm::vec2(300.0f, 550.0f), glm::vec2(0.5f, 0.5f),
+                  0.0f, glm::vec2(125.0f, 125.0f));
 
     engine.scene.addNode(std::make_shared<Frog>(frog), 2);
 

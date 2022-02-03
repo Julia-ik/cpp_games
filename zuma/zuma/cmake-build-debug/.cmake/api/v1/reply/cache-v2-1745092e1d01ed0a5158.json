@@ -5838,6 +5838,18 @@
 			"value" : "/usr/include"
 		},
 		{
+			"name" : "OPENGL_LIBRARY",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/lib64/libOpenGL.so"
+		},
+		{
 			"name" : "OPENGL_egl_LIBRARY",
 			"properties" : 
 			[

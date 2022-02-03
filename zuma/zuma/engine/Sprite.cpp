@@ -5,6 +5,7 @@
 #include "Sprite.h"
 #include "Bitmap.h"
 #include "MeshData.h"
+#include "Engine.h"
 
 Sprite::Sprite(const Engine &engine, const Shader &shader, glm::vec2 position, glm::vec2 size, float rotation, glm::vec2 center,
                std::string filepath) : _engine(engine)

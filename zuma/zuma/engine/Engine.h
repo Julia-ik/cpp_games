@@ -7,6 +7,8 @@
 #include "Renderer.h"
 #include "Sprite.h"
 #include "EventManager.h"
+#include "BallRaw.h"
+
 
 class Engine
 {
@@ -25,6 +27,7 @@ public:
     uint32_t VBO;
     uint32_t IBO;
     Node scene;
+    std::shared_ptr<BallRaw> _ballRaw;
     GLuint programID = 0;
 
     bool isActive;
@@ -34,7 +37,7 @@ public:
     void update(float delta);
     void initGLL();
 
-    void drawGLModel(GLuint programID);
+   // void drawGLModel(GLuint programID);
 
     void destroyEngine(SDL_Window **window, SDL_Renderer **render);
 
@@ -43,6 +46,7 @@ public:
     std::string_view getClipboardTxt() const;
 
     template<typename T, typename... Args>
+
     std::shared_ptr<T> createShared(Args&&... args) const
     {
         if constexpr(std::is_constructible_v<T, const Engine&, Args&&...>)

@@ -14,7 +14,8 @@
 #include "Renderer.h"
 #include "ResourceLoader.h"
 #include "MeshData.h"
-#include "Engine.h"
+
+class Engine;
 
 class Sprite: public Node
 {

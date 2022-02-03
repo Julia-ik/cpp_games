@@ -6,6 +6,7 @@
 #include "Sprite.h"
 #include "ResourceLoader.h"
 #include <stdio.h>
+#include "Ball.h"
 
 
 Frog::Frog(Engine *engine, const Shader &shader, glm::vec2 position, glm::vec2 size,
@@ -71,20 +72,18 @@ void Frog::registerEventHandler()
                 if (!keyState[SDL_SCANCODE_RIGHT]) {
                     _nodes[0]->isRight=false;
                 }
-//                if (keyState[SDL_SCANCODE_SPACE]) {
-//
-//                    _engine->scene.addNode(_engine->createShared<Sprite>(ResourceManager::GetShader("sprite"),
-//                                                                         glm::vec2 (_nodes[1]->getPosition().x + 68,
-//                                                                                    _nodes[1]->getPosition().y+8),
-//                                                                         glm::vec2(10.0f, 10.0f),
-//                                                                         0.0f, glm::vec2(0.5f),
-//                                                                         glm::vec4(1.0f, 0.0f,0.0f,0.8f),
-//                                                                         "/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/images/fire2.png"),7);
-//
+                if (keyState[SDL_SCANCODE_SPACE])
+                {
+                    auto vector = glm::rotate(glm::vec2{1.0f, 0.0f}, glm::radians(_nodes[0]->getRotation()));
+                   auto ball = _engine->createShared<Ball>(_position,
+                                                           glm::vec2(3.0f, 3.0f),
+                    _nodes[0]->getRotation()+90.0f, 500.0f);
+
+                    ball->setPosition(_position + vector);
+                    _engine->scene.addNode(ball, 4);
 //                    _engine->_sounds[0]->pause();
 //                  _sounds[1]->play();
-
-               // }
+               }
                 if (!keyState[SDL_SCANCODE_SPACE]) {
                   //  _sounds[1]->stop();
                 }
@@ -147,17 +146,33 @@ void Frog::updateSelf(float delta) {
     if (_nodes[0]->isRight) {
         moveRight(_nodes[0], delta);
     }
-//
+}
 //    if (_nodes[1]->isLeft) {
 //        moveLeft(_nodes[1], delta);
 //    }
 //    if (_nodes[1]->isRight) {
 //        moveRight(_nodes[1], delta);
-  //  }
+//    }
+//
+//
+//    _nodes[1]->setPosition(glm::vec2(_nodes[0]->getPosition().x + 21.0f, _nodes[0]->getPosition().y + 5.0f));
 
-}
-//    _nodes[1] ->setPosition(glm::vec2(_nodes[0]->getPosition().x+21.0f,
-//                                    0f  _nodes[0]->getPosition().y+5.0f));
+//void Frog::shoot(std::shared_ptr<Node> sprite, float delta)
+//{
+//    if (sprite->_speed < 150.0f) {
+//        sprite->_speed += delta * 2500.0f;
+//    }
+//
+//    auto vector = glm::rotate(glm::vec2(1.0f, 0.0f),
+//                              glm::radians(_nodes[0]->getRotation()));
+//
+//    if (sprite->_speed > 0.1f)
+//    {
+//        sprite->setPosition(sprite->getPosition()+ vector * static_cast<float>(delta) * sprite->_speed);
+//        sprite->_speed -= delta * 2200.0f;
+//    }
+//}
+
 
 
 
@@ -187,6 +202,7 @@ void Frog::updateSelf(float delta) {
         }
     }*/
 //}
+
 
 void Frog::moveLeft(std::shared_ptr<Node> sprite, float delta){
     if(std::abs(sprite->_turnSpeed < 100.1f))
@@ -222,7 +238,7 @@ void Frog::moveRight(std::shared_ptr<Node> sprite, float delta)
         sprite->_turnSpeed = 0.0f;
     }
 }
-//
+
 //void Frog::shoot(std::shared_ptr<Node> sprite, float delta)
 //{
 //    if (sprite->_speed < 150.0f) {
@@ -230,7 +246,7 @@ void Frog::moveRight(std::shared_ptr<Node> sprite, float delta)
 //    }
 //
 //    auto vector = glm::rotate(glm::vec2(1.0f, 0.0f),
-//                              glm::radians(_nodes[]->getRotation()));
+//                              glm::radians(_nodes[0]->getRotation()));
 //
 //    if (sprite->_speed > 0.1f)
 //    {

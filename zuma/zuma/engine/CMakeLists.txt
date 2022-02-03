@@ -7,7 +7,12 @@ if(COMPILER_SUPPORTS_CXX17)
     set(CMAKE_REQUIRED_FLAGS "-std=c++17")
 endif()
 
-add_library(engine STATIC Engine.cpp Node.cpp Node.h Sprite.cpp Sprite.h Shader.cpp Shader.h Bitmap.cpp Bitmap.h MeshData.h Uniforms.h Texture.cpp Texture.h Renderer.cpp Renderer.h VertexBuffer.cpp VertexBuffer.h ResourceLoader.cpp ResourceLoader.h Frog.cpp Frog.h EventManager.cpp EventManager.h)
+add_library(engine STATIC Engine.cpp Node.cpp Node.h Sprite.cpp Sprite.h
+        Shader.cpp Shader.h Bitmap.cpp Bitmap.h MeshData.h Uniforms.h
+        Texture.cpp Texture.h Renderer.cpp Renderer.h VertexBuffer.cpp
+        VertexBuffer.h ResourceLoader.cpp ResourceLoader.h
+        Frog.cpp Frog.h EventManager.cpp EventManager.h Ball.cpp Ball.h
+        ResourceManager.h TaskManager.cpp TaskManager.h BallRaw.cpp BallRaw.h LevelBall.cpp LevelBall.h)
 #SDL
 
 if(NOT IOS)
@@ -16,6 +21,11 @@ if(NOT IOS)
     set(SDL2_LIBRARY SDL2-static)
 endif()
 
+if(ANDROID)
+    set(OPENGL_LIBRARY OpenGL)
+else()
+    find_library(OPENGL_LIBRARY OpenGL)
+endif()
 
 if(NOT APPLE AND NOT ANDROID AND (UNIX OR MINGW))
     add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/libs/glew)

@@ -1,5 +1,8 @@
 #include "Engine.h"
 #include "ResourceLoader.h"
+#include "BallRaw.h"
+
+
 
 Engine::Engine(int w, int h)
 {
@@ -14,7 +17,7 @@ Engine::Engine(int w, int h)
 
     r = SDL_CreateRenderer(window, -1, SDL_WINDOW_OPENGL);
 }
-void Engine::drawGLModel(GLuint programID)
+/*void Engine::drawGLModel(GLuint programID)
 {
     glClear(GL_COLOR_BUFFER_BIT);
 
@@ -36,7 +39,7 @@ void Engine::drawGLModel(GLuint programID)
     glDisableVertexAttribArray(0);
 
     SDL_GL_SwapWindow(window);
-}
+}*/
 
 void Engine::initGLL()
 {
@@ -56,16 +59,17 @@ void Engine::initGLL()
                                 nullptr, "sprite");
     scene.setScale(glm::vec2(width, heights));
     scene._zOrder = 1;
-    scene.addNode(createShared<Sprite>(ResourceManager::GetShader("sprite"),
-                                        glm::vec2(0.0f, 0.0f), glm::vec2(0.45f, 0.7f),
-                                        0.0f, glm::vec2(0.5f),
-                                        "/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/images/background.jpg"), 1);
-
+//    scene.addNode(createShared<Sprite>(ResourceManager::GetShader("sprite"),
+//                                        glm::vec2(0.0f, 0.0f), glm::vec2(0.45f, 0.7f),
+//                                        0.0f, glm::vec2(0.5f),
+//                                        "/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/images/background.jpg"), 1);
+    _ballRaw = std::make_shared<BallRaw>(this, 10);
     isActive = true;
 }
 
 void Engine::update(float delta)
 {
+    _ballRaw->update();
     scene.update(delta);
     scene.visit();
     _renderer->draw();

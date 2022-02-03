@@ -85,3 +85,11 @@ std::shared_ptr<Texture> Renderer::createTexture(Bitmap bitmap) const
 {
     return _engine.createShared<Texture>(std::move(bitmap));
 }
+/*
+std::shared_ptr<Texture> Renderer::createTexture(std::string filepath) const
+{
+    return _textures.resourceForName(std::string(filepath), [&]()->std::shared_ptr<Texture>
+    {
+        return _engine.createShared<Texture>(Bitmap{filepath});
+    };
+}*/
