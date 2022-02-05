@@ -21,8 +21,11 @@ public:
     bool isLeft = false;
     bool isRight = false;
 
-    Frog(Engine *engine,const Shader &shader, glm::vec2 position, glm::vec2 size,
-         float rotation, glm::vec2 center);
+    std::vector<int> colorBall;
+    int i = 0;
+
+    Frog(Engine *engine, const Shader &shader, glm::vec2 position, glm::vec2 size, float rotation,
+         glm::vec2 center);
 
     void registerEventHandler();
 
@@ -40,18 +43,10 @@ public:
 
     void shoot(std::shared_ptr<Node> sprite, float delta);
 
-    template<typename T, typename... Args>
-    std::shared_ptr<T> createShared(Args&&... args) const
-    {
-        if constexpr(std::is_constructible_v<T, const Frog&, Args&&...>)
-        {
-            return std::make_shared<T>(*this, std::forward<Args>(args)...);
-        }
-        else
-        {
-            return std::make_shared<T>(std::forward<Args>(args)...);
-        }
-    }
+private:
+    std::shared_ptr<Ball> nextBall;
+    void generateBallBanch();
+
 
 };
 #endif //ZUMA_FROG_H

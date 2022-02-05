@@ -6,6 +6,7 @@
 #include "VertexBuffer.h"
 #include "Engine.h"
 
+
 VertexBuffer::VertexBuffer(const Engine &engine, MeshData data)
         :_engine(engine)
 {
@@ -26,12 +27,11 @@ VertexBuffer::VertexBuffer(const Engine &engine, MeshData data)
     glVertexAttribPointer(1, 2,
                           GL_FLOAT, GL_FALSE,  sizeof(MeshData::Vertex), (void*)offsetof(MeshData::Vertex, textureCoords));
 
+
+    glEnableVertexAttribArray(2);
+    glVertexAttribPointer(2, 4, GL_UNSIGNED_BYTE, GL_TRUE, sizeof (MeshData::Vertex), (void*) offsetof(MeshData::Vertex, color));
+
     glBindBuffer(GL_ARRAY_BUFFER, 0);
-
-    //glEnableVertexAttribArray(2);
-    //glVertexAttribPointer(2, 4, GL_UNSIGNED_BYTE, GL_TRUE, sizeof (MeshData::Vertex), (void*) offsetof(MeshData::Vertex, color));
-
-
     glGenBuffers(1, &_IBO);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, _IBO);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER,

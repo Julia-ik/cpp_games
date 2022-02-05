@@ -7,7 +7,6 @@
 #define GLEW_NO_GLU
 #include <GL/glew.h>
 #include <vector>
-#include <glm/glm.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include "Uniforms.h"
 
@@ -59,7 +58,7 @@ out vec4 color;
 
 void main()
 {
-    color = texture(uTexture, oTexCoord);
+    color = texture(uTexture, oTexCoord)* oColor;
 }
 )";
 

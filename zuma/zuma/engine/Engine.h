@@ -9,6 +9,13 @@
 #include "EventManager.h"
 #include "BallRaw.h"
 
+enum ColOfBall
+{
+    ORANGE = 0,
+    PURPLE = 1,
+    BLUE = 2,
+    YELLOW = 3
+};
 
 class Engine
 {
@@ -36,7 +43,7 @@ public:
 
     void update(float delta);
     void initGLL();
-
+    std::vector<int> chooseColor(int size) const;
    // void drawGLModel(GLuint programID);
 
     void destroyEngine(SDL_Window **window, SDL_Renderer **render);

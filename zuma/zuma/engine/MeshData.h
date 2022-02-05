@@ -6,6 +6,7 @@
 #define ZUMA_MESHDATA_H
 #include <glm/glm.hpp>
 #include <vector>
+#include "Color.h"
 
 class MeshData
 {
@@ -14,7 +15,7 @@ public:
     {
         glm::vec2 position;
         glm::vec2 textureCoords;
-        //color_t color = glm::vec4(1, 1, 1, 1);
+        color_t color = glm::vec4(1, 1, 1, 1);
     };
 
     std::vector<Vertex> vertices;

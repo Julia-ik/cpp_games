@@ -22,6 +22,7 @@ public:
     float _turnSpeed=0.0;
     bool isLeft = false;
     bool isRight = false;
+    glm::vec4 _color = {1,1,1,1};
 
     virtual ~Node() = default;
 

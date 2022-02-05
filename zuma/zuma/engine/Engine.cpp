@@ -1,6 +1,7 @@
 #include "Engine.h"
 #include "ResourceLoader.h"
 #include "BallRaw.h"
+#include <ctime>
 
 
 
@@ -41,13 +42,11 @@ Engine::Engine(int w, int h)
     SDL_GL_SwapWindow(window);
 }*/
 
-void Engine::initGLL()
-{
+void Engine::initGLL() {
     SDL_GL_CreateContext(window);
 
-    glewExperimental=true;
-    if (glewInit() != GLEW_OK)
-    {
+    glewExperimental = true;
+    if (glewInit() != GLEW_OK) {
         fprintf(stderr, "cannot identify GLEWn");
     }
     SDL_Init(SDL_INIT_EVERYTHING);
@@ -59,11 +58,15 @@ void Engine::initGLL()
                                 nullptr, "sprite");
     scene.setScale(glm::vec2(width, heights));
     scene._zOrder = 1;
-//    scene.addNode(createShared<Sprite>(ResourceManager::GetShader("sprite"),
-//                                        glm::vec2(0.0f, 0.0f), glm::vec2(0.45f, 0.7f),
-//                                        0.0f, glm::vec2(0.5f),
-//                                        "/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/images/background.jpg"), 1);
-    _ballRaw = std::make_shared<BallRaw>(this, 10);
+    auto background = createShared<Sprite>(ResourceManager::GetShader("sprite"),
+                                           glm::vec2(0.0f, 0.0f), glm::vec2(1, 1),
+                                           0.0f, glm::vec2(0.0f),
+                                           "/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/images/fon.png",
+                                           glm::vec4(1, 1, 1, 1));
+    scene.addNode(background, 1);
+
+    _ballRaw = std::make_shared<BallRaw>(this, 4);
+
     isActive = true;
 }
 
@@ -91,4 +94,24 @@ std::string_view Engine::getClipboardTxt() const
 {
     _clipboard = SDL_GetClipboardText();
     return _clipboard;
+}
+
+std::vector<int> Engine::chooseColor(int size) const
+{
+    srand( time( 0 ) );
+    std::vector<int> color;
+    for(int i=0; i<size; i++){
+        if(i>1){
+            int temp = rand()%4;
+            while(temp == color[i-1] && temp == color[i-2])
+            {
+                temp=rand()%4;
+            }
+            color.emplace_back(temp);
+        }
+        else{
+            color.emplace_back(rand()%4);
+        }
+    }
+    return  color;
 }

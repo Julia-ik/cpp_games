@@ -8,7 +8,8 @@
 
 
 LevelBall::LevelBall(const Engine& engine, glm::vec2 position, glm::vec2 size,
-                     float rotation, float speed, std::shared_ptr<BallRaw> raw) : Ball(engine, position, size, rotation, speed), _ballraw(raw)
+                     float rotation, float speed, std::shared_ptr<BallRaw> raw, int colorIndex)
+                     : Ball(engine, position, size, rotation, speed, colorIndex), _ballraw(raw)
 {
 }
 
@@ -21,7 +22,7 @@ void LevelBall::updateSelf(float delta)
 
 
         auto vec1 = glm::normalize(_tempPoint - _position);
-        setPosition(_nodes[0]->getPosition() + vec1 * delta * 30.0f);
+        setPosition(_nodes[0]->getPosition() + vec1 * delta * 60.0f);
         _nodes[0]->setPosition(_position);
         _transform = std::nullopt;
     } else{

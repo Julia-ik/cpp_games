@@ -15,7 +15,7 @@ class LevelBall : public Ball
         {
 public:
     LevelBall(const Engine& engine, glm::vec2 position, glm::vec2 size,
-              float rotation, float speed, std::shared_ptr<BallRaw> raw);
+              float rotation, float speed, std::shared_ptr<BallRaw> raw, int colorIndex);
     void updateSelf(float delta) override;
     int j =0;
     std::shared_ptr<BallRaw> _ballraw;

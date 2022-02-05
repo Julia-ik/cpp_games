@@ -8,7 +8,7 @@
 #include "Engine.h"
 
 Sprite::Sprite(const Engine &engine, const Shader &shader, glm::vec2 position, glm::vec2 size, float rotation, glm::vec2 center,
-               std::string filepath) : _engine(engine)
+               std::string filepath, glm::vec4 col) : _engine(engine)
 {
 
     this->shader = shader;
@@ -16,7 +16,7 @@ Sprite::Sprite(const Engine &engine, const Shader &shader, glm::vec2 position, g
     _contentSize = size;
     _rotation = rotation;
     _anchor=center;
-
+    _color = col;
     _filepath = filepath;
 
     this->initRenderData();
@@ -45,14 +45,17 @@ void Sprite::initRenderData()
     meshData.vertices.emplace_back();
     meshData.vertices.back().position = {0.0, 0.0};
     meshData.vertices.back().textureCoords = {0.0, 0.0};
+    meshData.vertices.back().color = _color; //glm::vec4(0, 0, 1, 1);
 
     meshData.vertices.emplace_back();
     meshData.vertices.back().position = {0.0, bitmap.getSize().y};
     meshData.vertices.back().textureCoords = {0.0, 1.0};
+    meshData.vertices.back().color = _color;
 
     meshData.vertices.emplace_back();
     meshData.vertices.back().position = {bitmap.getSize().x, bitmap.getSize().y};
     meshData.vertices.back().textureCoords = {1.0, 1.0};
+    meshData.vertices.back().color = _color;
 
     meshData.vertices.emplace_back();
     meshData.vertices.back().position = {bitmap.getSize().x, 0.0};

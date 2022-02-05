@@ -12,7 +12,7 @@ add_library(engine STATIC Engine.cpp Node.cpp Node.h Sprite.cpp Sprite.h
         Texture.cpp Texture.h Renderer.cpp Renderer.h VertexBuffer.cpp
         VertexBuffer.h ResourceLoader.cpp ResourceLoader.h
         Frog.cpp Frog.h EventManager.cpp EventManager.h Ball.cpp Ball.h
-        ResourceManager.h TaskManager.cpp TaskManager.h BallRaw.cpp BallRaw.h LevelBall.cpp LevelBall.h)
+        ResourceManager.h TaskManager.cpp TaskManager.h BallRaw.cpp BallRaw.h LevelBall.cpp LevelBall.h Color.h)
 #SDL
 
 if(NOT IOS)

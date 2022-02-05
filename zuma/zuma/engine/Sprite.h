@@ -7,7 +7,6 @@
 
 #include "Texture.h"
 #include "Node.h"
-//#include "Color.h"
 #include "Shader.h"
 #include <string>
 #include "Bitmap.h"
@@ -29,10 +28,10 @@ public:
     std::shared_ptr<GlTextureUniform>  _textureUniform;
 
     Sprite(const Engine &_engine, const Shader &shader, glm::vec2 position, glm::vec2 size, float rotation, glm::vec2 center,
-           std::string filepath);
+           std::string filepath, glm::vec4 col);
     ~Sprite();
     void  visitSelf() override;
-    //glm::vec4 _color;
+
 
 private:
 

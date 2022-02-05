@@ -9,7 +9,7 @@ set(GAME_SRC main.cpp engine/Node.cpp engine/Node.h engine/Sprite.cpp engine/Spr
         engine/VertexBuffer.cpp engine/VertexBuffer.h engine/ResourceLoader.cpp
         engine/ResourceLoader.h engine/Frog.cpp engine/Frog.h engine/EventManager.cpp engine/EventManager.h
         engine/ResourceManager.h GameScene.cpp GameScene.h LoadingScreen.cpp LoadingScreen.h engine/BallRaw.cpp
-        engine/BallRaw.h engine/LevelBall.cpp engine/LevelBall.h)
+        engine/BallRaw.h engine/LevelBall.cpp engine/LevelBall.h engine/Color.h)
 
 if (ANDROID)
 
