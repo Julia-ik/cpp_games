@@ -17,8 +17,11 @@ void Node::addNode(std::shared_ptr<Node> node, int zOrder)
             node->_parent = shared_from_this();
         }
         node->_zOrder = zOrder;
+        refInd++;
+        node->refInd = refInd;
         _nodes.push_back(std::move(node));
         std::sort(_nodes.begin(), _nodes.end(), comparor);
+
     }
 }
 
@@ -26,8 +29,24 @@ void Node::removeNode(std::shared_ptr<Node> node)
 {
     int index;
     for(int i=0; i<_nodes.size(); i++ ){
-        if(_nodes[i] == node){
+        if(_nodes[i]->refInd == node->refInd){
             index = i;
+        }
+    }
+    _nodes.erase(_nodes.begin() + index);
+}
+
+void Node::removeNodeByInd( int k)
+{
+    int index;
+    for(int i=0; i<_nodes.size(); i++ ){
+        if(_nodes[i]->refInd == k){
+            index = i;
+            if(_nodes[i]->getNodes().size() >0) {
+                for (int j = 0; j < _nodes[i]->getNodes().size(); j++) {
+                    _nodes[i]->removeNodeByInd(_nodes[i]->getNodes()[j]->refInd);
+                }
+            }
         }
     }
     _nodes.erase(_nodes.begin() + index);
@@ -36,6 +55,7 @@ void Node::removeNode(std::shared_ptr<Node> node)
 void Node::removeFromParent()
 {
     _parent->removeNode(shared_from_this());
+
 }
 
 std::shared_ptr<Node> Node::getParent()
@@ -157,4 +177,12 @@ void Node::setAnchor(const glm::vec2 &anchor)
 {
     _transform = std::nullopt;
     _anchor = anchor;
+}
+uint32_t Node::getRenderMask() const
+{
+    return _renderMask;
+}
+void Node::setRenderMask(uint32_t renderMask)
+{
+    _renderMask = renderMask;
 }

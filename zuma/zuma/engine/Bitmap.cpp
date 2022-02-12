@@ -14,7 +14,7 @@
 Bitmap::Bitmap(std::string_view filepath)
 {
     SDL_RWops *file = SDL_RWFromFile(filepath.data(), "rb");
-
+    //SDL_RWops *file = SDL_RWFromFile(_fileManager.resourceLocation(std::string{filepath}).c_str(), "rb");
     if (file == nullptr)
     {
         throw std::runtime_error("Failed to open file: " + std::string{filepath});

@@ -124,7 +124,7 @@
 						1,
 						4
 					],
-					"name" : "engine",
+					"name" : "Engine",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
@@ -186,7 +186,7 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "engine::@4088515cb4035b412499",
-					"jsonFile" : "target-engine-Debug-17c15a07d1b971e9714b.json",
+					"jsonFile" : "target-engine-Debug-31f12fef623dbbde5dc5.json",
 					"name" : "engine",
 					"projectIndex" : 1
 				},
@@ -214,7 +214,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "zuma::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-zuma-Debug-aba101f3c1f30be1980e.json",
+					"jsonFile" : "target-zuma-Debug-e82857ae34959a675059.json",
 					"name" : "zuma",
 					"projectIndex" : 0
 				}

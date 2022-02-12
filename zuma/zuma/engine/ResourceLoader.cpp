@@ -4,36 +4,22 @@
 //
 
 #include "ResourceLoader.h"
-#include "Bitmap.h"
-#include "stb_image.h"
-
-std::map<std::string, Shader> ResourceManager::Shaders;
 
 
-Shader ResourceManager::LoadShader(const char *vShaderFile, const char *fShaderFile, const char *gShaderFile, std::string name)
+ResourceManager::ResourceManager()
 {
-
-    Shaders[name] = loadShaderFromFile(vShaderFile, fShaderFile, gShaderFile);
-    return Shaders[name];
+    auto spriteShader = std::make_shared<SpriteShader>();
+    auto partShader = std::make_shared<ParticlesShader>();
+    _shaders.emplace_back(spriteShader);
+    _shaders.emplace_back(partShader);
 }
-
-
-Shader ResourceManager::GetShader(std::string name)
-{
-
-    return Shaders[name];
-
-}
-
-
-void ResourceManager::Clear()
-{
-    for (auto iter : Shaders)
-        glDeleteProgram(iter.second.programID);
-}
-
-Shader ResourceManager::loadShaderFromFile(const char *vShaderFile, const char *fShaderFile, const char *gShaderFile)
-{
-    Shader shader;
-    return shader;
+std::shared_ptr<Shader> ResourceManager::GetShader(std::string name) const {
+    if(name == "particles")
+    {
+        return _shaders[1];
+    }
+    else
+    {
+        return _shaders[0];
+    }
 }

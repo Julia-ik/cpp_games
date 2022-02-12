@@ -10,7 +10,7 @@
 #include "glm/gtx/vector_angle.hpp"
 
 
-Frog::Frog(Engine *engine, const Shader &shader, glm::vec2 position, glm::vec2 size, float rotation,
+Frog::Frog(Engine *engine, glm::vec2 position, glm::vec2 size, float rotation,
            glm::vec2 center) : _engine(engine)
 {
 
@@ -26,7 +26,7 @@ Frog::Frog(Engine *engine, const Shader &shader, glm::vec2 position, glm::vec2 s
     //_sounds[0]->stop();
     //_sounds[1]->stop();
 
-    auto frogBody = _engine->createShared<Sprite>(shader, _position, _contentSize, _rotation, _anchor,
+    auto frogBody = _engine->createShared<Sprite>(_position, _contentSize, _rotation, _anchor,
                                               "/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/images/frog.png",
                                               glm::vec4(0, 0, 1, 1));
 
@@ -42,7 +42,8 @@ Frog::Frog(Engine *engine, const Shader &shader, glm::vec2 position, glm::vec2 s
 //315 330
 //- 27.5f -2.5f)
     nextBall->_shouldUpdate = false;
-    addNode(nextBall, 4);
+    _engine->scene.addNode(nextBall, 4);
+    printf("\n FROG %d AND BALL %d", refInd, nextBall->refInd);
 };
 
 //void Frog::init()
@@ -89,13 +90,19 @@ void Frog::registerEventHandler()
                 {
 
                     i++;
+                    if(i >= 100){
+                        generateBallBanch();
+                        i = 0;
+                    }
                     auto ball = _engine->createShared<Ball>(nextBall->getPosition(), glm::vec2(3.0f, 3.0f),
                                                             nextBall->getRotation(), 500.0f, colorBall[i]);
                     ball->_shouldUpdate = false;
                     nextBall->_shouldUpdate = true;
-
+                    //_engine->scene.removeNode(nextBall);
                     nextBall = ball;
                     _engine->scene.addNode(nextBall, 5);
+
+                   // _engine->scene.removeNode(ball);
 
 
 //                  auto vector = glm::rotate(glm::vec2{1.0f, 0.0f},
@@ -168,16 +175,15 @@ void Frog::registerEventHandler()
             auto ball = _engine->createShared<Ball>(_position, glm::vec2(3.0f, 3.0f),
                                                     _nodes[0]->getRotation()+90.0f, 500.0f, colorBall[i]);
             i++;
-            if(i == 100){
+            if(i >= 100){
                 generateBallBanch();
+                i = 0;
             }
 
             ball->setPosition(_position + vector);
             _engine->scene.addNode(ball, 4);
-
         }
     });
-
 
 }
 
@@ -258,7 +264,6 @@ void Frog::moveLeft(std::shared_ptr<Node> sprite, float delta){
         sprite->_turnSpeed -= delta *30000.0f;
         auto vec =glm::rotate(glm::vec2{-1.0f, 0.0f}, glm::radians(sprite->getRotation()));
 
-        printf("\n HUI  %d\n", nextBall->_colorIndex);
                /* glm::rotate(glm::vec2{0.0f, 1.0f},
                                   glm::radians(sprite->getRotation()));*/
         nextBall->setPosition(nextBall->getPosition() - vec * 0.05f);
@@ -315,6 +320,7 @@ void Frog::moveRight(std::shared_ptr<Node> sprite, float delta)
 
 void Frog::generateBallBanch()
 {
+    printf("\n YA ZDES \n");
     colorBall =  _engine->chooseColor(100);
 }
 

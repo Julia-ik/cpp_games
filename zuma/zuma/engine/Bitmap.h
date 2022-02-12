@@ -8,6 +8,7 @@
 #include <string_view>
 #include <vector>
 #include <glm/glm.hpp>
+#include "FileManager.h"
 
 class Bitmap
 {
@@ -32,6 +33,7 @@ public:
     glm::vec2 getSize() const;
 
 private:
+    //FileManager _fileManager;
     Format _format;
     std::vector<unsigned char> _image;
     glm::vec2 _size;

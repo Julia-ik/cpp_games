@@ -44,7 +44,6 @@ Engine::Engine(int w, int h)
 
 void Engine::initGLL() {
     SDL_GL_CreateContext(window);
-
     glewExperimental = true;
     if (glewInit() != GLEW_OK) {
         fprintf(stderr, "cannot identify GLEWn");
@@ -54,18 +53,16 @@ void Engine::initGLL() {
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
     _renderer = createShared<Renderer>();
-    ResourceManager::LoadShader("../shaders/sprite.vs", "../shaders/sprite.frag",
-                                nullptr, "sprite");
+    _resManager = createShared<ResourceManager>();
     scene.setScale(glm::vec2(width, heights));
     scene._zOrder = 1;
-    auto background = createShared<Sprite>(ResourceManager::GetShader("sprite"),
-                                           glm::vec2(0.0f, 0.0f), glm::vec2(1, 1),
+    auto background = createShared<Sprite>(glm::vec2(0.0f, 0.0f), glm::vec2(1, 1),
                                            0.0f, glm::vec2(0.0f),
                                            "/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/images/fon.png",
                                            glm::vec4(1, 1, 1, 1));
     scene.addNode(background, 1);
 
-    _ballRaw = std::make_shared<BallRaw>(this, 4);
+    _ballRaw = std::make_shared<BallRaw>(this, 8);
 
     isActive = true;
 }
@@ -76,6 +73,8 @@ void Engine::update(float delta)
     scene.update(delta);
     scene.visit();
     _renderer->draw();
+    clearData();
+    //printf("\n TUTUTU, %d \n", scene.getNodes().size());
 }
 
 void Engine::destroyEngine(SDL_Window **window, SDL_Renderer **render)
@@ -114,4 +113,13 @@ std::vector<int> Engine::chooseColor(int size) const
         }
     }
     return  color;
+}
+
+void Engine::clearData ()
+{
+    for(int l = 0; l<dataToClear.size(); l++)
+    {
+        scene.removeNodeByInd(dataToClear[l]);
+    }
+    dataToClear.clear();
 }

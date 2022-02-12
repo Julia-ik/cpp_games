@@ -320,6 +320,15 @@ ESD:BOOL=ON
 //Dynamically load ESD audio support
 ESD_SHARED:BOOL=ON
 
+//Value Computed by CMake
+Engine_BINARY_DIR:STATIC=/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/cmake-build-debug/engine
+
+//Value Computed by CMake
+Engine_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Engine_SOURCE_DIR:STATIC=/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine
+
 //number to use for magic foregrounding signal or 'OFF'
 FOREGROUNDING_SIGNAL:STRING=OFF
 
@@ -635,15 +644,6 @@ XXF86VM_LIB:FILEPATH=/usr/lib64/libXxf86vm.so
 
 //Path to a file.
 X_INCLUDEDIR:PATH=/usr/include
-
-//Value Computed by CMake
-engine_BINARY_DIR:STATIC=/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/cmake-build-debug/engine
-
-//Value Computed by CMake
-engine_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-engine_SOURCE_DIR:STATIC=/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine
 
 //Value Computed by CMake
 glew_BINARY_DIR:STATIC=/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/cmake-build-debug/engine/libs/glew

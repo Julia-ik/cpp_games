@@ -17,23 +17,28 @@
 class GlTextureUniform;
 class GlMat3Uniform;
 class GlVec2Uniform;
+class GlVec3Uniform;
+class GlFloatUniform;
 
 class Shader
 {
 public:
-    Shader();
+    Shader(std::initializer_list<const char*> attributes, std::string vs, std::string ps);
 
     Shader(GLuint programID);
 
     void Use();
     GLuint programID;
 
-
     std::shared_ptr<GlTextureUniform> createTextureUniform(std::basic_string_view<char> name, std::shared_ptr<Shader>& program);
 
     std::shared_ptr<GlMat3Uniform> createMat3Uniform(std::string_view name, std::shared_ptr<Shader>& program);
 
     std::shared_ptr<GlVec2Uniform> createVec2Uniform(std::string_view name, std::shared_ptr<Shader>& program);
+
+
+    std::shared_ptr<GlVec3Uniform> createVec3Uniform(std::string_view name, std::shared_ptr<Shader>& program);
+    std::shared_ptr<GlFloatUniform> createFloatUniform(std::string_view name, std::shared_ptr<Shader>& program);
 };
 
 

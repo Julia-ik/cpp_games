@@ -228,6 +228,51 @@ build CMakeFiles/zuma.dir/engine/LevelBall.cpp.o: CXX_COMPILER__zuma_Debug /home
   TARGET_COMPILE_PDB = CMakeFiles/zuma.dir/
   TARGET_PDB = zuma.pdb
 
+build CMakeFiles/zuma.dir/engine/Particles.cpp.o: CXX_COMPILER__zuma_Debug /home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/Particles.cpp || cmake_object_order_depends_target_zuma
+  DEP_FILE = CMakeFiles/zuma.dir/engine/Particles.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/SRC -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/SDL2/include -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/glew/include -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/stbi -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/imgui
+  OBJECT_DIR = CMakeFiles/zuma.dir
+  OBJECT_FILE_DIR = CMakeFiles/zuma.dir/engine
+  TARGET_COMPILE_PDB = CMakeFiles/zuma.dir/
+  TARGET_PDB = zuma.pdb
+
+build CMakeFiles/zuma.dir/engine/ParticleBuffer.cpp.o: CXX_COMPILER__zuma_Debug /home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/ParticleBuffer.cpp || cmake_object_order_depends_target_zuma
+  DEP_FILE = CMakeFiles/zuma.dir/engine/ParticleBuffer.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/SRC -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/SDL2/include -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/glew/include -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/stbi -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/imgui
+  OBJECT_DIR = CMakeFiles/zuma.dir
+  OBJECT_FILE_DIR = CMakeFiles/zuma.dir/engine
+  TARGET_COMPILE_PDB = CMakeFiles/zuma.dir/
+  TARGET_PDB = zuma.pdb
+
+build CMakeFiles/zuma.dir/engine/ParticlesShader.cpp.o: CXX_COMPILER__zuma_Debug /home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/ParticlesShader.cpp || cmake_object_order_depends_target_zuma
+  DEP_FILE = CMakeFiles/zuma.dir/engine/ParticlesShader.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/SRC -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/SDL2/include -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/glew/include -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/stbi -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/imgui
+  OBJECT_DIR = CMakeFiles/zuma.dir
+  OBJECT_FILE_DIR = CMakeFiles/zuma.dir/engine
+  TARGET_COMPILE_PDB = CMakeFiles/zuma.dir/
+  TARGET_PDB = zuma.pdb
+
+build CMakeFiles/zuma.dir/engine/SpriteShader.cpp.o: CXX_COMPILER__zuma_Debug /home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/SpriteShader.cpp || cmake_object_order_depends_target_zuma
+  DEP_FILE = CMakeFiles/zuma.dir/engine/SpriteShader.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/SRC -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/SDL2/include -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/glew/include -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/stbi -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/imgui
+  OBJECT_DIR = CMakeFiles/zuma.dir
+  OBJECT_FILE_DIR = CMakeFiles/zuma.dir/engine
+  TARGET_COMPILE_PDB = CMakeFiles/zuma.dir/
+  TARGET_PDB = zuma.pdb
+
+build CMakeFiles/zuma.dir/engine/FileManager.cpp.o: CXX_COMPILER__zuma_Debug /home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/FileManager.cpp || cmake_object_order_depends_target_zuma
+  DEP_FILE = CMakeFiles/zuma.dir/engine/FileManager.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/SRC -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/SDL2/include -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/glew/include -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/stbi -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/imgui
+  OBJECT_DIR = CMakeFiles/zuma.dir
+  OBJECT_FILE_DIR = CMakeFiles/zuma.dir/engine
+  TARGET_COMPILE_PDB = CMakeFiles/zuma.dir/
+  TARGET_PDB = zuma.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target zuma
@@ -236,7 +281,7 @@ build CMakeFiles/zuma.dir/engine/LevelBall.cpp.o: CXX_COMPILER__zuma_Debug /home
 #############################################
 # Link the executable zuma
 
-build zuma: CXX_EXECUTABLE_LINKER__zuma_Debug CMakeFiles/zuma.dir/main.cpp.o CMakeFiles/zuma.dir/engine/Node.cpp.o CMakeFiles/zuma.dir/engine/Sprite.cpp.o CMakeFiles/zuma.dir/engine/Shader.cpp.o CMakeFiles/zuma.dir/engine/Texture.cpp.o CMakeFiles/zuma.dir/engine/Renderer.cpp.o CMakeFiles/zuma.dir/engine/VertexBuffer.cpp.o CMakeFiles/zuma.dir/engine/ResourceLoader.cpp.o CMakeFiles/zuma.dir/engine/Frog.cpp.o CMakeFiles/zuma.dir/engine/EventManager.cpp.o CMakeFiles/zuma.dir/GameScene.cpp.o CMakeFiles/zuma.dir/LoadingScreen.cpp.o CMakeFiles/zuma.dir/engine/BallRaw.cpp.o CMakeFiles/zuma.dir/engine/LevelBall.cpp.o | engine/libengine.a engine/libs/SDL2/libSDL2maind.a engine/libs/SDL2/libSDL2d.a engine/libs/glew/libglewd.a /usr/lib64/libOpenGL.so engine/libs/imgui/libimgui.a || engine/libengine.a engine/libs/SDL2/libSDL2d.a engine/libs/SDL2/libSDL2maind.a engine/libs/glew/libglewd.a engine/libs/imgui/libimgui.a
+build zuma: CXX_EXECUTABLE_LINKER__zuma_Debug CMakeFiles/zuma.dir/main.cpp.o CMakeFiles/zuma.dir/engine/Node.cpp.o CMakeFiles/zuma.dir/engine/Sprite.cpp.o CMakeFiles/zuma.dir/engine/Shader.cpp.o CMakeFiles/zuma.dir/engine/Texture.cpp.o CMakeFiles/zuma.dir/engine/Renderer.cpp.o CMakeFiles/zuma.dir/engine/VertexBuffer.cpp.o CMakeFiles/zuma.dir/engine/ResourceLoader.cpp.o CMakeFiles/zuma.dir/engine/Frog.cpp.o CMakeFiles/zuma.dir/engine/EventManager.cpp.o CMakeFiles/zuma.dir/GameScene.cpp.o CMakeFiles/zuma.dir/LoadingScreen.cpp.o CMakeFiles/zuma.dir/engine/BallRaw.cpp.o CMakeFiles/zuma.dir/engine/LevelBall.cpp.o CMakeFiles/zuma.dir/engine/Particles.cpp.o CMakeFiles/zuma.dir/engine/ParticleBuffer.cpp.o CMakeFiles/zuma.dir/engine/ParticlesShader.cpp.o CMakeFiles/zuma.dir/engine/SpriteShader.cpp.o CMakeFiles/zuma.dir/engine/FileManager.cpp.o | engine/libengine.a engine/libs/SDL2/libSDL2maind.a engine/libs/SDL2/libSDL2d.a engine/libs/glew/libglewd.a /usr/lib64/libOpenGL.so engine/libs/imgui/libimgui.a || engine/libengine.a engine/libs/SDL2/libSDL2d.a engine/libs/SDL2/libSDL2maind.a engine/libs/glew/libglewd.a engine/libs/imgui/libimgui.a
   FLAGS = -g
   LINK_LIBRARIES = engine/libengine.a  engine/libs/SDL2/libSDL2maind.a  engine/libs/SDL2/libSDL2d.a  -lm  -Wl,--no-undefined  -pthread  engine/libs/glew/libglewd.a  -lGL  -lX11  -ldl  -lXext  /usr/lib64/libOpenGL.so  engine/libs/imgui/libimgui.a
   OBJECT_DIR = CMakeFiles/zuma.dir
@@ -446,6 +491,56 @@ build engine/CMakeFiles/engine.dir/LevelBall.cpp.o: CXX_COMPILER__engine_Debug /
   TARGET_COMPILE_PDB = engine/CMakeFiles/engine.dir/engine.pdb
   TARGET_PDB = engine/libengine.pdb
 
+build engine/CMakeFiles/engine.dir/Particles.cpp.o: CXX_COMPILER__engine_Debug /home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/Particles.cpp || cmake_object_order_depends_target_engine
+  DEFINES = -DGLEW_NO_GLU -DGLEW_STATIC
+  DEP_FILE = engine/CMakeFiles/engine.dir/Particles.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/SRC -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/SDL2/include -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/glew/include -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/stbi -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/imgui
+  OBJECT_DIR = engine/CMakeFiles/engine.dir
+  OBJECT_FILE_DIR = engine/CMakeFiles/engine.dir
+  TARGET_COMPILE_PDB = engine/CMakeFiles/engine.dir/engine.pdb
+  TARGET_PDB = engine/libengine.pdb
+
+build engine/CMakeFiles/engine.dir/ParticleBuffer.cpp.o: CXX_COMPILER__engine_Debug /home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/ParticleBuffer.cpp || cmake_object_order_depends_target_engine
+  DEFINES = -DGLEW_NO_GLU -DGLEW_STATIC
+  DEP_FILE = engine/CMakeFiles/engine.dir/ParticleBuffer.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/SRC -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/SDL2/include -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/glew/include -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/stbi -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/imgui
+  OBJECT_DIR = engine/CMakeFiles/engine.dir
+  OBJECT_FILE_DIR = engine/CMakeFiles/engine.dir
+  TARGET_COMPILE_PDB = engine/CMakeFiles/engine.dir/engine.pdb
+  TARGET_PDB = engine/libengine.pdb
+
+build engine/CMakeFiles/engine.dir/ParticlesShader.cpp.o: CXX_COMPILER__engine_Debug /home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/ParticlesShader.cpp || cmake_object_order_depends_target_engine
+  DEFINES = -DGLEW_NO_GLU -DGLEW_STATIC
+  DEP_FILE = engine/CMakeFiles/engine.dir/ParticlesShader.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/SRC -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/SDL2/include -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/glew/include -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/stbi -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/imgui
+  OBJECT_DIR = engine/CMakeFiles/engine.dir
+  OBJECT_FILE_DIR = engine/CMakeFiles/engine.dir
+  TARGET_COMPILE_PDB = engine/CMakeFiles/engine.dir/engine.pdb
+  TARGET_PDB = engine/libengine.pdb
+
+build engine/CMakeFiles/engine.dir/SpriteShader.cpp.o: CXX_COMPILER__engine_Debug /home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/SpriteShader.cpp || cmake_object_order_depends_target_engine
+  DEFINES = -DGLEW_NO_GLU -DGLEW_STATIC
+  DEP_FILE = engine/CMakeFiles/engine.dir/SpriteShader.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/SRC -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/SDL2/include -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/glew/include -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/stbi -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/imgui
+  OBJECT_DIR = engine/CMakeFiles/engine.dir
+  OBJECT_FILE_DIR = engine/CMakeFiles/engine.dir
+  TARGET_COMPILE_PDB = engine/CMakeFiles/engine.dir/engine.pdb
+  TARGET_PDB = engine/libengine.pdb
+
+build engine/CMakeFiles/engine.dir/FileManager.cpp.o: CXX_COMPILER__engine_Debug /home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/FileManager.cpp || cmake_object_order_depends_target_engine
+  DEFINES = -DGLEW_NO_GLU -DGLEW_STATIC
+  DEP_FILE = engine/CMakeFiles/engine.dir/FileManager.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/SRC -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/SDL2/include -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/glew/include -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/stbi -I/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/libs/imgui
+  OBJECT_DIR = engine/CMakeFiles/engine.dir
+  OBJECT_FILE_DIR = engine/CMakeFiles/engine.dir
+  TARGET_COMPILE_PDB = engine/CMakeFiles/engine.dir/engine.pdb
+  TARGET_PDB = engine/libengine.pdb
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target engine
@@ -454,7 +549,7 @@ build engine/CMakeFiles/engine.dir/LevelBall.cpp.o: CXX_COMPILER__engine_Debug /
 #############################################
 # Link the static library engine/libengine.a
 
-build engine/libengine.a: CXX_STATIC_LIBRARY_LINKER__engine_Debug engine/CMakeFiles/engine.dir/Engine.cpp.o engine/CMakeFiles/engine.dir/Node.cpp.o engine/CMakeFiles/engine.dir/Sprite.cpp.o engine/CMakeFiles/engine.dir/Shader.cpp.o engine/CMakeFiles/engine.dir/Bitmap.cpp.o engine/CMakeFiles/engine.dir/Texture.cpp.o engine/CMakeFiles/engine.dir/Renderer.cpp.o engine/CMakeFiles/engine.dir/VertexBuffer.cpp.o engine/CMakeFiles/engine.dir/ResourceLoader.cpp.o engine/CMakeFiles/engine.dir/Frog.cpp.o engine/CMakeFiles/engine.dir/EventManager.cpp.o engine/CMakeFiles/engine.dir/Ball.cpp.o engine/CMakeFiles/engine.dir/TaskManager.cpp.o engine/CMakeFiles/engine.dir/BallRaw.cpp.o engine/CMakeFiles/engine.dir/LevelBall.cpp.o || engine/libs/SDL2/libSDL2d.a engine/libs/SDL2/libSDL2maind.a engine/libs/glew/libglewd.a engine/libs/imgui/libimgui.a
+build engine/libengine.a: CXX_STATIC_LIBRARY_LINKER__engine_Debug engine/CMakeFiles/engine.dir/Engine.cpp.o engine/CMakeFiles/engine.dir/Node.cpp.o engine/CMakeFiles/engine.dir/Sprite.cpp.o engine/CMakeFiles/engine.dir/Shader.cpp.o engine/CMakeFiles/engine.dir/Bitmap.cpp.o engine/CMakeFiles/engine.dir/Texture.cpp.o engine/CMakeFiles/engine.dir/Renderer.cpp.o engine/CMakeFiles/engine.dir/VertexBuffer.cpp.o engine/CMakeFiles/engine.dir/ResourceLoader.cpp.o engine/CMakeFiles/engine.dir/Frog.cpp.o engine/CMakeFiles/engine.dir/EventManager.cpp.o engine/CMakeFiles/engine.dir/Ball.cpp.o engine/CMakeFiles/engine.dir/TaskManager.cpp.o engine/CMakeFiles/engine.dir/BallRaw.cpp.o engine/CMakeFiles/engine.dir/LevelBall.cpp.o engine/CMakeFiles/engine.dir/Particles.cpp.o engine/CMakeFiles/engine.dir/ParticleBuffer.cpp.o engine/CMakeFiles/engine.dir/ParticlesShader.cpp.o engine/CMakeFiles/engine.dir/SpriteShader.cpp.o engine/CMakeFiles/engine.dir/FileManager.cpp.o || engine/libs/SDL2/libSDL2d.a engine/libs/SDL2/libSDL2maind.a engine/libs/glew/libglewd.a engine/libs/imgui/libimgui.a
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = engine/CMakeFiles/engine.dir
   POST_BUILD = :

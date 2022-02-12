@@ -7,16 +7,15 @@
 #include "MeshData.h"
 #include "Engine.h"
 
-Sprite::Sprite(const Engine &engine, const Shader &shader, glm::vec2 position, glm::vec2 size, float rotation, glm::vec2 center,
+Sprite::Sprite(const Engine &engine, glm::vec2 position, glm::vec2 size, float rotation, glm::vec2 center,
                std::string filepath, glm::vec4 col) : _engine(engine)
 {
-
-    this->shader = shader;
     _position=position;
     _contentSize = size;
     _rotation = rotation;
     _anchor=center;
     _color = col;
+    _shader = engine._resManager->GetShader("sprite");
     _filepath = filepath;
 
     this->initRenderData();
@@ -71,7 +70,7 @@ void Sprite::initRenderData()
 
 
     _command.vertexBuffer = _engine._renderer->createVertexBuffer(std::move(meshData));
-    _command.program = std::make_shared<Shader>(shader);
+    _command.program = _shader;
 
     _textureUniform = _command.program->createTextureUniform("uTexture", _command.program);
     _textureUniform->texture = _engine._renderer->createTexture(std::move(bitmap));

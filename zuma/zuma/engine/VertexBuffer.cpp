@@ -39,10 +39,6 @@ VertexBuffer::VertexBuffer(const Engine &engine, MeshData data)
                  data.indexes.data(), GL_STATIC_DRAW);
 
     _count = data.indexes.size();
-
-
-
-
 }
 
 

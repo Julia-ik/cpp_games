@@ -14,7 +14,6 @@
 class Frog: public Node
 {
 public:
-    Shader shader;
     Engine *_engine;
     float _speed=0.0;
     float _turnSpeed=0.0;
@@ -24,7 +23,7 @@ public:
     std::vector<int> colorBall;
     int i = 0;
 
-    Frog(Engine *engine, const Shader &shader, glm::vec2 position, glm::vec2 size, float rotation,
+    Frog(Engine *engine, glm::vec2 position, glm::vec2 size, float rotation,
          glm::vec2 center);
 
     void registerEventHandler();

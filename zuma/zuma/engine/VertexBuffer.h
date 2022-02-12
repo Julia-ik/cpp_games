@@ -17,7 +17,8 @@ public:
     virtual ~VertexBuffer();
 
     void draw(size_t num, size_t offset);
-    void draw();
+
+    virtual void draw();
 
 private:
     uint32_t _VAO = 0;

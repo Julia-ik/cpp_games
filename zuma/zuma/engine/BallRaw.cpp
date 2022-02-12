@@ -37,8 +37,8 @@ void BallRaw::update()
     }
 
     if(_currentSize<_initialSize && (
-            abs(_raw[_raw.size()-1]->getPosition().x - _initialPoint.x) > 50.0f ||
-            abs(_raw[_raw.size()-1]->getPosition().y - _initialPoint.y) > 50.0f))
+            abs(_raw[_raw.size()-1]->getPosition().x - _initialPoint.x) > 45.0f ||
+            abs(_raw[_raw.size()-1]->getPosition().y - _initialPoint.y) > 45.0f))
     {
         auto ball = _engine->createShared<LevelBall>(_initialPoint,
                                                      glm::vec2(3.0f, 3.0f), 0.0f, 500.0f,
@@ -51,6 +51,19 @@ void BallRaw::update()
         _currentSize ++;
     }
 
+    deleteMatch();
+}
 
-
+void BallRaw::deleteMatch()
+{
+    for(int i=0; i<_raw.size(); i++)
+    {
+       if(i>1 && _raw[i]->_colorIndex == _raw[i-1]->_colorIndex && _raw[i]->_colorIndex == _raw[i-2]->_colorIndex)
+       {
+           _engine->scene.removeNodeByInd(_raw[i]->refInd);
+           _engine->scene.removeNodeByInd(_raw[i-1]->refInd);
+           _engine->scene.removeNodeByInd(_raw[i-2]->refInd);
+           _raw.erase(_raw.begin()+i-2,_raw.begin()+i);
+       }
+    }
 }

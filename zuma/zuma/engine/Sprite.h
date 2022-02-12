@@ -27,7 +27,7 @@ public:
     std::shared_ptr<GlMat3Uniform>  _transformUniform;
     std::shared_ptr<GlTextureUniform>  _textureUniform;
 
-    Sprite(const Engine &_engine, const Shader &shader, glm::vec2 position, glm::vec2 size, float rotation, glm::vec2 center,
+    Sprite(const Engine &_engine, glm::vec2 position, glm::vec2 size, float rotation, glm::vec2 center,
            std::string filepath, glm::vec4 col);
     ~Sprite();
     void  visitSelf() override;
@@ -35,7 +35,7 @@ public:
 
 private:
 
-    Shader shader;
+    std::shared_ptr<Shader> _shader;
     std::string  _filepath;
     unsigned int quadVAO;
     void initRenderData();

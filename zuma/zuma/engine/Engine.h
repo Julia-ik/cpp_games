@@ -25,15 +25,18 @@ public:
     SDL_Window *window;
     SDL_Renderer *r;
     EventManager _eventManager;
+    std::shared_ptr<ResourceManager> _resManager;
     int width;
     int heights;
     mutable std::string_view _clipboard;
     SDL_bool done = SDL_FALSE;
+    mutable std::vector<int> dataToClear;
+    void clearData();
 
     uint32_t VAO;
     uint32_t VBO;
     uint32_t IBO;
-    Node scene;
+    mutable Node scene;
     std::shared_ptr<BallRaw> _ballRaw;
     GLuint programID = 0;
 

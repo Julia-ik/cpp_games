@@ -4,12 +4,13 @@
 
 int main()
 {
+
     Engine engine(700, 700);
 
 
     engine.initGLL();
 
-    Frog frog(&engine, ResourceManager::GetShader("sprite"),
+    Frog frog(&engine,
               glm::vec2(280.0f, 270.0f), glm::vec2(0.5f, 0.5f),
               0.0f, glm::vec2(125.0f, 125.0f));
 

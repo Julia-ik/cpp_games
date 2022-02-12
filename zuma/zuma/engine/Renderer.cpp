@@ -68,6 +68,7 @@ void Renderer::draw()
     _commands.clear();
 }
 
+
 std::shared_ptr<VertexBuffer> Renderer::createVertexBuffer(MeshData data) const
 {
     return _engine.createShared<VertexBuffer>(data);
@@ -76,7 +77,7 @@ std::shared_ptr<VertexBuffer> Renderer::createVertexBuffer(MeshData data) const
 std::shared_ptr<Shader> Renderer::createProgram(std::string_view name) const
 {
     std::string name_string(name);
-    auto shader = std::make_shared<Shader>(ResourceManager::GetShader(name_string));
+    auto shader = _engine._resManager->GetShader(name_string);
 
     return shader;
 }
@@ -84,6 +85,23 @@ std::shared_ptr<Shader> Renderer::createProgram(std::string_view name) const
 std::shared_ptr<Texture> Renderer::createTexture(Bitmap bitmap) const
 {
     return _engine.createShared<Texture>(std::move(bitmap));
+}
+
+glm::vec2 Renderer::getRenderResolution()
+{
+    GLint curViewport[4];
+    glGetIntegerv(GL_VIEWPORT, curViewport);
+    return glm::vec2(curViewport[2], curViewport[3]);
+}
+
+std::shared_ptr<ParticleBuffer> Renderer::createParticleBuffer(std::vector<ParticleBuffer::ParticleData> data) const
+{
+    return _engine.createShared<ParticleBuffer>(std::move(data));
+}
+
+std::shared_ptr<ParticleBuffer> Renderer::createParticleBuffer(size_t count) const
+{
+    return _engine.createShared<ParticleBuffer>(count);
 }
 /*
 std::shared_ptr<Texture> Renderer::createTexture(std::string filepath) const

@@ -22,6 +22,7 @@ public:
     float _turnSpeed=0.0;
     bool isLeft = false;
     bool isRight = false;
+    mutable int refInd = 0;
     glm::vec4 _color = {1,1,1,1};
 
     virtual ~Node() = default;
@@ -70,20 +71,26 @@ protected:
     virtual void updateSelf(float delta) {};
 
 
-    std::shared_ptr<Node> _parent;
-    std::vector<std::shared_ptr<Node>> _nodes;
+    mutable std::shared_ptr<Node> _parent;
+    mutable std::vector<std::shared_ptr<Node>> _nodes;
 
     glm::vec2 _position = glm::vec2(0.0f);
     glm::vec2 _scale = glm::vec2(1.0f);
     glm::vec2 _anchor = glm::vec2(0.5f);
     glm::float32 _rotation = 0.0f;
+    std::uint32_t _renderMask{0x0};
 
 
 
 public:
     std::optional<glm::mat3> _transform;
-    int _zOrder=0;
+    mutable int _zOrder=0;
     glm::vec2 _contentSize = glm::vec2(0.0f);
+
+    uint32_t getRenderMask() const;
+    void setRenderMask(uint32_t renderMask);
+
+    void removeNodeByInd(int i);
 };
 
 

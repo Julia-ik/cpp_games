@@ -28,6 +28,8 @@ public:
     glm::vec2 _initialPoint = glm::vec2(550, 500);
     glm::vec2 _finalPoint = glm::vec2(400, 450);
     void update();
+
+    void deleteMatch();
 };
 
 

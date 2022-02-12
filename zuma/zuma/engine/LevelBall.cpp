@@ -17,9 +17,8 @@ LevelBall::LevelBall(const Engine& engine, glm::vec2 position, glm::vec2 size,
 
 void LevelBall::updateSelf(float delta)
 {
-    if(abs(_tempPoint.x - _position.x)>0.0f ||
-            abs(_tempPoint.y - _position.y)>0.0f) {
-
+    if(abs(_tempPoint.x - _position.x)>0.01f ||
+            abs(_tempPoint.y - _position.y)>0.01f) {
 
         auto vec1 = glm::normalize(_tempPoint - _position);
         setPosition(_nodes[0]->getPosition() + vec1 * delta * 60.0f);
@@ -28,7 +27,6 @@ void LevelBall::updateSelf(float delta)
     } else{
         j++;
         if(j<_ballraw->_points.size()){
-
             _tempPoint = _ballraw->_points[j];
         }
     }

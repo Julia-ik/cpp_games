@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(engine)
+project(Engine)
 
 set(CMAKE_CXX_STANDARD 17)
 if(COMPILER_SUPPORTS_CXX17)
@@ -7,12 +7,16 @@ if(COMPILER_SUPPORTS_CXX17)
     set(CMAKE_REQUIRED_FLAGS "-std=c++17")
 endif()
 
+#add_definitions(-DPROJECT_ROOT_FOLDER=${PROJECT_SOURCE_DIR})
+
 add_library(engine STATIC Engine.cpp Node.cpp Node.h Sprite.cpp Sprite.h
         Shader.cpp Shader.h Bitmap.cpp Bitmap.h MeshData.h Uniforms.h
         Texture.cpp Texture.h Renderer.cpp Renderer.h VertexBuffer.cpp
         VertexBuffer.h ResourceLoader.cpp ResourceLoader.h
         Frog.cpp Frog.h EventManager.cpp EventManager.h Ball.cpp Ball.h
-        ResourceManager.h TaskManager.cpp TaskManager.h BallRaw.cpp BallRaw.h LevelBall.cpp LevelBall.h Color.h)
+        ResourceManager.h TaskManager.cpp TaskManager.h BallRaw.cpp BallRaw.h LevelBall.cpp
+        LevelBall.h Color.h Particles.cpp Particles.h ParticleBuffer.cpp ParticleBuffer.h
+        ParticlesShader.cpp ParticlesShader.h SpriteShader.cpp SpriteShader.h FileManager.cpp FileManager.h)
 #SDL
 
 if(NOT IOS)
