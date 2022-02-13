@@ -16,10 +16,10 @@ ResourceManager::ResourceManager()
 std::shared_ptr<Shader> ResourceManager::GetShader(std::string name) const {
     if(name == "particles")
     {
-        return _shaders[1];
+        return std::make_shared<ParticlesShader>();
     }
     else
     {
-        return _shaders[0];
+        return std::make_shared<SpriteShader>();
     }
 }

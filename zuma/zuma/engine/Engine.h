@@ -8,6 +8,8 @@
 #include "Sprite.h"
 #include "EventManager.h"
 #include "BallRaw.h"
+#include "SoundManager.h"
+#include "Sound.h"
 
 enum ColOfBall
 {
@@ -25,6 +27,7 @@ public:
     SDL_Window *window;
     SDL_Renderer *r;
     EventManager _eventManager;
+    SoundManager _soundManager;
     std::shared_ptr<ResourceManager> _resManager;
     int width;
     int heights;
@@ -39,7 +42,7 @@ public:
     mutable Node scene;
     std::shared_ptr<BallRaw> _ballRaw;
     GLuint programID = 0;
-
+    std::vector<std::shared_ptr<Sound>> _sounds;
     bool isActive;
 
     Engine(int w, int h);

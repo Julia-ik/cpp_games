@@ -18,6 +18,7 @@ class GlTextureUniform;
 class GlMat3Uniform;
 class GlVec2Uniform;
 class GlVec3Uniform;
+class GlVec4Uniform;
 class GlFloatUniform;
 
 class Shader
@@ -38,6 +39,7 @@ public:
 
 
     std::shared_ptr<GlVec3Uniform> createVec3Uniform(std::string_view name, std::shared_ptr<Shader>& program);
+    std::shared_ptr<GlVec4Uniform> createVec4Uniform(std::string_view name, std::shared_ptr<Shader>& program);
     std::shared_ptr<GlFloatUniform> createFloatUniform(std::string_view name, std::shared_ptr<Shader>& program);
 };
 

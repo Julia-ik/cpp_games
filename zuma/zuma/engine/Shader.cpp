@@ -18,23 +18,6 @@ Shader::Shader(std::initializer_list<const char*> attributes, std::string vs, st
 {
     GLuint VertexShaderID = glCreateShader(GL_VERTEX_SHADER);
     GLuint FragmentShaderID =glCreateShader(GL_FRAGMENT_SHADER);
-    std::string vs_header =
-#if GLES20
-    R"(
-#version 100
-#define VS_IN attribute
-#define VS_OUT varying
-    )";
-#elif GL33
-    R"(
-#version 330 core
-#define VS_IN in
-#define VS_OUT out
-    )";
-#endif
-
-
-    vs = vs_header + vs;
 
             /*R"(
 #version 330 core
@@ -62,27 +45,7 @@ void main()
     gl_Position = vec4(scaledPos.x, scaledPos.y, 1.0, 1.0);
 }
 )";*/
-    std::string ps_header =
-#if GLES20
-            R"(
-#version 100
-precision mediump float;
-#define PS_IN varying
-#define PS_OUT gl_FragColor
-#define TEXTURE2D texture2D
-    )";
-#elif GL33
-            R"(
-#version 330 core
 
-#define PS_IN in
-#define TEXTURE2D texture
-
-out vec4 PS_OUT;
-    )";
-#endif
-
-            ps = ps_header + ps;
     printf("\n HELLLO \n");
 
             /*R"(
@@ -166,6 +129,11 @@ std::shared_ptr<GlVec3Uniform> Shader::createVec3Uniform(std::string_view name, 
     return std::make_shared<GlVec3Uniform>(shader, name);
 }
 
+std::shared_ptr<GlVec4Uniform> Shader::createVec4Uniform(std::string_view name, std::shared_ptr<Shader> & shader)
+{
+    return std::make_shared<GlVec4Uniform>(shader, name);
+}
+
 std::shared_ptr<GlFloatUniform> Shader::createFloatUniform(std::string_view name, std::shared_ptr<Shader> & shader)
 {
     return std::make_shared<GlFloatUniform>(shader, name);
@@ -198,6 +166,17 @@ void GlVec3Uniform::activate()
 {
     Uniform::activate();
     glUniform3f(_location, value.x, value.y, value.z);
+}
+
+GlVec4Uniform::GlVec4Uniform(const std::shared_ptr<Shader> &program, std::string_view name)
+{
+    _location = glGetUniformLocation(program->programID, name.data());
+}
+
+void GlVec4Uniform::activate()
+{
+    Uniform::activate();
+    glUniform4f(_location, value.x, value.y, value.z, 1.0f);
 }
 
 GlVec2Uniform::GlVec2Uniform(const std::shared_ptr<Shader> &program, std::string_view name)

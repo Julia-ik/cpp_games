@@ -8,12 +8,14 @@ namespace
 {
     constexpr auto vs_program =
             R"(
-VS_IN vec2 position;
-VS_IN vec2 texCoord;
-VS_IN vec4 color;
+#version 330 core
 
-VS_OUT vec2 oTexCoord;
-VS_OUT vec4 oColor;
+layout (location = 0) in vec2 position;
+layout (location = 1) in vec2 texCoord;
+layout (location = 2) in vec4 color;
+
+out vec2 oTexCoord;
+out vec4 oColor;
 
 uniform vec2 uScreenSize;
 uniform mat3 uTransform;
@@ -34,14 +36,18 @@ void main()
 
     constexpr auto ps_program =
             R"(
-uniform sampler2D uTexture;
+#version 330 core
 
-PS_IN vec2 oTexCoord;
-PS_IN vec4 oColor;
+uniform sampler2D uTexture;
+uniform vec4 uColor;
+
+in vec2 oTexCoord;
+in vec4 oColor;
+out vec4 color;
 
 void main()
 {
-    PS_OUT = TEXTURE2D(uTexture, oTexCoord) * oColor;
+    color = texture(uTexture, oTexCoord)* uColor;
 }
 )";
 }

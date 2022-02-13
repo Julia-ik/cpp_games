@@ -22,10 +22,12 @@ public:
     MeshData meshData;
     const Engine &_engine;
     Renderer::Command _command;
+    Bitmap _bitmap;
 
     std::shared_ptr<GlVec2Uniform> _screenSizeUniform;
     std::shared_ptr<GlMat3Uniform>  _transformUniform;
     std::shared_ptr<GlTextureUniform>  _textureUniform;
+    std::shared_ptr<GlVec4Uniform> _colorUniform;
 
     Sprite(const Engine &_engine, glm::vec2 position, glm::vec2 size, float rotation, glm::vec2 center,
            std::string filepath, glm::vec4 col);

@@ -21,6 +21,7 @@ public:
     bool isRight = false;
 
     std::vector<int> colorBall;
+    std::shared_ptr<Ball> nextBall;
     int i = 0;
 
     Frog(Engine *engine, glm::vec2 position, glm::vec2 size, float rotation,
@@ -43,7 +44,7 @@ public:
     void shoot(std::shared_ptr<Node> sprite, float delta);
 
 private:
-    std::shared_ptr<Ball> nextBall;
+
     void generateBallBanch();
 
 

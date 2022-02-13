@@ -5,7 +5,6 @@
 #include "Ball.h"
 #include "Engine.h"
 #include <glm/gtx/vector_angle.hpp>
-#include <vector>
 
 Ball::Ball(const Engine& engine, glm::vec2 position, glm::vec2 size,
 float rotation, float speed, int colorIndex) : _engine(engine)
@@ -30,6 +29,7 @@ float rotation, float speed, int colorIndex) : _engine(engine)
 void Ball::updateSelf(float delta)
 {
     //_rotation =  glm::degrees(glm::orientedAngle(glm::vec2(1.0f, 0.0f), glm::normalize(_speed)));
+    _nodes[0]->_color = getColorFromIndex(_colorIndex);
 
     if(_shouldUpdate) {
         auto vector = glm::rotate(glm::vec2(1.0f, 0.0f),
@@ -55,54 +55,27 @@ void Ball::updateSelf(float delta)
 
                  for (int m = 0; m <= i; m++)
                  {
-
-                     auto vec1 = glm::normalize(_engine._ballRaw->_raw[m]->_tempPoint -
-                     _engine._ballRaw->_raw[m]->_position);
-
-                     _engine._ballRaw->_raw[m]->setPosition(
-                             _engine._ballRaw->_raw[m]->_nodes[0]->getPosition() + vec1 * 45.0f);
-                     _engine._ballRaw->_raw[m]->_nodes[0]->setPosition(_engine._ballRaw->_raw[m]->_position);
-                     _transform = std::nullopt;
+                     for(int l=0; l<75; l++)
+                     {
+                         _engine._ballRaw->_raw[m]->updateSelf(0.01f);
+                     }
                  }
 
                  _engine.scene.addNode(lvlball, 5);
-
-
                  _engine._ballRaw->_raw.insert(_engine._ballRaw->_raw.begin() +i+1, lvlball);
-
-
                 _engine.dataToClear.emplace_back(refInd);
                  break;
-
-
-                //_nodes[0]->setPosition(_nodes[0]->getPosition());+
             }
         }
-        //_transform = std::nullopt;
     } else{
         _nodes[0]->setPosition(_position);
 
         _nodes[0]->setRotation(_rotation);
-        //ВОТ ТУТ НАДО УДАЛЯТЬ Я НЕ ЗНАЮ КАК УДАЛЯТЬ СЕБЯ ПАМАГИТИ
     }
 
 
-      /*  if (sprite->_speed < 40.0f) {
-            sprite->_speed += delta * 2000.0f;
-        }
 
-        auto vector = glm::rotate(glm::vec2(1.0f, 0.0f),
-                                  glm::radians(sprite->getRotation()));
 
-        if (sprite->_speed > 0.1f) {
-            sprite->setPosition(sprite->getPosition() + vector * delta * sprite->_speed);
-            sprite->_speed -= delta * 1800.0f;
-
-        }
-        if (sprite->_speed < 0.1f) {
-            sprite->_speed = 0.0f;
-        }
-    }*/
 }
 
 glm::vec4 Ball::getColorFromIndex(int colorIndex)

@@ -6,15 +6,16 @@
 #define ZUMA_VERTEXBUFFER_H
 
 #include "MeshData.h"
+#include "BaseVertexBuffer.h"
 #include <SDL.h>
 
 class Engine;
-class VertexBuffer
+class VertexBuffer : public BaseVertexBuffer
 {
 public:
     VertexBuffer(const Engine& engine, MeshData data);
 
-    virtual ~VertexBuffer();
+    ~VertexBuffer() override;
 
     void draw(size_t num, size_t offset);
 

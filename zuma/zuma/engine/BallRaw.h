@@ -9,6 +9,7 @@
 #include <memory>
 #include <glm/vec2.hpp>
 #include "LevelBall.h"
+#include "Particles.h"
 
 class Engine;
 
@@ -21,15 +22,18 @@ public:
     int _initialSize;
     int _currentSize = 1;
     float _delta;
+    std::shared_ptr<Particles> _emitter;
     std::vector<int> colorBall;
     int j =0;
     int k = 0;
     std::vector<glm::vec2> _points;
-    glm::vec2 _initialPoint = glm::vec2(550, 500);
+    glm::vec2 _initialPoint = glm::vec2(550, 550);
     glm::vec2 _finalPoint = glm::vec2(400, 450);
     void update();
 
     void deleteMatch();
+
+    void checkGaps();
 };
 
 

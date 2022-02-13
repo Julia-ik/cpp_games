@@ -61,8 +61,21 @@ void Engine::initGLL() {
                                            "/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/images/fon.png",
                                            glm::vec4(1, 1, 1, 1));
     scene.addNode(background, 1);
-
+    auto placeholder = createShared<Sprite>(glm::vec2(538, 550), glm::vec2(0.6f, 0.6f),
+                                           0.0f, glm::vec2(0.0f),
+                                           "/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/images/krug.png",
+                                           glm::vec4(1, 1, 1, 1));
+    scene.addNode(placeholder, 10);
+    auto placeholder2 = createShared<Sprite>(glm::vec2(400, 450), glm::vec2(0.6f, 0.6f),
+                                            0.0f, glm::vec2(0.0f),
+                                            "/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/images/krug.png",
+                                            glm::vec4(1, 1, 1, 1));
+    scene.addNode(placeholder2, 10);
     _ballRaw = std::make_shared<BallRaw>(this, 8);
+    _soundManager.init();
+    _sounds.push_back(std::make_shared<Sound>("/home/lilu/lilu/cpp_games/cpp_games/less3/game/sound/dramatic.wav",
+                                              &_soundManager, "theme"));
+    _sounds[0]->play();
 
     isActive = true;
 }

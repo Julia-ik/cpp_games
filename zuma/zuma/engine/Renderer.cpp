@@ -12,6 +12,7 @@
 
 
 Renderer::Renderer(const Engine &engine) :_engine(engine)
+        , _drawContext{SDL_GL_CreateContext(engine.window), SDL_GL_DeleteContext}
 {
     printf("OpenGL version supported by this platform (%s): \n",
            glGetString(GL_VERSION));
@@ -22,6 +23,11 @@ Renderer::Renderer(const Engine &engine) :_engine(engine)
 
 void Renderer::draw()
 {
+    auto needRender = [](uint32_t renderMask, uint32_t nodeMask)
+    {
+        return (renderMask == nodeMask) || (nodeMask & renderMask) != 0;
+    };
+
     glDisable(GL_SCISSOR_TEST);
     //glClearColor(0.0f, 0.3f, 0.0f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
@@ -39,6 +45,7 @@ void Renderer::draw()
                 glProgram->Use();
                 command._screenSizeUniform->activate();
                 command._textureUniform->activate();
+                command._colorUniform->activate();
                 command._transformUniform->activate();
 
                 if (command.scissor)
@@ -69,7 +76,7 @@ void Renderer::draw()
 }
 
 
-std::shared_ptr<VertexBuffer> Renderer::createVertexBuffer(MeshData data) const
+std::shared_ptr<BaseVertexBuffer> Renderer::createVertexBuffer(MeshData data) const
 {
     return _engine.createShared<VertexBuffer>(data);
 }

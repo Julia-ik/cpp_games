@@ -5,6 +5,7 @@
 #include "BallRaw.h"
 #include "LevelBall.h"
 #include "Engine.h"
+#include "Particles.h"
 
 BallRaw::BallRaw(Engine *engine,  int size): _engine(engine)
 {
@@ -21,37 +22,64 @@ BallRaw::BallRaw(Engine *engine,  int size): _engine(engine)
 
     colorBall = _engine->chooseColor(size);
 
+    for(int o=0;o<_initialSize;o++)
+    {
+        auto ball = _engine->createShared<LevelBall>(_initialPoint,
+                                                     glm::vec2(3.0f, 3.0f), 0.0f, 500.0f,
+                                                     std::make_shared<BallRaw>(*this), colorBall[k]);
+        k++;
+        ball->_tempPoint = _initialPoint;
+        ball->_shouldUpdate=false;
+        if(o==0)
+        {
+            ball->_shouldUpdate=true;
+        }
+
+        _engine->scene.addNode(ball, 4);
+        _raw.emplace_back(ball);
+    }
+
+//    _emitter = engine->createShared<Particles>();
+//    _emitter->start(5000, 0.0002f, 1.0);
+//    _emitter->setRenderMask(0x1);
+//    _engine->scene.addNode(_emitter,6);
+
 }
 
 void BallRaw::update()
 {
-    if(_raw.size() == 0)
-    {
-        auto ball = _engine->createShared<LevelBall>(_initialPoint,
-                                                     glm::vec2(3.0f, 3.0f), 0.0f, 500.0f,
-                                                     std::make_shared<BallRaw>(*this), colorBall[k]);
-        k++;
-        ball->_tempPoint = _initialPoint;
-        _engine->scene.addNode(ball, 4);
-        _raw.emplace_back(ball);
+    if(_raw.size()>0) {
+        for (int o = 0; o < _raw.size() - 1; o++) {
+            if ((abs(_raw[o]->getPosition().x - _raw[o + 1]->getPosition().x) > 46.0f
+                 && abs(_raw[o]->getPosition().x - _raw[o + 1]->getPosition().x) < 50.0f) ||
+                (abs(_raw[o]->getPosition().y - _raw[o + 1]->getPosition().y) > 46.0f
+                 && abs(_raw[o]->getPosition().y - _raw[o + 1]->getPosition().y) < 50.0f))
+            {
+                _raw[o + 1]->_shouldUpdate = true;
+                _raw[o]->_shouldUpdate = true;
+            }
+            if(abs(_raw[o]->getPosition().x - _raw[o+1]->getPosition().x) >= 50.0f ||
+               abs(_raw[o]->getPosition().y - _raw[o+1]->getPosition().y) >= 50.0f)
+            {
+                _raw[o]->_shouldUpdate = false;
+            }
+        }
+
+        deleteMatch();
+
+
+        if(abs(_raw[0]->getPosition().x - _finalPoint.x)<1.0f &&
+        abs(_raw[0]->getPosition().y - _finalPoint.y)<1.0f)
+        {
+            for(int i =0; i<_raw.size();i++)
+            {
+                _raw[i]->_speedRaw = 600.0f;
+            }
+        }
     }
 
-    if(_currentSize<_initialSize && (
-            abs(_raw[_raw.size()-1]->getPosition().x - _initialPoint.x) > 45.0f ||
-            abs(_raw[_raw.size()-1]->getPosition().y - _initialPoint.y) > 45.0f))
-    {
-        auto ball = _engine->createShared<LevelBall>(_initialPoint,
-                                                     glm::vec2(3.0f, 3.0f), 0.0f, 500.0f,
-                                                     std::make_shared<BallRaw>(*this), colorBall[k]);
-        k++;
-        ball->_tempPoint = _initialPoint;
-        _engine->scene.addNode(ball, 4);
 
-        _raw.emplace_back(ball);
-        _currentSize ++;
-    }
-
-    deleteMatch();
+    //checkGaps();
 }
 
 void BallRaw::deleteMatch()
@@ -60,10 +88,45 @@ void BallRaw::deleteMatch()
     {
        if(i>1 && _raw[i]->_colorIndex == _raw[i-1]->_colorIndex && _raw[i]->_colorIndex == _raw[i-2]->_colorIndex)
        {
+//           if (_emitter->getParent() == nullptr)
+//           {
+//               _engine->scene.addNode(_emitter,6);
+//           }
+//           _emitter->setPosition(_raw[i]->getPosition());
+//           _emitter->start(1000);
+
            _engine->scene.removeNodeByInd(_raw[i]->refInd);
            _engine->scene.removeNodeByInd(_raw[i-1]->refInd);
            _engine->scene.removeNodeByInd(_raw[i-2]->refInd);
-           _raw.erase(_raw.begin()+i-2,_raw.begin()+i);
+           if(_raw.size()==3)
+           {
+               _raw.clear();
+               printf("\n OOOPS \n");
+           }
+           else
+           {
+               _raw.erase(_raw.begin()+i-2,_raw.begin()+i+1);
+           }
        }
+    }
+}
+
+void BallRaw::checkGaps()
+{
+    for(int a=0; a<_raw.size(); a++)
+    {
+        if(a>0 && (abs(_raw[a]->getPosition().x - _raw[a-1]->getPosition().x) > 46.0f ||
+                abs(_raw[a]->getPosition().y - _raw[a-1]->getPosition().y) > 46.0f))
+        {
+            for(int b=0; b<=a; b++)
+            {
+                _raw[b]->_shouldUpdate = false;
+            }
+           printf("\n I AM IN GAP \n");
+        }
+        else
+        {
+
+        }
     }
 }

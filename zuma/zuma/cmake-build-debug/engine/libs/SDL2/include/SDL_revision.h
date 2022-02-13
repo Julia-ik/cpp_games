@@ -1,2 +1,2 @@
-#define SDL_REVISION "https://github.com/Julia-ik/cpp_games.git@5b2c5e152e45c14d9f1681dc66ea6c0d0491ff4c"
+#define SDL_REVISION "https://github.com/Julia-ik/cpp_games.git@dcca9063fae8625858183ec47db5f3c04e82867a"
 #define SDL_REVISION_NUMBER 0

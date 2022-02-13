@@ -31,11 +31,12 @@ public:
     {
         uint32_t mask;
 
-        std::shared_ptr<VertexBuffer>  vertexBuffer;
+        std::shared_ptr<BaseVertexBuffer>  vertexBuffer;
         std::shared_ptr<Shader> program;
         std::shared_ptr<GlVec2Uniform> _screenSizeUniform;
         std::shared_ptr<GlMat3Uniform>  _transformUniform;
         std::shared_ptr<GlTextureUniform>  _textureUniform;
+        std::shared_ptr<GlVec4Uniform> _colorUniform;
         std::shared_ptr<GlFloatUniform> _timeUniform;
         std::shared_ptr<GlVec2Uniform> _resolutionUniform;
 
@@ -62,7 +63,7 @@ public:
     std::shared_ptr<ParticleBuffer> createParticleBuffer(size_t count) const;
 
 
-    std::shared_ptr<VertexBuffer> createVertexBuffer(MeshData data) const;
+    std::shared_ptr<BaseVertexBuffer> createVertexBuffer(MeshData data) const;
     std::shared_ptr<Texture> createTexture(Bitmap bitmap) const;
     std::shared_ptr<Shader> createProgram(std::string_view name) const;
 
@@ -72,6 +73,10 @@ public:
 protected:
     mutable std::vector<Command> _commands;
     const Engine &_engine;
+    std::unique_ptr<void, void(*)(void*)> _drawContext;
+    mutable std::unordered_map<std::string, std::shared_ptr<Shader>> _programs;
+    std::shared_ptr<VertexBuffer>  _buffer;
+    std::shared_ptr<Shader> _particleShader;
 };
 
 

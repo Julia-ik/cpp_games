@@ -5,11 +5,12 @@
 #ifndef ZUMA_PARTICLEBUFFER_H
 #define ZUMA_PARTICLEBUFFER_H
 
-#include "VertexBuffer.h"
+#include "BaseVertexBuffer.h"
+#include "MeshData.h"
 
 class color_t;
 
-class ParticleBuffer
+class ParticleBuffer : public BaseVertexBuffer
 {
 public:
     struct ParticleData
@@ -20,13 +21,16 @@ public:
         float phase = 0;
     };
 
-    ParticleBuffer(std::vector<ParticleData> data);
-    ParticleBuffer(size_t capacity);
-    //void draw() override;
-    void addData(ParticleData data);
-    ~ParticleBuffer();
+    explicit ParticleBuffer(std::vector<ParticleData> data);
 
-protected:
+    explicit ParticleBuffer(size_t capacity);
+    void addData(ParticleData data);
+
+    virtual ~ParticleBuffer();
+
+    void draw();
+
+private:
     uint32_t _VAO = 0;
     uint32_t _VBO = 0;
 

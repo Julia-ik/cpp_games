@@ -8,6 +8,8 @@ namespace {
     constexpr auto vs_program =
             R"(
 #version 330 core
+#define VS_IN in
+#define VS_OUT out
 
 layout (location = 0) in vec2 position;
 layout (location = 1) in vec2 velocity;
@@ -48,6 +50,11 @@ void main()
     constexpr auto ps_program =
             R"(
 #version 330 core
+
+#define PS_IN in
+#define TEXTURE2D texture
+
+out vec4 PS_OUT;
 
 in vec4 oColor;
 in vec2 oPos;

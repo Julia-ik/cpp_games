@@ -39,6 +39,17 @@ private:
 
 };
 
+class GlVec4Uniform :public Uniform
+{
+public:
+    GlVec4Uniform(const std::shared_ptr<Shader>& program, std::string_view name);
+    void activate() override;
+    glm::vec4 value;
+private:
+    int32_t _location;
+
+};
+
 class GlFloatUniform :public Uniform
 {
 public:

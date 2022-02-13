@@ -21,7 +21,7 @@ ParticleBuffer::ParticleBuffer(std::vector<ParticleData> data)
     _count = data.size();
 }
 
-ParticleBuffer::ParticleBuffer( size_t capacity)
+ParticleBuffer::ParticleBuffer(size_t capacity)
 {
     this->createBuffers();
 
@@ -40,32 +40,19 @@ ParticleBuffer::ParticleBuffer( size_t capacity)
 
 }
 
-/*void ParticleBuffer::draw()
+void ParticleBuffer::draw()
 {
     if (_count > 0)
     {
-
-#if GLES20
-        glBindVertexArrayOES(_VAO);
-#elif GL33
         glBindVertexArray(_VAO);
-#endif
-
         glDrawArrays(GL_POINTS, 0, _count);
     }
 }
-*/
+
 void ParticleBuffer::createBuffers()
 {
-#if GLES20
-    glGenVertexArraysOES(1, &_VAO);
-
-    glBindVertexArrayOES(_VAO);
-#elif GL33
     glGenVertexArrays(1, &_VAO);
-
     glBindVertexArray(_VAO);
-#endif
     glGenBuffers(1, &_VBO);
 }
 
@@ -108,14 +95,8 @@ void ParticleBuffer::addData(ParticleBuffer::ParticleData data)
     _curPos %= _capacity;
 }
 
-ParticleBuffer::~ParticleBuffer()
-{
+ParticleBuffer::~ParticleBuffer() {
     glDeleteBuffers(1, &_VBO);
 
-#if GLES20
-    glDeleteVertexArraysOES(1, &_VAO);
-#elif GL33
     glDeleteVertexArrays(1, &_VAO);
-#endif
-
 }

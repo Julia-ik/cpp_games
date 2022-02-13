@@ -66,8 +66,8 @@ void Particles::update(float delta)
                 particle._color = glm::vec4(1.0, 1.0, 1.0, 1.0);
                 particle.phase = _timeUniform->value;
 
-                //auto particleBuffer = std::static_pointer_cast<ParticleBuffer>(_command.vertexBuffer);
-                //particleBuffer->addData(particle);
+                auto particleBuffer = std::static_pointer_cast<ParticleBuffer>(_command.vertexBuffer);
+                particleBuffer->addData(particle);
             }
         }
     }
