@@ -19,7 +19,7 @@ public:
     void updateSelf(float delta) override;
     int j =0;
     std::shared_ptr<BallRaw> _ballraw;
-    float _speedRaw=60.0f;
+    float _speedRaw=45.0f;
 
     glm::vec2 _tempPoint;
 };

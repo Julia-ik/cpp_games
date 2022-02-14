@@ -54,7 +54,7 @@ void Ball::updateSelf(float delta)
 
                  for (int m = 0; m <= i; m++)
                  {
-                     for(int l=0; l<75; l++)
+                     for(int l=0; l<105; l++)
                      {
                          _engine._ballRaw->_raw[m]->updateSelf(0.01f);
                      }
