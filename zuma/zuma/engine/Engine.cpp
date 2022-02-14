@@ -2,7 +2,7 @@
 #include "ResourceLoader.h"
 #include "BallRaw.h"
 #include <ctime>
-
+#include "imguiManager.h"
 
 
 Engine::Engine(int w, int h)
@@ -53,6 +53,8 @@ void Engine::initGLL() {
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
     _renderer = createShared<Renderer>();
+    _imguiManager = createShared<ImguiManager>();
+
     _resManager = createShared<ResourceManager>();
     scene.setScale(glm::vec2(width, heights));
     scene._zOrder = 1;
@@ -71,6 +73,7 @@ void Engine::initGLL() {
                                             "/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/images/krug.png",
                                             glm::vec4(1, 1, 1, 1));
     scene.addNode(placeholder2, 10);
+
     _ballRaw = std::make_shared<BallRaw>(this, 8);
     _soundManager.init();
     _sounds.push_back(std::make_shared<Sound>("/home/lilu/lilu/cpp_games/cpp_games/less3/game/sound/dramatic.wav",
@@ -85,9 +88,9 @@ void Engine::update(float delta)
     _ballRaw->update();
     scene.update(delta);
     scene.visit();
+    _imguiManager->visit();
     _renderer->draw();
     clearData();
-    //printf("\n TUTUTU, %d \n", scene.getNodes().size());
 }
 
 void Engine::destroyEngine(SDL_Window **window, SDL_Renderer **render)
@@ -99,7 +102,6 @@ void Engine::destroyEngine(SDL_Window **window, SDL_Renderer **render)
 void Engine::setClipboardTxt(std::string_view text) const
 {
     SDL_SetClipboardText(text.data());
-
 }
 
 std::string_view Engine::getClipboardTxt() const

@@ -5,6 +5,7 @@
 #include "LevelBall.h"
 #include "BallRaw.h"
 #include <cmath>
+#include "Engine.h"
 
 
 LevelBall::LevelBall(const Engine& engine, glm::vec2 position, glm::vec2 size,
@@ -18,7 +19,7 @@ LevelBall::LevelBall(const Engine& engine, glm::vec2 position, glm::vec2 size,
 
 void LevelBall::updateSelf(float delta)
 {
-    if(_shouldUpdate)
+    if(_shouldUpdate && !_engine.isPaused)
     {
         if(abs(_tempPoint.x - _position.x)>0.01f ||
            abs(_tempPoint.y - _position.y)>0.01f) {

@@ -28,10 +28,9 @@ float rotation, float speed, int colorIndex) : _engine(engine)
 }
 void Ball::updateSelf(float delta)
 {
-    //_rotation =  glm::degrees(glm::orientedAngle(glm::vec2(1.0f, 0.0f), glm::normalize(_speed)));
     _nodes[0]->_color = getColorFromIndex(_colorIndex);
 
-    if(_shouldUpdate) {
+    if(_shouldUpdate && !_engine.isPaused) {
         auto vector = glm::rotate(glm::vec2(1.0f, 0.0f),
                                   glm::radians(_rotation));
         _nodes[0]->setPosition(_nodes[0]->getPosition() + vector * delta * 300.0f);

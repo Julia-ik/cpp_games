@@ -11,6 +11,8 @@
 #include "SoundManager.h"
 #include "Sound.h"
 
+
+class ImguiManager;
 enum ColOfBall
 {
     ORANGE = 0,
@@ -22,7 +24,7 @@ enum ColOfBall
 class Engine
 {
 public:
-
+    std::shared_ptr<ImguiManager> _imguiManager;
     std::shared_ptr<Renderer> _renderer;
     SDL_Window *window;
     SDL_Renderer *r;
@@ -43,8 +45,8 @@ public:
     std::shared_ptr<BallRaw> _ballRaw;
     GLuint programID = 0;
     std::vector<std::shared_ptr<Sound>> _sounds;
-    bool isActive;
-
+    mutable bool isActive;
+    mutable bool isPaused= false;
     Engine(int w, int h);
 
     void update(float delta);

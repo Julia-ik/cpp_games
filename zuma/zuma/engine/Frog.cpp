@@ -30,6 +30,7 @@ Frog::Frog(Engine *engine, glm::vec2 position, glm::vec2 size, float rotation,
 
     registerEventHandler();
     generateBallBanch();
+
     nextBall = _engine->createShared<Ball>(glm::vec2((_position.x +62.5f) -27.5f, (_position.y+62.5f)-2.5f), _contentSize,
                                            _rotation, 500.0f, colorBall[i]);
     nextBall->setRotation(getRotation()+90.0f);
@@ -59,16 +60,20 @@ void Frog::registerEventHandler()
                 }
                 if (keyState[SDL_SCANCODE_UP])
                 {
-                    i++;
-                    if(i >= 100){
-                        generateBallBanch();
-                        i = 0;
-                    }
-                    auto ball = _engine->createShared<Ball>(nextBall->getPosition(), glm::vec2(3.0f, 3.0f),
-                                                            nextBall->getRotation(), 500.0f, nextBall->_colorIndex);
+                    if(!_engine->isPaused)
+                    {
+                        i++;
+                        if(i >= 100){
+                            generateBallBanch();
+                            i = 0;
+                        }
+                        auto ball = _engine->createShared<Ball>(nextBall->getPosition(), glm::vec2(3.0f, 3.0f),
+                                                                nextBall->getRotation(), 500.0f, nextBall->_colorIndex);
 
-                    _engine->scene.addNode(ball, 4);
-                    nextBall->_colorIndex = colorBall[i];
+                        _engine->scene.addNode(ball, 4);
+                        nextBall->_colorIndex = colorBall[i];
+                    }
+
                }
 
                 if (keyState[SDL_SCANCODE_ESCAPE]) {
@@ -94,23 +99,26 @@ void Frog::registerEventHandler()
         }
         else if (e.type == SDL_MOUSEBUTTONDOWN && e.button.button == SDL_BUTTON_LEFT)
         {
-           auto _mousePos = glm::vec2{e.motion.x, e.motion.y};
-            _rotation =  glm::degrees(glm::orientedAngle(glm::vec2(0.0f, 1.0f),
-                                                         glm::normalize(_mousePos- _nodes[0]->getPosition())));
-            _nodes[0]->setRotation(_rotation);
+            if(!_engine->isPaused)
+            {
+                auto _mousePos = glm::vec2{e.motion.x, e.motion.y};
+                _rotation =  glm::degrees(glm::orientedAngle(glm::vec2(0.0f, 1.0f),
+                                                             glm::normalize(_mousePos- _nodes[0]->getPosition())));
+                _nodes[0]->setRotation(_rotation);
 
-            auto vector =   glm::normalize(_mousePos- _nodes[0]->getPosition());
-            auto ball = _engine->createShared<Ball>(_position, glm::vec2(3.0f, 3.0f),
-                                                    _nodes[0]->getRotation()+90.0f, 500.0f, nextBall->_colorIndex);
-            i++;
-            if(i >= 100){
-                generateBallBanch();
-                i = 0;
+                auto vector =   glm::normalize(_mousePos- _nodes[0]->getPosition());
+                auto ball = _engine->createShared<Ball>(_position, glm::vec2(3.0f, 3.0f),
+                                                        _nodes[0]->getRotation()+90.0f, 500.0f, nextBall->_colorIndex);
+                i++;
+                if(i >= 100){
+                    generateBallBanch();
+                    i = 0;
+                }
+
+                ball->setPosition(_position + vector);
+                _engine->scene.addNode(ball, 4);
+                nextBall->_colorIndex = colorBall[i];
             }
-
-            ball->setPosition(_position + vector);
-            _engine->scene.addNode(ball, 4);
-            nextBall->_colorIndex = colorBall[i];
         }
     });
 
@@ -118,12 +126,16 @@ void Frog::registerEventHandler()
 
 void Frog::updateSelf(float delta) {
 
-    if (_nodes[0]->isLeft) {
-        moveLeft(_nodes[0], delta);
+    if(!_engine->isPaused)
+    {
+        if (_nodes[0]->isLeft) {
+            moveLeft(_nodes[0], delta);
+        }
+        if (_nodes[0]->isRight) {
+            moveRight(_nodes[0], delta);
+        }
     }
-    if (_nodes[0]->isRight) {
-        moveRight(_nodes[0], delta);
-    }
+
 }
 
 void Frog::moveLeft(std::shared_ptr<Node> sprite, float delta){

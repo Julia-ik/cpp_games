@@ -16,7 +16,7 @@ public:
 
     ResourceManager();
     std::vector<std::shared_ptr<Shader>> _shaders;
-    std::shared_ptr<Shader> GetShader(std::string name) const;
+    static std::shared_ptr<Shader> GetShader(std::string name);
 
 };
 #endif //ZUMA_RESOURCELOADER_H

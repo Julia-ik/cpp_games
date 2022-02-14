@@ -16,7 +16,7 @@ add_library(engine STATIC Engine.cpp Node.cpp Node.h Sprite.cpp Sprite.h
         Frog.cpp Frog.h EventManager.cpp EventManager.h Ball.cpp Ball.h
         ResourceManager.h TaskManager.cpp TaskManager.h BallRaw.cpp BallRaw.h LevelBall.cpp
         LevelBall.h Color.h Particles.cpp Particles.h ParticleBuffer.cpp ParticleBuffer.h
-        ParticlesShader.cpp ParticlesShader.h SpriteShader.cpp SpriteShader.h FileManager.cpp FileManager.h BaseVertexBuffer.h SoundManager.cpp SoundManager.h Sound.cpp Sound.h)
+        ParticlesShader.cpp ParticlesShader.h SpriteShader.cpp SpriteShader.h FileManager.cpp FileManager.h BaseVertexBuffer.h SoundManager.cpp SoundManager.h Sound.cpp Sound.h imguiManager.cpp imguiManager.h ImguiShader.cpp ImguiShader.h)
 #SDL
 
 if(NOT IOS)

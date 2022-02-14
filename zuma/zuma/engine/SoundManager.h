@@ -40,7 +40,7 @@ private:
     SDL_AudioSpec returned{};
 
 public:
-    float volume = 0.25f;
+    mutable float volume = 0.25f;
     bool shouldLoop = true;
     void createAudioDevice();
     void initAudioSpec();

@@ -48,7 +48,8 @@ BallRaw::BallRaw(Engine *engine,  int size): _engine(engine)
 
 void BallRaw::update()
 {
-    if(_raw.size()>0) {
+    if(_raw.size()>0 && !_engine->isPaused)
+    {
         for (int o = 0; o < _raw.size() - 1; o++) {
             if ((abs(_raw[o]->getPosition().x - _raw[o + 1]->getPosition().x) > 46.0f
                  && abs(_raw[o]->getPosition().x - _raw[o + 1]->getPosition().x) < 50.0f) ||
@@ -78,8 +79,6 @@ void BallRaw::update()
         }
     }
 
-
-    //checkGaps();
 }
 
 void BallRaw::deleteMatch()
@@ -95,38 +94,17 @@ void BallRaw::deleteMatch()
 //           _emitter->setPosition(_raw[i]->getPosition());
 //           _emitter->start(1000);
 
-           _engine->scene.removeNodeByInd(_raw[i]->refInd);
-           _engine->scene.removeNodeByInd(_raw[i-1]->refInd);
-           _engine->scene.removeNodeByInd(_raw[i-2]->refInd);
+           _engine->dataToClear.emplace_back(_raw[i]->refInd);
+           _engine->dataToClear.emplace_back(_raw[i-1]->refInd);
+           _engine->dataToClear.emplace_back(_raw[i-2]->refInd);
            if(_raw.size()==3)
            {
                _raw.clear();
-               printf("\n OOOPS \n");
            }
            else
            {
                _raw.erase(_raw.begin()+i-2,_raw.begin()+i+1);
            }
        }
-    }
-}
-
-void BallRaw::checkGaps()
-{
-    for(int a=0; a<_raw.size(); a++)
-    {
-        if(a>0 && (abs(_raw[a]->getPosition().x - _raw[a-1]->getPosition().x) > 46.0f ||
-                abs(_raw[a]->getPosition().y - _raw[a-1]->getPosition().y) > 46.0f))
-        {
-            for(int b=0; b<=a; b++)
-            {
-                _raw[b]->_shouldUpdate = false;
-            }
-           printf("\n I AM IN GAP \n");
-        }
-        else
-        {
-
-        }
     }
 }

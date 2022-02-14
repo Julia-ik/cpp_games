@@ -71,7 +71,6 @@ void Renderer::draw()
             }
         }
     }
-
     _commands.clear();
 }
 
