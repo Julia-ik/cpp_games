@@ -13,7 +13,7 @@
 
 class Engine;
 
-class BallRaw
+class BallRaw: public Node
 {
 public:
     BallRaw(Engine *_engine,  int size);
@@ -21,9 +21,9 @@ public:
     std::vector<std::shared_ptr<LevelBall>> _raw;
     int _initialSize;
     int _currentSize = 1;
-    float _delta;
     std::shared_ptr<Particles> _emitter;
     std::vector<int> colorBall;
+    bool _isLevelFinished = false;
     int j =0;
     int k = 0;
     std::vector<glm::vec2> _points;
@@ -34,6 +34,8 @@ public:
     void deleteMatch();
 
     void checkGaps();
+
+    void checkFinish();
 };
 
 

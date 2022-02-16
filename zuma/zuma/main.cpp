@@ -4,10 +4,7 @@
 
 int main()
 {
-
     Engine engine(700, 700);
-
-
     engine.initGLL();
 
     Frog frog(&engine,

@@ -52,7 +52,6 @@ void VertexBuffer::draw(size_t num, size_t offset)
                    static_cast<GLsizei>(num),
                    GL_UNSIGNED_INT,
                    reinterpret_cast<GLvoid*>(offset));
-//    GlCheckError(__FILE__, __LINE__);
 }
 
 VertexBuffer::~VertexBuffer()
@@ -71,8 +70,6 @@ VertexBuffer::~VertexBuffer()
 #else
     glDeleteVertexArrays(1, &_VAO);
 #endif
-
-    // GlCheckError(__FILE__, __LINE__);
 
 }
 void VertexBuffer::draw()

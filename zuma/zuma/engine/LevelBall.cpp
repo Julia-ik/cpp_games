@@ -12,10 +12,7 @@ LevelBall::LevelBall(const Engine& engine, glm::vec2 position, glm::vec2 size,
                      float rotation, float speed, std::shared_ptr<BallRaw> raw, int colorIndex)
                      : Ball(engine, position, size, rotation, speed, colorIndex), _ballraw(raw)
 {
-
 }
-
-
 
 void LevelBall::updateSelf(float delta)
 {

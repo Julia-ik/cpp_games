@@ -8,8 +8,6 @@ namespace {
     constexpr auto vs_program =
             R"(
 #version 330 core
-#define VS_IN in
-#define VS_OUT out
 
 layout (location = 0) in vec2 position;
 layout (location = 1) in vec2 velocity;
@@ -25,7 +23,6 @@ out float oSize;
 uniform vec2 uResolutionSize;
 uniform vec2 uScreenSize;
 uniform float uTime;
-uniform mat3 uCameraMatrix;
 
 void main()
 {
@@ -34,7 +31,7 @@ void main()
 
     vec2 v = velocity * clamp(mix(1.0, 0.25, (uTime - oPhase) / 3.0), 0.0, 1.0);
     vec2 pos = position + v * (uTime - phase);
-    pos = (uCameraMatrix * vec3(pos, 1.0)).xy;
+    pos = (vec3(pos, 1.0)).xy;
     oPos = pos;
     oPos.y = uScreenSize.y - oPos.y;
 
@@ -42,7 +39,7 @@ void main()
     scaledPos.y = 1.0 - scaledPos.y;
     scaledPos = scaledPos * 2.0 - vec2(1.0);
 
-    oSize = clamp(mix(2.0, 64.0, (uTime - oPhase) / 1.0), 2.0, 64.0) * uCameraMatrix[0][0];
+    oSize = clamp(mix(2.0, 64.0, (uTime - oPhase) / 1.0), 2.0, 64.0);
     gl_PointSize = oSize / uScreenSize.y * uResolutionSize.y;
     gl_Position = vec4(scaledPos.x, scaledPos.y, 1.0, 1.0);
 }
@@ -50,11 +47,6 @@ void main()
     constexpr auto ps_program =
             R"(
 #version 330 core
-
-#define PS_IN in
-#define TEXTURE2D texture
-
-out vec4 PS_OUT;
 
 in vec4 oColor;
 in vec2 oPos;

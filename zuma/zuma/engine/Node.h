@@ -5,10 +5,6 @@
 #ifndef ZUMA_NODE_H
 #define ZUMA_NODE_H
 
-
-
-#ifndef GAME_NODE_H
-#define GAME_NODE_H
 #include <memory>
 #include <vector>
 #include <glm/glm.hpp>
@@ -17,12 +13,11 @@
 class Node :public std::enable_shared_from_this<Node> {
 public:
 
-
-    float _speed=0.0;
     float _turnSpeed=0.0;
     bool isLeft = false;
     bool isRight = false;
     mutable int refInd = 0;
+    mutable int childrefInd = 0;
     glm::vec4 _color = {1,1,1,1};
 
     virtual ~Node() = default;
@@ -92,9 +87,5 @@ public:
 
     void removeNodeByInd(int i);
 };
-
-
-
-#endif //GAME_NODE_H
 
 #endif //ZUMA_NODE_H

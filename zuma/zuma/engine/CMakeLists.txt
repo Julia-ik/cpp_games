@@ -7,8 +7,6 @@ if(COMPILER_SUPPORTS_CXX17)
     set(CMAKE_REQUIRED_FLAGS "-std=c++17")
 endif()
 
-#add_definitions(-DPROJECT_ROOT_FOLDER=${PROJECT_SOURCE_DIR})
-
 add_library(engine STATIC Engine.cpp Node.cpp Node.h Sprite.cpp Sprite.h
         Shader.cpp Shader.h Bitmap.cpp Bitmap.h MeshData.h Uniforms.h
         Texture.cpp Texture.h Renderer.cpp Renderer.h VertexBuffer.cpp
@@ -16,7 +14,9 @@ add_library(engine STATIC Engine.cpp Node.cpp Node.h Sprite.cpp Sprite.h
         Frog.cpp Frog.h EventManager.cpp EventManager.h Ball.cpp Ball.h
         ResourceManager.h TaskManager.cpp TaskManager.h BallRaw.cpp BallRaw.h LevelBall.cpp
         LevelBall.h Color.h Particles.cpp Particles.h ParticleBuffer.cpp ParticleBuffer.h
-        ParticlesShader.cpp ParticlesShader.h SpriteShader.cpp SpriteShader.h FileManager.cpp FileManager.h BaseVertexBuffer.h SoundManager.cpp SoundManager.h Sound.cpp Sound.h imguiManager.cpp imguiManager.h ImguiShader.cpp ImguiShader.h)
+        ParticlesShader.cpp ParticlesShader.h SpriteShader.cpp SpriteShader.h FileManager.cpp
+        FileManager.h BaseVertexBuffer.h SoundManager.cpp SoundManager.h Sound.cpp Sound.h
+        imguiManager.cpp imguiManager.h ImguiShader.cpp ImguiShader.h)
 #SDL
 
 if(NOT IOS)

@@ -21,8 +21,6 @@ namespace
         size_t current_pos = 0;
     };
 
-
-
     enum State {playing, paused};
 
 }

@@ -71,7 +71,6 @@ ImguiManager::ImguiManager(const Engine& engine)
     io.ClipboardUserData = this;
 
     _command.program = _engine._resManager->GetShader("imgui");
-            //std::make_shared<Shader>(ResourceManager::GetShader("sprite"));
 
     _textureUniform = _command.program->createTextureUniform("uTexture", _command.program);
     _textureUniform->texture = engine._renderer->createTexture(std::move(bitmap));

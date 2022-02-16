@@ -1,10 +1,6 @@
 //
 // Created by lilu on 03/02/2022.
 //
-//
-// Created by lilu on 13/12/2021.
-//
-
 #ifndef GAME_COLOR_H
 #define GAME_COLOR_H
 #include <glm/glm.hpp>

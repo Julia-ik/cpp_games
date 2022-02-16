@@ -7,9 +7,7 @@
 #include "Engine.h"
 #include "Shader.h"
 #include "Uniforms.h"
-
 #include <glm/gtx/vector_angle.hpp>
-
 #include <random>
 
 Particles::Particles(const Engine &engine)
@@ -31,10 +29,9 @@ Particles::Particles(const Engine &engine)
     {
         _resolutionUniform->value = _engine._renderer->getRenderResolution();
     };
-//TODO включить в апдейт
 }
 
-void Particles::update(float delta)
+void Particles::updateSelf(float delta)
 {
     _timeUniform->value += delta;
 
@@ -110,13 +107,13 @@ void Particles::start(size_t count)
         particles.push_back(particle);
     }
 
-    //_command.vertexBuffer = _engine._renderer->createParticleBuffer(std::move(particles));
+    _command.vertexBuffer = _engine._renderer->createParticleBuffer(std::move(particles));
 }
 
 void Particles::start(size_t count, float freq, float lifeTime)
 {
     _count = count;
-    //_command.vertexBuffer = _engine._renderer->createParticleBuffer(count);
+    _command.vertexBuffer = _engine._renderer->createParticleBuffer(count);
     _dynamicMode = true;
     _freq = freq;
     _lastGenTime = 0;

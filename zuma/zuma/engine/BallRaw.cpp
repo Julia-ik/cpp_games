@@ -30,32 +30,32 @@ BallRaw::BallRaw(Engine *engine,  int size): _engine(engine)
         k++;
         ball->_tempPoint = _initialPoint;
         ball->_shouldUpdate=false;
+        ball->_isInitialized = false;
         if(o==0)
         {
             ball->_shouldUpdate=true;
         }
 
-        _engine->scene.addNode(ball, 4);
+        this->addNode(ball, 4);
         _raw.emplace_back(ball);
     }
-
-//    _emitter = engine->createShared<Particles>();
-//    _emitter->start(5000, 0.0002f, 1.0);
-//    _emitter->setRenderMask(0x1);
-//    _engine->scene.addNode(_emitter,6);
-
 }
 
 void BallRaw::update()
 {
     if(_raw.size()>0 && !_engine->isPaused)
     {
-        for (int o = 0; o < _raw.size() - 1; o++) {
-            if ((abs(_raw[o]->getPosition().x - _raw[o + 1]->getPosition().x) > 46.0f
+        for (int o = 0; o < _raw.size() - 1; o++)
+        {
+            if ((abs(_raw[o]->getPosition().x - _raw[o + 1]->getPosition().x) > 48.0f
                  && abs(_raw[o]->getPosition().x - _raw[o + 1]->getPosition().x) < 50.0f) ||
-                (abs(_raw[o]->getPosition().y - _raw[o + 1]->getPosition().y) > 46.0f
+                (abs(_raw[o]->getPosition().y - _raw[o + 1]->getPosition().y) > 48.0f
                  && abs(_raw[o]->getPosition().y - _raw[o + 1]->getPosition().y) < 50.0f))
             {
+                if(_raw[o + 1]->_isInitialized == false)
+                {
+                    _raw[o + 1]->_isInitialized = true;
+                }
                 _raw[o + 1]->_shouldUpdate = true;
                 _raw[o]->_shouldUpdate = true;
             }
@@ -63,40 +63,61 @@ void BallRaw::update()
                abs(_raw[o]->getPosition().y - _raw[o+1]->getPosition().y) >= 50.0f)
             {
                 _raw[o]->_shouldUpdate = false;
+                _raw[o+1]->_shouldUpdate = true;
+            }
+            if ((abs(_raw[o]->getPosition().x - _raw[o + 1]->getPosition().x) <= 48.0f) &&
+                (abs(_raw[o]->getPosition().y - _raw[o + 1]->getPosition().y) <= 48.0f))
+            {
+                if(_raw[o + 1]->_isInitialized && _raw[o]->_isInitialized
+                && _raw[o + 1]->_tempPoint == _raw[o]->_tempPoint)
+                {
+                    _raw[o + 1]->_shouldUpdate = false;
+                    _raw[o]->_shouldUpdate = true;
+                }
+            }
+            if(_isLevelFinished)
+            {
+                _raw[o + 1]->_shouldUpdate = true;
+                _raw[o]->_shouldUpdate = true;
             }
         }
 
         deleteMatch();
+        checkFinish();
 
-
-        if(abs(_raw[0]->getPosition().x - _finalPoint.x)<1.0f &&
-        abs(_raw[0]->getPosition().y - _finalPoint.y)<1.0f)
-        {
-            for(int i =0; i<_raw.size();i++)
-            {
-                _raw[i]->_speedRaw = 600.0f;
-            }
-        }
     }
 
 }
-
+void BallRaw::checkFinish()
+{
+    if(abs(_raw[0]->getPosition().x - _finalPoint.x)<1.0f &&
+       abs(_raw[0]->getPosition().y - _finalPoint.y)<1.0f)
+    {
+        for(int i =0; i<_raw.size();i++)
+        {
+            _raw[i]->_speedRaw = 600.0f;
+        }
+        _isLevelFinished = true;
+    }
+}
 void BallRaw::deleteMatch()
 {
     for(int i=0; i<_raw.size(); i++)
     {
        if(i>1 && _raw[i]->_colorIndex == _raw[i-1]->_colorIndex && _raw[i]->_colorIndex == _raw[i-2]->_colorIndex)
        {
-//           if (_emitter->getParent() == nullptr)
-//           {
-//               _engine->scene.addNode(_emitter,6);
-//           }
-//           _emitter->setPosition(_raw[i]->getPosition());
-//           _emitter->start(1000);
 
-           _engine->dataToClear.emplace_back(_raw[i]->refInd);
-           _engine->dataToClear.emplace_back(_raw[i-1]->refInd);
-           _engine->dataToClear.emplace_back(_raw[i-2]->refInd);
+           auto emitter = _engine->createShared<Particles>();
+           emitter->start(5000, 0.0002f, 0.5f);
+           emitter->setRenderMask(0x1);
+           emitter->setPosition(_raw[i-1]->getPosition());
+           _engine->scene.addNode(emitter,8);
+
+           printf("\n deleting %d, %d, %d", _raw[i]->refInd, _raw[i-1]->refInd, _raw[i-2]->refInd);
+
+           this->removeNodeByInd(_raw[i]->refInd);
+           this->removeNodeByInd(_raw[i-1]->refInd);
+           this->removeNodeByInd(_raw[i-2]->refInd);
            if(_raw.size()==3)
            {
                _raw.clear();

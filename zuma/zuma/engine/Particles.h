@@ -21,6 +21,7 @@ public:
     void start(size_t count, float freq, float lifeTime);
 
     void update(float delta);
+    void updateSelf(float delta) override;
 
 protected:
     void visitSelf() override;

@@ -8,12 +8,6 @@
 
 ResourceManager::ResourceManager()
 {
-    auto spriteShader = std::make_shared<SpriteShader>();
-    auto partShader = std::make_shared<ParticlesShader>();
-    auto imguiShader = std::make_shared<ImguiShader>();
-    _shaders.emplace_back(spriteShader);
-    _shaders.emplace_back(partShader);
-    _shaders.emplace_back(imguiShader);
 }
 
 std::shared_ptr<Shader> ResourceManager::GetShader(std::string name)

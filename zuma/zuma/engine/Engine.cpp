@@ -18,29 +18,6 @@ Engine::Engine(int w, int h)
 
     r = SDL_CreateRenderer(window, -1, SDL_WINDOW_OPENGL);
 }
-/*void Engine::drawGLModel(GLuint programID)
-{
-    glClear(GL_COLOR_BUFFER_BIT);
-
-    glUseProgram(programID);
-
-    glEnableVertexAttribArray(0);
-    glBindBuffer(GL_ARRAY_BUFFER, VAO);
-    glVertexAttribPointer(
-            0,
-            3,
-            GL_FLOAT,
-            GL_FALSE,
-            0,
-            (void*)0
-    );
-
-    glDrawArrays(GL_TRIANGLES, 0, 6);
-
-    glDisableVertexAttribArray(0);
-
-    SDL_GL_SwapWindow(window);
-}*/
 
 void Engine::initGLL() {
     SDL_GL_CreateContext(window);
@@ -75,6 +52,7 @@ void Engine::initGLL() {
     scene.addNode(placeholder2, 10);
 
     _ballRaw = std::make_shared<BallRaw>(this, 8);
+    scene.addNode(_ballRaw, 9);
     _soundManager.init();
     _sounds.push_back(std::make_shared<Sound>("/home/lilu/lilu/cpp_games/cpp_games/less3/game/sound/dramatic.wav",
                                               &_soundManager, "theme"));

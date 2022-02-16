@@ -17,7 +17,6 @@ public:
     virtual ~Ball();
     void updateSelf(float delta) override;
     bool _shouldUpdate= true;
-    float _tempSwap = 0;
 
     int _colorIndex;
 protected:

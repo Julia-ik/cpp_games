@@ -15,7 +15,6 @@ class ResourceManager
 public:
 
     ResourceManager();
-    std::vector<std::shared_ptr<Shader>> _shaders;
     static std::shared_ptr<Shader> GetShader(std::string name);
 
 };

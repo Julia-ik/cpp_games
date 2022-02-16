@@ -28,23 +28,12 @@ public:
          glm::vec2 center);
 
     void registerEventHandler();
-
-    //TODO  Sound createSound {return /*массив вик птр*/};
-
     void moveLeft(std::shared_ptr<Node>, float delta);
-
     void moveRight(std::shared_ptr<Node> sprite, float delta);
-
     void updateSelf(float delta) override;
 
-
-    void init();
-
-
-    void shoot(std::shared_ptr<Node> sprite, float delta);
-
 private:
-
+    bool _couldShooting;
     void generateBallBanch();
 
 

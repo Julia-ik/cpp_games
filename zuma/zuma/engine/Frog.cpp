@@ -35,7 +35,7 @@ Frog::Frog(Engine *engine, glm::vec2 position, glm::vec2 size, float rotation,
                                            _rotation, 500.0f, colorBall[i]);
     nextBall->setRotation(getRotation()+90.0f);
     nextBall->_shouldUpdate = false;
-    _engine->scene.addNode(nextBall, 4);
+    this->addNode(nextBall, 4);
 };
 
 void Frog::registerEventHandler()
@@ -60,8 +60,9 @@ void Frog::registerEventHandler()
                 }
                 if (keyState[SDL_SCANCODE_UP])
                 {
-                    if(!_engine->isPaused)
+                    if(!_engine->isPaused && _couldShooting)
                     {
+                        _couldShooting = false;
                         i++;
                         if(i >= 100){
                             generateBallBanch();
@@ -75,6 +76,10 @@ void Frog::registerEventHandler()
                     }
 
                }
+                if (!keyState[SDL_SCANCODE_UP])
+                {
+                    _couldShooting = true;
+                }
 
                 if (keyState[SDL_SCANCODE_ESCAPE]) {
                     _engine->isActive = false;
@@ -95,12 +100,13 @@ void Frog::registerEventHandler()
     {
         if (e.type == SDL_MOUSEBUTTONUP && e.button.button == SDL_BUTTON_LEFT)
         {
-
+            _couldShooting = true;
         }
         else if (e.type == SDL_MOUSEBUTTONDOWN && e.button.button == SDL_BUTTON_LEFT)
         {
-            if(!_engine->isPaused)
+            if(!_engine->isPaused && _couldShooting)
             {
+                _couldShooting = false;
                 auto _mousePos = glm::vec2{e.motion.x, e.motion.y};
                 _rotation =  glm::degrees(glm::orientedAngle(glm::vec2(0.0f, 1.0f),
                                                              glm::normalize(_mousePos- _nodes[0]->getPosition())));
@@ -135,7 +141,6 @@ void Frog::updateSelf(float delta) {
             moveRight(_nodes[0], delta);
         }
     }
-
 }
 
 void Frog::moveLeft(std::shared_ptr<Node> sprite, float delta){
@@ -148,15 +153,10 @@ void Frog::moveLeft(std::shared_ptr<Node> sprite, float delta){
         sprite->setRotation(sprite->getRotation() - delta * sprite->_turnSpeed);
         sprite->_turnSpeed -= delta *30000.0f;
         auto vec =glm::rotate(glm::vec2{-1.0f, 0.0f}, glm::radians(sprite->getRotation()));
-
-               /* glm::rotate(glm::vec2{0.0f, 1.0f},
-                                  glm::radians(sprite->getRotation()));*/
         nextBall->setPosition(nextBall->getPosition() - vec * 0.05f);
-//        printf("\n HUI %f, %f\n", nextBall->getPosition().x, nextBall->getPosition().y);
         nextBall->setRotation(sprite->getRotation()+90.0f);
 
     }
-
     if(sprite->_turnSpeed <0.1f)
     {
         sprite->_turnSpeed = 0.0f;

@@ -34,19 +34,41 @@ void Renderer::draw()
     glEnable(GL_SCISSOR_TEST);
     for (const auto &command: _commands)
     {
-        auto glVertexBuffer = std::dynamic_pointer_cast<VertexBuffer>(command.vertexBuffer);
+        auto spriteVertexBuffer = std::dynamic_pointer_cast<VertexBuffer>(command.vertexBuffer);
+        auto particleBuffer = std::dynamic_pointer_cast<ParticleBuffer>(
+                command.vertexBuffer);
 
-        if (glVertexBuffer)
+        if (spriteVertexBuffer || particleBuffer)
         {
             auto glProgram = std::dynamic_pointer_cast<Shader>(command.program);
 
             if (glProgram)
             {
                 glProgram->Use();
-                command._screenSizeUniform->activate();
-                command._textureUniform->activate();
-                command._colorUniform->activate();
-                command._transformUniform->activate();
+                if(command._screenSizeUniform)
+                {
+                    command._screenSizeUniform->activate();
+                }
+                if(command._textureUniform)
+                {
+                    command._textureUniform->activate();
+                }
+                if(command._colorUniform)
+                {
+                    command._colorUniform->activate();
+                }
+                if(command._transformUniform)
+                {
+                    command._transformUniform->activate();
+                }
+                if(command._timeUniform)
+                {
+                    command._timeUniform->activate();
+                }
+                if(command._resolutionUniform)
+                {
+                    command._resolutionUniform->activate();
+                }
 
                 if (command.scissor)
                 {
@@ -60,14 +82,24 @@ void Renderer::draw()
                     glScissor(0, 0, _engine.width, _engine.heights);
                 }
 
-                if (command.sub)
+                if(spriteVertexBuffer)
                 {
-                    glVertexBuffer->draw(command.sub->num, command.sub->offset);
+                    if (command.sub)
+                    {
+                        spriteVertexBuffer->draw(command.sub->num, command.sub->offset);
+                    }
+                    else
+                    {
+                        spriteVertexBuffer->draw();
+                    }
                 }
-                else
+                if (particleBuffer)
                 {
-                    glVertexBuffer->draw();
+                    glBlendFunc(GL_SRC_ALPHA, GL_ONE);
+                    particleBuffer->draw();
+                    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
                 }
+
             }
         }
     }
@@ -109,11 +141,3 @@ std::shared_ptr<ParticleBuffer> Renderer::createParticleBuffer(size_t count) con
 {
     return _engine.createShared<ParticleBuffer>(count);
 }
-/*
-std::shared_ptr<Texture> Renderer::createTexture(std::string filepath) const
-{
-    return _textures.resourceForName(std::string(filepath), [&]()->std::shared_ptr<Texture>
-    {
-        return _engine.createShared<Texture>(Bitmap{filepath});
-    };
-}*/

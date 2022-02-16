@@ -7,7 +7,8 @@
 #include <vector>
 #include "glm/glm.hpp"
 #include <algorithm>
-#include <stdio.h>
+#include <cstdio>
+
 void Node::addNode(std::shared_ptr<Node> node, int zOrder)
 {
     if (node != nullptr)
@@ -17,8 +18,8 @@ void Node::addNode(std::shared_ptr<Node> node, int zOrder)
             node->_parent = shared_from_this();
         }
         node->_zOrder = zOrder;
-        refInd++;
-        node->refInd = refInd;
+        childrefInd++;
+        node->refInd = childrefInd;
         _nodes.push_back(std::move(node));
         std::sort(_nodes.begin(), _nodes.end(), comparor);
 
@@ -40,13 +41,11 @@ void Node::removeNodeByInd( int k)
 {
     int index;
     for(int i=0; i<_nodes.size(); i++ ){
-        if(_nodes[i]->refInd == k){
+        if(_nodes[i]->refInd == k &&_nodes[i]->_zOrder !=1  &&_nodes[i]->_zOrder!=10
+        && _nodes[i]->_zOrder !=2)
+        {
             index = i;
-            if(_nodes[i]->getNodes().size() >0) {
-                for (int j = 0; j < _nodes[i]->getNodes().size(); j++) {
-                    _nodes[i]->removeNodeByInd(_nodes[i]->getNodes()[j]->refInd);
-                }
-            }
+            _nodes[i]->getNodes().clear();
         }
     }
     _nodes.erase(_nodes.begin() + index);
@@ -55,7 +54,6 @@ void Node::removeNodeByInd( int k)
 void Node::removeFromParent()
 {
     _parent->removeNode(shared_from_this());
-
 }
 
 std::shared_ptr<Node> Node::getParent()

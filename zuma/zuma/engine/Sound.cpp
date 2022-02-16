@@ -45,22 +45,17 @@ Sound::Sound(std::string_view filename, SoundManager * soundManager, std::string
 }
 void Sound::play()
 {
-    //SDL_PauseAudioDevice(_audio_device_id, SDL_TRUE);
     _soundManager->_currentSound = _name;
     SDL_PauseAudioDevice(_soundManager->_audio_device_id, SDL_FALSE);
 }
 void Sound::pause()
 {
-
     SDL_PauseAudioDevice(_soundManager->_audio_device_id, SDL_TRUE);
 }
 void Sound::stop()
 {
     SDL_PauseAudioDevice(_soundManager->_audio_device_id, SDL_TRUE);
     _soundManager->_buffers[_name].current_pos = 0;
-
-    //SDL_CloseAudio();
-    //SDL_FreeWAV(_buf);
 }
 
 void Sound::volumePlus()

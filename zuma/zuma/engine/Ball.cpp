@@ -9,7 +9,6 @@
 Ball::Ball(const Engine& engine, glm::vec2 position, glm::vec2 size,
 float rotation, float speed, int colorIndex) : _engine(engine)
 {
-    {
         _position=position;
         _contentSize = size;
         _rotation = rotation;
@@ -22,9 +21,8 @@ float rotation, float speed, int colorIndex) : _engine(engine)
                                               "/home/lilu/lilu/cpp_games/cpp_games/zuma/zuma/engine/images/shar.png",
                                               _color);
 
-    }
-
         this->addNode(_sprite, 7);
+
 }
 void Ball::updateSelf(float delta)
 {
@@ -54,15 +52,15 @@ void Ball::updateSelf(float delta)
 
                  for (int m = 0; m <= i; m++)
                  {
-                     for(int l=0; l<105; l++)
+                     for(int l=0; l<115; l++)
                      {
                          _engine._ballRaw->_raw[m]->updateSelf(0.01f);
                      }
                  }
 
-                 _engine.scene.addNode(lvlball, 5);
+                 _engine._ballRaw->addNode(lvlball, 5);
                  _engine._ballRaw->_raw.insert(_engine._ballRaw->_raw.begin() +i+1, lvlball);
-                _engine.dataToClear.emplace_back(refInd);
+                _engine.dataToClear.emplace_back(this->refInd);
                  break;
             }
         }

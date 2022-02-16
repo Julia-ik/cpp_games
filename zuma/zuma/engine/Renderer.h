@@ -76,7 +76,6 @@ protected:
     std::unique_ptr<void, void(*)(void*)> _drawContext;
     mutable std::unordered_map<std::string, std::shared_ptr<Shader>> _programs;
     std::shared_ptr<VertexBuffer>  _buffer;
-    std::shared_ptr<Shader> _particleShader;
 };
 
 
